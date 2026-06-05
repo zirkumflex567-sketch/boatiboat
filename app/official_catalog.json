@@ -11711,19 +11711,19 @@
       "Gegen 15:00 Uhr"
     ],
     "correct_index": 0,
-    "explanation": "Die Zeit ergibt sich aus Distanz und Fahrt über Grund. In der amtlichen Navigationsaufgabe 9 ist das erwartete Ergebnis: Gegen 13:00 Uhr.",
+    "explanation": "Aus der Grafik: Ablauf 12:00 Uhr, Distanz 6,5 sm bei einer Fahrt über Grund von 6,5 kn. 6,5 sm ÷ 6,5 kn = 1,0 Stunde Fahrzeit, also Ankunft gegen 13:00 Uhr.",
     "source_name": "ELWIS Fragenkatalog See",
     "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-See/Fragenkatalog-See-August-2023.pdf?__blob=publicationFile&v=13",
     "source_stand": "01. August 2023",
     "exam_section": "Navigationsaufgaben",
-    "image_url": "/assets/graphics/navigation-card.svg",
-    "image_alt": "Schematische Seekarten- und Kursdarstellung"
+    "image_url": "/assets/graphics/nav-time.svg",
+    "image_alt": "Fahrtstrecke mit Ablaufzeit, Distanz und Fahrt über Grund"
   },
   {
     "external_id": "SEE-NAV-009-02",
     "license_type": "see",
     "category": "Navigationsaufgaben",
-    "prompt": "Navigationsaufgabe 9: Von Tonne \"1\" wird rwK 206° auf den Leuchtturm \"Alte Weser\" abgesetzt. Ablenkung +4°, Missweisung aus der Karte. Wie lautet der MgK?",
+    "prompt": "Navigationsaufgabe 9: Von Tonne \"1\" wird rwK 206° auf den Leuchtturm \"Alte Weser\" abgesetzt. Ablenkung +4°, Missweisung 0° aus der Karte. Wie lautet der MgK?",
     "choices": [
       "MgK = 202°",
       "MgK = 206°",
@@ -11731,13 +11731,13 @@
       "MgK = 198°"
     ],
     "correct_index": 0,
-    "explanation": "Der Magnetkompasskurs entsteht aus dem rechtweisenden Kurs unter Berücksichtigung von Missweisung und Ablenkung. Das amtliche Ergebnis lautet MgK = 202°.",
+    "explanation": "Der Magnetkompasskurs entsteht aus dem rechtweisenden Kurs abzüglich Missweisung und Ablenkung: MgK = rwK − Mw − Abl = 206° − 0° − 4° = 202°.",
     "source_name": "ELWIS Fragenkatalog See",
     "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-See/Fragenkatalog-See-August-2023.pdf?__blob=publicationFile&v=13",
     "source_stand": "01. August 2023",
     "exam_section": "Navigationsaufgaben",
-    "image_url": "/assets/graphics/navigation-card.svg",
-    "image_alt": "Schematische Seekarten- und Kursdarstellung"
+    "image_url": "/assets/graphics/nav-mgk.svg",
+    "image_alt": "Kompassrose mit rechtweisendem Kurs, Missweisung und Ablenkung"
   },
   {
     "external_id": "SEE-NAV-010-01",
@@ -11751,13 +11751,13 @@
       "54° 08,6' N 007° 55,7' E"
     ],
     "correct_index": 0,
-    "explanation": "Bei Positionsangaben wird zuerst die Breite, dann die Länge gelesen. Das amtliche Ergebnis für Tonne A10 lautet 53° 52,6' N 008° 06,4' E.",
+    "explanation": "Bei Positionsangaben wird zuerst die Breite, dann die Länge gelesen. Die Tonne A10 liegt in der Grafik bei 53° 52,6' N (knapp über 53°52') und 008° 06,4' E (knapp rechts von 008°06'). Das amtliche Ergebnis lautet 53° 52,6' N 008° 06,4' E.",
     "source_name": "ELWIS Fragenkatalog See",
     "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-See/Fragenkatalog-See-August-2023.pdf?__blob=publicationFile&v=13",
     "source_stand": "01. August 2023",
     "exam_section": "Navigationsaufgaben",
-    "image_url": "/assets/graphics/navigation-card.svg",
-    "image_alt": "Schematische Seekarten- und Kursdarstellung"
+    "image_url": "/assets/graphics/nav-position.svg",
+    "image_alt": "Seekartengitter mit eingezeichneter Tonne A10"
   },
   {
     "external_id": "SEE-NAV-011-03",
@@ -11771,13 +11771,13 @@
       "rwK = 205°"
     ],
     "correct_index": 0,
-    "explanation": "Der rwK wird in der Karte rechtweisend abgetragen und abgelesen. Das amtliche Ergebnis dieser Aufgabe ist rwK = 148°.",
+    "explanation": "Der rwK wird in der Karte rechtweisend abgetragen und an der Kompassrose abgelesen. Die Kurslinie liegt zwischen den Marken 120° und 150°, knapp vor 150°. Das amtliche Ergebnis dieser Aufgabe ist rwK = 148°.",
     "source_name": "ELWIS Fragenkatalog See",
     "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-See/Fragenkatalog-See-August-2023.pdf?__blob=publicationFile&v=13",
     "source_stand": "01. August 2023",
     "exam_section": "Navigationsaufgaben",
-    "image_url": "/assets/graphics/navigation-card.svg",
-    "image_alt": "Schematische Seekarten- und Kursdarstellung"
+    "image_url": "/assets/graphics/nav-rwk.svg",
+    "image_alt": "Kompassrose mit Kurslinie von der Startposition zur Tonne 5"
   },
   {
     "external_id": "SEE-NAV-012-08",
@@ -11791,13 +11791,13 @@
       "BV = 304° -4,6 sm"
     ],
     "correct_index": 0,
-    "explanation": "Die Besteckversetzung beschreibt Richtung und Betrag der Abweichung zwischen Koppelort und beobachtetem Ort. Das amtliche Ergebnis lautet BV = 296° -0,7 sm.",
+    "explanation": "Die Besteckversetzung beschreibt Richtung und Betrag der Abweichung vom Koppelort zum beobachteten Ort (in der Grafik der türkise Pfeil). Sie zeigt nach rund 296° mit einer Länge von etwa 0,7 sm. Das amtliche Ergebnis lautet BV = 296° -0,7 sm.",
     "source_name": "ELWIS Fragenkatalog See",
     "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-See/Fragenkatalog-See-August-2023.pdf?__blob=publicationFile&v=13",
     "source_stand": "01. August 2023",
     "exam_section": "Navigationsaufgaben",
-    "image_url": "/assets/graphics/navigation-card.svg",
-    "image_alt": "Schematische Seekarten- und Kursdarstellung"
+    "image_url": "/assets/graphics/nav-bv.svg",
+    "image_alt": "Koppelort und beobachteter Ort mit Besteckversetzungsvektor"
   },
   {
     "external_id": "SEE-NAV-014-02",
@@ -11816,7 +11816,7 @@
     "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-See/Fragenkatalog-See-August-2023.pdf?__blob=publicationFile&v=13",
     "source_stand": "01. August 2023",
     "exam_section": "Navigationsaufgaben",
-    "image_url": "/assets/graphics/navigation-card.svg",
-    "image_alt": "Schematische Seekarten- und Kursdarstellung"
+    "image_url": "/assets/graphics/nav-colors.svg",
+    "image_alt": "Die vier Hintergrundfarben der Seekarte als Farbfelder"
   }
 ]

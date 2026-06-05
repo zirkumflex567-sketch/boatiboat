@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Hintergrundfarben der Seekarte</title>
+  <desc id="desc">Die vier Hintergrundfarben einer Seekarte als Farbfelder mit ihren Bezeichnungen weiss, hellblau, hellgruen und hellgelb.</desc>
+  <rect width="720" height="360" fill="#f7f4e9"/>
+  <text x="36" y="48" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#10212b">Kartenfarben zuordnen</text>
+  <text x="36" y="78" font-family="Segoe UI, sans-serif" font-size="15" fill="#5a6b73">Welche Bedeutung hat jede dieser Hintergrundfarben?</text>
+  <g stroke="#10212b" stroke-width="2">
+    <rect x="48" y="110" width="140" height="150" rx="10" fill="#ffffff"/>
+    <rect x="216" y="110" width="140" height="150" rx="10" fill="#bfe0ef"/>
+    <rect x="384" y="110" width="140" height="150" rx="10" fill="#c9e3b8"/>
+    <rect x="552" y="110" width="140" height="150" rx="10" fill="#f1e2a6"/>
+  </g>
+  <g font-family="Segoe UI, sans-serif" font-size="18" font-weight="700" fill="#10212b" text-anchor="middle">
+    <text x="118" y="298">wei&#223;</text>
+    <text x="286" y="298">hellblau</text>
+    <text x="454" y="298">hellgr&#252;n</text>
+    <text x="622" y="298">hellgelb</text>
+  </g>
+</svg>
