@@ -268,6 +268,84 @@ h2 {
   display: none;
 }
 
+.choices.nav-card {
+  display: block;
+}
+
+.nav-scenario {
+  padding: 16px 18px;
+  border-left: 6px solid var(--sea);
+  background: #eef6f4;
+  line-height: 1.55;
+  font-size: 1.02rem;
+  margin: 0 0 18px;
+}
+
+.nav-tasks {
+  display: grid;
+  gap: 12px;
+}
+
+.nav-task {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+}
+
+.nav-q {
+  line-height: 1.45;
+}
+
+.nav-reveal {
+  margin-top: 10px;
+  min-height: 0;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  background: var(--paper);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+}
+
+.nav-a {
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: #e7f3ec;
+  border-left: 4px solid var(--good);
+  font-weight: 600;
+  color: #0a5b3f;
+  white-space: pre-line;
+}
+
+.nav-chart {
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 10px 16px;
+}
+
+.nav-chart summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-chart ul {
+  margin: 12px 0 4px;
+  padding-left: 18px;
+  line-height: 1.6;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.nav-note {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .actions {
   margin-top: 18px;
   display: flex;

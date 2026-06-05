@@ -60,6 +60,9 @@ def serialize_question(question: Question, shuffle_salt: str | None = None) -> Q
         image_url=question.image_url,
         image_alt=question.image_alt,
         exam_section=question.exam_section,
+        card_type=question.card_type,
+        scenario=question.scenario,
+        subtasks=question.subtasks,
         priority=priority_for(question),
         choice_order=mixed.get("choice_order"),
     )

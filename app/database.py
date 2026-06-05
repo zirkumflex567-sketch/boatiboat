@@ -49,6 +49,9 @@ def ensure_sqlite_columns() -> None:
         "image_url": "TEXT",
         "image_alt": "TEXT",
         "exam_section": "VARCHAR(80)",
+        "card_type": "VARCHAR(40)",
+        "scenario": "TEXT",
+        "subtasks": "JSON",
     }
     with engine.begin() as connection:
         existing = {row[1] for row in connection.exec_driver_sql("PRAGMA table_info(questions)")}

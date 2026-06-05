@@ -29,6 +29,9 @@ class Question(Base):
     image_url: Mapped[str | None] = mapped_column(Text)
     image_alt: Mapped[str | None] = mapped_column(Text)
     exam_section: Mapped[str | None] = mapped_column(String(80))
+    card_type: Mapped[str | None] = mapped_column(String(40))
+    scenario: Mapped[str | None] = mapped_column(Text)
+    subtasks: Mapped[list | None] = mapped_column(JSON)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now_utc)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now_utc, onupdate=now_utc)
 

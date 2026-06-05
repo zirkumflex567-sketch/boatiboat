@@ -78,6 +78,7 @@ function renderQuestion() {
   $("explanation").classList.add("hidden");
   $("explanation").textContent = "";
   $("media").classList.add("hidden");
+  $("choices").classList.remove("nav-card");
 
   if (!question) {
     const passed = $("mode").value === "exam" ? state.correct >= Math.max(0, state.answered - 6) : true;
@@ -112,12 +113,65 @@ function renderQuestion() {
     $("media").classList.remove("hidden");
   }
 
+  if (question.card_type === "navigation") {
+    renderNavigationCard(question);
+    $("next").disabled = false;
+    return;
+  }
+
   question.choices.forEach((choice, index) => {
     const button = document.createElement("button");
     button.className = "choice";
     button.innerHTML = `<span>${String.fromCharCode(65 + index)}</span><span>${choice}</span>`;
     button.addEventListener("click", () => submitAnswer(question, index));
     $("choices").appendChild(button);
+  });
+}
+
+const CHART_SECTIONS = [
+  "1: N53°46,06' E007°43,12' – N54°00,42' E008°00,00'",
+  "2: N53°50,48' E007°57,54' – N54°05,24' E008°14,48'",
+  "3: N53°53,36' E007°51,12' – N54°13,80' E008°15,00'",
+  "4: N53°46,00' E007°49,00' – N54°06,00' E008°13,00'",
+  "5: N53°43,00' E007°24,00' – N53°57,00' E007°55,00'",
+  "6: N53°48,20' E007°24,00' – N54°08,54' E007°48,00'",
+  "7: N53°54,24' E008°15,24' – N54°09,00' E008°32,12'",
+  "8: N53°50,00' E008°04,00' – N54°01,00' E008°32,00'",
+];
+
+function escapeHtml(text) {
+  const div = document.createElement("div");
+  div.textContent = text == null ? "" : String(text);
+  return div.innerHTML;
+}
+
+function renderNavigationCard(question) {
+  const box = $("choices");
+  box.classList.add("nav-card");
+  const subtasks = (question.subtasks || [])
+    .map(
+      (sub) => `
+      <div class="nav-task">
+        <div class="nav-q"><strong>${sub.n}.</strong> ${escapeHtml(sub.question)}</div>
+        <button type="button" class="nav-reveal">Lösung anzeigen</button>
+        <div class="nav-a hidden">${escapeHtml(sub.answer)}</div>
+      </div>`
+    )
+    .join("");
+  box.innerHTML = `
+    <p class="nav-scenario">${escapeHtml(question.scenario || "")}</p>
+    <div class="nav-tasks">${subtasks}</div>
+    <details class="nav-chart">
+      <summary>Kartenausschnitte der amtlichen Übungskarte D49</summary>
+      <ul>${CHART_SECTIONS.map((s) => `<li>${s}</li>`).join("")}</ul>
+    </details>
+    <p class="nav-note">${escapeHtml(question.explanation || "")}</p>`;
+  box.querySelectorAll(".nav-reveal").forEach((button) => {
+    button.addEventListener("click", () => {
+      const answer = button.nextElementSibling;
+      answer.classList.toggle("hidden");
+      button.textContent = answer.classList.contains("hidden") ? "Lösung anzeigen" : "Lösung verbergen";
+    });
   });
 }
 

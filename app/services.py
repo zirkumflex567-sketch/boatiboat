@@ -11,16 +11,23 @@ from .schemas import QuestionIn
 
 
 def normalize_question(data: dict) -> QuestionIn:
-    choices = data.get("choices") or data.get("answers")
+    choices = data.get("choices")
+    if choices is None:
+        choices = data.get("answers")
     if isinstance(choices, str):
         choices = [part.strip() for part in choices.split("|") if part.strip()]
+    if choices is None:
+        choices = []
+    raw_correct = data.get("correct_index")
+    if raw_correct is None:
+        raw_correct = data.get("correct")
     return QuestionIn(
         external_id=str(data.get("external_id") or data.get("id") or data.get("number")),
         license_type=str(data.get("license_type") or data.get("license") or "see").lower(),
         category=str(data.get("category") or data.get("topic") or "Allgemein"),
         prompt=str(data.get("prompt") or data.get("question") or data.get("text")),
         choices=choices,
-        correct_index=int(data.get("correct_index") if data.get("correct_index") is not None else data.get("correct")),
+        correct_index=int(raw_correct) if raw_correct is not None else 0,
         explanation=data.get("explanation") or None,
         source_name=data.get("source_name") or None,
         source_url=data.get("source_url") or None,
@@ -28,6 +35,9 @@ def normalize_question(data: dict) -> QuestionIn:
         image_url=data.get("image_url") or None,
         image_alt=data.get("image_alt") or None,
         exam_section=data.get("exam_section") or None,
+        card_type=data.get("card_type") or None,
+        scenario=data.get("scenario") or None,
+        subtasks=data.get("subtasks") or None,
     )
 
 
@@ -83,6 +93,9 @@ def weighted_sample_without_replacement(
 
 
 def shuffled_choices(question: Question, salt: str = "") -> dict:
+    if not question.choices or len(question.choices) < 2:
+        # Lernkarten (z. B. Navigationsaufgaben) haben keine Antwortoptionen.
+        return {"choices": list(question.choices or []), "correct_index": 0, "choice_order": None}
     order = list(range(len(question.choices)))
     digest = hashlib.sha256(f"{question.external_id}:{salt}".encode("utf-8")).digest()
     decorated = [(digest[idx % len(digest)], idx) for idx in order]

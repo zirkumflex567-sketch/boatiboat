@@ -36,74 +36,6 @@ SOURCES = [
     },
 ]
 
-NAVIGATION_TASKLETS = [
-    {
-        "external_id": "SEE-NAV-009-01",
-        "license_type": "see",
-        "category": "Navigationsaufgaben",
-        "prompt": 'Navigationsaufgabe 9: Wann erreicht das Boot voraussichtlich die Tonne "6"?',
-        "choices": ["Gegen 13:00 Uhr", "Gegen 12:20 Uhr", "Gegen 14:10 Uhr", "Gegen 15:00 Uhr"],
-        "correct_index": 0,
-        "explanation": "Aus der Grafik: Ablauf 12:00 Uhr, Distanz 6,5 sm bei einer Fahrt über Grund von 6,5 kn. 6,5 sm ÷ 6,5 kn = 1,0 Stunde Fahrzeit, also Ankunft gegen 13:00 Uhr.",
-        "image_url": "/assets/graphics/nav-time.svg",
-        "image_alt": "Fahrtstrecke mit Ablaufzeit, Distanz und Fahrt über Grund",
-    },
-    {
-        "external_id": "SEE-NAV-009-02",
-        "license_type": "see",
-        "category": "Navigationsaufgaben",
-        "prompt": 'Navigationsaufgabe 9: Von Tonne "1" wird rwK 206° auf den Leuchtturm "Alte Weser" abgesetzt. Ablenkung +4°, Missweisung 0° aus der Karte. Wie lautet der MgK?',
-        "choices": ["MgK = 202°", "MgK = 206°", "MgK = 210°", "MgK = 198°"],
-        "correct_index": 0,
-        "explanation": "Der Magnetkompasskurs entsteht aus dem rechtweisenden Kurs abzüglich Missweisung und Ablenkung: MgK = rwK − Mw − Abl = 206° − 0° − 4° = 202°.",
-        "image_url": "/assets/graphics/nav-mgk.svg",
-        "image_alt": "Kompassrose mit rechtweisendem Kurs, Missweisung und Ablenkung",
-    },
-    {
-        "external_id": "SEE-NAV-010-01",
-        "license_type": "see",
-        "category": "Navigationsaufgaben",
-        "prompt": 'Navigationsaufgabe 10: Entnehmen Sie der Seekarte die geographische Position der Tonne "A10".',
-        "choices": ["53° 52,6' N 008° 06,4' E", "53° 56,0' N 008° 11,0' E", "53° 50,0' N 007° 53,4' E", "54° 08,6' N 007° 55,7' E"],
-        "correct_index": 0,
-        "explanation": "Bei Positionsangaben wird zuerst die Breite, dann die Länge gelesen. Die Tonne A10 liegt in der Grafik bei 53° 52,6' N (knapp über 53°52') und 008° 06,4' E (knapp rechts von 008°06'). Das amtliche Ergebnis lautet 53° 52,6' N 008° 06,4' E.",
-        "image_url": "/assets/graphics/nav-position.svg",
-        "image_alt": "Seekartengitter mit eingezeichneter Tonne A10",
-    },
-    {
-        "external_id": "SEE-NAV-011-03",
-        "license_type": "see",
-        "category": "Navigationsaufgaben",
-        "prompt": 'Navigationsaufgabe 11: Von Position 53° 54,2\' N 007° 53,8\' E wird der Kurs auf Tonne "5" der Neuen Weser abgesetzt. Wie lautet der rwK?',
-        "choices": ["rwK = 148°", "rwK = 152°", "rwK = 012°", "rwK = 205°"],
-        "correct_index": 0,
-        "explanation": "Der rwK wird in der Karte rechtweisend abgetragen und an der Kompassrose abgelesen. Die Kurslinie liegt zwischen den Marken 120° und 150°, knapp vor 150°. Das amtliche Ergebnis dieser Aufgabe ist rwK = 148°.",
-        "image_url": "/assets/graphics/nav-rwk.svg",
-        "image_alt": "Kompassrose mit Kurslinie von der Startposition zur Tonne 5",
-    },
-    {
-        "external_id": "SEE-NAV-012-08",
-        "license_type": "see",
-        "category": "Navigationsaufgaben",
-        "prompt": 'Navigationsaufgabe 12: Um 09:00 Uhr wird die Tonne "ST" mit rwP = 168° und Distanz 2,0 sm gepeilt. Wie lautet die Besteckversetzung?',
-        "choices": ["BV = 296° -0,7 sm", "BV = 168° -2,0 sm", "BV = 007° +0,7 sm", "BV = 304° -4,6 sm"],
-        "correct_index": 0,
-        "explanation": "Die Besteckversetzung beschreibt Richtung und Betrag der Abweichung vom Koppelort zum beobachteten Ort (in der Grafik der türkise Pfeil). Sie zeigt nach rund 296° mit einer Länge von etwa 0,7 sm. Das amtliche Ergebnis lautet BV = 296° -0,7 sm.",
-        "image_url": "/assets/graphics/nav-bv.svg",
-        "image_alt": "Koppelort und beobachteter Ort mit Besteckversetzungsvektor",
-    },
-    {
-        "external_id": "SEE-NAV-014-02",
-        "license_type": "see",
-        "category": "Navigationsaufgaben",
-        "prompt": "Navigationsaufgabe 14: Was bedeuten die Hintergrundfarben weiß, hellblau, hellgrün und hellgelb in der Seekarte?",
-        "choices": ['weiß: "tiefes Wasser", hellblau: "flaches Wasser", hellgrün: "Watt", hellgelb: "Land"', 'weiß: "Land", hellblau: "Watt", hellgrün: "tiefes Wasser", hellgelb: "flaches Wasser"', 'weiß: "Sperrgebiet", hellblau: "Land", hellgrün: "Fahrwasser", hellgelb: "Ankerplatz"', 'weiß: "flaches Wasser", hellblau: "tiefes Wasser", hellgrün: "Land", hellgelb: "Watt"'],
-        "correct_index": 0,
-        "explanation": "Die Kartenfarben helfen beim schnellen Erfassen von Wassertiefe und Landbereichen. Das amtliche Ergebnis ordnet weiß tiefem Wasser, hellblau flachem Wasser, hellgrün Watt und hellgelb Land zu.",
-        "image_url": "/assets/graphics/nav-colors.svg",
-        "image_alt": "Die vier Hintergrundfarben der Seekarte als Farbfelder",
-    },
-]
 
 
 def download_pdf(url: str) -> Path:
@@ -250,10 +182,8 @@ def explanation_for(prompt: str, correct: str, section: str, choices: list[str] 
 
 
 def image_for(number: int, section: str) -> tuple[str | None, str | None]:
-    if "Navigation" in section or "Navigations" in section:
-        return "/assets/graphics/navigation-card.svg", "Schematische Seekarten- und Kursdarstellung"
-    if number in {7, 10, 11, 12, 13}:
-        return "/assets/graphics/lights-card.svg", "Schematische Darstellung von Lichtern und Tagzeichen"
+    # Echte Grafiken werden aus den PDFs extrahiert (siehe extract_catalog_images.py)
+    # und nachträglich über die image_map zugeordnet.
     return None, None
 
 
@@ -292,21 +222,79 @@ def parse_questions(text: str, source: dict) -> list[dict]:
     return records
 
 
+PDF_DIR = ROOT / "build" / "elwis"
+NAV_NOTE = (
+    "Amtliche Lösungen aus dem ELWIS-Fragenkatalog See. In der Prüfung wird diese "
+    "Aufgabe an der amtlichen Übungskarte D49 (Mündungen der Jade, Weser und Elbe) "
+    "bearbeitet. Die Karte ist urheberrechtlich geschützt (BSH) und im Fachhandel erhältlich."
+)
+
+
+def save_pdf(url: str, dest: Path) -> Path:
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    with httpx.Client(follow_redirects=True, timeout=120, verify=False) as client:
+        response = client.get(url, headers={"User-Agent": "boatiboat-catalog-sync/1.0"})
+        response.raise_for_status()
+        dest.write_bytes(response.content)
+    return dest
+
+
+def build_navigation_cards() -> list[dict]:
+    import extract_nav_tasks  # liest build/elwis/see.pdf, schreibt nav_tasks.json
+
+    extract_nav_tasks.main()
+    nav = json.loads((PDF_DIR / "nav_tasks.json").read_text(encoding="utf-8"))
+    cards = []
+    for task in nav["tasks"]:
+        cards.append({
+            "external_id": f"SEE-NAV-{task['task']:02d}",
+            "license_type": "see",
+            "category": "Navigationsaufgaben",
+            "card_type": "navigation",
+            "prompt": f"Navigationsaufgabe {task['task']}",
+            "scenario": task["scenario"],
+            "subtasks": task["subtasks"],
+            "choices": [],
+            "correct_index": 0,
+            "explanation": NAV_NOTE,
+            "source_name": "ELWIS Fragenkatalog See",
+            "source_url": SEE_URL,
+            "source_stand": "01. August 2023",
+            "exam_section": "Navigationsaufgaben",
+            "image_url": None,
+            "image_alt": None,
+        })
+    return cards
+
+
 def main() -> None:
+    import extract_catalog_images  # liest build/elwis/*.pdf, schreibt image_map.json
+
     all_records = []
     for source in SOURCES:
-        path = download_pdf(source["source_url"])
-        records = parse_questions(pdf_text(path), source)
+        dest = PDF_DIR / f"{source['license_type']}.pdf"
+        save_pdf(source["source_url"], dest)
+        records = parse_questions(pdf_text(dest), source)
         print(f"{source['source_name']}: {len(records)} Fragen extrahiert")
         all_records.extend(records)
-    for tasklet in NAVIGATION_TASKLETS:
-        tasklet.setdefault("source_name", "ELWIS Fragenkatalog See")
-        tasklet.setdefault("source_url", SEE_URL)
-        tasklet.setdefault("source_stand", "01. August 2023")
-        tasklet.setdefault("exam_section", "Navigationsaufgaben")
-        all_records.append(tasklet)
+
+    # Echte Grafiken aus den PDFs extrahieren und zuordnen
+    extract_catalog_images.main()
+    image_map = json.loads((PDF_DIR / "image_map.json").read_text(encoding="utf-8"))
+    for record in all_records:
+        url = image_map.get(record["external_id"])
+        if url:
+            record["image_url"] = url
+            record["image_alt"] = f"Abbildung zur Frage: {record['prompt']}"
+    print(f"Grafiken zugeordnet: {sum(1 for r in all_records if r.get('image_url'))}")
+
+    # Amtliche Navigationsaufgaben als Lernkarten anhängen
+    nav_cards = build_navigation_cards()
+    all_records.extend(nav_cards)
+    print(f"Navigationsaufgaben: {len(nav_cards)}")
+
     OUTPUT.write_text(json.dumps(all_records, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"geschrieben: {OUTPUT}")
+    print(f"geschrieben: {OUTPUT} ({len(all_records)} Eintraege)")
 
 
 if __name__ == "__main__":

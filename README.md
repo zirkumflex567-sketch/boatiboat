@@ -14,8 +14,29 @@ aus der Datenbank aus. Es gibt keine Live-KI und keine LLM-Abhaengigkeit im Proj
 - Pruefungsmodus nutzt feste amtliche Bogenform statt frei waehlbarer Fragenzahl
 - Einfaches Spaced-Repetition-Scoring
 - Antwortreihenfolge wird pro Session gemischt
+- Frageauswahl und -reihenfolge werden pro Session zufaellig gemischt
+- Amtliche Grafiken (Lichter, Tonnen, Tagzeichen, Flaggen, Schallzeichen) werden
+  aus den PDFs extrahiert und den Fragen zugeordnet
+- Die 15 amtlichen See-Navigationsaufgaben werden als Lernkarten mit Szenario,
+  Teilaufgaben und amtlichen Loesungen dargestellt
 - Quellenstand wird in API und UI pro Session angezeigt
-- ELWIS-Sync-Skript fuer die amtlichen PDF-Kataloge
+- ELWIS-Sync-Skript fuer die amtlichen PDF-Kataloge inkl. Bild- und Navigationsextraktion
+
+## Navigationsaufgaben und Uebungskarte D49
+
+Die See-Navigationsaufgaben werden in der amtlichen Pruefung an der **Uebungskarte
+D49 (Muendungen der Jade, Weser und Elbe)** bearbeitet. Diese Karte ist
+urheberrechtlich geschuetzt (BSH) und im Fachhandel erhaeltlich; sie darf nicht
+mitgeliefert werden. Boatiboat zeigt die 15 Aufgaben mit allen Teilaufgaben und
+den amtlichen Loesungen als Lernkarten sowie die acht Kartenausschnitt-Koordinaten
+der D49. Erzeugt werden Bilder und Navigationskarten mit:
+
+```powershell
+.venv\Scripts\python scripts\extract_catalog_images.py
+.venv\Scripts\python scripts\extract_nav_tasks.py
+```
+
+Beide werden auch vom Sync-Skript automatisch aufgerufen.
 
 ## Quellenstand
 

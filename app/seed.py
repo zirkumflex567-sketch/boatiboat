@@ -4,7 +4,7 @@ from pathlib import Path
 from sqlalchemy import select
 
 from .database import Base, engine, ensure_sqlite_columns, session_scope
-from .models import Question
+from .models import Progress, Question
 from .services import upsert_questions
 
 
@@ -105,4 +105,19 @@ def init_db(seed: bool = True) -> int:
         return 0
     with session_scope() as session:
         records = load_catalog_records()
-        return upsert_questions(session, records)
+        imported = upsert_questions(session, records)
+        prune_stale_questions(session, records)
+        return imported
+
+
+def prune_stale_questions(session, records: list[dict]) -> int:
+    """Entfernt Fragen (und deren Fortschritt), die nicht mehr im Katalog stehen,
+    z. B. ersetzte Navigationsaufgaben."""
+    valid = {str(r.get("external_id")) for r in records}
+    stale = session.scalars(select(Question).where(Question.external_id.notin_(valid))).all()
+    for question in stale:
+        progress = session.scalar(select(Progress).where(Progress.question_id == question.id))
+        if progress:
+            session.delete(progress)
+        session.delete(question)
+    return len(stale)
