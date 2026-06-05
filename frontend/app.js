@@ -108,8 +108,16 @@ function renderQuestion() {
   $("choices").innerHTML = "";
 
   if (question.image_url) {
-    $("mediaImage").src = question.image_url.replace(/^\/assets\//, "assets/");
-    $("mediaImage").alt = question.image_alt || "";
+    const img = $("mediaImage");
+    $("media").classList.remove("media-symbol");
+    img.onload = () => {
+      // Sehr breite, flache Grafiken (Schallzeichen) nicht aufblasen
+      if (img.naturalWidth && img.naturalHeight && img.naturalWidth / img.naturalHeight >= 3.2) {
+        $("media").classList.add("media-symbol");
+      }
+    };
+    img.src = question.image_url.replace(/^\/assets\//, "assets/");
+    img.alt = question.image_alt || "";
     $("media").classList.remove("hidden");
   }
 

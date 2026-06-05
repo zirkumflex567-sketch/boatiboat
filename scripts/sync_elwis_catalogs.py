@@ -230,6 +230,16 @@ NAV_NOTE = (
 )
 
 
+TONE_SVG_OVERRIDES = {
+    "BINNEN-004": ("/assets/graphics/catalog/tone-kurz.svg", "Schallzeichen: ein kurzer Ton"),
+    "SEE-004": ("/assets/graphics/catalog/tone-kurz.svg", "Schallzeichen: ein kurzer Ton"),
+    "BINNEN-005": ("/assets/graphics/catalog/tone-lang.svg", "Schallzeichen: ein langer Ton"),
+    "SEE-005": ("/assets/graphics/catalog/tone-lang.svg", "Schallzeichen: ein langer Ton"),
+    "SEE-116": ("/assets/graphics/catalog/tone-lang.svg", "Schallzeichen: ein langer Ton"),
+    "SEE-117": ("/assets/graphics/catalog/tone-lang-lang.svg", "Schallzeichen: zwei lange Töne"),
+}
+
+
 def save_pdf(url: str, dest: Path) -> Path:
     dest.parent.mkdir(parents=True, exist_ok=True)
     with httpx.Client(follow_redirects=True, timeout=120, verify=False) as client:
@@ -287,6 +297,12 @@ def main() -> None:
             record["image_url"] = url
             record["image_alt"] = f"Abbildung zur Frage: {record['prompt']}"
     print(f"Grafiken zugeordnet: {sum(1 for r in all_records if r.get('image_url'))}")
+
+    # Niedrig aufgeloeste Inline-Tonzeichen durch saubere SVGs ersetzen
+    for record in all_records:
+        ov = TONE_SVG_OVERRIDES.get(record["external_id"])
+        if ov:
+            record["image_url"], record["image_alt"] = ov
 
     # Amtliche Navigationsaufgaben als Lernkarten anhängen
     nav_cards = build_navigation_cards()

@@ -192,18 +192,27 @@ h2 {
 .question-media {
   margin: 0 0 18px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  background: white;
+  padding: 18px;
+  box-sizing: border-box;
 }
 
 .question-media img {
   display: block;
-  width: 100%;
-  aspect-ratio: 2 / 1;
+  max-width: 100%;
+  max-height: 380px;
+  width: auto;
   height: auto;
-  max-height: none;
   object-fit: contain;
-  border: 2px solid var(--ink);
-  border-radius: 8px;
-  background: white;
+}
+
+/* Sehr breite, flache Grafiken (z. B. Schallzeichen) nicht hochskalieren */
+.question-media.media-symbol img {
+  max-height: 60px;
 }
 
 .choices {

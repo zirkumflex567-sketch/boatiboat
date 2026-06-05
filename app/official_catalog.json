@@ -76,8 +76,8 @@
     "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-See/Fragenkatalog-See-August-2023.pdf?__blob=publicationFile&v=13",
     "source_stand": "01. August 2023",
     "exam_section": "Basisfragen",
-    "image_url": "/assets/graphics/catalog/see-004.png",
-    "image_alt": "Abbildung zur Frage: Wie lang ist die Dauer eines kurzen Tons ( )?"
+    "image_url": "/assets/graphics/catalog/tone-kurz.svg",
+    "image_alt": "Schallzeichen: ein kurzer Ton"
   },
   {
     "external_id": "SEE-005",
@@ -96,8 +96,8 @@
     "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-See/Fragenkatalog-See-August-2023.pdf?__blob=publicationFile&v=13",
     "source_stand": "01. August 2023",
     "exam_section": "Basisfragen",
-    "image_url": "/assets/graphics/catalog/see-005.png",
-    "image_alt": "Abbildung zur Frage: Wie lang ist die Dauer eines langen Tons ( )?"
+    "image_url": "/assets/graphics/catalog/tone-lang.svg",
+    "image_alt": "Schallzeichen: ein langer Ton"
   },
   {
     "external_id": "SEE-006",
@@ -2316,8 +2316,8 @@
     "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-See/Fragenkatalog-See-August-2023.pdf?__blob=publicationFile&v=13",
     "source_stand": "01. August 2023",
     "exam_section": "Spezifische Fragen See",
-    "image_url": "/assets/graphics/catalog/see-116.png",
-    "image_alt": "Abbildung zur Frage: Sie hören bei verminderter Sicht mindestens alle zwei Minuten einen langen Ton mit der Pfeife ( ). Welches Fahrzeug gibt dieses Signal?"
+    "image_url": "/assets/graphics/catalog/tone-lang.svg",
+    "image_alt": "Schallzeichen: ein langer Ton"
   },
   {
     "external_id": "SEE-117",
@@ -2336,8 +2336,8 @@
     "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-See/Fragenkatalog-See-August-2023.pdf?__blob=publicationFile&v=13",
     "source_stand": "01. August 2023",
     "exam_section": "Spezifische Fragen See",
-    "image_url": "/assets/graphics/catalog/see-117.png",
-    "image_alt": "Abbildung zur Frage: Sie hören bei verminderter Sicht mindestens alle zwei Minuten zwei aufeinander folgende lange Töne mit der Pfeife ( ). Welches Fahrzeug gibt dieses Signal?"
+    "image_url": "/assets/graphics/catalog/tone-lang-lang.svg",
+    "image_alt": "Schallzeichen: zwei lange Töne"
   },
   {
     "external_id": "SEE-118",
@@ -5776,8 +5776,8 @@
     "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-Binnen/Fragenkatalog-Binnen-August-2023.pdf?__blob=publicationFile&v=8",
     "source_stand": "01. August 2023",
     "exam_section": "Basisfragen",
-    "image_url": "/assets/graphics/catalog/binnen-004.png",
-    "image_alt": "Abbildung zur Frage: Wie lang ist die Dauer eines kurzen Tons ( )?"
+    "image_url": "/assets/graphics/catalog/tone-kurz.svg",
+    "image_alt": "Schallzeichen: ein kurzer Ton"
   },
   {
     "external_id": "BINNEN-005",
@@ -5796,8 +5796,8 @@
     "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-Binnen/Fragenkatalog-Binnen-August-2023.pdf?__blob=publicationFile&v=8",
     "source_stand": "01. August 2023",
     "exam_section": "Basisfragen",
-    "image_url": "/assets/graphics/catalog/binnen-005.png",
-    "image_alt": "Abbildung zur Frage: Wie lang ist die Dauer eines langen Tons ( )?"
+    "image_url": "/assets/graphics/catalog/tone-lang.svg",
+    "image_alt": "Schallzeichen: ein langer Ton"
   },
   {
     "external_id": "BINNEN-006",
