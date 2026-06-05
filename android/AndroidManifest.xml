@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="de.boatiboat.app">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="36" />
 
     <application
         android:allowBackup="true"
