@@ -197,6 +197,7 @@ h2 {
 .question-media img {
   display: block;
   width: 100%;
+  aspect-ratio: 2 / 1;
   height: auto;
   max-height: none;
   object-fit: contain;
