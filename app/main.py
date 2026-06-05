@@ -1,7 +1,7 @@
 from pathlib import Path
 from contextlib import asynccontextmanager
-from datetime import date
 import random
+import secrets
 
 from fastapi import Depends, FastAPI, File, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
@@ -14,7 +14,14 @@ from .database import get_session
 from .models import Question
 from .schemas import AnswerIn, AnswerOut, QuestionOut, SessionOut
 from .seed import init_db
-from .services import parse_csv_catalog, priority_for, record_answer, shuffled_choices, upsert_questions
+from .services import (
+    parse_csv_catalog,
+    priority_for,
+    record_answer,
+    shuffled_choices,
+    upsert_questions,
+    weighted_sample_without_replacement,
+)
 
 
 @asynccontextmanager
@@ -149,14 +156,18 @@ def create_session(
     if license_type:
         statement = statement.where(Question.license_type == license_type)
     questions = session.scalars(statement).all()
+    # Eigener Zufalls-Salt pro Session: sorgt dafuer, dass sowohl die Frage-
+    # auswahl/-reihenfolge als auch die Antwortreihenfolge bei jeder Session
+    # neu gemischt werden und nicht jedes Mal identisch sind.
+    session_salt = secrets.token_hex(8)
     if mode == "exam":
         ordered, passing_rules, time_limit_seconds = pick_exam_questions(
             questions,
             license_type,
-            f"{date.today().isoformat()}:{license_type or 'see'}",
+            f"{session_salt}:{license_type or 'see'}",
         )
     else:
-        ordered = sorted(questions, key=lambda question: (-priority_for(question), question.id))[:limit]
+        ordered = weighted_sample_without_replacement(list(questions), limit)
         passing_rules = {
             "question_count": limit,
             "required_total": 0,
@@ -170,7 +181,7 @@ def create_session(
         passing_rules=passing_rules,
         source_summary=source_summary(ordered),
         questions=[
-            serialize_question(question, shuffle_salt=f"{mode}:{idx}:{len(ordered)}") for idx, question in enumerate(ordered)
+            serialize_question(question, shuffle_salt=f"{session_salt}:{mode}:{idx}:{len(ordered)}") for idx, question in enumerate(ordered)
         ],
     )
 

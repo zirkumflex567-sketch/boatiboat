@@ -1,5 +1,6 @@
 from csv import DictReader
 import hashlib
+import random
 from io import StringIO
 
 from sqlalchemy import select
@@ -54,6 +55,28 @@ def priority_for(question: Question) -> float:
     if not progress:
         return 1.0
     return max(0.25, 1 + progress.wrong_count * 2 - progress.correct_count * 0.35 - progress.box * 0.15)
+
+
+def weighted_sample_without_replacement(
+    questions: list[Question],
+    limit: int,
+    rng: random.Random | None = None,
+) -> list[Question]:
+    """Zieht Fragen zufaellig, gewichtet nach Spaced-Repetition-Prioritaet.
+
+    Hoehere Prioritaet (zuletzt falsch beantwortete Fragen) erscheint
+    wahrscheinlicher und weiter vorne, aber die Auswahl und Reihenfolge
+    variiert bei jeder Session. Nutzt das Efraimidis-Spirakis-Verfahren.
+    """
+    rng = rng or random.Random()
+    decorated = []
+    for question in questions:
+        weight = max(priority_for(question), 1e-6)
+        # Schluessel: random()^(1/weight) -> absteigend sortiert
+        key = rng.random() ** (1.0 / weight)
+        decorated.append((key, question))
+    decorated.sort(key=lambda item: item[0], reverse=True)
+    return [question for _, question in decorated[:limit]]
 
 
 def shuffled_choices(question: Question, salt: str = "") -> dict:
