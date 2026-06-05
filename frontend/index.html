@@ -19,20 +19,20 @@
         </div>
         <div class="instrument">
           <span id="timer">Lernmodus</span>
-          <strong id="score">0 / 0</strong>
-          <small>Fortschritt</small>
+          <strong id="score">- / -</strong>
+          <small id="scoreLabel">Fortschritt</small>
         </div>
       </section>
 
       <section class="controls" aria-label="Training konfigurieren">
-        <label>
+        <label class="control-field">
           Modus
           <select id="mode">
             <option value="learn">Lernmodus</option>
             <option value="exam">Prüfungsmodus</option>
           </select>
         </label>
-        <label>
+        <label class="control-field">
           Schein
           <select id="license">
             <option value="">Binnen + See</option>
@@ -40,7 +40,7 @@
             <option value="binnen">Binnen</option>
           </select>
         </label>
-        <label>
+        <label class="control-field">
           Fragen
           <select id="limit">
             <option>10</option>

@@ -21,7 +21,7 @@ function applyUrlParams() {
 function syncModeControls() {
   const isExam = $("mode").value === "exam";
   $("limit").disabled = isExam;
-  $("limitNote").textContent = isExam ? "Amtlich festgelegt" : "";
+  $("limitNote").textContent = isExam ? "amtlicher Umfang" : "\u00a0";
 }
 
 async function startSession() {
@@ -74,7 +74,6 @@ function updateTimer() {
 
 function renderQuestion() {
   const question = state.questions[state.index];
-  $("score").textContent = `${state.correct} / ${state.answered}`;
   $("next").disabled = true;
   $("explanation").classList.add("hidden");
   $("explanation").textContent = "";
@@ -85,6 +84,8 @@ function renderQuestion() {
     $("category").textContent = "Session beendet";
     $("priority").textContent = $("mode").value === "exam" ? (passed ? "Bestanden" : "Nicht bestanden") : "Gut gemacht";
     $("prompt").textContent = `Ergebnis: ${state.correct} von ${state.answered} richtig.`;
+    $("score").textContent = `${state.correct} / ${state.answered}`;
+    $("scoreLabel").textContent = $("mode").value === "exam" ? "Prüfungsergebnis" : "Richtig beantwortet";
     $("choices").innerHTML = state.results
       .filter((result) => !result.is_correct)
       .slice(0, 8)
@@ -95,6 +96,8 @@ function renderQuestion() {
     return;
   }
 
+  $("score").textContent = `${state.index + 1} / ${state.questions.length}`;
+  $("scoreLabel").textContent = "Frage";
   $("next").textContent = "Nächste Frage";
   $("category").textContent = `${question.license_type.toUpperCase()} · ${question.category}`;
   $("priority").textContent = question.source_stand
@@ -142,7 +145,8 @@ async function submitAnswer(question, selectedIndex) {
     label: `${question.external_id}: ${question.prompt}`,
     explanation: result.explanation,
   });
-  $("score").textContent = `${state.correct} / ${state.answered}`;
+  $("score").textContent = `${state.index + 1} / ${state.questions.length}`;
+  $("scoreLabel").textContent = `${state.correct} richtig`;
 
   buttons.forEach((button, index) => {
     if (isExam && index === selectedIndex) button.classList.add("selected");
