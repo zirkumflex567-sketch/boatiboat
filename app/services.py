@@ -71,8 +71,11 @@ def weighted_sample_without_replacement(
     rng = rng or random.Random()
     decorated = []
     for question in questions:
-        weight = max(priority_for(question), 1e-6)
-        # Schluessel: random()^(1/weight) -> absteigend sortiert
+        # Prioritaet quadriert: verstaerkt den Spaced-Repetition-Effekt
+        # gegenueber dem grossen Fragenpool, sodass oft falsch beantwortete
+        # Fragen zuverlaessig vorne landen, ohne die Reihenfolge zu fixieren.
+        weight = max(priority_for(question), 1e-6) ** 2
+        # Schluessel: random()^(1/weight) -> absteigend sortiert (Efraimidis-Spirakis)
         key = rng.random() ** (1.0 / weight)
         decorated.append((key, question))
     decorated.sort(key=lambda item: item[0], reverse=True)
