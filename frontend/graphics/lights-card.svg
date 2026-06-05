@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Schematische Lichterfuehrung</title>
+  <desc id="desc">Ein Boot mit rotem Backbordlicht, gruenem Steuerbordlicht, weissem Hecklicht und schwarzem Kegel als Tagzeichen.</desc>
+  <rect width="720" height="360" fill="#0f222b"/>
+  <path d="M170 230c88 32 278 32 380 0l-50 62H224z" fill="#f7f4e9" stroke="#f7f4e9" stroke-width="4"/>
+  <path d="M360 76v154" stroke="#f7f4e9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M326 112l34-62 34 62z" fill="#111" stroke="#f7f4e9" stroke-width="3"/>
+  <circle cx="246" cy="214" r="34" fill="#d63f2f"/>
+  <circle cx="474" cy="214" r="34" fill="#0aa36e"/>
+  <circle cx="360" cy="248" r="26" fill="#fff"/>
+  <g font-family="Segoe UI, sans-serif" font-weight="700" fill="#fff">
+    <text x="70" y="72" font-size="26">Lichter und Tagzeichen</text>
+    <text x="198" y="178" font-size="18">Backbord rot</text>
+    <text x="452" y="178" font-size="18">Steuerbord gruen</text>
+    <text x="372" y="292" font-size="18">Hecklicht weiss</text>
+    <text x="402" y="95" font-size="18">Kegel: unter Motor</text>
+  </g>
+</svg>

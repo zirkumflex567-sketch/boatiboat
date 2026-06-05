@@ -9,17 +9,25 @@ class QuestionIn(BaseModel):
     choices: list[str] = Field(min_length=2)
     correct_index: int
     explanation: str | None = None
+    source_name: str | None = None
+    source_url: str | None = None
+    source_stand: str | None = None
+    image_url: str | None = None
+    image_alt: str | None = None
+    exam_section: str | None = None
 
 
 class QuestionOut(QuestionIn):
     id: int
     priority: float = 1
+    choice_order: list[int] | None = None
 
 
 class AnswerIn(BaseModel):
     question_id: int
     selected_index: int
     mode: str = Field(default="learn", pattern="^(learn|exam)$")
+    choice_order: list[int] | None = None
 
 
 class AnswerOut(BaseModel):
@@ -33,4 +41,6 @@ class AnswerOut(BaseModel):
 class SessionOut(BaseModel):
     mode: str
     time_limit_seconds: int | None
+    passing_rules: dict
+    source_summary: list[dict]
     questions: list[QuestionOut]

@@ -1,5 +1,7 @@
 from pathlib import Path
 from contextlib import asynccontextmanager
+from datetime import date
+import random
 
 from fastapi import Depends, FastAPI, File, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
@@ -12,7 +14,7 @@ from .database import get_session
 from .models import Question
 from .schemas import AnswerIn, AnswerOut, QuestionOut, SessionOut
 from .seed import init_db
-from .services import parse_csv_catalog, priority_for, record_answer, upsert_questions
+from .services import parse_csv_catalog, priority_for, record_answer, shuffled_choices, upsert_questions
 
 
 @asynccontextmanager
@@ -34,18 +36,35 @@ PUBLIC_DIR = Path(__file__).resolve().parent.parent / "frontend"
 app.mount("/assets", StaticFiles(directory=PUBLIC_DIR), name="assets")
 
 
-def serialize_question(question: Question) -> QuestionOut:
+def serialize_question(question: Question, shuffle_salt: str | None = None) -> QuestionOut:
+    mixed = shuffled_choices(question, shuffle_salt) if shuffle_salt is not None else {}
     return QuestionOut(
         id=question.id,
         external_id=question.external_id,
         license_type=question.license_type,
         category=question.category,
         prompt=question.prompt,
-        choices=question.choices,
-        correct_index=question.correct_index,
+        choices=mixed.get("choices", question.choices),
+        correct_index=mixed.get("correct_index", question.correct_index),
         explanation=question.explanation,
+        source_name=question.source_name,
+        source_url=question.source_url,
+        source_stand=question.source_stand,
+        image_url=question.image_url,
+        image_alt=question.image_alt,
+        exam_section=question.exam_section,
         priority=priority_for(question),
+        choice_order=mixed.get("choice_order"),
     )
+
+
+def source_summary(questions: list[Question]) -> list[dict]:
+    seen = {}
+    for question in questions:
+        key = (question.source_name, question.source_stand, question.source_url)
+        if key[0] and key not in seen:
+            seen[key] = {"name": key[0], "stand": key[1], "url": key[2]}
+    return list(seen.values())
 
 
 @app.get("/")
@@ -80,11 +99,33 @@ def create_session(
     if license_type:
         statement = statement.where(Question.license_type == license_type)
     questions = session.scalars(statement).all()
-    ordered = sorted(questions, key=lambda question: (-priority_for(question), question.id))[:limit]
+    if mode == "exam":
+        rng = random.Random(f"{date.today().isoformat()}:{license_type or 'all'}:{limit}")
+        pool = list(questions)
+        rng.shuffle(pool)
+        ordered = []
+        if license_type == "see":
+            nav = [question for question in pool if question.category == "Navigationsaufgaben"]
+            if nav:
+                ordered.append(nav[0])
+        for question in pool:
+            if question not in ordered:
+                ordered.append(question)
+            if len(ordered) >= limit:
+                break
+    else:
+        ordered = sorted(questions, key=lambda question: (-priority_for(question), question.id))[:limit]
     return SessionOut(
         mode=mode,
         time_limit_seconds=limit * 90 if mode == "exam" else None,
-        questions=[serialize_question(question) for question in ordered],
+        passing_rules={
+            "max_wrong": 5 if mode == "exam" else 0,
+            "navigation_note": "SBF See: Navigationsaufgaben werden als eigener Abschnitt markiert; in der amtlichen Pruefung muessen diese gesondert bestanden werden.",
+        },
+        source_summary=source_summary(ordered),
+        questions=[
+            serialize_question(question, shuffle_salt=f"{mode}:{idx}:{limit}") for idx, question in enumerate(ordered)
+        ],
     )
 
 
@@ -93,10 +134,13 @@ def submit_answer(payload: AnswerIn, session: Session = Depends(get_session)) ->
     question = session.get(Question, payload.question_id)
     if not question:
         raise HTTPException(status_code=404, detail="Question not found")
-    is_correct, progress = record_answer(session, question, payload.selected_index)
+    is_correct, progress = record_answer(session, question, payload.selected_index, payload.choice_order)
+    correct_index = question.correct_index
+    if payload.choice_order:
+        correct_index = payload.choice_order.index(question.correct_index)
     return AnswerOut(
         is_correct=is_correct,
-        correct_index=question.correct_index,
+        correct_index=correct_index,
         explanation=question.explanation or "Für diese Frage wurde noch keine Erklärung erzeugt.",
         box=progress.box,
         wrong_count=progress.wrong_count,

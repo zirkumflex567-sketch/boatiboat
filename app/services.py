@@ -1,4 +1,5 @@
 from csv import DictReader
+import hashlib
 from io import StringIO
 
 from sqlalchemy import select
@@ -20,6 +21,12 @@ def normalize_question(data: dict) -> QuestionIn:
         choices=choices,
         correct_index=int(data.get("correct_index") if data.get("correct_index") is not None else data.get("correct")),
         explanation=data.get("explanation") or None,
+        source_name=data.get("source_name") or None,
+        source_url=data.get("source_url") or None,
+        source_stand=data.get("source_stand") or None,
+        image_url=data.get("image_url") or None,
+        image_alt=data.get("image_alt") or None,
+        exam_section=data.get("exam_section") or None,
     )
 
 
@@ -49,7 +56,26 @@ def priority_for(question: Question) -> float:
     return max(0.25, 1 + progress.wrong_count * 2 - progress.correct_count * 0.35 - progress.box * 0.15)
 
 
-def record_answer(session: Session, question: Question, selected_index: int) -> tuple[bool, Progress]:
+def shuffled_choices(question: Question, salt: str = "") -> dict:
+    order = list(range(len(question.choices)))
+    digest = hashlib.sha256(f"{question.external_id}:{salt}".encode("utf-8")).digest()
+    decorated = [(digest[idx % len(digest)], idx) for idx in order]
+    order = [idx for _, idx in sorted(decorated, reverse=True)]
+    if order == list(range(len(question.choices))) and len(order) > 1:
+        order = order[1:] + order[:1]
+    return {
+        "choices": [question.choices[idx] for idx in order],
+        "correct_index": order.index(question.correct_index),
+        "choice_order": order,
+    }
+
+
+def record_answer(
+    session: Session,
+    question: Question,
+    selected_index: int,
+    choice_order: list[int] | None = None,
+) -> tuple[bool, Progress]:
     progress = question.progress or Progress(
         question_id=question.id,
         correct_count=0,
@@ -57,7 +83,8 @@ def record_answer(session: Session, question: Question, selected_index: int) -> 
         streak=0,
         box=1,
     )
-    is_correct = selected_index == question.correct_index
+    original_index = choice_order[selected_index] if choice_order else selected_index
+    is_correct = original_index == question.correct_index
     if is_correct:
         progress.correct_count += 1
         progress.streak += 1

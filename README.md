@@ -1,8 +1,8 @@
 # Boatiboat SBF Trainer
 
 Interaktive Lern-Webapp fuer den deutschen Sportbootfuehrerschein Binnen und See.
-Die App trennt KI-Erklaerungen bewusst vom Live-Betrieb: Erklaerungen werden einmalig
-pregeneriert und danach nur noch schnell aus SQLite ausgeliefert.
+Die App nutzt die amtlichen ELWIS-Fragenkataloge und liefert Erklaerungen statisch
+aus der Datenbank aus. Es gibt keine Live-KI und keine LLM-Abhaengigkeit im Projekt.
 
 ## Bestandteile
 
@@ -12,7 +12,20 @@ pregeneriert und danach nur noch schnell aus SQLite ausgeliefert.
 - Lernmodus mit sofortiger Erklaerung
 - Pruefungsmodus mit Zeitlimit
 - Einfaches Spaced-Repetition-Scoring
-- LiteLLM-Skript zur Vorab-Erzeugung fehlender Erklaerungen
+- Antwortreihenfolge wird pro Session gemischt
+- Quellenstand wird in API und UI pro Session angezeigt
+- ELWIS-Sync-Skript fuer die amtlichen PDF-Kataloge
+
+## Quellenstand
+
+Aktuell eingelesen:
+
+- ELWIS Fragenkatalog See, anzuwenden ab 01. August 2023, Stand 01. August 2023
+- ELWIS Fragenkatalog Binnen, anzuwenden ab 01. August 2023, Stand 01. August 2023
+
+Die amtlichen PDFs enthalten selbst den Hinweis, dass im Katalog immer Antwort a
+richtig ist. Boatiboat mischt die Antworten daher beim Ausspielen und berechnet
+den korrekten Index neu.
 
 ## Lokal starten
 
@@ -24,16 +37,15 @@ python -m venv .venv
 
 Dann `http://127.0.0.1:8000` oeffnen.
 
-## Erklaerungen pregenerieren
+## Amtliche Kataloge synchronisieren
 
 ```powershell
-$env:LITELLM_MODEL="ollama/gemma3:27b"
-.venv\Scripts\python -m pip install -r requirements-ai.txt
-.venv\Scripts\python scripts\pregenerate_explanations.py --limit 20
+.venv\Scripts\python scripts\sync_elwis_catalogs.py
 ```
 
-Fuer gehostete Modelle werden die jeweiligen LiteLLM-Umgebungsvariablen gesetzt,
-zum Beispiel API Keys fuer Gemini/OpenAI-kompatible Provider.
+Das Skript schreibt `app/official_catalog.json`. Die generischen Erklaerungen
+werden deterministisch aus Frage, richtiger Antwort und Themenbereich erzeugt;
+ausgewaehlte Navigations- und Regelthemen haben handgeschriebene Erklaerungen.
 
 ## Katalogformat
 
@@ -48,7 +60,10 @@ JSON:
     "prompt": "Fragetext",
     "choices": ["Antwort A", "Antwort B", "Antwort C"],
     "correct_index": 0,
-    "explanation": "Vorab erzeugte Erklaerung"
+    "explanation": "Vorab erzeugte Erklaerung",
+    "source_name": "ELWIS Fragenkatalog See",
+    "source_url": "https://www.elwis.de/...",
+    "source_stand": "01. August 2023"
   }
 ]
 ```

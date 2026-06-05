@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Schematische Seekarten- und Kursdarstellung</title>
+  <desc id="desc">Eine vereinfachte Seekarte mit Breiten- und Längengitter, Tonnen, Kurslinie und Peilung.</desc>
+  <rect width="720" height="360" fill="#f7f4e9"/>
+  <g stroke="#d2c8b3" stroke-width="1">
+    <path d="M0 60h720M0 120h720M0 180h720M0 240h720M0 300h720"/>
+    <path d="M90 0v360M180 0v360M270 0v360M360 0v360M450 0v360M540 0v360M630 0v360"/>
+  </g>
+  <path d="M0 246c80-16 134-6 190 12 78 25 146 20 218-10 88-36 168-30 312 4v108H0z" fill="#b7dfd7"/>
+  <path d="M0 278c94-18 148 8 234 22 92 15 160-6 238-24 80-19 146-8 248 20v64H0z" fill="#e7d795"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M112 280L520 94" stroke="#10212b" stroke-width="5"/>
+    <path d="M112 280L402 160" stroke="#d63f2f" stroke-width="3" stroke-dasharray="10 10"/>
+    <path d="M520 94l-52-5 29 44z" fill="#10212b" stroke="#10212b" stroke-width="2"/>
+  </g>
+  <g font-family="Segoe UI, sans-serif" font-weight="700" fill="#10212b">
+    <text x="36" y="42" font-size="24">rwK / Peilung</text>
+    <text x="124" y="306" font-size="18">Start</text>
+    <text x="536" y="96" font-size="18">Zieltonne</text>
+  </g>
+  <g>
+    <circle cx="112" cy="280" r="14" fill="#006c75" stroke="#10212b" stroke-width="3"/>
+    <rect x="503" y="66" width="34" height="48" rx="4" fill="#d63f2f" stroke="#10212b" stroke-width="3"/>
+    <circle cx="402" cy="160" r="13" fill="#fff" stroke="#10212b" stroke-width="3"/>
+    <path d="M391 160h22" stroke="#10212b" stroke-width="3"/>
+  </g>
+</svg>

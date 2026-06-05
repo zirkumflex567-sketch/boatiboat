@@ -37,3 +37,21 @@ def session_scope():
 def get_session():
     with session_scope() as session:
         yield session
+
+
+def ensure_sqlite_columns() -> None:
+    if not DATABASE_URL.startswith("sqlite"):
+        return
+    required = {
+        "source_name": "VARCHAR(160)",
+        "source_url": "TEXT",
+        "source_stand": "VARCHAR(80)",
+        "image_url": "TEXT",
+        "image_alt": "TEXT",
+        "exam_section": "VARCHAR(80)",
+    }
+    with engine.begin() as connection:
+        existing = {row[1] for row in connection.exec_driver_sql("PRAGMA table_info(questions)")}
+        for name, ddl in required.items():
+            if name not in existing:
+                connection.exec_driver_sql(f"ALTER TABLE questions ADD COLUMN {name} {ddl}")

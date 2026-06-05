@@ -8,6 +8,7 @@ from fastapi.testclient import TestClient
 from app.database import Base, engine, session_scope
 from app.main import app
 from app.models import Question, Progress
+from app.services import shuffled_choices
 
 
 client = TestClient(app)
@@ -30,6 +31,9 @@ def seed_questions():
                     choices=["Segler", "Maschinenfahrzeug", "Beide"],
                     correct_index=1,
                     explanation="Ein Maschinenfahrzeug muss einem Segelfahrzeug ausweichen.",
+                    source_name="Testquelle",
+                    source_url="https://example.test/see.pdf",
+                    source_stand="01. August 2023",
                 ),
                 Question(
                     external_id="binnen-1",
@@ -39,6 +43,9 @@ def seed_questions():
                     choices=["Achtung", "Backbord", "Stopp"],
                     correct_index=0,
                     explanation="Ein langer Ton macht andere Verkehrsteilnehmer aufmerksam.",
+                    source_name="Testquelle",
+                    source_url="https://example.test/binnen.pdf",
+                    source_stand="01. August 2023",
                 ),
             ]
         )
@@ -54,6 +61,8 @@ def test_lists_questions_with_stored_explanations():
     assert len(data) == 1
     assert data[0]["external_id"] == "see-1"
     assert data[0]["explanation"].startswith("Ein Maschinenfahrzeug")
+    assert data[0]["source_stand"] == "01. August 2023"
+    assert data[0]["source_url"].startswith("https://")
 
 
 def test_answer_updates_progress_and_returns_explanation():
@@ -98,6 +107,9 @@ def test_import_accepts_json_catalog_records():
             "choices": ["Tiefen und Seezeichen", "Nur Hafennamen", "Nur Wetter"],
             "correct_index": 0,
             "explanation": "Seekarten zeigen nautisch relevante Informationen.",
+            "source_name": "ELWIS",
+            "source_url": "https://www.elwis.de/test.pdf",
+            "source_stand": "01. August 2023",
         }
     ]
 
@@ -106,3 +118,68 @@ def test_import_accepts_json_catalog_records():
     assert response.status_code == 200
     assert response.json()["imported"] == 1
     assert client.get("/api/questions").json()[0]["external_id"] == "SBF-42"
+
+
+def test_choices_are_shuffled_and_correct_index_is_rebased():
+    question = Question(
+        external_id="mix-1",
+        license_type="see",
+        category="Test",
+        prompt="Mix?",
+        choices=["richtig", "falsch b", "falsch c", "falsch d"],
+        correct_index=0,
+    )
+
+    mixed = shuffled_choices(question, salt="exam")
+
+    assert mixed["choices"] != question.choices
+    assert mixed["choices"][mixed["correct_index"]] == "richtig"
+
+
+def test_exam_session_contains_sources_and_exam_shape():
+    seed_questions()
+
+    response = client.get("/api/session?mode=exam&license_type=see&limit=5")
+
+    assert response.status_code == 200
+    data = response.json()
+    assert data["mode"] == "exam"
+    assert data["time_limit_seconds"] is not None
+    assert data["passing_rules"]["max_wrong"] >= 0
+    assert data["questions"][0]["source_stand"] == "01. August 2023"
+
+
+def test_see_exam_prefers_navigation_task_when_available():
+    with session_scope() as session:
+        session.add_all(
+            [
+                Question(
+                    external_id="see-nav",
+                    license_type="see",
+                    category="Navigationsaufgaben",
+                    prompt="Wie lautet der rwK?",
+                    choices=["148°", "150°", "152°", "154°"],
+                    correct_index=0,
+                    source_name="ELWIS",
+                    source_url="https://example.test/see.pdf",
+                    source_stand="01. August 2023",
+                ),
+                Question(
+                    external_id="see-basic",
+                    license_type="see",
+                    category="Basisfragen",
+                    prompt="Basis?",
+                    choices=["A", "B", "C", "D"],
+                    correct_index=0,
+                    source_name="ELWIS",
+                    source_url="https://example.test/see.pdf",
+                    source_stand="01. August 2023",
+                ),
+            ]
+        )
+
+    response = client.get("/api/session?mode=exam&license_type=see&limit=2")
+
+    assert response.status_code == 200
+    categories = [question["category"] for question in response.json()["questions"]]
+    assert "Navigationsaufgaben" in categories

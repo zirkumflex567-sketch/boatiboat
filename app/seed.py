@@ -1,8 +1,16 @@
+import json
+from pathlib import Path
+
 from sqlalchemy import select
 
-from .database import Base, engine, session_scope
+from .database import Base, engine, ensure_sqlite_columns, session_scope
 from .models import Question
 from .services import upsert_questions
+
+
+ELWIS_SEE_URL = "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-See/Fragenkatalog-See-August-2023.pdf?__blob=publicationFile&v=13"
+ELWIS_BINNEN_URL = "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-Binnen/Fragenkatalog-Binnen-August-2023.pdf?__blob=publicationFile&v=8"
+SOURCE_STAND = "01. August 2023"
 
 
 SAMPLE_QUESTIONS = [
@@ -19,6 +27,10 @@ SAMPLE_QUESTIONS = [
         ],
         "correct_index": 0,
         "explanation": "Bei Gegenkursen zwischen Maschinenfahrzeugen müssen beide rechtzeitig nach Steuerbord ausweichen. So wird die Begegnung klar und vorhersehbar: Die Fahrzeuge passieren einander Backbord an Backbord.",
+        "source_name": "ELWIS Fragenkatalog See",
+        "source_url": ELWIS_SEE_URL,
+        "source_stand": SOURCE_STAND,
+        "exam_section": "Basis/Spezifisch",
     },
     {
         "external_id": "SEE-002",
@@ -33,6 +45,12 @@ SAMPLE_QUESTIONS = [
         ],
         "correct_index": 0,
         "explanation": "Die Missweisung ist der Winkel zwischen geografischem Nord und magnetischem Nord. Sie ist wichtig, weil der Magnetkompass magnetisch Nord anzeigt, Seekartenkurse aber rechtweisend angegeben werden.",
+        "source_name": "ELWIS Fragenkatalog See",
+        "source_url": ELWIS_SEE_URL,
+        "source_stand": SOURCE_STAND,
+        "exam_section": "Navigation",
+        "image_url": "/assets/graphics/navigation-card.svg",
+        "image_alt": "Schematische Seekarten- und Kursdarstellung",
     },
     {
         "external_id": "BINNEN-001",
@@ -47,6 +65,10 @@ SAMPLE_QUESTIONS = [
         ],
         "correct_index": 0,
         "explanation": "Ein kurzer Ton kündigt auf Binnengewässern eine Kursänderung nach Steuerbord an. Das Signal beschreibt die eigene Absicht, damit andere Fahrzeuge die Bewegung früh erkennen.",
+        "source_name": "ELWIS Fragenkatalog Binnen",
+        "source_url": ELWIS_BINNEN_URL,
+        "source_stand": SOURCE_STAND,
+        "exam_section": "Basis/Spezifisch",
     },
     {
         "external_id": "BINNEN-002",
@@ -61,15 +83,26 @@ SAMPLE_QUESTIONS = [
         ],
         "correct_index": 0,
         "explanation": "In engen Fahrwassern gilt Rechtsfahrgebot. Wer früh rechts fährt, macht die eigene Absicht deutlich und lässt Berufsschifffahrt sowie Gegenverkehr genügend Raum.",
+        "source_name": "ELWIS Fragenkatalog Binnen",
+        "source_url": ELWIS_BINNEN_URL,
+        "source_stand": SOURCE_STAND,
+        "exam_section": "Basis/Spezifisch",
     },
 ]
 
 
+def load_catalog_records() -> list[dict]:
+    catalog = Path(__file__).resolve().parent / "official_catalog.json"
+    if catalog.exists():
+        return json.loads(catalog.read_text(encoding="utf-8"))
+    return SAMPLE_QUESTIONS
+
+
 def init_db(seed: bool = True) -> int:
     Base.metadata.create_all(bind=engine)
+    ensure_sqlite_columns()
     if not seed:
         return 0
     with session_scope() as session:
-        if session.scalar(select(Question.id).limit(1)):
-            return 0
-        return upsert_questions(session, SAMPLE_QUESTIONS)
+        records = load_catalog_records()
+        return upsert_questions(session, records)

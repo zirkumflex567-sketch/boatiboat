@@ -23,6 +23,12 @@ class Question(Base):
     choices: Mapped[list[str]] = mapped_column(JSON, nullable=False)
     correct_index: Mapped[int] = mapped_column(Integer, nullable=False)
     explanation: Mapped[str | None] = mapped_column(Text)
+    source_name: Mapped[str | None] = mapped_column(String(160))
+    source_url: Mapped[str | None] = mapped_column(Text)
+    source_stand: Mapped[str | None] = mapped_column(String(80))
+    image_url: Mapped[str | None] = mapped_column(Text)
+    image_alt: Mapped[str | None] = mapped_column(Text)
+    exam_section: Mapped[str | None] = mapped_column(String(80))
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now_utc)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=now_utc, onupdate=now_utc)
 
