@@ -97,7 +97,7 @@ function renderQuestion() {
   $("choices").innerHTML = "";
 
   if (question.image_url) {
-    $("mediaImage").src = question.image_url;
+    $("mediaImage").src = question.image_url.replace(/^\/assets\//, "assets/");
     $("mediaImage").alt = question.image_alt || "";
     $("media").classList.remove("hidden");
   }
