@@ -137,7 +137,35 @@ def test_choices_are_shuffled_and_correct_index_is_rebased():
 
 
 def test_exam_session_contains_sources_and_exam_shape():
-    seed_questions()
+    with session_scope() as session:
+        for idx in range(1, 8):
+            session.add(
+                Question(
+                    external_id=f"source-basis-{idx}",
+                    license_type="see",
+                    category="Basisfragen",
+                    prompt=f"Basis {idx}?",
+                    choices=["A", "B", "C", "D"],
+                    correct_index=0,
+                    source_name="Testquelle",
+                    source_url="https://example.test/see.pdf",
+                    source_stand="01. August 2023",
+                )
+            )
+        for idx in range(1, 24):
+            session.add(
+                Question(
+                    external_id=f"source-see-{idx}",
+                    license_type="see",
+                    category="Spezifische Fragen See",
+                    prompt=f"See {idx}?",
+                    choices=["A", "B", "C", "D"],
+                    correct_index=0,
+                    source_name="Testquelle",
+                    source_url="https://example.test/see.pdf",
+                    source_stand="01. August 2023",
+                )
+            )
 
     response = client.get("/api/session?mode=exam&license_type=see&limit=5")
 
@@ -183,3 +211,85 @@ def test_see_exam_prefers_navigation_task_when_available():
     assert response.status_code == 200
     categories = [question["category"] for question in response.json()["questions"]]
     assert "Navigationsaufgaben" in categories
+
+
+def test_exam_ignores_requested_limit_for_binnen_motor_shape():
+    with session_scope() as session:
+        for idx in range(1, 8):
+            session.add(
+                Question(
+                    external_id=f"basis-{idx}",
+                    license_type="binnen",
+                    category="Basisfragen",
+                    prompt=f"Basis {idx}?",
+                    choices=["A", "B", "C", "D"],
+                    correct_index=0,
+                )
+            )
+        for idx in range(1, 24):
+            session.add(
+                Question(
+                    external_id=f"binnen-{idx}",
+                    license_type="binnen",
+                    category="Spezifische Fragen Binnen",
+                    prompt=f"Binnen {idx}?",
+                    choices=["A", "B", "C", "D"],
+                    correct_index=0,
+                )
+            )
+
+    response = client.get("/api/session?mode=exam&license_type=binnen&limit=10")
+    data = response.json()
+
+    assert data["time_limit_seconds"] == 45 * 60
+    assert len(data["questions"]) == 30
+    assert data["passing_rules"]["required_total"] == 24
+    assert sum(1 for q in data["questions"] if q["category"] == "Basisfragen") == 7
+    assert sum(1 for q in data["questions"] if q["category"] == "Spezifische Fragen Binnen") == 23
+
+
+def test_exam_ignores_requested_limit_for_see_shape():
+    with session_scope() as session:
+        for idx in range(1, 8):
+            session.add(
+                Question(
+                    external_id=f"see-basis-{idx}",
+                    license_type="see",
+                    category="Basisfragen",
+                    prompt=f"Basis {idx}?",
+                    choices=["A", "B", "C", "D"],
+                    correct_index=0,
+                )
+            )
+        for idx in range(1, 24):
+            session.add(
+                Question(
+                    external_id=f"see-{idx}",
+                    license_type="see",
+                    category="Spezifische Fragen See",
+                    prompt=f"See {idx}?",
+                    choices=["A", "B", "C", "D"],
+                    correct_index=0,
+                )
+            )
+        session.add(
+            Question(
+                external_id="see-nav-1",
+                license_type="see",
+                category="Navigationsaufgaben",
+                prompt="Navigation?",
+                choices=["A", "B", "C", "D"],
+                correct_index=0,
+            )
+        )
+
+    response = client.get("/api/session?mode=exam&license_type=see&limit=10")
+    data = response.json()
+
+    assert data["time_limit_seconds"] == 60 * 60
+    assert len(data["questions"]) == 31
+    assert data["passing_rules"]["required_total"] == 24
+    assert data["passing_rules"]["navigation_required"] == 7
+    assert sum(1 for q in data["questions"] if q["category"] == "Basisfragen") == 7
+    assert sum(1 for q in data["questions"] if q["category"] == "Spezifische Fragen See") == 23
+    assert sum(1 for q in data["questions"] if q["category"] == "Navigationsaufgaben") == 1

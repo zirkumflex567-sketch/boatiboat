@@ -11,6 +11,7 @@ aus der Datenbank aus. Es gibt keine Live-KI und keine LLM-Abhaengigkeit im Proj
 - JSON- und CSV-Import fuer Fragenkataloge
 - Lernmodus mit sofortiger Erklaerung
 - Pruefungsmodus mit Zeitlimit
+- Pruefungsmodus nutzt feste amtliche Bogenform statt frei waehlbarer Fragenzahl
 - Einfaches Spaced-Repetition-Scoring
 - Antwortreihenfolge wird pro Session gemischt
 - Quellenstand wird in API und UI pro Session angezeigt
@@ -27,6 +28,12 @@ Die amtlichen PDFs enthalten selbst den Hinweis, dass im Katalog immer Antwort a
 richtig ist. Boatiboat mischt die Antworten daher beim Ausspielen und berechnet
 den korrekten Index neu.
 
+## Amtliche Pruefungsform
+
+- SBF Binnen Motor: 30 Fragen, davon 7 Basisfragen und 23 spezifische Binnen-Fragen, 45 Minuten.
+- SBF See: 30 Multiple-Choice-Fragen, davon 7 Basisfragen und 23 spezifische See-Fragen, plus eine Navigationsaufgabe mit 9 Teilaufgaben, 60 Minuten.
+- In beiden MC-Bogen muessen mindestens 24 von 30 Fragen richtig sein; dabei mindestens 5 von 7 Basisfragen und 18 von 23 spezifischen Fragen. Bei SBF See muessen zusaetzlich mindestens 7 von 9 Navigationsteilaufgaben richtig sein.
+
 ## Lokal starten
 
 ```powershell
@@ -36,6 +43,16 @@ python -m venv .venv
 ```
 
 Dann `http://127.0.0.1:8000` oeffnen.
+
+## Android-App bauen
+
+Die Android-App ist eine native WebView-Huelle um die Live-App:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\build_android.ps1
+```
+
+Das erzeugt `build\android\boatiboat-debug.apk`.
 
 ## Amtliche Kataloge synchronisieren
 

@@ -18,7 +18,14 @@ function applyUrlParams() {
   if (params.get("limit")) $("limit").value = params.get("limit");
 }
 
+function syncModeControls() {
+  const isExam = $("mode").value === "exam";
+  $("limit").disabled = isExam;
+  $("limitNote").textContent = isExam ? "Amtlich festgelegt" : "";
+}
+
 async function startSession() {
+  syncModeControls();
   const mode = $("mode").value;
   const license = $("license").value;
   const limit = $("limit").value;
@@ -74,7 +81,7 @@ function renderQuestion() {
   $("media").classList.add("hidden");
 
   if (!question) {
-    const passed = $("mode").value === "exam" ? state.correct >= Math.max(0, state.answered - 5) : true;
+    const passed = $("mode").value === "exam" ? state.correct >= Math.max(0, state.answered - 6) : true;
     $("category").textContent = "Session beendet";
     $("priority").textContent = $("mode").value === "exam" ? (passed ? "Bestanden" : "Nicht bestanden") : "Gut gemacht";
     $("prompt").textContent = `Ergebnis: ${state.correct} von ${state.answered} richtig.`;
@@ -162,8 +169,12 @@ $("next").addEventListener("click", () => {
 });
 
 applyUrlParams();
+syncModeControls();
 $("start").addEventListener("click", startSession);
-$("mode").addEventListener("change", startSession);
+$("mode").addEventListener("change", () => {
+  syncModeControls();
+  startSession();
+});
 $("license").addEventListener("change", startSession);
 
 startSession();

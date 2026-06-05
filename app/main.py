@@ -67,6 +67,56 @@ def source_summary(questions: list[Question]) -> list[dict]:
     return list(seen.values())
 
 
+def pick_exam_questions(questions: list[Question], license_type: str | None, seed: str) -> tuple[list[Question], dict, int]:
+    rng = random.Random(seed)
+
+    def take(category: str, count: int) -> list[Question]:
+        pool = [question for question in questions if question.category == category]
+        rng.shuffle(pool)
+        return pool[:count]
+
+    target_license = license_type or "see"
+    if target_license == "binnen":
+        basis = take("Basisfragen", 7)
+        specific = take("Spezifische Fragen Binnen", 23)
+        return (
+            basis + specific,
+            {
+                "question_count": 30,
+                "basis_count": 7,
+                "specific_count": 23,
+                "required_total": 24,
+                "required_basis": 5,
+                "required_specific": 18,
+                "navigation_count": 0,
+                "navigation_required": 0,
+                "max_wrong": 6,
+                "note": "Amtlicher SBF Binnen Motor-Fragebogen: 7 Basisfragen und 23 spezifische Binnen-Fragen.",
+            },
+            45 * 60,
+        )
+
+    basis = take("Basisfragen", 7)
+    specific = take("Spezifische Fragen See", 23)
+    navigation = take("Navigationsaufgaben", 1)
+    return (
+        navigation + basis + specific,
+        {
+            "question_count": 30,
+            "basis_count": 7,
+            "specific_count": 23,
+            "required_total": 24,
+            "required_basis": 5,
+            "required_specific": 18,
+            "navigation_count": 9,
+            "navigation_required": 7,
+            "max_wrong": 6,
+            "note": "Amtlicher SBF See-Fragebogen: 7 Basisfragen, 23 spezifische See-Fragen und eine Navigationsaufgabe mit 9 Teilaufgaben.",
+        },
+        60 * 60,
+    )
+
+
 @app.get("/")
 def index() -> FileResponse:
     return FileResponse(PUBLIC_DIR / "index.html")
@@ -100,31 +150,27 @@ def create_session(
         statement = statement.where(Question.license_type == license_type)
     questions = session.scalars(statement).all()
     if mode == "exam":
-        rng = random.Random(f"{date.today().isoformat()}:{license_type or 'all'}:{limit}")
-        pool = list(questions)
-        rng.shuffle(pool)
-        ordered = []
-        if license_type == "see":
-            nav = [question for question in pool if question.category == "Navigationsaufgaben"]
-            if nav:
-                ordered.append(nav[0])
-        for question in pool:
-            if question not in ordered:
-                ordered.append(question)
-            if len(ordered) >= limit:
-                break
+        ordered, passing_rules, time_limit_seconds = pick_exam_questions(
+            questions,
+            license_type,
+            f"{date.today().isoformat()}:{license_type or 'see'}",
+        )
     else:
         ordered = sorted(questions, key=lambda question: (-priority_for(question), question.id))[:limit]
+        passing_rules = {
+            "question_count": limit,
+            "required_total": 0,
+            "max_wrong": 0,
+            "note": "Lernmodus: freie Frageanzahl mit Spaced-Repetition-Auswahl.",
+        }
+        time_limit_seconds = None
     return SessionOut(
         mode=mode,
-        time_limit_seconds=limit * 90 if mode == "exam" else None,
-        passing_rules={
-            "max_wrong": 5 if mode == "exam" else 0,
-            "navigation_note": "SBF See: Navigationsaufgaben werden als eigener Abschnitt markiert; in der amtlichen Pruefung muessen diese gesondert bestanden werden.",
-        },
+        time_limit_seconds=time_limit_seconds,
+        passing_rules=passing_rules,
         source_summary=source_summary(ordered),
         questions=[
-            serialize_question(question, shuffle_salt=f"{mode}:{idx}:{limit}") for idx, question in enumerate(ordered)
+            serialize_question(question, shuffle_salt=f"{mode}:{idx}:{len(ordered)}") for idx, question in enumerate(ordered)
         ],
     )
 

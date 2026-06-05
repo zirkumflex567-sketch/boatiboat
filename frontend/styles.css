@@ -124,6 +124,13 @@ label {
   gap: 7px;
 }
 
+.field-note {
+  min-height: 1rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: none;
+}
+
 select,
 button {
   width: 100%;
