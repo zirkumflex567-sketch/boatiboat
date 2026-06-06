@@ -260,6 +260,80 @@ const KNOTS = [
   },
 ];
 
+const PHONETIC_ALPHABET = [
+  ["A", "Alfa"], ["B", "Bravo"], ["C", "Charlie"], ["D", "Delta"], ["E", "Echo"], ["F", "Foxtrot"],
+  ["G", "Golf"], ["H", "Hotel"], ["I", "India"], ["J", "Juliett"], ["K", "Kilo"], ["L", "Lima"],
+  ["M", "Mike"], ["N", "November"], ["O", "Oscar"], ["P", "Papa"], ["Q", "Quebec"], ["R", "Romeo"],
+  ["S", "Sierra"], ["T", "Tango"], ["U", "Uniform"], ["V", "Victor"], ["W", "Whiskey"], ["X", "X-ray"],
+  ["Y", "Yankee"], ["Z", "Zulu"],
+  ["0", "Nadazero"], ["1", "Unaone"], ["2", "Bissotwo"], ["3", "Terrathree"], ["4", "Kartefour"],
+  ["5", "Pantafive"], ["6", "Soxisix"], ["7", "Setteseven"], ["8", "Oktoeight"], ["9", "Novenine"],
+];
+
+const RADIO_PRACTICE = [
+  {
+    title: "Seenotmeldung",
+    badge: "MAYDAY",
+    purpose: "Unmittelbare Gefahr für Schiff oder Personen.",
+    steps: [
+      "MAYDAY dreimal",
+      "THIS IS + Schiffsname/Rufzeichen",
+      "Position",
+      "Art des Notfalls",
+      "Benötigte Hilfe",
+      "Personenzahl und weitere wichtige Angaben",
+      "OVER",
+    ],
+    example: "MAYDAY MAYDAY MAYDAY. This is BOATIBOAT, BOATIBOAT, DB1234. Position 54 degrees 10 minutes North, 010 degrees 20 minutes East. Fire on board. Require immediate assistance. Four persons on board. Over.",
+  },
+  {
+    title: "Dringlichkeitsmeldung",
+    badge: "PAN-PAN",
+    purpose: "Dringende Lage ohne unmittelbare Seenot.",
+    steps: [
+      "PAN-PAN dreimal",
+      "Adressat oder ALL STATIONS",
+      "THIS IS + Schiffsname/Rufzeichen",
+      "Lage und gewünschte Unterstützung",
+      "OVER",
+    ],
+    example: "PAN-PAN PAN-PAN PAN-PAN. All stations, all stations, all stations. This is BOATIBOAT, DB1234. Engine failure near buoy 12, drifting slowly east. Request tow assistance. Over.",
+  },
+  {
+    title: "Sicherheitsmeldung",
+    badge: "SÉCURITÉ",
+    purpose: "Wichtige Warnung für die Sicherheit der Schifffahrt.",
+    steps: [
+      "SÉCURITÉ dreimal",
+      "Adressat oder ALL STATIONS",
+      "THIS IS + Schiffsname/Rufzeichen",
+      "Warninhalt knapp und eindeutig",
+      "OUT oder OVER",
+    ],
+    example: "SÉCURITÉ SÉCURITÉ SÉCURITÉ. All stations. This is BOATIBOAT, DB1234. Large floating timber sighted north of fairway buoy 4. Out.",
+  },
+  {
+    title: "Routine-Anruf",
+    badge: "CALL",
+    purpose: "Normale Kontaktaufnahme mit einer Funkstelle.",
+    steps: [
+      "Name der gerufenen Funkstelle",
+      "THIS IS + eigener Schiffsname",
+      "Rufzeichen oder MMSI, falls nötig",
+      "Arbeitskanal oder Anliegen",
+      "OVER",
+    ],
+    example: "Kiel Radio, Kiel Radio. This is BOATIBOAT, DB1234. Radio check on channel 16. Over.",
+  },
+];
+
+const UBI_TRAFFIC_CIRCLES = [
+  ["Nautische Information", "Meldungen mit Revierzentralen, Schleusen, Verkehrsposten und Behörden."],
+  ["Schiff-Schiff", "Absprachen zwischen Fahrzeugen, z. B. Begegnung, Überholen oder Manöver."],
+  ["Funkverkehr an Bord", "Kommunikation innerhalb eines Schiffsverbands oder an Bord."],
+  ["Öffentlicher Nachrichtenaustausch", "Nachrichten über zugelassene Landfunkstellen, soweit verfügbar."],
+];
+
 // ----------- State ------------------------------------------------------
 let CATALOG = [];   // alle Fragen aus der API
 let MC      = [];   // Nur MC-Fragen (kein card_type navigation)
@@ -936,6 +1010,9 @@ function renderHome() {
     grid.appendChild(modecard("🪢", "Knoten",              "Prüfungsknoten mit Schritten und Einsatz.",         renderKnots));
     grid.appendChild(modecard("🧾", "Weg zur Prüfung",     "Anmeldung, Unterlagen und Ablauf auf einen Blick.", renderExamGuide));
   }
+  if (store.scope === "all" || ["src", "lrc", "ubi"].includes(store.scope)) {
+    grid.appendChild(modecard("📻", "Funkpraxis", "Buchstabieren, Anrufschema und Notmeldung trainieren.", renderRadioPractice));
+  }
   if (store.bookmarks.length)
     grid.appendChild(modecard("🔖", "Gemerkte Fragen",   `${store.bookmarks.length} Lesezeichen`,            () => startLearn("bookmarks")));
   if (navPool.length)
@@ -1403,6 +1480,80 @@ function renderKnots() {
     );
   });
   view.appendChild(list);
+
+  APP.innerHTML = "";
+  APP.appendChild(view);
+  window.scrollTo(0, 0);
+}
+
+// ========================================================================
+// FUNKPRAXIS
+// ========================================================================
+function renderRadioPractice() {
+  session = null;
+  stopTimer();
+  TOPACTIONS.innerHTML = "";
+  TOPACTIONS.appendChild(el("button", { class: "btn-icon", onclick: renderHome, "aria-label": "Zurück" }, "←"));
+
+  const view = el("div", { class: "view" });
+  view.appendChild(
+    el("section", { class: "radio-hero" },
+      el("p", { class: "eyebrow" }, "Funkpraxis"),
+      el("h1", {}, "Klar sprechen, sauber buchstabieren."),
+      el("p", {}, "Kurze Praxisbausteine für SRC, LRC und UBI: internationale Buchstabiertafel, Standard-Anrufschema und die wichtigsten Meldungsarten."),
+    )
+  );
+
+  view.appendChild(
+    el("section", { class: "radio-panel" },
+      el("div", { class: "radio-title" },
+        el("h2", {}, "Buchstabiertafel"),
+        el("p", {}, "Für Namen, Rufzeichen, Kennungen und schwer verständliche Wörter."),
+      ),
+      el("div", { class: "alphabet-grid" },
+        ...PHONETIC_ALPHABET.map(([char, word]) =>
+          el("div", { class: "alphabet-cell" },
+            el("strong", {}, char),
+            el("span", {}, word),
+          )
+        ),
+      ),
+    )
+  );
+
+  view.appendChild(el("p", { class: "section-label" }, "Sprechfunkabläufe"));
+  const cards = el("div", { class: "radio-card-grid" });
+  RADIO_PRACTICE.forEach((item) => {
+    cards.appendChild(
+      el("details", { class: "radio-card" },
+        el("summary", {},
+          el("span", { class: "radio-badge" }, item.badge),
+          el("strong", {}, item.title),
+          el("small", {}, item.purpose),
+        ),
+        el("ol", {}, ...item.steps.map((step) => el("li", {}, step))),
+        el("p", { class: "radio-example" }, item.example),
+      )
+    );
+  });
+  view.appendChild(cards);
+
+  view.appendChild(
+    el("section", { class: "radio-panel" },
+      el("div", { class: "radio-title" },
+        el("h2", {}, "UBI-Verkehrskreise"),
+        el("p", {}, "Die Verkehrskreise helfen, Zweck und Funkstelle sauber zuzuordnen."),
+      ),
+      el("div", { class: "traffic-list" },
+        ...UBI_TRAFFIC_CIRCLES.map(([name, text]) =>
+          el("div", { class: "traffic-row" },
+            el("strong", {}, name),
+            el("span", {}, text),
+          )
+        ),
+      ),
+    )
+  );
 
   APP.innerHTML = "";
   APP.appendChild(view);

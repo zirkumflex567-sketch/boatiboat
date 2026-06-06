@@ -162,7 +162,7 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
   - [x] Parser/Importer für SRC, LRC und UBI gebaut und als Lernkataloge freigeschaltet.
   - [x] Zufalls-Prüfungssimulation für SRC, LRC und UBI mit Zeitlimit und Bestehensgrenzen ergänzt.
   - [ ] Amtliche feste Funk-Prüfungsbögen importieren, sobald belastbare Bogenverteilungen vorliegen.
-  - Muster-Funksprüche, Buchstabiertafel (gratis, einfach).
+  - [x] Muster-Funksprüche, Buchstabiertafel und UBI-Verkehrskreise als Funkpraxis-Modul ergänzt.
   - **Vokabel-Liste mit Audio** (TTS/aufgenommen).
   - **Diktat-Aufgaben** (vorgelesener englischer Funktext → Übersetzung), **Übersetzungsaufgaben**.
 - [ ] **Pyroschein FKN** + ggf. **KI-Auswertung** des Notruf-Verfahrens (Sprach-/Texteingabe → Feedback). *Differenzierungs-Feature.*
