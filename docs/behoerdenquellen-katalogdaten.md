@@ -31,3 +31,13 @@ bis eine belastbare Quelle oder Genehmigung vorliegt.
 
 Das Skript schreibt die Quellen nach `build/authority_catalogs/` und erzeugt dort ein Manifest
 mit Dateigrößen und SHA-256-Prüfsummen. `build/` bleibt bewusst unversioniert.
+
+## Strukturierte Folgeimporte
+
+```powershell
+.venv\Scripts\python scripts\parse_fkn_catalog.py
+```
+
+Das FKN-Skript liest die amtliche PDF aus `build/authority_catalogs/` und schreibt 60
+Flashcard-Datensätze nach `app/fkn_catalog.json`. Die Fragen bleiben damit getrennt vom
+SBF-Prüfungskatalog, bis FKN-Lernmodus und Prüfungslogik in der App freigeschaltet werden.

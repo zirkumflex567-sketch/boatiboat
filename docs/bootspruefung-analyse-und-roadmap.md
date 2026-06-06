@@ -165,7 +165,8 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
   - **Diktat-Aufgaben** (vorgelesener englischer Funktext → Übersetzung), **Übersetzungsaufgaben**.
 - [ ] **Pyroschein FKN** + ggf. **KI-Auswertung** des Notruf-Verfahrens (Sprach-/Texteingabe → Feedback). *Differenzierungs-Feature.*
   - [x] FKN Fragen- und Antwortenkatalog vom gemeinsamen Sportbootführerschein-Portal abgerufen und mit Prüfsumme manifestiert.
-  - [ ] FKN-Importer und Prüfungsmodus bauen.
+  - [x] FKN-PDF-Importer gebaut und 60 amtliche Frage-/Antwort-Flashcards strukturiert abgelegt.
+  - [ ] FKN-Lernmodus und Prüfungsmodus in der App freischalten.
 
 ### Phase 3 – Monetarisierung & Konto (parallel ab Phase 1)
 - [ ] **Free/PRO-Logik** definieren. Empfehlung: **mehr gratis als der Wettbewerb**
