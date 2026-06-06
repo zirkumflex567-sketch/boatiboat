@@ -1,0 +1,92 @@
+[
+  {
+    "id": "sbf-see-catalog",
+    "license_type": "see",
+    "title": "ELWIS Fragenkatalog See",
+    "publisher": "Wasserstraßen- und Schifffahrtsverwaltung des Bundes",
+    "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-See/Fragenkatalog-See-August-2023.pdf?__blob=publicationFile&v=13",
+    "kind": "pdf",
+    "local_filename": "sbf-see-fragenkatalog.pdf",
+    "status": "imported"
+  },
+  {
+    "id": "sbf-binnen-catalog",
+    "license_type": "binnen",
+    "title": "ELWIS Fragenkatalog Binnen",
+    "publisher": "Wasserstraßen- und Schifffahrtsverwaltung des Bundes",
+    "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenkatalog-Binnen/Fragenkatalog-Binnen-August-2023.pdf?__blob=publicationFile&v=8",
+    "kind": "pdf",
+    "local_filename": "sbf-binnen-fragenkatalog.pdf",
+    "status": "imported"
+  },
+  {
+    "id": "sbf-see-sheet-distribution",
+    "license_type": "see",
+    "title": "ELWIS Fragenverteilung See",
+    "publisher": "Bundesministerium für Verkehr, Bau und Stadtentwicklung / ELWIS",
+    "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenverteilung-See.pdf?__blob=publicationFile&v=1",
+    "kind": "pdf",
+    "local_filename": "sbf-see-fragenverteilung.pdf",
+    "status": "imported"
+  },
+  {
+    "id": "sbf-binnen-sheet-distribution",
+    "license_type": "binnen",
+    "title": "ELWIS Fragenverteilung Binnen",
+    "publisher": "Bundesministerium für Verkehr, Bau und Stadtentwicklung / ELWIS",
+    "source_url": "https://www.elwis.de/DE/Sportschifffahrt/Sportbootfuehrerscheine/Fragenverteilung-Binnen.pdf?__blob=publicationFile&v=1",
+    "kind": "pdf",
+    "local_filename": "sbf-binnen-fragenverteilung.pdf",
+    "status": "imported"
+  },
+  {
+    "id": "src-catalog",
+    "license_type": "src",
+    "title": "ELWIS Gesamtfragenkatalog SRC",
+    "publisher": "Fachstelle der WSV für Verkehrstechniken / ELWIS",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "kind": "pdf",
+    "local_filename": "src-fragenkatalog.pdf",
+    "status": "fetched"
+  },
+  {
+    "id": "lrc-catalog",
+    "license_type": "lrc",
+    "title": "ELWIS Fragenkatalog LRC",
+    "publisher": "Fachstelle der WSV für Verkehrstechniken / ELWIS",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "kind": "pdf",
+    "local_filename": "lrc-fragenkatalog.pdf",
+    "status": "fetched"
+  },
+  {
+    "id": "ubi-catalog",
+    "license_type": "ubi",
+    "title": "UBI Fragenkatalog aus der Bundes-Verwaltungsvorschrift",
+    "publisher": "Bundesministerium für Verkehr, Bau und Stadtentwicklung",
+    "source_url": "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_16052007_LS26626317.htm",
+    "kind": "html",
+    "local_filename": "ubi-fragenkatalog.html",
+    "status": "fetched"
+  },
+  {
+    "id": "fkn-catalog",
+    "license_type": "fkn",
+    "title": "Anlage 2 zur Prüfungsordnung FKN - Fragen- und Antwortenkatalog",
+    "publisher": "Gemeinsames Sportbootführerschein-Portal von DMYV und DSV",
+    "source_url": "https://www.sportbootfuehrerscheine.org/app/uploads/sites/6/2024/08/Anlage-2-Fachkunde_Fragen-_und_Antwortenkatalog_Anlage_2.pdf",
+    "kind": "pdf",
+    "local_filename": "fkn-fragenkatalog.pdf",
+    "status": "fetched"
+  },
+  {
+    "id": "bsp-authority-note-konstanz",
+    "license_type": "bsp",
+    "title": "Bodenseeschifferpatent Hinweis zum neuen Fragenkatalog",
+    "publisher": "Landkreis Konstanz",
+    "source_url": "https://www.lrakn.de/service-und-verwaltung/aemter/strassenverkehr%2Bund%2Bschifffahrt/bodenseeschifferpatent",
+    "kind": "html",
+    "local_filename": "bsp-landkreis-konstanz.html",
+    "status": "reference_only"
+  }
+]

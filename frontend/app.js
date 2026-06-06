@@ -246,7 +246,9 @@ function defaultStore() {
       showResultLate: true,       // Prüfungs-Ergebnis erst am Schluss
       highlightKeys:  true,       // Schlüsselwörter hervorheben
       autoHint:       "wrong",    // "always" | "wrong" | "never"
+      dailyGoal:      20,         // Tagesziel beantwortete Fragen
     },
+    today: { date: "", count: 0 },
     bookmarks: [],    // external_ids der gemerkten Fragen
   };
 }
@@ -294,7 +296,24 @@ function recordAnswer(id, correct) {
   }
   store.best      = Math.max(store.best, store.streak);
   store.byId[id]  = st;
+  bumpToday();
   saveStore();
+}
+
+function todayKey() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function todayProgress() {
+  const key = todayKey();
+  if (!store.today || store.today.date !== key) {
+    store.today = { date: key, count: 0 };
+  }
+  return store.today;
+}
+
+function bumpToday() {
+  todayProgress().count += 1;
 }
 
 // ========================================================================
@@ -471,6 +490,48 @@ function masteryFor(pool) {
     }
   }
   return { total: pool.length, seen, mastered, correct, answered };
+}
+
+function categoryStats(pool) {
+  const cats = {};
+  for (const q of pool) {
+    const c = q.category || "Sonstige";
+    cats[c] = cats[c] || { total: 0, seen: 0, mastered: 0, correct: 0, answered: 0 };
+    cats[c].total++;
+    const s = store.byId[q.external_id];
+    if (s?.seen) {
+      cats[c].seen++;
+      cats[c].correct += s.c;
+      cats[c].answered += s.c + s.w;
+      if (s.box >= MASTER_BOX) cats[c].mastered++;
+    }
+  }
+  return cats;
+}
+
+function readinessFor(pool) {
+  const m = masteryFor(pool);
+  if (!m.total) return { score: 0, level: "Noch keine Daten", weakest: [], detail: "Starte eine Lernrunde, damit Boatiboat deine Prüfungslage einschätzen kann." };
+
+  const seenPct = m.seen / m.total;
+  const masteredPct = m.mastered / m.total;
+  const accuracy = m.answered ? m.correct / m.answered : 0;
+  const cats = categoryStats(pool);
+  const catRows = Object.entries(cats).map(([name, s]) => {
+    const seen = s.total ? s.seen / s.total : 0;
+    const mastered = s.total ? s.mastered / s.total : 0;
+    const acc = s.answered ? s.correct / s.answered : 0;
+    const score = Math.round((mastered * 0.55 + acc * 0.30 + seen * 0.15) * 100);
+    return { name, score, seen: s.seen, total: s.total };
+  }).sort((a, b) => a.score - b.score);
+  const categoryFloor = catRows.length ? Math.min(...catRows.map((r) => r.score)) / 100 : 0;
+  const score = Math.round((masteredPct * 0.45 + accuracy * 0.30 + seenPct * 0.15 + categoryFloor * 0.10) * 100);
+  const level = score >= 88 ? "Prüfungsnah" : score >= 70 ? "Solide Basis" : score >= 45 ? "Im Aufbau" : "Frühphase";
+  const weakest = catRows.slice(0, 3);
+  const detail = score >= 88
+    ? "Du bist nah an prüfungsreifer Stabilität. Halte jetzt Tempo und wiederhole gezielt Schwächen."
+    : "Der Score gewichtet gemeisterte Fragen, Trefferquote, Katalogabdeckung und schwächste Themen.";
+  return { score, level, weakest, detail };
 }
 
 // ========================================================================
@@ -694,6 +755,9 @@ function renderHome() {
 
   const pool  = scopedMC();
   const m     = masteryFor(pool);
+  const ready = readinessFor(pool);
+  const today = todayProgress();
+  const goalPct = cfg().dailyGoal ? Math.min(100, Math.round((today.count / cfg().dailyGoal) * 100)) : 0;
   const navPool = scopedNAV();
   const masterPct = m.total ? Math.round((m.mastered / m.total) * 100) : 0;
   const acc       = m.answered ? Math.round((m.correct / m.answered) * 100) : 0;
@@ -731,6 +795,35 @@ function renderHome() {
       tile(acc + "%",           "Trefferquote"),
       tile(m.mastered,          "Gemeistert"),
       tile("🔥 " + store.streak,"Serie", `Bestwert ${store.best}`),
+    )
+  );
+
+  view.appendChild(
+    el("section", { class: "readiness-card" },
+      el("div", { class: "readiness-main" },
+        el("div", { class: "readiness-score" }, `${ready.score}%`),
+        el("div", {},
+          el("p", { class: "section-label" }, "Prüfungs-Readiness"),
+          el("h3", {}, ready.level),
+          el("p", {}, ready.detail),
+        ),
+      ),
+      ready.weakest.length
+        ? el("div", { class: "readiness-weak" },
+            el("strong", {}, "Nächste Themen"),
+            ...ready.weakest.map((w) => el("span", {}, `${w.name}: ${w.score}%`)),
+          )
+        : null,
+    )
+  );
+
+  view.appendChild(
+    el("section", { class: "daily-card" },
+      el("div", {},
+        el("strong", {}, `Tagesziel: ${today.count}/${cfg().dailyGoal || 0} Fragen`),
+        el("p", {}, today.count >= cfg().dailyGoal ? "Ziel erreicht. Sehr ordentlich." : "Kurze Runde starten und den Balken füllen."),
+      ),
+      el("div", { class: "bar daily-bar" }, el("i", { style: `width:${goalPct}%` })),
     )
   );
 
@@ -902,6 +995,13 @@ function renderSettings() {
     [["always", "Immer"], ["wrong", "Nur bei Fehlern"], ["never", "Nie"]],
     cfg().autoHint,
     (v) => { store.settings.autoHint = v; saveStore(); },
+  ));
+
+  quiz.appendChild(settingSelect(
+    "🎯 Tagesziel",
+    [[10, "10 Fragen"], [20, "20 Fragen"], [50, "50 Fragen"], [100, "100 Fragen"]],
+    cfg().dailyGoal,
+    (v) => { store.settings.dailyGoal = Number(v); saveStore(); },
   ));
 
   view.appendChild(quiz);

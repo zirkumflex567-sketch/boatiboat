@@ -155,11 +155,17 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
 
 ### Phase 2 – Scheine erweitern (parallelisierbar, je M–L)
 - [ ] **Bodenseeschifferpatent** (Fragenkatalog integrieren).
+  - [x] Behördenhinweis zum neuen Fragenkatalog recherchiert und als Referenzquelle erfasst.
+  - [ ] Offiziellen, frei nutzbaren Behördenkatalog oder Genehmigung beschaffen; keine Drittanbieter-Abschrift importieren.
 - [ ] **Funkscheine UBI / SRC / LRC**: Fragen + **Funk-Module**:
+  - [x] Amtliche/behördennahe Katalogquellen für SRC, LRC und UBI abgerufen und mit Prüfsummen manifestiert.
+  - [ ] Parser/Importer für SRC, LRC und UBI bauen.
   - Muster-Funksprüche, Buchstabiertafel (gratis, einfach).
   - **Vokabel-Liste mit Audio** (TTS/aufgenommen).
   - **Diktat-Aufgaben** (vorgelesener englischer Funktext → Übersetzung), **Übersetzungsaufgaben**.
 - [ ] **Pyroschein FKN** + ggf. **KI-Auswertung** des Notruf-Verfahrens (Sprach-/Texteingabe → Feedback). *Differenzierungs-Feature.*
+  - [x] FKN Fragen- und Antwortenkatalog vom gemeinsamen Sportbootführerschein-Portal abgerufen und mit Prüfsumme manifestiert.
+  - [ ] FKN-Importer und Prüfungsmodus bauen.
 
 ### Phase 3 – Monetarisierung & Konto (parallel ab Phase 1)
 - [ ] **Free/PRO-Logik** definieren. Empfehlung: **mehr gratis als der Wettbewerb**
@@ -178,8 +184,11 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
       Lokal-first bleibt Default; Sync ist opt-in. **(L)**
 
 ### Phase 4 – Mehr Wert als bootspruefung.de (Differenzierung)
-- [ ] **Adaptiver Prüfungs-Readiness-Score** („Du bist zu 87 % prüfungsbereit", Prognose pro Kategorie). 
+- [x] **Adaptiver Prüfungs-Readiness-Score** („Du bist zu 87 % prüfungsbereit", Prognose pro Kategorie).
+  - [x] Dashboard-Score aus gemeisterten Fragen, Trefferquote, Katalogabdeckung und schwächsten Themen umgesetzt.
 - [ ] **Tagesziel / Streak / Erinnerungen** (Push/Local Notifications, Lern-Gewohnheit).
+  - [x] Lokales Tagesziel mit Fortschrittsbalken und einstellbarer Zielhöhe umgesetzt.
+  - [ ] Push-/Local-Notifications ergänzen.
 - [ ] **Erklärungen aufwerten**: kurze, verständliche Begründung **+ Eselsbrücken** je Frage.
 - [ ] **Audio-Vorlesen** von Fragen/Theorie (Barrierefreiheit, Lernen unterwegs).
 - [ ] **Echte Navigationsaufgaben-Übung**: interaktive Kursdreieck-/Besteck-Tools statt nur Lösungsanzeige (großer Vorteil ggü. reinem „Siehe Karte").
