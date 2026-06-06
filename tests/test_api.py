@@ -293,3 +293,102 @@ def test_exam_ignores_requested_limit_for_see_shape():
     assert sum(1 for q in data["questions"] if q["category"] == "Basisfragen") == 7
     assert sum(1 for q in data["questions"] if q["category"] == "Spezifische Fragen See") == 23
     assert sum(1 for q in data["questions"] if q["category"] == "Navigationsaufgaben") == 1
+
+
+def test_lists_fixed_exam_sheets():
+    response = client.get("/api/exam-sheets?license_type=binnen")
+
+    assert response.status_code == 200
+    data = response.json()
+    assert len(data) == 15
+    assert data[0]["id"] == "binnen-01"
+    assert data[-1]["label"] == "SBF Binnen Bogen 15"
+
+
+def test_fixed_exam_sheet_is_reproducible():
+    with session_scope() as session:
+        for idx in range(1, 73):
+            session.add(
+                Question(
+                    external_id=f"BINNEN-{idx:03d}",
+                    license_type="binnen",
+                    category="Basisfragen" if idx <= 72 else "Spezifische Fragen Binnen",
+                    prompt=f"Basis {idx}?",
+                    choices=["A", "B", "C", "D"],
+                    correct_index=0,
+                )
+            )
+        for idx in range(73, 254):
+            session.add(
+                Question(
+                    external_id=f"BINNEN-{idx:03d}",
+                    license_type="binnen",
+                    category="Spezifische Fragen Binnen",
+                    prompt=f"Binnen {idx}?",
+                    choices=["A", "B", "C", "D"],
+                    correct_index=0,
+                )
+            )
+
+    first = client.get("/api/session?mode=exam&license_type=binnen&sheet_id=binnen-01").json()
+    second = client.get("/api/session?mode=exam&license_type=binnen&sheet_id=binnen-01").json()
+    third = client.get("/api/session?mode=exam&license_type=binnen&sheet_id=binnen-02").json()
+
+    first_ids = [question["external_id"] for question in first["questions"]]
+    second_ids = [question["external_id"] for question in second["questions"]]
+    third_ids = [question["external_id"] for question in third["questions"]]
+    expected = [
+        "BINNEN-008", "BINNEN-016", "BINNEN-017", "BINNEN-032", "BINNEN-047",
+        "BINNEN-060", "BINNEN-063", "BINNEN-077", "BINNEN-084", "BINNEN-086",
+        "BINNEN-088", "BINNEN-092", "BINNEN-099", "BINNEN-102", "BINNEN-115",
+        "BINNEN-118", "BINNEN-129", "BINNEN-137", "BINNEN-139", "BINNEN-147",
+        "BINNEN-162", "BINNEN-168", "BINNEN-183", "BINNEN-191", "BINNEN-207",
+        "BINNEN-214", "BINNEN-222", "BINNEN-237", "BINNEN-244", "BINNEN-251",
+    ]
+
+    assert first["passing_rules"]["sheet_id"] == "binnen-01"
+    assert first["passing_rules"]["official_distribution"] is True
+    assert first_ids == expected
+    assert first_ids == second_ids
+    assert first_ids != third_ids
+    assert len(first_ids) == 30
+
+
+def test_see_fixed_exam_sheet_includes_matching_navigation_task():
+    with session_scope() as session:
+        for idx in range(1, 286):
+            session.add(
+                Question(
+                    external_id=f"SEE-{idx:03d}",
+                    license_type="see",
+                    category="Basisfragen" if idx <= 72 else "Spezifische Fragen See",
+                    prompt=f"See {idx}?",
+                    choices=["A", "B", "C", "D"],
+                    correct_index=0,
+                )
+            )
+        for idx in range(1, 16):
+            session.add(
+                Question(
+                    external_id=f"SEE-NAV-{idx:02d}",
+                    license_type="see",
+                    category="Navigationsaufgaben",
+                    prompt=f"Navigation {idx}?",
+                    choices=[],
+                    correct_index=0,
+                    card_type="navigation",
+                )
+            )
+
+    data = client.get("/api/session?mode=exam&license_type=see&sheet_id=see-01").json()
+    ids = [question["external_id"] for question in data["questions"]]
+
+    assert ids[0] == "SEE-NAV-01"
+    assert ids[1:8] == ["SEE-008", "SEE-016", "SEE-017", "SEE-032", "SEE-047", "SEE-060", "SEE-063"]
+    assert len(ids) == 31
+
+
+def test_fixed_exam_sheet_rejects_mismatched_license():
+    response = client.get("/api/session?mode=exam&license_type=see&sheet_id=binnen-01")
+
+    assert response.status_code == 400
