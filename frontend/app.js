@@ -355,6 +355,27 @@ const RADIO_VOCAB = [
   ["Adrift", "Treibend", "Nicht mehr kontrolliert manövrierfähig."],
 ];
 
+const RADIO_DICTATION = [
+  {
+    title: "Seenotmeldung verstehen",
+    prompt: "Mayday. This is Boatiboat. Fire on board. Four persons on board. Require immediate assistance.",
+    expected: "Seenotmeldung: Feuer an Bord, vier Personen an Bord, sofortige Hilfe erforderlich.",
+    keywords: ["feuer", "vier", "personen", "hilfe"],
+  },
+  {
+    title: "Dringlichkeit übersetzen",
+    prompt: "Pan-pan. Engine failure near buoy twelve. Drifting slowly east. Request tow assistance.",
+    expected: "Dringlichkeitsmeldung: Maschinenausfall nahe Tonne 12, treibt langsam nach Osten, Schlepphilfe erbeten.",
+    keywords: ["maschine", "tonne", "treibt", "schlepp"],
+  },
+  {
+    title: "Sicherheitswarnung erfassen",
+    prompt: "Sécurité. Large floating timber sighted north of fairway buoy four.",
+    expected: "Sicherheitsmeldung: Großes treibendes Holz nördlich der Fahrwassertonne 4 gesichtet.",
+    keywords: ["holz", "nördlich", "fahrwasser", "tonne"],
+  },
+];
+
 // ----------- State ------------------------------------------------------
 let CATALOG = [];   // alle Fragen aus der API
 let MC      = [];   // Nur MC-Fragen (kein card_type navigation)
@@ -1588,6 +1609,18 @@ function renderRadioPractice() {
   view.appendChild(
     el("section", { class: "radio-panel" },
       el("div", { class: "radio-title" },
+        el("h2", {}, "Diktat & Übersetzung"),
+        el("p", {}, "Höre eine kurze Meldung, schreibe den Sinn auf Deutsch auf und prüfe die Schlüsselstellen."),
+      ),
+      el("div", { class: "dictation-list" },
+        ...RADIO_DICTATION.map((task, index) => renderDictationTask(task, index)),
+      ),
+    )
+  );
+
+  view.appendChild(
+    el("section", { class: "radio-panel" },
+      el("div", { class: "radio-title" },
         el("h2", {}, "UBI-Verkehrskreise"),
         el("p", {}, "Die Verkehrskreise helfen, Zweck und Funkstelle sauber zuzuordnen."),
       ),
@@ -1605,6 +1638,56 @@ function renderRadioPractice() {
   APP.innerHTML = "";
   APP.appendChild(view);
   window.scrollTo(0, 0);
+}
+
+function renderDictationTask(task, index) {
+  const inputId = `dictation-${index}`;
+  const feedbackId = `dictation-feedback-${index}`;
+  return el("div", { class: "dictation-card" },
+    el("div", { class: "dictation-head" },
+      el("strong", {}, task.title),
+      el("button", {
+        class: "btn btn-ghost",
+        onclick: () => speakRadioTerm(task.prompt),
+      }, "Anhören"),
+    ),
+    el("textarea", {
+      id: inputId,
+      class: "dictation-input",
+      rows: 3,
+      placeholder: "Kurz auf Deutsch notieren...",
+    }),
+    el("div", { class: "dictation-actions" },
+      el("button", { class: "btn btn-primary", onclick: () => checkDictation(task, inputId, feedbackId) }, "Prüfen"),
+      el("button", { class: "btn btn-ghost", onclick: () => revealDictation(task, feedbackId) }, "Lösung anzeigen"),
+    ),
+    el("div", { id: feedbackId, class: "dictation-feedback hidden" }),
+  );
+}
+
+function normalizeDictationText(value) {
+  return value.toLowerCase()
+    .replace(/[ä]/g, "ae")
+    .replace(/[ö]/g, "oe")
+    .replace(/[ü]/g, "ue")
+    .replace(/[ß]/g, "ss");
+}
+
+function checkDictation(task, inputId, feedbackId) {
+  const input = document.getElementById(inputId);
+  const feedback = document.getElementById(feedbackId);
+  if (!input || !feedback) return;
+  const value = normalizeDictationText(input.value || "");
+  const hits = task.keywords.filter((keyword) => value.includes(normalizeDictationText(keyword)));
+  feedback.className = `dictation-feedback ${hits.length >= Math.ceil(task.keywords.length * 0.75) ? "ok" : "no"}`;
+  feedback.innerHTML = `<strong>${hits.length}/${task.keywords.length} Schlüsselstellen erkannt</strong><span>${task.expected}</span>`;
+}
+
+function revealDictation(task, feedbackId) {
+  const feedback = document.getElementById(feedbackId);
+  if (!feedback) return;
+  feedback.className = "dictation-feedback";
+  feedback.innerHTML = `<strong>Beispiellösung</strong><span>${task.expected}</span><small>Gehört: ${task.prompt}</small>`;
 }
 
 function speakRadioTerm(term) {

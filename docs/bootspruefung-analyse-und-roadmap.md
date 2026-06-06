@@ -164,7 +164,7 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
   - [ ] Amtliche feste Funk-Prüfungsbögen importieren, sobald belastbare Bogenverteilungen vorliegen.
   - [x] Muster-Funksprüche, Buchstabiertafel und UBI-Verkehrskreise als Funkpraxis-Modul ergänzt.
   - [x] **Vokabel-Liste mit Audio** per Browser-TTS ergänzt.
-  - **Diktat-Aufgaben** (vorgelesener englischer Funktext → Übersetzung), **Übersetzungsaufgaben**.
+  - [x] Erste **Diktat-/Übersetzungsaufgaben** mit vorgelesenem englischem Funktext und Schlüsselwortprüfung ergänzt.
 - [ ] **Pyroschein FKN** + ggf. **KI-Auswertung** des Notruf-Verfahrens (Sprach-/Texteingabe → Feedback). *Differenzierungs-Feature.*
   - [x] FKN Fragen- und Antwortenkatalog vom gemeinsamen Sportbootführerschein-Portal abgerufen und mit Prüfsumme manifestiert.
   - [x] FKN-PDF-Importer gebaut und 60 amtliche Frage-/Antwort-Flashcards strukturiert abgelegt.
