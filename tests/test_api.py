@@ -149,10 +149,32 @@ def test_fkn_flashcard_import_and_learning_session():
     assert session["source_summary"][0]["name"] == "FKN"
 
 
-def test_fkn_exam_mode_is_not_enabled_yet():
-    response = client.get("/api/session?mode=exam&license_type=fkn")
+def test_fkn_exam_mode_uses_official_sheet_shape():
+    with session_scope() as session:
+        for idx in range(1, 61):
+            session.add(
+                Question(
+                    external_id=f"FKN-{idx:03d}",
+                    license_type="fkn",
+                    category="Fachkundenachweis Seenotsignalmittel",
+                    prompt=f"FKN {idx}?",
+                    choices=[],
+                    correct_index=0,
+                    card_type="flashcard",
+                )
+            )
 
-    assert response.status_code == 400
+    response = client.get("/api/session?mode=exam&license_type=fkn&limit=5")
+    data = response.json()
+
+    assert response.status_code == 200
+    assert len(data["questions"]) == 15
+    assert data["time_limit_seconds"] == 30 * 60
+    assert data["passing_rules"]["required_total"] == 12
+    assert data["passing_rules"]["point_required"] == 24
+    assert data["passing_rules"]["official_distribution"] is True
+    assert data["passing_rules"]["sheet_id"].startswith("fkn-")
+    assert all(q["card_type"] == "flashcard" for q in data["questions"])
 
 
 def test_radio_catalog_import_and_learning_session():

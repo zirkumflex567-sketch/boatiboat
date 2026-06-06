@@ -25,6 +25,13 @@ from .services import (
     weighted_sample_without_replacement,
 )
 
+FKN_EXAM_SHEETS = {
+    1: [1, 5, 12, 14, 18, 21, 23, 29, 33, 37, 41, 47, 54, 56, 60],
+    2: [2, 7, 11, 13, 20, 24, 26, 28, 31, 34, 38, 46, 51, 57, 59],
+    3: [3, 6, 10, 15, 19, 22, 30, 32, 36, 39, 42, 44, 50, 52, 58],
+    4: [4, 8, 9, 16, 17, 25, 27, 35, 40, 43, 45, 48, 49, 53, 55],
+}
+
 
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
@@ -130,6 +137,19 @@ def exam_rules(license_type: str, sheet_id: str | None = None) -> tuple[dict, in
         seconds = 20 * 60 if license_type == "lrc" else 30 * 60
         return rules, seconds
 
+    if license_type == "fkn":
+        return {
+            "question_count": 15,
+            "required_total": 12,
+            "point_total": 30,
+            "point_required": 24,
+            "points_per_full_answer": 2,
+            "max_wrong": 3,
+            "sheet_label": "FKN Fragebogen",
+            "official_distribution": True,
+            "note": "FKN-Theorie: 15 Fragen in 30 Minuten. Vollständig richtige Antworten zählen hier 2 Punkte; 24 von 30 Punkten sind erforderlich. Teilpunkte werden in dieser Simulation noch nicht vergeben.",
+        }, 30 * 60
+
     if license_type == "binnen":
         rules = {
             "question_count": 30,
@@ -219,6 +239,25 @@ def pick_exam_questions(
         rules, seconds = exam_rules("binnen", sheet_id)
         return basis + specific, rules, seconds
 
+    if target_license == "fkn":
+        sheet_number = rng.choice(sorted(FKN_EXAM_SHEETS))
+        by_external_id = {question.external_id.upper(): question for question in questions}
+        selected = []
+        missing = []
+        for number in FKN_EXAM_SHEETS[sheet_number]:
+            external_id = f"FKN-{number:03d}"
+            question = by_external_id.get(external_id)
+            if question:
+                selected.append(question)
+            else:
+                missing.append(external_id)
+        if missing:
+            raise HTTPException(status_code=409, detail=f"Missing questions for FKN exam sheet: {', '.join(missing)}")
+        rules, seconds = exam_rules("fkn", sheet_id)
+        rules["sheet_id"] = f"fkn-{sheet_number:03d}"
+        rules["sheet_label"] = f"FKN Fragebogen {sheet_number:03d}"
+        return selected, rules, seconds
+
     if target_license in {"src", "lrc", "ubi"}:
         rules, seconds = exam_rules(target_license, sheet_id)
         pool = [question for question in questions if question.license_type == target_license]
@@ -302,8 +341,8 @@ def create_session(
     # neu gemischt werden und nicht jedes Mal identisch sind.
     session_salt = secrets.token_hex(8)
     if mode == "exam":
-        if license_type not in {None, "see", "binnen", "src", "lrc", "ubi"}:
-            raise HTTPException(status_code=400, detail="Exam mode is only available for SBF See, SBF Binnen, SRC, LRC and UBI")
+        if license_type not in {None, "see", "binnen", "fkn", "src", "lrc", "ubi"}:
+            raise HTTPException(status_code=400, detail="Exam mode is only available for SBF See, SBF Binnen, FKN, SRC, LRC and UBI")
         ordered, passing_rules, time_limit_seconds = pick_exam_questions(
             questions,
             license_type,

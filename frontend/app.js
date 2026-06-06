@@ -59,7 +59,13 @@ const RADIO_EXAM_RULES = {
   lrc: { question_count: 14, required_total: 11, max_wrong: 3, sheet_label: "LRC Ergänzungsbogen", time_limit_seconds: 20 * 60 },
   ubi: { question_count: 22, required_total: 17, max_wrong: 5, sheet_label: "UBI Prüfungssimulation", time_limit_seconds: 30 * 60 },
 };
-const EXAM_SCOPES = new Set(["all", "see", "binnen", "src", "lrc", "ubi"]);
+const FKN_EXAM_SHEETS = {
+  1: [1, 5, 12, 14, 18, 21, 23, 29, 33, 37, 41, 47, 54, 56, 60],
+  2: [2, 7, 11, 13, 20, 24, 26, 28, 31, 34, 38, 46, 51, 57, 59],
+  3: [3, 6, 10, 15, 19, 22, 30, 32, 36, 39, 42, 44, 50, 52, 58],
+  4: [4, 8, 9, 16, 17, 25, 27, 35, 40, 43, 45, 48, 49, 53, 55],
+};
+const EXAM_SCOPES = new Set(["all", "see", "binnen", "fkn", "src", "lrc", "ubi"]);
 
 const OFFICIAL_EXAM_SHEETS = {
   see: {
@@ -626,7 +632,7 @@ function startNav() {
 
 // ---------- Prüfungs-Modus (mit Server-Fallback) -------------------------
 async function startExam(sheetId = null) {
-  const lic = ["binnen", "src", "lrc", "ubi"].includes(store.scope) ? store.scope : "see";
+  const lic = ["binnen", "fkn", "src", "lrc", "ubi"].includes(store.scope) ? store.scope : "see";
   if (!EXAM_SCOPES.has(store.scope)) {
     toast("Prüfungsmodus kommt für diesen Schein als nächster Schritt");
     return;
@@ -698,6 +704,31 @@ function officialSheetItems(lic, sheetId) {
 }
 
 function startExamLocal(lic, sheetId = null) {
+  if (lic === "fkn") {
+    const sheetNumber = 1 + Math.floor(Math.random() * 4);
+    const byNumber = new Map(MC.filter((q) => q.license_type === "fkn").map((q) => [questionNumber(q), q]));
+    const items = FKN_EXAM_SHEETS[sheetNumber].map((n) => byNumber.get(n)).filter(Boolean);
+    if (items.length !== 15) { toast("FKN-Prüfung offline unvollständig"); return; }
+    session = {
+      mode: "exam",
+      items: items.map(makeLearnItem),
+      idx: 0,
+      rules: {
+        question_count: 15,
+        required_total: 12,
+        point_total: 30,
+        point_required: 24,
+        points_per_full_answer: 2,
+        sheet_id: `fkn-${String(sheetNumber).padStart(3, "0")}`,
+        sheet_label: `FKN Fragebogen ${String(sheetNumber).padStart(3, "0")}`,
+        official_distribution: true,
+      },
+      deadline: Date.now() + 30 * 60 * 1000,
+    };
+    renderQuiz();
+    return;
+  }
+
   if (RADIO_EXAM_RULES[lic]) {
     const rule = RADIO_EXAM_RULES[lic];
     const pool = MC.filter((q) => q.license_type === lic);
