@@ -12,6 +12,7 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session, selectinload
 
 from .database import get_session
+from .exam_sheets import EXAM_SHEET_COUNT, OFFICIAL_EXAM_SHEETS, external_ids_for_sheet
 from .models import Question
 from .schemas import AnswerIn, AnswerOut, QuestionOut, SessionOut
 from .seed import init_db
@@ -79,7 +80,104 @@ def source_summary(questions: list[Question]) -> list[dict]:
     return list(seen.values())
 
 
-def pick_exam_questions(questions: list[Question], license_type: str | None, seed: str) -> tuple[list[Question], dict, int]:
+def exam_sheet_id(license_type: str, number: int) -> str:
+    return f"{license_type}-{number:02d}"
+
+
+def parse_sheet_id(sheet_id: str | None, license_type: str) -> tuple[str | None, int | None]:
+    if not sheet_id:
+        return None, None
+    parts = sheet_id.lower().split("-", 1)
+    if len(parts) != 2 or parts[0] not in {"see", "binnen"}:
+        raise HTTPException(status_code=400, detail="Invalid sheet_id")
+    if parts[0] != license_type:
+        raise HTTPException(status_code=400, detail="sheet_id does not match license_type")
+    try:
+        number = int(parts[1])
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail="Invalid sheet_id") from exc
+    if number < 1 or number > EXAM_SHEET_COUNT:
+        raise HTTPException(status_code=404, detail="Exam sheet not found")
+    return parts[0], number
+
+
+def exam_rules(license_type: str, sheet_id: str | None = None) -> tuple[dict, int]:
+    if license_type == "binnen":
+        rules = {
+            "question_count": 30,
+            "basis_count": 7,
+            "specific_count": 23,
+            "required_total": 24,
+            "required_basis": 5,
+            "required_specific": 18,
+            "navigation_count": 0,
+            "navigation_required": 0,
+            "max_wrong": 6,
+            "note": "Amtlicher SBF Binnen Motor-Fragebogen: 7 Basisfragen und 23 spezifische Binnen-Fragen.",
+        }
+        if sheet_id:
+            rules["sheet_id"] = sheet_id
+            rules["sheet_label"] = f"SBF Binnen Bogen {sheet_id[-2:]}"
+            rules["official_distribution"] = True
+            rules["note"] += " Dieser Bogen nutzt die amtliche ELWIS-Fragenverteilung."
+        return rules, 45 * 60
+
+    rules = {
+        "question_count": 30,
+        "basis_count": 7,
+        "specific_count": 23,
+        "required_total": 24,
+        "required_basis": 5,
+        "required_specific": 18,
+        "navigation_count": 9,
+        "navigation_required": 7,
+        "max_wrong": 6,
+        "note": "Amtlicher SBF See-Fragebogen: 7 Basisfragen, 23 spezifische See-Fragen und eine Navigationsaufgabe mit 9 Teilaufgaben.",
+    }
+    if sheet_id:
+        rules["sheet_id"] = sheet_id
+        rules["sheet_label"] = f"SBF See Bogen {sheet_id[-2:]}"
+        rules["official_distribution"] = True
+        rules["note"] += " Dieser Bogen nutzt die amtliche ELWIS-Fragenverteilung."
+    return rules, 60 * 60
+
+
+def pick_official_sheet_questions(questions: list[Question], license_type: str, sheet_number: int) -> list[Question]:
+    by_external_id = {question.external_id.upper(): question for question in questions}
+    required_ids = external_ids_for_sheet(license_type, sheet_number)
+    selected = []
+    missing = []
+    for external_id in required_ids:
+        question = by_external_id.get(external_id)
+        if question:
+            selected.append(question)
+        else:
+            missing.append(external_id)
+    if missing:
+        raise HTTPException(status_code=409, detail=f"Missing questions for exam sheet: {', '.join(missing)}")
+    if license_type == "see":
+        nav_id = f"SEE-NAV-{sheet_number:02d}"
+        navigation = by_external_id.get(nav_id)
+        if navigation:
+            selected = [navigation] + selected
+        else:
+            raise HTTPException(status_code=409, detail=f"Missing navigation task for exam sheet: {nav_id}")
+    return selected
+
+
+def pick_exam_questions(
+    questions: list[Question],
+    license_type: str | None,
+    seed: str,
+    sheet_id: str | None = None,
+) -> tuple[list[Question], dict, int]:
+    target_license = license_type or "see"
+    _, sheet_number = parse_sheet_id(sheet_id, target_license)
+    if sheet_number:
+        selected = pick_official_sheet_questions(questions, target_license, sheet_number)
+        rules, seconds = exam_rules(target_license, sheet_id)
+        return selected, rules, seconds
+
     rng = random.Random(seed)
 
     def take(category: str, count: int) -> list[Question]:
@@ -87,46 +185,17 @@ def pick_exam_questions(questions: list[Question], license_type: str | None, see
         rng.shuffle(pool)
         return pool[:count]
 
-    target_license = license_type or "see"
     if target_license == "binnen":
         basis = take("Basisfragen", 7)
         specific = take("Spezifische Fragen Binnen", 23)
-        return (
-            basis + specific,
-            {
-                "question_count": 30,
-                "basis_count": 7,
-                "specific_count": 23,
-                "required_total": 24,
-                "required_basis": 5,
-                "required_specific": 18,
-                "navigation_count": 0,
-                "navigation_required": 0,
-                "max_wrong": 6,
-                "note": "Amtlicher SBF Binnen Motor-Fragebogen: 7 Basisfragen und 23 spezifische Binnen-Fragen.",
-            },
-            45 * 60,
-        )
+        rules, seconds = exam_rules("binnen", sheet_id)
+        return basis + specific, rules, seconds
 
     basis = take("Basisfragen", 7)
     specific = take("Spezifische Fragen See", 23)
     navigation = take("Navigationsaufgaben", 1)
-    return (
-        navigation + basis + specific,
-        {
-            "question_count": 30,
-            "basis_count": 7,
-            "specific_count": 23,
-            "required_total": 24,
-            "required_basis": 5,
-            "required_specific": 18,
-            "navigation_count": 9,
-            "navigation_required": 7,
-            "max_wrong": 6,
-            "note": "Amtlicher SBF See-Fragebogen: 7 Basisfragen, 23 spezifische See-Fragen und eine Navigationsaufgabe mit 9 Teilaufgaben.",
-        },
-        60 * 60,
-    )
+    rules, seconds = exam_rules("see", sheet_id)
+    return navigation + basis + specific, rules, seconds
 
 
 @app.get("/")
@@ -162,11 +231,29 @@ def list_questions(
     return [serialize_question(question) for question in session.scalars(statement).all()]
 
 
+@app.get("/api/exam-sheets")
+def list_exam_sheets(
+    license_type: str = Query(default="see", pattern="^(see|binnen)$"),
+) -> list[dict]:
+    label = "SBF See" if license_type == "see" else "SBF Binnen"
+    return [
+        {
+            "id": exam_sheet_id(license_type, number),
+            "label": f"{label} Bogen {number:02d}",
+            "license_type": license_type,
+            "official_distribution": True,
+            "question_numbers": OFFICIAL_EXAM_SHEETS[license_type][number],
+        }
+        for number in range(1, EXAM_SHEET_COUNT + 1)
+    ]
+
+
 @app.get("/api/session", response_model=SessionOut)
 def create_session(
     mode: str = Query(default="learn", pattern="^(learn|exam)$"),
     license_type: str | None = Query(default=None, pattern="^(see|binnen)$"),
     limit: int = Query(default=10, ge=1, le=60),
+    sheet_id: str | None = Query(default=None, pattern="^(see|binnen)-\\d{2}$"),
     session: Session = Depends(get_session),
 ) -> SessionOut:
     statement = select(Question).options(selectinload(Question.progress))
@@ -182,7 +269,10 @@ def create_session(
             questions,
             license_type,
             f"{session_salt}:{license_type or 'see'}",
+            sheet_id,
         )
+        if sheet_id:
+            session_salt = f"fixed:{sheet_id}"
     else:
         ordered = weighted_sample_without_replacement(list(questions), limit)
         passing_rules = {
