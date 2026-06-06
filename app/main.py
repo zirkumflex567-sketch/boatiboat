@@ -102,6 +102,34 @@ def parse_sheet_id(sheet_id: str | None, license_type: str) -> tuple[str | None,
 
 
 def exam_rules(license_type: str, sheet_id: str | None = None) -> tuple[dict, int]:
+    radio_rules = {
+        "src": {
+            "question_count": 24,
+            "required_total": 19,
+            "max_wrong": 5,
+            "sheet_label": "SRC Prüfungssimulation",
+            "note": "SRC-Theorie: 24 Multiple-Choice-Fragen, mindestens 19 richtig. Not-/Dringlichkeits-/Sicherheitsmeldungen und Praxis sind nicht enthalten.",
+        },
+        "lrc": {
+            "question_count": 14,
+            "required_total": 11,
+            "max_wrong": 3,
+            "sheet_label": "LRC Ergänzungsbogen",
+            "note": "LRC-Katalog II: 14 Multiple-Choice-Fragen, mindestens 11 richtig. Die vollständige LRC-Prüfung kann zusätzlich SRC-Anteile und Praxis enthalten.",
+        },
+        "ubi": {
+            "question_count": 22,
+            "required_total": 17,
+            "max_wrong": 5,
+            "sheet_label": "UBI Prüfungssimulation",
+            "note": "UBI-Theorie: 22 Multiple-Choice-Fragen aus dem Gesamtfragenkatalog, mindestens 17 richtig. Praktische Funkaufgaben sind nicht enthalten.",
+        },
+    }
+    if license_type in radio_rules:
+        rules = {**radio_rules[license_type], "simulated_distribution": True}
+        seconds = 20 * 60 if license_type == "lrc" else 30 * 60
+        return rules, seconds
+
     if license_type == "binnen":
         rules = {
             "question_count": 30,
@@ -191,6 +219,15 @@ def pick_exam_questions(
         rules, seconds = exam_rules("binnen", sheet_id)
         return basis + specific, rules, seconds
 
+    if target_license in {"src", "lrc", "ubi"}:
+        rules, seconds = exam_rules(target_license, sheet_id)
+        pool = [question for question in questions if question.license_type == target_license]
+        rng.shuffle(pool)
+        selected = pool[: rules["question_count"]]
+        if len(selected) < rules["question_count"]:
+            raise HTTPException(status_code=409, detail=f"Not enough questions for {target_license.upper()} exam simulation")
+        return selected, rules, seconds
+
     basis = take("Basisfragen", 7)
     specific = take("Spezifische Fragen See", 23)
     navigation = take("Navigationsaufgaben", 1)
@@ -265,8 +302,8 @@ def create_session(
     # neu gemischt werden und nicht jedes Mal identisch sind.
     session_salt = secrets.token_hex(8)
     if mode == "exam":
-        if license_type not in {None, "see", "binnen"}:
-            raise HTTPException(status_code=400, detail="Exam mode is only available for SBF See and SBF Binnen")
+        if license_type not in {None, "see", "binnen", "src", "lrc", "ubi"}:
+            raise HTTPException(status_code=400, detail="Exam mode is only available for SBF See, SBF Binnen, SRC, LRC and UBI")
         ordered, passing_rules, time_limit_seconds = pick_exam_questions(
             questions,
             license_type,

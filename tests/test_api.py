@@ -182,10 +182,35 @@ def test_radio_catalog_import_and_learning_session():
     assert session["source_summary"][0]["name"] == "SRC"
 
 
-def test_radio_exam_modes_are_not_enabled_yet():
-    for license_type in ("src", "lrc", "ubi"):
-        response = client.get(f"/api/session?mode=exam&license_type={license_type}")
-        assert response.status_code == 400
+def test_radio_exam_modes_use_certificate_shapes():
+    specs = {
+        "src": (24, 19, 30 * 60),
+        "lrc": (14, 11, 20 * 60),
+        "ubi": (22, 17, 30 * 60),
+    }
+    with session_scope() as session:
+        for license_type, (count, _, _) in specs.items():
+            for idx in range(1, count + 2):
+                session.add(
+                    Question(
+                        external_id=f"{license_type.upper()}-{idx:03d}",
+                        license_type=license_type,
+                        category="Funk",
+                        prompt=f"{license_type} {idx}?",
+                        choices=["A", "B", "C", "D"],
+                        correct_index=0,
+                    )
+                )
+
+    for license_type, (count, required, seconds) in specs.items():
+        response = client.get(f"/api/session?mode=exam&license_type={license_type}&limit=5")
+        data = response.json()
+
+        assert response.status_code == 200
+        assert len(data["questions"]) == count
+        assert data["time_limit_seconds"] == seconds
+        assert data["passing_rules"]["required_total"] == required
+        assert data["passing_rules"]["simulated_distribution"] is True
 
 
 def test_choices_are_shuffled_and_correct_index_is_rebased():

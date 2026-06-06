@@ -54,6 +54,12 @@ const LICENSE_LABELS = {
   ubi: "UBI",
 };
 const SBF_SCOPES = new Set(["all", "see", "binnen"]);
+const RADIO_EXAM_RULES = {
+  src: { question_count: 24, required_total: 19, max_wrong: 5, sheet_label: "SRC Prüfungssimulation", time_limit_seconds: 30 * 60 },
+  lrc: { question_count: 14, required_total: 11, max_wrong: 3, sheet_label: "LRC Ergänzungsbogen", time_limit_seconds: 20 * 60 },
+  ubi: { question_count: 22, required_total: 17, max_wrong: 5, sheet_label: "UBI Prüfungssimulation", time_limit_seconds: 30 * 60 },
+};
+const EXAM_SCOPES = new Set(["all", "see", "binnen", "src", "lrc", "ubi"]);
 
 const OFFICIAL_EXAM_SHEETS = {
   see: {
@@ -620,8 +626,8 @@ function startNav() {
 
 // ---------- Prüfungs-Modus (mit Server-Fallback) -------------------------
 async function startExam(sheetId = null) {
-  const lic = store.scope === "binnen" ? "binnen" : "see";
-  if (!SBF_SCOPES.has(store.scope)) {
+  const lic = ["binnen", "src", "lrc", "ubi"].includes(store.scope) ? store.scope : "see";
+  if (!EXAM_SCOPES.has(store.scope)) {
     toast("Prüfungsmodus kommt für diesen Schein als nächster Schritt");
     return;
   }
@@ -692,6 +698,22 @@ function officialSheetItems(lic, sheetId) {
 }
 
 function startExamLocal(lic, sheetId = null) {
+  if (RADIO_EXAM_RULES[lic]) {
+    const rule = RADIO_EXAM_RULES[lic];
+    const pool = MC.filter((q) => q.license_type === lic);
+    if (pool.length < rule.question_count) { toast("Prüfung offline unvollständig"); return; }
+    const items = shuffle(pool).slice(0, rule.question_count);
+    session = {
+      mode: "exam",
+      items: items.map(makeLearnItem),
+      idx: 0,
+      rules: { ...rule, simulated_distribution: true },
+      deadline: Date.now() + rule.time_limit_seconds * 1000,
+    };
+    renderQuiz();
+    return;
+  }
+
   const byCat = (c) => MC.filter((q) => q.license_type === lic && q.category === c);
   if (sheetId) {
     const official = officialSheetItems(lic, sheetId);
@@ -874,8 +896,10 @@ function renderHome() {
   grid.appendChild(modecard("📚", "Weiterlernen",       "Clevere Auswahl: neue & schwierige Fragen zuerst.", () => startLearn(20), "feature"));
   grid.appendChild(modecard("🗂️", "Alle Fragen",        `Kompletter Durchlauf (${pool.length} Fragen).`,    () => startLearn("all")));
   grid.appendChild(modecard("🎯", "Nur Schwächen",       "Wiederhole gezielt deine Fehler.",                 () => startLearn("wrong")));
+  if (EXAM_SCOPES.has(store.scope)) {
+    grid.appendChild(modecard("⏱️", "Prüfung simulieren",  SBF_SCOPES.has(store.scope) ? "Amtlicher Bogen mit Zeitlimit." : "Zufallsbogen mit Zeitlimit.", () => startExam()));
+  }
   if (SBF_SCOPES.has(store.scope)) {
-    grid.appendChild(modecard("⏱️", "Prüfung simulieren",  "Amtlicher Bogen mit Zeitlimit.",                   () => startExam()));
     grid.appendChild(modecard("📋", "Feste Prüfungsbögen", "15 reproduzierbare Bögen in amtlicher Form.",       renderExamSheets));
     grid.appendChild(modecard("📖", "Lehrbuch",            "Theorie kapitelweise lesen und durchsuchen.",       renderTheoryLibrary));
     grid.appendChild(modecard("🪢", "Knoten",              "Prüfungsknoten mit Schritten und Einsatz.",         renderKnots));
@@ -1966,21 +1990,29 @@ function renderResult() {
     const spec  = mcItems.filter((it) => it.q.category !== "Basisfragen");
     const bc = basis.filter((it) => it.correct).length;
     const sc = spec.filter((it)  => it.correct).length;
+    const isSbf = (r.required_basis ?? 0) || (r.required_specific ?? 0);
     const passed = correct >= (r.required_total ?? 0)
-      && bc >= (r.required_basis ?? 0)
-      && sc >= (r.required_specific ?? 0);
+      && (!isSbf || bc >= (r.required_basis ?? 0))
+      && (!isSbf || sc >= (r.required_specific ?? 0));
     badge = passed ? "✅" : "❌";
     title = passed ? "Bestanden!" : "Noch nicht bestanden";
+    const statTiles = isSbf
+      ? [
+          tile(`${bc}/${basis.length}`, "Basisfragen"),
+          tile(`${sc}/${spec.length}`, "Spezifisch"),
+          tile(acc + "%", "Trefferquote"),
+        ]
+      : [
+          tile(`${correct}/${total}`, "Richtig"),
+          tile(`${Math.max(0, (r.required_total ?? 0) - correct)}`, "Noch nötig"),
+          tile(acc + "%", "Trefferquote"),
+        ];
     view.appendChild(
       el("div", { class: "result-card" },
         el("div",  { class: "result-badge" }, badge),
         el("h2",   {}, title),
         el("div",  { class: "result-score", html: `${correct}<small> / ${total} richtig</small>` }),
-        el("div",  { class: "result-stats" },
-          tile(`${bc}/${basis.length}`, "Basisfragen"),
-          tile(`${sc}/${spec.length}`,  "Spezifisch"),
-          tile(acc + "%", "Trefferquote"),
-        ),
+        el("div",  { class: "result-stats" }, ...statTiles),
         el("p", { class: "qhint" }, `Bestehensgrenze: mind. ${r.required_total ?? 0} von ${total} richtig`),
         resultActions(),
       )

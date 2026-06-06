@@ -160,7 +160,8 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
 - [ ] **Funkscheine UBI / SRC / LRC**: Fragen + **Funk-Module**:
   - [x] Amtliche/behördennahe Katalogquellen für SRC, LRC und UBI abgerufen und mit Prüfsummen manifestiert.
   - [x] Parser/Importer für SRC, LRC und UBI gebaut und als Lernkataloge freigeschaltet.
-  - [ ] Prüfungsmodus/Bogenlogik für SRC, LRC und UBI ergänzen.
+  - [x] Zufalls-Prüfungssimulation für SRC, LRC und UBI mit Zeitlimit und Bestehensgrenzen ergänzt.
+  - [ ] Amtliche feste Funk-Prüfungsbögen importieren, sobald belastbare Bogenverteilungen vorliegen.
   - Muster-Funksprüche, Buchstabiertafel (gratis, einfach).
   - **Vokabel-Liste mit Audio** (TTS/aufgenommen).
   - **Diktat-Aufgaben** (vorgelesener englischer Funktext → Übersetzung), **Übersetzungsaufgaben**.
