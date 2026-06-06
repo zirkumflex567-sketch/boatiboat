@@ -33,3 +33,19 @@ def test_parse_fkn_catalog_ignores_numbered_answer_options():
     assert records[0]["prompt"] == "Frage 1?"
     assert "Erste Antwortoption" in records[0]["explanation"]
     assert records[1]["external_id"] == "FKN-002"
+
+
+def test_parse_fkn_catalog_keeps_multi_part_prompts_together():
+    raw = "\n".join(
+        (
+            f"{number}. a) Erste Teilfrage {number}?\n"
+            "b) Zweite Teilfrage?\n"
+            "Gemeinsame Antwort."
+        )
+        for number in range(1, 61)
+    )
+
+    records = parse_text(raw)
+
+    assert "b) Zweite Teilfrage?" in records[0]["prompt"]
+    assert records[0]["explanation"] == "Gemeinsame Antwort."

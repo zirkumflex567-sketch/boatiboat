@@ -54,9 +54,10 @@ def parse_text(raw_text: str) -> list[dict]:
         next_start = markers[index + 1].start() if index + 1 < len(markers) else len(body)
         chunk = body[marker.end():next_start]
         chunk = re.sub(r"\n\s*\d+\s*\n\s*01\.01\.2008/500\s+010/02\s*", "\n", chunk)
-        split = re.search(r"[?!]", chunk)
-        if not split:
+        terminators = list(re.finditer(r"[?!]", chunk))
+        if not terminators:
             raise ValueError(f"Question {number} has no prompt terminator")
+        split = terminators[-1]
 
         prompt = clean_text(chunk[: split.end()])
         answer = clean_text(chunk[split.end():])

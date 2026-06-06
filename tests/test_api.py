@@ -120,6 +120,41 @@ def test_import_accepts_json_catalog_records():
     assert client.get("/api/questions").json()[0]["external_id"] == "SBF-42"
 
 
+def test_fkn_flashcard_import_and_learning_session():
+    payload = [
+        {
+            "external_id": "FKN-TEST-1",
+            "license_type": "fkn",
+            "category": "Fachkundenachweis Seenotsignalmittel",
+            "prompt": "Wann dürfen pyrotechnische Notsignale verwendet werden?",
+            "choices": [],
+            "correct_index": 0,
+            "explanation": "Nur im Notfall.",
+            "source_name": "FKN",
+            "source_url": "https://example.test/fkn.pdf",
+            "source_stand": "01.01.2008/500 010/02",
+            "card_type": "flashcard",
+        }
+    ]
+
+    assert client.post("/api/import/json", json=payload).status_code == 200
+
+    questions = client.get("/api/questions?license_type=fkn").json()
+    assert len(questions) == 1
+    assert questions[0]["card_type"] == "flashcard"
+    assert questions[0]["choices"] == []
+
+    session = client.get("/api/session?mode=learn&license_type=fkn&limit=5").json()
+    assert session["questions"][0]["external_id"] == "FKN-TEST-1"
+    assert session["source_summary"][0]["name"] == "FKN"
+
+
+def test_fkn_exam_mode_is_not_enabled_yet():
+    response = client.get("/api/session?mode=exam&license_type=fkn")
+
+    assert response.status_code == 400
+
+
 def test_choices_are_shuffled_and_correct_index_is_rebased():
     question = Question(
         external_id="mix-1",

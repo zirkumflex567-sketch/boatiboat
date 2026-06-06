@@ -93,9 +93,14 @@ SAMPLE_QUESTIONS = [
 
 def load_catalog_records() -> list[dict]:
     catalog = Path(__file__).resolve().parent / "official_catalog.json"
+    fkn_catalog = Path(__file__).resolve().parent / "fkn_catalog.json"
     if catalog.exists():
-        return json.loads(catalog.read_text(encoding="utf-8"))
-    return SAMPLE_QUESTIONS
+        records = json.loads(catalog.read_text(encoding="utf-8"))
+    else:
+        records = SAMPLE_QUESTIONS
+    if fkn_catalog.exists():
+        records.extend(json.loads(fkn_catalog.read_text(encoding="utf-8")))
+    return records
 
 
 def init_db(seed: bool = True) -> int:

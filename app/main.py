@@ -222,7 +222,7 @@ def health() -> dict:
 
 @app.get("/api/questions", response_model=list[QuestionOut])
 def list_questions(
-    license_type: str | None = Query(default=None, pattern="^(see|binnen)$"),
+    license_type: str | None = Query(default=None, pattern="^(see|binnen|fkn)$"),
     session: Session = Depends(get_session),
 ) -> list[QuestionOut]:
     statement = select(Question).options(selectinload(Question.progress)).order_by(Question.category, Question.id)
@@ -251,7 +251,7 @@ def list_exam_sheets(
 @app.get("/api/session", response_model=SessionOut)
 def create_session(
     mode: str = Query(default="learn", pattern="^(learn|exam)$"),
-    license_type: str | None = Query(default=None, pattern="^(see|binnen)$"),
+    license_type: str | None = Query(default=None, pattern="^(see|binnen|fkn)$"),
     limit: int = Query(default=10, ge=1, le=60),
     sheet_id: str | None = Query(default=None, pattern="^(see|binnen)-\\d{2}$"),
     session: Session = Depends(get_session),
@@ -265,6 +265,8 @@ def create_session(
     # neu gemischt werden und nicht jedes Mal identisch sind.
     session_salt = secrets.token_hex(8)
     if mode == "exam":
+        if license_type not in {None, "see", "binnen"}:
+            raise HTTPException(status_code=400, detail="Exam mode is only available for SBF See and SBF Binnen")
         ordered, passing_rules, time_limit_seconds = pick_exam_questions(
             questions,
             license_type,

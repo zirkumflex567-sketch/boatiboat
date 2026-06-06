@@ -26,7 +26,15 @@ const CAT_ORDER = [
   "Spezifische Fragen Binnen",
   "Spezifische Fragen Segeln",
   "Navigationsaufgaben",
+  "Fachkundenachweis Seenotsignalmittel",
 ];
+
+const LICENSE_LABELS = {
+  all: "Binnen + See",
+  see: "See",
+  binnen: "Binnen",
+  fkn: "FKN",
+};
 
 const OFFICIAL_EXAM_SHEETS = {
   see: {
@@ -234,7 +242,7 @@ let timerId = null;
 function defaultStore() {
   return {
     v: 2,
-    scope: "all",     // "all" | "see" | "binnen"
+    scope: "all",     // "all" | "see" | "binnen" | "fkn"
     byId:  {},         // Lernfortschritt je external_id
     streak: 0,
     best:   0,
@@ -455,7 +463,7 @@ function scopedMC() {
 }
 
 function scopedNAV() {
-  return store.scope === "binnen" ? [] : NAV;
+  return store.scope === "see" || store.scope === "all" ? NAV : [];
 }
 
 // ========================================================================
@@ -539,6 +547,7 @@ function readinessFor(pool) {
 // ========================================================================
 function makeLearnItem(q) {
   if (q.card_type === "navigation") return { q, nav: true };
+  if (q.card_type === "flashcard" || !q.choices?.length) return { q, flashcard: true, revealed: false, picked: null, correct: null };
   const order       = shuffle(q.choices.map((_, i) => i));
   const correctIdx  = order.indexOf(q.correct_index);
   return { q, order, correctIdx, picked: null, correct: null, confirmed: false };
@@ -546,6 +555,7 @@ function makeLearnItem(q) {
 
 function makeExamItem(q) {
   if (q.card_type === "navigation") return { q, nav: true };
+  if (q.card_type === "flashcard" || !q.choices?.length) return { q, flashcard: true, revealed: false, picked: null, correct: null };
   // /api/session liefert bereits gemischte choices + rebasierten correct_index
   return { q, order: q.choices.map((_, i) => i), correctIdx: q.correct_index, picked: null, correct: null, confirmed: false };
 }
@@ -592,6 +602,10 @@ function startNav() {
 // ---------- Prüfungs-Modus (mit Server-Fallback) -------------------------
 async function startExam(sheetId = null) {
   const lic = store.scope === "binnen" ? "binnen" : "see";
+  if (store.scope === "fkn") {
+    toast("FKN-Prüfungsmodus kommt als nächster Schritt");
+    return;
+  }
   if (!window.__CATALOG__) {
     try {
       const url = `api/session?mode=exam&license_type=${lic}` + (sheetId ? `&sheet_id=${encodeURIComponent(sheetId)}` : "");
@@ -722,7 +736,7 @@ function ring(percent, sub) {
 
 function scopeSegmented() {
   const seg = el("div", { class: "segmented", role: "group", "aria-label": "Schein wählen" });
-  [["all", "Binnen + See"], ["see", "See"], ["binnen", "Binnen"]].forEach(([val, lbl]) => {
+  [["all", LICENSE_LABELS.all], ["see", LICENSE_LABELS.see], ["binnen", LICENSE_LABELS.binnen], ["fkn", LICENSE_LABELS.fkn]].forEach(([val, lbl]) => {
     seg.appendChild(el("button", {
       "aria-pressed": String(store.scope === val),
       onclick: () => { store.scope = val; saveStore(); renderHome(); },
@@ -767,7 +781,7 @@ function renderHome() {
   // Hero
   view.appendChild(
     el("section", { class: "hero" },
-      el("p",  { class: "eyebrow" }, "Sportbootführerschein · See & Binnen"),
+      el("p",  { class: "eyebrow" }, "Sportbootführerschein · See, Binnen & FKN"),
       el("h1", {}, "Verstehen statt nur ankreuzen."),
       el("p",  {}, "Lerne mit den amtlichen ELWIS-Fragen, im eigenen Tempo. Falsch beantwortete Fragen kommen automatisch häufiger – dein Fortschritt bleibt auf diesem Gerät gespeichert."),
     )
@@ -833,11 +847,13 @@ function renderHome() {
   grid.appendChild(modecard("📚", "Weiterlernen",       "Clevere Auswahl: neue & schwierige Fragen zuerst.", () => startLearn(20), "feature"));
   grid.appendChild(modecard("🗂️", "Alle Fragen",        `Kompletter Durchlauf (${pool.length} Fragen).`,    () => startLearn("all")));
   grid.appendChild(modecard("🎯", "Nur Schwächen",       "Wiederhole gezielt deine Fehler.",                 () => startLearn("wrong")));
-  grid.appendChild(modecard("⏱️", "Prüfung simulieren",  "Amtlicher Bogen mit Zeitlimit.",                   () => startExam()));
-  grid.appendChild(modecard("📋", "Feste Prüfungsbögen", "15 reproduzierbare Bögen in amtlicher Form.",       renderExamSheets));
-  grid.appendChild(modecard("📖", "Lehrbuch",            "Theorie kapitelweise lesen und durchsuchen.",       renderTheoryLibrary));
-  grid.appendChild(modecard("🪢", "Knoten",              "Prüfungsknoten mit Schritten und Einsatz.",         renderKnots));
-  grid.appendChild(modecard("🧾", "Weg zur Prüfung",     "Anmeldung, Unterlagen und Ablauf auf einen Blick.", renderExamGuide));
+  if (store.scope !== "fkn") {
+    grid.appendChild(modecard("⏱️", "Prüfung simulieren",  "Amtlicher Bogen mit Zeitlimit.",                   () => startExam()));
+    grid.appendChild(modecard("📋", "Feste Prüfungsbögen", "15 reproduzierbare Bögen in amtlicher Form.",       renderExamSheets));
+    grid.appendChild(modecard("📖", "Lehrbuch",            "Theorie kapitelweise lesen und durchsuchen.",       renderTheoryLibrary));
+    grid.appendChild(modecard("🪢", "Knoten",              "Prüfungsknoten mit Schritten und Einsatz.",         renderKnots));
+    grid.appendChild(modecard("🧾", "Weg zur Prüfung",     "Anmeldung, Unterlagen und Ablauf auf einen Blick.", renderExamGuide));
+  }
   if (store.bookmarks.length)
     grid.appendChild(modecard("🔖", "Gemerkte Fragen",   `${store.bookmarks.length} Lesezeichen`,            () => startLearn("bookmarks")));
   if (navPool.length)
@@ -1091,6 +1107,10 @@ function renderExamSheets() {
   TOPACTIONS.innerHTML = "";
   TOPACTIONS.appendChild(el("button", { class: "btn-icon", onclick: renderHome, "aria-label": "Zurück" }, "←"));
 
+  if (store.scope === "fkn") {
+    store.scope = "see";
+    saveStore();
+  }
   const lic = store.scope === "binnen" ? "binnen" : "see";
   const label = lic === "see" ? "SBF See" : "SBF Binnen";
   const view = el("div", { class: "view" });
@@ -1146,6 +1166,7 @@ function scopeSegmentedFor(onChange) {
 function theoryKeys() {
   if (store.scope === "see") return ["see"];
   if (store.scope === "binnen") return ["binnen"];
+  if (store.scope === "fkn") return [];
   return ["see", "binnen"];
 }
 
@@ -1308,6 +1329,7 @@ function renderKnots() {
 
 function theoryLinkForQuestion(q) {
   if (!q || q.card_type === "navigation") return { key: "see", id: "see-navigation-position" };
+  if (q.license_type === "fkn") return null;
   const key = q.license_type === "binnen" ? "binnen" : "see";
   const hay = [q.category, q.prompt, ...(q.choices || []), q.explanation || ""].join(" ").toLowerCase();
 
@@ -1340,6 +1362,7 @@ function theoryLinkForQuestion(q) {
 
 function theoryButtonForQuestion(q, extraClass = "") {
   const link = theoryLinkForQuestion(q);
+  if (!link) return null;
   const found = findTheorySection(link.key, link.id);
   if (!found) return null;
   return el("button", {
@@ -1615,6 +1638,17 @@ function renderQuiz() {
     return;
   }
 
+  // Offene Frage als Lernkarte
+  if (it.flashcard) {
+    card.appendChild(renderFlashcard(it));
+    card.appendChild(quizFooter(it, false));
+    view.appendChild(card);
+    APP.innerHTML = "";
+    APP.appendChild(view);
+    window.scrollTo(0, 0);
+    return;
+  }
+
   // Antwort-Buttons
   const choicesEl = el("div", { class: "choices" });
   it.order.forEach((origIdx, displayIdx) => {
@@ -1649,7 +1683,9 @@ function quizFooter(it, isNav) {
   if (!isNav && it.picked == null) nextBtn.disabled = true;
 
   const hint = el("div", { class: "qhint" },
-    isNav
+    it.flashcard
+      ? el("span", {}, "Antwort aufdecken und selbst ehrlich bewerten")
+      : isNav
       ? el("span", { html: "Tasten <kbd>→</kbd> weiter" })
       : el("span", { html: "Tasten <kbd>1</kbd>–<kbd>4</kbd> · <kbd>↵</kbd> weiter" }),
   );
@@ -1727,6 +1763,16 @@ function paintAnswer(it) {
 
 function restoreAnswered(it) {
   if (it.nav || it.picked == null) return;
+  if (it.flashcard) {
+    const answer = $("#flashAnswer");
+    if (answer) answer.classList.remove("hidden");
+    const reveal = $("#flashReveal");
+    if (reveal) reveal.classList.add("hidden");
+    APP.querySelectorAll(".flash-actions button").forEach((btn) => btn.disabled = true);
+    const nb = $("#nextBtn");
+    if (nb) nb.disabled = false;
+    return;
+  }
   paintAnswer(it);
   const nb = $("#nextBtn");
   if (nb) nb.disabled = false;
@@ -1757,6 +1803,41 @@ function confirmExit() {
   }
   if (session?.returnTo === "search") { renderSearch(); return; }
   renderHome();
+}
+
+function markFlashcard(it, correct) {
+  if (it.picked != null) return;
+  it.revealed = true;
+  it.picked = correct ? 1 : 0;
+  it.correct = correct;
+  recordAnswer(it.q.external_id, correct);
+  APP.querySelectorAll(".flash-actions button").forEach((btn) => btn.disabled = true);
+  const nb = $("#nextBtn");
+  if (nb) { nb.disabled = false; nb.focus(); }
+}
+
+function renderFlashcard(it) {
+  const box = el("div", { class: "flash-card" });
+  const answer = el("div", { class: "flash-answer hidden", id: "flashAnswer" },
+    el("p", { class: "section-label" }, "Amtliche Antwort"),
+    el("div", { html: highlightText(it.q.explanation || "Keine Antwort hinterlegt.") }),
+    el("div", { class: "flash-actions" },
+      el("button", { class: "btn btn-ghost", onclick: () => markFlashcard(it, false) }, "Wiederholen"),
+      el("button", { class: "btn btn-primary", onclick: () => markFlashcard(it, true) }, "Gewusst"),
+    ),
+  );
+  const reveal = el("button", {
+    class: "btn btn-primary",
+    id: "flashReveal",
+    onclick: () => {
+      it.revealed = true;
+      answer.classList.remove("hidden");
+      reveal.classList.add("hidden");
+    },
+  }, "Antwort anzeigen");
+  box.appendChild(reveal);
+  box.appendChild(answer);
+  return box;
 }
 
 // ---------- Navigations-Lernkarte (inline) ------------------------------
