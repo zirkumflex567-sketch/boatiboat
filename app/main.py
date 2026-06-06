@@ -222,7 +222,7 @@ def health() -> dict:
 
 @app.get("/api/questions", response_model=list[QuestionOut])
 def list_questions(
-    license_type: str | None = Query(default=None, pattern="^(see|binnen|fkn)$"),
+    license_type: str | None = Query(default=None, pattern="^(see|binnen|fkn|src|lrc|ubi)$"),
     session: Session = Depends(get_session),
 ) -> list[QuestionOut]:
     statement = select(Question).options(selectinload(Question.progress)).order_by(Question.category, Question.id)
@@ -251,7 +251,7 @@ def list_exam_sheets(
 @app.get("/api/session", response_model=SessionOut)
 def create_session(
     mode: str = Query(default="learn", pattern="^(learn|exam)$"),
-    license_type: str | None = Query(default=None, pattern="^(see|binnen|fkn)$"),
+    license_type: str | None = Query(default=None, pattern="^(see|binnen|fkn|src|lrc|ubi)$"),
     limit: int = Query(default=10, ge=1, le=60),
     sheet_id: str | None = Query(default=None, pattern="^(see|binnen)-\\d{2}$"),
     session: Session = Depends(get_session),

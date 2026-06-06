@@ -159,7 +159,8 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
   - [ ] Offiziellen, frei nutzbaren Behördenkatalog oder Genehmigung beschaffen; keine Drittanbieter-Abschrift importieren.
 - [ ] **Funkscheine UBI / SRC / LRC**: Fragen + **Funk-Module**:
   - [x] Amtliche/behördennahe Katalogquellen für SRC, LRC und UBI abgerufen und mit Prüfsummen manifestiert.
-  - [ ] Parser/Importer für SRC, LRC und UBI bauen.
+  - [x] Parser/Importer für SRC, LRC und UBI gebaut und als Lernkataloge freigeschaltet.
+  - [ ] Prüfungsmodus/Bogenlogik für SRC, LRC und UBI ergänzen.
   - Muster-Funksprüche, Buchstabiertafel (gratis, einfach).
   - **Vokabel-Liste mit Audio** (TTS/aufgenommen).
   - **Diktat-Aufgaben** (vorgelesener englischer Funktext → Übersetzung), **Übersetzungsaufgaben**.

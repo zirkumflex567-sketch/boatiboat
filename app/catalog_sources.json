@@ -47,7 +47,7 @@
     "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
     "kind": "pdf",
     "local_filename": "src-fragenkatalog.pdf",
-    "status": "fetched"
+    "status": "parsed"
   },
   {
     "id": "lrc-catalog",
@@ -57,17 +57,17 @@
     "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
     "kind": "pdf",
     "local_filename": "lrc-fragenkatalog.pdf",
-    "status": "fetched"
+    "status": "parsed"
   },
   {
     "id": "ubi-catalog",
     "license_type": "ubi",
-    "title": "UBI Fragenkatalog aus der Bundes-Verwaltungsvorschrift",
-    "publisher": "Bundesministerium für Verkehr, Bau und Stadtentwicklung",
-    "source_url": "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_16052007_LS26626317.htm",
-    "kind": "html",
-    "local_filename": "ubi-fragenkatalog.html",
-    "status": "fetched"
+    "title": "UBI Gesamtfragenkatalog",
+    "publisher": "Amt für Binnen-Verkehrstechnik / WSV",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "kind": "pdf",
+    "local_filename": "ubi-gesamtfragenkatalog-2023.pdf",
+    "status": "parsed"
   },
   {
     "id": "fkn-catalog",

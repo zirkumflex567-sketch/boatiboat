@@ -1,0 +1,2342 @@
+[
+  {
+    "external_id": "UBI-001",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Was ist Binnenschifffahrtsfunk?",
+    "choices": [
+      "Internationaler mobiler UKW/VHF- Sprechfunkdienst auf Binnenschifffahrtsstraßen",
+      "Nationaler mobiler UKW/VHF-Sprechfunkdienst auf Binnenschifffahrtsstraßen",
+      "Internationales UKW/VHF-Sprechfunkverfahren im Binnenbereich",
+      "Nationales UKW/VHF-Sprechfunkverfahren im Binnenbereich"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-002",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Wozu dient der Binnenschifffahrtsfunk?",
+    "choices": [
+      "Funkverkehr für bestimmte Zwecke auf vereinbarten Kanälen (Verkehrskreise) und nach einem festgelegten Betriebsverfahren",
+      "Funkverkehr für Schiffsfunkstellen zu bestimmten Zwecken auf vereinbarten Kanälen (Verkehrskreise) und nach einem festgelegten Betriebsverfahren",
+      "Funkverkehr zu Landfunkstellen für bestimmte Zwecke auf vereinbarten Kanälen (Verkehrskreise) und nach einem festgelegten Betriebsverfahren",
+      "Funkverkehr für Schiffsfunkstellen über Landfunkstellen auf vereinbarten Kanälen (Verkehrskreise) und nach einem festgelegten Betriebsverfahren"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-003",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Wo findet man Angaben über die grundsätzlichen Regelungen für den Binnenschifffahrtsfunk in Europa?",
+    "choices": [
+      "Regionale Vereinbarung über den Binnenschifffahrtsfunk (RAINWAT)",
+      "International Convention for the Safety of Life at Sea (SOLAS)",
+      "Verwaltungsvereinbarung über die Koordinierung von Frequenzen (HCM)",
+      "Binnenschifffahrt-Sprechfunkverordnung (BinSchSprFunkV)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-004",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Was ist eine „ortsfeste Funkstelle”?",
+    "choices": [
+      "Funkstelle, die an Land betrieben wird",
+      "Funkstelle, die von der Fernmeldebehörde betrieben wird",
+      "Funkstelle, die an Bord eines nicht dauernd festgemachten Binnenschiffes betrieben wird",
+      "Funkstelle, die im Verkehrskreis Funkverkehr an Bord betrieben wird"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-005",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Was ist eine „Revierzentrale”?",
+    "choices": [
+      "Zentrale Landfunkstelle des Verkehrskreises Nautische Information",
+      "Zentrale Schiffsfunkstelle der Wasserstraßen- und Schifffahrtsverwaltung",
+      "Zentrale Telematikdienste zur Datenübermittlung von AIS",
+      "Zentrale Seefunkstelle zur Schiffslenkung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-006",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Was ist ein „Verkehrsposten”?",
+    "choices": [
+      "Zentrale ortsfeste Funkstelle in den Niederlanden",
+      "Zentrale mobile Funkstelle in den Niederlanden",
+      "Zentrale ortsfeste Funkstelle in den Niederlanden und in Frankreich",
+      "Zentrale mobile Funkstelle in den Niederlanden und in Frankreich"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-007",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Was ist ein „Blockkanal”?",
+    "choices": [
+      "Funkkanal für sicherheitsrelevante Meldungen der Verkehrsposten und Schiffsfunkstellen in den Niederlanden",
+      "Funkkanal für Routinegespräche der Verkehrsposten und Schiffsfunkstellen in den Niederlanden",
+      "Gesperrter Funkkanal der Verkehrsposten und Verkehrszentralen in den Niederlanden",
+      "Funkkanal für öffentlichen Nachrichtenaustausch zwischen den Verkehrsposten in den Niederlanden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-008",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Was bedeutet „MIB”?",
+    "choices": [
+      "Melde- und Informationssystem in der Binnenschifffahrt",
+      "Maritimes Identifikationssystem in der Binnenschifffahrt",
+      "Mobiles Informationssystem in der Binnenschifffahrt",
+      "Melde- und Identifikationssystem in der Binnenschifffahrt"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-009",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Wo darf der Inhaber eines in Deutschland erworbenen UKW-Sprechfunk- zeugnisses für den Binnenschifffahrtsfunk am Funkverkehr teilnehmen?",
+    "choices": [
+      "In allen Ländern, die der Regionalen Vereinbarung über den Binnenschifffahrtsfunk beigetreten sind",
+      "In allen Mitgliedstaaten der EU",
+      "In allen Staaten, die die Vollzugsordnung für den Funkdienst ratifiziert haben",
+      "In allen deutschsprachigen Ländern"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-010",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Wo berechtigt das UKW-Sprechfunkzeugnis für den Binnenschifffahrtsfunk (UBI) auch zur Teilnahme am mobilen Seefunkdienst?",
+    "choices": [
+      "Wasserstraßen der Zonen 1 bis 2",
+      "Wasserstraßen der Zonen 2 bis 4",
+      "Wasserstraßen der Zonen 1 bis 4",
+      "Wasserstraßen der Zonen 2 bis 3"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-011",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Wer erteilt neben der zuständigen Stelle des Bundes das UKW-Sprechfunkzeugnis für den Binnenschifffahrtsfunk (UBI)?",
+    "choices": [
+      "Prüfungsausschüsse des Deutschen Motoryachtverbandes e. V. (DMYV) und des Deutschen Segler-Verbandes e. V. (DSV)",
+      "Bundesnetzagentur (BNetzA) und das Bundesamt für Seeschifffahrt und Hydrographie (BSH)",
+      "Zentrale Verwaltungsstelle (ZVST) und Generaldirektion Wasserstraßen und Schifffahrt (GDWS)",
+      "Wasserstraßen- und Schifffahrtsamt (WSA) und Bundesnetzagentur (BNetzA)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-012",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Welches Funkzeugnis berechtigt nicht zur Teilnahme am Weltweiten Seenot- und Sicherheitsfunksystem (GMDSS)?",
+    "choices": [
+      "UKW-Sprechfunkzeugnis für den Binnenschifffahrtsfunk (UBI)",
+      "Beschränkt Gültiges Funkbetriebszeugnis (SRC)",
+      "Allgemeines Funkbetriebszeugnis (LRC)",
+      "Allgemeines Betriebszeugnis für Funker (GOC)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-013",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Welches Funkzeugnis berechtigt nicht zur Teilnahme am Binnenschifffahrtsfunk?",
+    "choices": [
+      "Amateurfunkzeugnis",
+      "UKW-Sprechfunkzeugnis für den Binnenschifffahrtsfunk (UBI)",
+      "Allgemeines Sprechfunkzeugnis für den Seefunkdienst",
+      "Beschränkt gültiges Betriebszeugnis für Funker I (BZ I)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-014",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Worauf ist bei der Teilnahme am Binnenschifffahrtsfunk in anderen Ländern zu achten?",
+    "choices": [
+      "Die Bestimmungen im Regionalen Teil des Handbuchs Binnenschifffahrtsfunk sind zu beachten",
+      "Die Bestimmungen der Binnenschifffahrt-Sprechfunkverordnung sind zu beachten",
+      "Die Bestimmungen der EU-Kommission sind zu beachten",
+      "Die Bestimmungen der Binnenschifffahrtsstraßenordnung sind zu beachten"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-015",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Wo findet man grundsätzliche Bestimmungen über den Sprechfunk auf den jeweiligen Bundeswasserstraßen?",
+    "choices": [
+      "Schifffahrtspolizeiverordnungen",
+      "Binnenschifffahrtspatentverordnung",
+      "Binnenschifffahrt-Sprechfunkverordnung",
+      "Binnenschiffsuntersuchungsordnung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-016",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Wo findet man z. B. Angaben über die Ausrüstungspflicht mit Funkanlagen auf Binnenschiffen?",
+    "choices": [
+      "Binnenschifffahrtstraßenordnung",
+      "Binnenschifffahrt-Sprechfunkverordnung",
+      "Binnenschifferpatentverordnung",
+      "Schiffssicherheitsverordnung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-017",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Wo findet man Angaben über die Funkbenutzungspflicht für Fahrzeuge auf bestimmten Binnenschifffahrtsstraßen?",
+    "choices": [
+      "Regionale Teile des Handbuchs Binnenschifffahrtsfunk",
+      "Allgemeiner Teil des Handbuchs Binnenschifffahrtsfunk",
+      "Binnenschifffahrt-Sprechfunkverordnung",
+      "Binnenschifferpatentverordnung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-018",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Das Abhörverbot und das Fernmeldegeheimnis sind geregelt…",
+    "choices": [
+      "im Telekommunikationsgesetz (TKG)",
+      "in der Binnenschifffahrt-Sprechfunkverordnung (BinSchSprFunkV)",
+      "in der Schiffssicherheitsverordnung (SchSV)",
+      "im Gesetz über Funkanlagen und Telekommunikationsendeinrichtungen (FTEG)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-019",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Was unterliegt dem Fernmeldegeheimnis?",
+    "choices": [
+      "Inhalt des Funkverkehrs und seine näheren Umstände, insbesondere die Tatsache, ob jemand an der Abwicklung des Funkverkehrs beteiligt ist oder war",
+      "Inhalt des Funkverkehrs und seine näheren Umstände, insbesondere konkrete Daten wie z. B. der ATIS-Code",
+      "Inhalt des Funkverkehrs und seine näheren Umstände, sofern es sich um Nachrichtenaustausch mit einer Revierzentrale handelt",
+      "Inhalt des Funkverkehrs und seine näheren Umstände, sofern es sich um Nachrichtenaustausch im Rahmen des Not-, Dringlichkeits- und Sicherheitsverkehrs handelt"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-020",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Welche Nachrichten dürfen uneingeschränkt aufgenommen und verbreitet werden?",
+    "choices": [
+      "Aussendungen, die „An alle Funkstellen“ gerichtet sind",
+      "Aussendungen des Öffentlichen Nachrichtenaustauschs",
+      "Aussendungen im Verkehrskreis Funkverkehr an Bord",
+      "Aussendungen im Binnenschifffahrtsfunk dürfen uneingeschränkt aufgenommen und verbreitet werden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-021",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Welche Folgen kann die Verletzung des Fernmeldegeheimnisses haben?",
+    "choices": [
+      "Strafrechtliche Verfolgung",
+      "Ordnungswidrigkeitsverfahren",
+      "Schriftliche Verwarnung",
+      "Einzug der Funkanlage"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-022",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Welchen Frequenzbereich nutzt der Binnenschifffahrtsfunk?",
+    "choices": [
+      "Ultrakurzwelle (UKW/VHF)",
+      "Kurzwelle (KW/HF)",
+      "Grenzwelle (GW/MF)",
+      "Langwelle (LW/LF)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-023",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Wie breiten sich Ultrakurzwellen aus?",
+    "choices": [
+      "Geradlinig und quasioptisch",
+      "Abhängig von der Tageszeit",
+      "Der Erdkrümmung folgend bis weit hinter den Horizont",
+      "In der Ionosphäre reflektiert"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-024",
+    "license_type": "ubi",
+    "category": "Binnenschifffahrtsfunk",
+    "prompt": "Welche Faktoren können die Ausbreitung der Ultrakurzwellen beeinflussen?",
+    "choices": [
+      "Hindernisse, z. B. Berge oder hohe Bauwerke",
+      "Niederschläge, z. B. Schnee- oder Regenschauer",
+      "Tag- und Nachtschwankungen",
+      "Kurs und Geschwindigkeit des Schiffes II. Funkeinrichtungen und Schiffsfunkstellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-025",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Was ist eine „Schiffsfunkstelle”?",
+    "choices": [
+      "Mobile Funkstelle des Binnenschifffahrtsfunks",
+      "Mobile Funkstelle des mobilen Seefunkdienstes",
+      "Ortsfeste Funkstelle des Binnenschifffahrtsfunks",
+      "Ortsfeste Funkstelle des mobilen Seefunkdienstes"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-026",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Was ist eine „Seefunkstelle”?",
+    "choices": [
+      "Funkstelle des Mobilen Seefunkdienstes an Bord eines nicht dauernd verankerten Seefahrzeuges",
+      "Funkstelle des Mobilen Seefunkdienstes, die an Land als Küstenfunkstelle betrieben wird",
+      "Funkstelle des Binnenschifffahrtsfunks, die im Seebereich an Bord eines Seeschiffes betrieben wird",
+      "Funkstelle des Mobilen Seefunkdienstes, die im Verkehrskreis Nautische Information betrieben wird"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-027",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Wer darf eine Schiffsfunkstelle bedienen?",
+    "choices": [
+      "Inhaber eines gültigen Sprechfunkzeugnisses für den Binnenschifffahrtsfunk (UBI) oder eines gleichwertigen Zeugnisses",
+      "Personen, die ohne Aufsicht eines Funkzeugnisinhabers am Funkverkehr teilnehmen, sofern sie älter als 16 Jahre sind",
+      "Nur der Schiffsführer, sofern er über ein gültiges Sprechfunkzeugnis für den Binnenschifffahrtsfunk (UBI) verfügt",
+      "Personen, die über einen gültigen Sportbootführerschein-Binnen und über die Erlaubnis des Schiffsführers verfügen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-028",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Wer stellt in Deutschland die Zuteilungsurkunde (Ship Station Licence) für eine Schiffsfunkstelle aus?",
+    "choices": [
+      "Bundesnetzagentur (BNetzA)",
+      "Bundesamt für Seeschifffahrt und Hydrographie (BSH)",
+      "Generaldirektion Wasserstraßen und Schifffahrt (GDWS)",
+      "Wasserstraßen- und Schifffahrtsamt (WSA)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-029",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Der Betrieb einer Schiffsfunkstelle ohne Zuteilungsurkunde (Ship Station Licence) verstößt gegen Vorschriften…",
+    "choices": [
+      "des Telekommunikationsgesetzes (TKG)",
+      "der Binnenschifffahrtstraßenordnung (BinSchStrO)",
+      "des Gesetzes über Funkanlagen und Telekommunikationsendeinrichtungen (FTEG)",
+      "der Binnenschifffahrt-Sprechfunkverordnung (BinSchSprFunkV)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-030",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Die Bedienung einer Schiffsfunkstelle ohne Erlaubnis (UKW-Sprechfunkzeugnis) verstößt gegen Vorschriften…",
+    "choices": [
+      "der Binnenschifffahrt-Sprechfunkverordnung (BinSchSprFunkV)",
+      "der Binnenschifffahrtstraßenordnung (BinSchStrO)",
+      "des Gesetzes über Funkanlagen und Telekommunikationsendeinrichtungen (FTEG)",
+      "des Telekommunikationsgesetzes (TKG)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-031",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Welches amtliche Dokument für eine Schiffsfunkstelle muss sich an Bord befinden?",
+    "choices": [
+      "Zuteilungsurkunde (Ship Station Licence)",
+      "UKW-Sprechfunkzeugnis (UBI)",
+      "UKW-Betriebszeugnis",
+      "Zulassungsurkunde"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-032",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Die telekommunikationsrechtliche Überprüfung einer Schiffsfunkstelle wird durchgeführt von...",
+    "choices": [
+      "Bundesnetzagentur (BNetzA)",
+      "Bundesamt für Seeschifffahrt und Hydrographie (BSH)",
+      "Generaldirektion Wasserstraßen und Schifffahrt (GDWS)",
+      "Wasserstraßen- und Schifffahrtsamt (WSA)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-033",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Wer ist bei Eignerwechsel eines Binnenschiffes in Bezug auf die Schiffsfunkstelle zu benachrichtigen?",
+    "choices": [
+      "Bundesnetzagentur (BNetzA)",
+      "Bundesamt für Seeschifffahrt und Hydrographie (BSH)",
+      "Generaldirektion Wasserstraßen und Schifffahrt (GDWS)",
+      "Wasserstraßen- und Schifffahrtsamt (WSA)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-034",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Wer ist bei technischen Änderungen an einer Schiffsfunkstelle, z. B. bei Änderung des Gerätebestands, schriftlich zu informieren?",
+    "choices": [
+      "Bundesnetzagentur (BNetzA)",
+      "Bundesamt für Seeschifffahrt und Hydrographie (BSH)",
+      "Generaldirektion Wasserstraßen und Schifffahrt (GDWS)",
+      "Wasserstraßen- und Schifffahrtsamt (WSA)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-035",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Wer kann die Einstellung des Betriebes einer Schiffsfunkstelle anordnen?",
+    "choices": [
+      "Bundesnetzagentur (BNetzA)",
+      "Bundesamt für Seeschifffahrt und Hydrographie (BSH)",
+      "Generaldirektion Wasserstraßen und Schifffahrt (GDWS)",
+      "Wasserstraßen- und Schifffahrtsamt (WSA)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-036",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Welche Teile des Handbuchs Binnenschifffahrtsfunk müssen bei einer Schiffsfunkstelle mitgeführt werden?",
+    "choices": [
+      "Allgemeiner Teil sowie Regionale Teile für die Strecken, in denen die Schiffsfunkstelle am Binnenschifffahrtsfunk teilnimmt",
+      "Regionale Teile für die Strecke, in der sich die Schiffsfunkstelle gerade befindet",
+      "Regionale Teile für alle europäischen Wasserstraßen",
+      "Allgemeiner Teil sowie Regionale Teile des Landes, in dem die Schiffsfunkstelle angemeldet wurde"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-037",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Woraus besteht das Rufzeichen für eine deutsche Schiffsfunkstelle?",
+    "choices": [
+      "Zwei Buchstaben der Rufzeichenreihe für Deutschland, gefolgt von vier Ziffern",
+      "Vier Buchstaben der Rufzeichenreihe für Deutschland, gefolgt von vier Ziffern",
+      "Zwei Buchstaben der Rufzeichenreihe für Deutschland, gefolgt von zwei Ziffern",
+      "Vier Buchstaben der Rufzeichenreihe für Deutschland, gefolgt von zwei Ziffern"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-038",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Welches der nachfolgend angegebenen Rufzeichen kennzeichnet eine Schiffsfunkstelle?",
+    "choices": [
+      "DA 5005",
+      "DABC 55",
+      "DA5 0BC",
+      "DA 505B"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-039",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Was bedeutet „ATIS”?",
+    "choices": [
+      "Automatisches Senderidentifizierungssystem",
+      "Automatisches Schiffsidentifizierungssystem",
+      "Automatisches Verkehrsinformationssystem",
+      "Automatisches Transponderabfragesystem"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-040",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Welchem Zweck dient die Aussendung eines ATIS-Codes?",
+    "choices": [
+      "Identifizierung einer Schiffsfunkstelle",
+      "Identifizierung einer Seefunkstelle",
+      "Identifizierung des Bedieners der Schiffsfunkstelle",
+      "Identifizierung des Verkehrskreises"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-041",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Wie setzt sich der ATIS-Code zusammen?",
+    "choices": [
+      "Aus 10 Ziffern: der Ziffer 9, der dreistelligen Seefunkkennzahl (MID) und 6 Ziffern",
+      "Aus 10 Ziffern: der dreistelligen Seefunkkennzahl (MID), und 6 Ziffern",
+      "Aus 10 Ziffern: der Ziffer 9, zwei Nullen, der dreistelligen Seefunkkennzahl (MID) und 4 Ziffern",
+      "Aus 10 Ziffern: zwei Nullen, der dreistelligen Seefunkkennzahl (MID) und 5 Ziffern"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-042",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Wann wird das ATIS-Signal ausgesendet?",
+    "choices": [
+      "Automatisch nach dem Loslassen der Sprechtaste",
+      "Automatisch beim Drücken der Sprechtaste",
+      "Automatisch alle 10 Minuten",
+      "Automatisch beim Kanalwechsel"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-043",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Welchen ATIS-Code sendet eine tragbare Funkanlage aus?",
+    "choices": [
+      "ATIS-Code der Schiffsfunkstelle, zu der sie gehört",
+      "ATIS-Code, der ihr g esondert mit der Zuteilungsurkunde (Ship Station Licence) zugewiesen wurde",
+      "ATIS-Code der ortsfesten Funkstelle",
+      "ATIS-Code der Schiffsfunkstelle und die Gerätenummer"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-044",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Was ist ein „ATIS-Killer”?",
+    "choices": [
+      "Zusatzeinrichtung in der Funkanlage zur akustischen Unterdrückung des empfangenen ATIS-Signals",
+      "Zusatzeinrichtung in der Funkanlage zur optischen Unterdrückung des empfangenen ATIS-Signals",
+      "Zusatzeinrichtung in der Funkanlage zur Unterdrückung der versehentlichen Aussendung des ATIS-Signals",
+      "Zusatzeinrichtung in der Funkanlage zur Unterdrückung der Aussendung des ATIS-Signals"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-045",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Was versteht man unter „AIS“?",
+    "choices": [
+      "Automatisches Schiffsidentifizierungs- und Überwachungssystem, das statische, dynamische und reisebezogene Informationen auf UKW überträgt",
+      "Allgemeines Informationssystem für die Binnenschifffahrt",
+      "Automatische Aussendung der Kennung eines Binnenschiffes beim Loslassen der Sprechtaste",
+      "Identifizierung eines Schiffes mit Hilfe von Radarpeilungen und deren Weitergabe an die Schifffahrt zur Kollisionsverhütung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-046",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Welche Informationen werden bei AIS automatisch ausgetauscht?",
+    "choices": [
+      "Statische Informationen (z. B. Schiffsname), dynamische Informationen (z. B. Kurs) und reisebezogene Informationen (z. B. Bestimmungsort)",
+      "Statische Informationen (z. B. Schiffsname), notfallbezogene Informationen (z. B. Notalarme) und reisebezogene Informationen (z. B. Bestimmungsort)",
+      "Statische Informationen (z. B. Schiffsname), reisebezogene Informationen (z. B. Bestimmungsort) und dringende Informationen (z. B. Treibstoffmangel)",
+      "Statische Informationen (z. B. Schiffsname), dynamische Informationen (z. B. Kurs) und notfallbezogene Informationen (z. B. Notalarme)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-047",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Was ist beim Betrieb einer Amateurfunkstelle an Bord eines Binnenschiffes, das mit einer Schiffsfunkstelle ausgerüstet ist, zu beachten?",
+    "choices": [
+      "Die Amateurfunkstelle darf nur mit Zustimmung des Schiffsführers betrieben werden und keine schädlichen Störungen bei der Schiffsfunkstelle oder bei sonstigen nautischen und technischen Einrichtungen des Fahrzeugs verursachen.",
+      "Die Amateurfunkstelle darf nur mit Zustimmung des Schiffsführers und zur Vermeidung von schädlichen Störungen nur mit einer Leistung von bis zu 5 Watt betrieben werden",
+      "Die Amateurfunkstelle darf nur mit Zustimmung der Revierzentrale betrieben werden und keine schädlichen Störungen bei der Schiffsfunkstelle oder bei sonstigen nautischen und technischen Einrichtungen des Fahrzeugs verursachen",
+      "Die Amateurfunkstelle darf nur nach Eintragung in die Zuteilungsurkunde (Ship Station Licence) der Schiffsfunkstelle betrieben werden und keine schädlichen Störungen bei der Schiffsfunkstelle oder bei sonstigen nautischen und technischen Einrichtungen des Fahrzeugs verursachen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-048",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Was bedeutet die Angabe „Betriebsspannung 10,8 – 14,6 V=“ in der Bedienungsanleitung für eine Funkanlage?",
+    "choices": [
+      "Es ist eine Gleichspannung zwischen 10,8 und 14,6 Volt für den Betrieb erforderlich",
+      "Es ist eine Wechselspannung zwischen 10,8 und 14,6 Volt für den Betrieb erforderlich",
+      "Es ist eine Gleichspannung von 12,7 Volt (Mittelwert zwischen 10,8 und 14,6 Volt) für den Betrieb erforderlich.",
+      "Es ist eine Wechselspannung von 12,7 Volt (Mittelwert zwischen 10,8 und 14,6 Volt) für den Betrieb erforderlich"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-049",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Was ist beim Kauf eines UKW-Sprechfunkgerätes für den Binnenschifffahrtsfunk zu beachten?",
+    "choices": [
+      "Das Funkgerät muss zugelassen oder für die Teilnahme am Binnenschifffahrtsfunk in Verkehr gebracht worden sein",
+      "Das Funkgerät muss funktionsfähig und für die Teilnahme am Binnenschifffahrtsfunk TÜV-geprüft sein",
+      "Das Funkgerät muss für die Teilnahme am Binnenschifffahrtsfunk eine ATIS Schnittstelle besitzen und Wetterberichte empfangen können",
+      "Das Funkgerät muss gemäß der Binnenschifffahrt-Sprechfunkverordnung für die Teilnahme am Binnenschifffahrtsfunk zugelassen sein"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-050",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Je höher die Antenne angebracht ist, desto…",
+    "choices": [
+      "größer ist die Reichweite",
+      "größer ist die erforderliche Sendeleistung",
+      "wetterunabhängiger ist der Funkverkehr",
+      "größer wird die Gefährdung von Personen in elektromagnetischen Feldern"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-051",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Bei einer Beschädigung der äußeren Isolierung (Mantel) des Antennenkabels sollte das Antennenkabel…",
+    "choices": [
+      "umgehend erneuert werden",
+      "bei Gelegenheit erneuert werden",
+      "umgehend hilfsweise durch ein Stromkabel ersetzt werden",
+      "bei Gelegenheit gegen eindringende Feuchtigkeit gesichert werden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-052",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Eine Schiffsfunkstelle empfängt auf allen UKW-Kanälen nur starkes Rauschen. Was könnte die mögliche Ursache für die Störung sein?",
+    "choices": [
+      "Die Antenne oder das Antennenkabel ist möglicherweise beschädigt",
+      "Der Empfang wird durch atmosphärische Störungen beeinträchtigt",
+      "Eine unbeabsichtigte Aussendung einer anderen Schiffsfunkstelle blockiert die UKW-Kanäle",
+      "Die Funkantenne wurde in zu geringer Nähe zur Radarantenne angebracht"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-053",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Worauf ist beim Austausch einer defekten UKW-Antenne bei einer Schiffsfunkstelle durch eine Ersatzantenne zu achten?",
+    "choices": [
+      "Die Ersatzantenne muss für den Frequenzbereich des Binnenschifffahrtsfunks ausgelegt sein",
+      "Die Ersatzantenne muss wettergeschützt angebracht werden",
+      "Die Ersatzantenne muss außerhalb des Abdeckungsbereichs des Radars angebracht werden",
+      "Die Ersatzantenne muss am höchsten Punkt des Fahrzeugs angebracht werden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-054",
+    "license_type": "ubi",
+    "category": "Funkeinrichtungen und Schiffsfunkstellen",
+    "prompt": "Wozu dient am UKW-Gerät die Rauschsperre (Squelch)?",
+    "choices": [
+      "Die Wiedergabe des Empfängers wird nur bei einem brauchbaren Empfangssignal aktiviert",
+      "Das Rauschen kann stufenlos auf einen angenehmen Wert eingestellt werden",
+      "Die Rauschsperre verbessert die Wiedergabe von schwachen Empfangssignalen",
+      "Die Wiedergabe des Empfängers wird nur beim Empfang von Notsignalen aktiviert III. Verkehrskreise"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-055",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Wozu dient ein „Verkehrskreis” im Binnenschifffahrtsfunk?",
+    "choices": [
+      "Zuordnung von Sprechfunk-Kanälen für bestimmte Zwecke",
+      "Zuordnung von Sprechfunk-Kanälen für bestimmte Schiffsfunkstellen",
+      "Zuordnung der Rangfolge von bestimmten Arten von Funkgesprächen",
+      "Zuordnung von Sprechfunk-Rufzeichen für bestimmte Funkstellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-056",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Verkehrskreise werden im Binnenschifffahrtsfunk betrieben?",
+    "choices": [
+      "Schiff – Schiff, Nautische Information, Schiff – Hafenbehörde, Funkverkehr an Bord",
+      "Schiff – Schiff, Schiff - Verkehrszentrale, Schiff – Hafenbehörde, Funkverkehr an Bord",
+      "Schiff – Schiff, Nautische Information, Schiff – Hafenbehörde, Schiff – Verkehrsposten",
+      "Schiff – Schiff, Nautische Information, Schiff – Hafenbehörde, Schiff - Landfunkstelle"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-057",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Wo findet man Angaben über die Verkehrskreise des Binnenschifffahrtsfunks?",
+    "choices": [
+      "Binnenschifffahrt-Sprechfunkverordnung",
+      "Regionaler Teil Deutschland des Handbuchs Binnenschifffahrtsfunk",
+      "Gesetz über Funkanlagen und Telekommunikationsendeinrichtungen (FTEG)",
+      "Binnenschifffahrtsstraßenordnung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-058",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Die Verkehrskreise „Nautische Information” und „Schiff – Hafenbehörde” werden...",
+    "choices": [
+      "nicht auf allen Bundeswasserstraßen angeboten",
+      "auf allen Bundeswasserstraßen angeboten",
+      "in Häfen und ausgewiesenen Liegestellen angeboten",
+      "auf dem Rhein, auf der Donau und auf der Mosel angeboten"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-059",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Wozu dient der Verkehrskreis „Schiff – Schiff”?",
+    "choices": [
+      "Funkverkehr zwischen Schiffsfunkstellen",
+      "Funkverkehr zwischen Schiffsfunkstellen und Funkstellen der Behörden, die für die Betriebsdienste auf Binnenwasserstraßen zuständig sind",
+      "Funkverkehr von Schiffsfunkstellen über Landfunkstellen mit dem öffentlichen Telekommunikationsnetz",
+      "Funkverkehr zwischen Handfunkgeräten auf einem Schiff"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-060",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Nachrichten werden im Verkehrskreis „Schiff – Schiff” übermittelt?",
+    "choices": [
+      "Nachrichten, die sich auf den Schutz von Personen oder auf die Fahrt oder auf die Sicherheit von Schiffen beziehen",
+      "Nachrichten über den Zustand der Wasserstraßen, über Verkehrsberatung und zur Verkehrslenkung zwischen Schiffsfunkstellen und Landfunkstellen",
+      "Nachrichten über die Zuweisung von Li egeplätzen oder über die Fahrt in den Häfen",
+      "Nachrichten über schiffsbetriebliche Angelegenheiten, die sich auf die Sicherheit von Schiffen beziehen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-061",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Funkstelle ist nicht dem Verkehrskreis „Schiff-Schiff“ zugeordnet?",
+    "choices": [
+      "Duisburg Hafen",
+      "Segelyacht Robbe DA 5005",
+      "Spey Fähre",
+      "MS Mainz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-062",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Funkstelle kann am Verkehrskreis „Schiff-Schiff“ teilnehmen?",
+    "choices": [
+      "Segelyacht Robbe DA 5005",
+      "Lauenburg Schleuse",
+      "Duisburg Hafen",
+      "Minden Revierzentrale"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-063",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Wozu dient der Verkehrskreis „Nautische Information“?",
+    "choices": [
+      "Funkverkehr zwischen Schiffsfunkstellen und Funkstellen der Behörden, denen der Betrieb der Bundeswasserstraßen obliegt",
+      "Funkverkehr von Schiffsfunkstellen über Landfunkstellen mit dem öffentlichen Telekommunikationsnetz",
+      "Funkverkehr zwischen Schiffsfunkstellen",
+      "Funkverkehr zwischen Schiffsfunkstellen und Landfunkstellen von Hafenbehörden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-064",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Nachrichten werden im Verkehrskreis „Nautische Information” übermittelt?",
+    "choices": [
+      "Nachrichten über den Zustand der Wasserstraßen, über Verkehrsberatung und zur Verkehrslenkung",
+      "Nachrichten über die Zuweisung von Liegeplätzen oder über die Fahrt in den Häfen",
+      "Nachrichten, die sich auf Funkverkehr zwischen Schiffsfunkstellen beziehen",
+      "Nachrichten über schiffsbetriebliche Angelegenheiten"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-065",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Wodurch kann bei einem nicht funkausrüstungspflichtigen Fahrzeug die ununterbrochene Teilnahme am Verkehrskreis „Nautische Information” sichergestellt werden?",
+    "choices": [
+      "Zusätzliche UKW-Funkanlage für den Binnenschifffahrtsfunk",
+      "Zweikanalüberwachung (Dual Watch)",
+      "Ununterbrochene Empfangsbereitschaft auf Kanal 10",
+      "Einschalten des Kanals der Funkstelle der zuständigen Hafenbehörde"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-066",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Funkstelle ist nicht dem Verkehrskreis „Nautische Information“ zugeordnet?",
+    "choices": [
+      "Neuss Hafen",
+      "Iffezheim Schleuse",
+      "Gerstheim Ecluse",
+      "Oberwesel Revierzentrale"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-067",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Funkstelle ist dem Verkehrskreis „Nautische Information“ zugeordnet?",
+    "choices": [
+      "Iffezheim Schleuse",
+      "Neuss Hafen",
+      "Diffenébrücke Mannheim",
+      "Mannheim Hafenschleuse"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-068",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Wozu dient der Verkehrskreis „Schiff – Hafenbehörde”?",
+    "choices": [
+      "Funkverkehr zwischen Schiffsfunkstellen und Landfunkstellen von Hafenbehörden",
+      "Funkverkehr von Schiffsfunkstellen über Landfunkstellen mit dem öffentlichen Telekommunikationsnetz",
+      "Funkverkehr zwischen Schiffsfunkstellen in Häfen",
+      "Funkverkehr an Bord eines Schiffes oder innerhalb einer Gruppe von Fahrzeugen, die geschleppt oder geschoben werden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-069",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Nachrichten werden im Verkehrskreis „Schiff – Hafenbehörde” übermittelt?",
+    "choices": [
+      "Nachrichten über die Zuweisung von Liegeplätzen oder über die Fahrt in den Häfen",
+      "Nachrichten über den Zustand der Wasserstraßen, über Verkehrsberatung und zur Verkehrslenkung",
+      "Nachrichten, die sich auf Funkverkehr zwischen Schiffsfunkstellen beziehen",
+      "Nachrichten über schiffsbetriebliche Angelegenheiten."
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-070",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welchem Verkehrskreis ist die Landfunkstelle Düsseldorf Marina zugeordnet?",
+    "choices": [
+      "Schiff – Hafenbehörde",
+      "Schiff – Schiff",
+      "Nautische Information",
+      "Funkverkehr an Bord"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-071",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Funkstelle ist nicht dem Verkehrskreis „Schiff-Hafenbehörde“ zugeordnet?",
+    "choices": [
+      "Gerstheim Ecluse",
+      "Mannheim Hafenschleuse",
+      "Segelyacht Robbe DA 5005",
+      "Duisburg Hafen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-072",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Funkstelle ist dem Verkehrskreis „Schiff-Hafenbehörde“ zugeordnet?",
+    "choices": [
+      "Duisburg Hafen",
+      "Gerstheim Ecluse",
+      "Rothensee Hebewerk",
+      "Lauenburg Schleuse"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-073",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Wozu dient der Verkehrskreis „Funkverkehr an Bord“?",
+    "choices": [
+      "Funkverkehr an Bord eines Schiffes oder innerhalb einer Gruppe von Fahrzeugen, die geschleppt oder geschoben werden",
+      "Funkverkehr zwischen Schiffsfunkstellen und Landfunkstellen von Hafenbehörden",
+      "Funkverkehr von Schiffsfunkstellen über Landfunkstellen mit dem öffentlichen Telekommunikationsnetz",
+      "Funkverkehr zwischen Schiffsfunkstellen in Häfen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-074",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Nachrichten werden im Verkehrskreis „Funkverkehr an Bord“ übermittelt?",
+    "choices": [
+      "Nachrichten über schiffsbetriebliche Angelegenheiten sowie bei Anweisungen für das Arbeiten mit Leinen und für das Ankern",
+      "Nachrichten über die Zuweisung von Liegeplätzen oder über die Fahrt in den Häfen",
+      "Nachrichten über den Zustand der Wasserstraßen, über Verkehrsberatung und zur Verkehrslenkung zwischen Schiffsfunkstellen und Landfunkstellen",
+      "Nachrichten, die sich auf den Schutz von Personen und auf die Fahrt oder auf die Sicherheit von Schiffen beziehen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-075",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche UKW-Kanäle dürfen im Verkehrskreis „Funkverkehr an Bord” benutzt werden?",
+    "choices": [
+      "15 und 17",
+      "72 und 77",
+      "06 und 16",
+      "18 und 22"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-076",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "In welchem Verkehrskreis dürfen tragbare Funkanlagen in Deutschland benutzt werden?",
+    "choices": [
+      "Funkverkehr an Bord",
+      "Schiff - Hafenbehörde",
+      "Nautische Informationen",
+      "Schiff - Schiff"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-077",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Fahrzeuge / Schiffe mit Schiffsfunkstellen dürfen nicht am Verkehrskreis „Funkverkehr an Bord” teilnehmen?",
+    "choices": [
+      "Kleinfahrzeuge",
+      "Schlepp- und Schubschiffe",
+      "Behördenfahrzeuge",
+      "Fahrgastschiffe"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-078",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "Welche Kennung müssen Schiffsfunkstellen in den Verkehrskreisen „Schiff - Schiff“, „Nautische Information“ und „Schiff - Hafenbehörde“ im Sprechfunkverkehr verwenden?",
+    "choices": [
+      "Schiffsname und Rufzeichen",
+      "ATIS-Kennung",
+      "Rufnummer im Seefunkdienst (MMSI)",
+      "Heimathafen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-079",
+    "license_type": "ubi",
+    "category": "Verkehrskreise",
+    "prompt": "In welchen Verkehrskreisen müssen Schiffsfunkstellen, außer auf Kleinfahrzeugen, während der Fahrt empfangsbereit sein?",
+    "choices": [
+      "Mindestens in zwei der Verkehrskreise Schiff - Schiff, Nautische Information oder Schiff - Hafenbehörde",
+      "Mindestens in drei der Verkehrskreise Schiff - Schiff, Nautische Information, Funkverkehr an Bord oder Schiff - Hafenbehörde",
+      "Mindestens in einem der Verkehrskreise Schiff - Schiff, Nautische Information oder Schiff - Hafenbehörde",
+      "Mindestens abwechselnd in einem der Verkehrskreise Schiff - Schiff, Nautische Information, Funkverkehr an Bord oder Schiff - Hafenbehörde"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-080",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Wo findet man Regelungen über die Abwicklung des Binnenschifffahrtsfunks?",
+    "choices": [
+      "Allgemeiner Teil des Handbuchs Binnenschifffahrtsfunk",
+      "Regionaler Teil Deutschland des Handbuchs Binnenschifffahrtsfunk",
+      "Binnenschifffahrt-Sprechfunkverordnung",
+      "Binnenschifffahrtsstraßenordnung IV. Sprechfunk"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-081",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Wo findet man die empfohlenen fremdsprachlichen Redewendungen für die Abwicklung des Binnenschifffahrtsfunks?",
+    "choices": [
+      "Regionale Teile des Handbuchs Binnenschifffahrtsfunk",
+      "Allgemeiner Teil des Handbuchs Binnenschifffahrtsfunk",
+      "Binnenschifffahrt-Sprechfunkverordnung",
+      "Binnenschifffahrtsstraßenordnung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-082",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Wozu dient die Internationale Buchstabiertafel im Binnenschifffahrtsfunk?",
+    "choices": [
+      "Zum Buchstabieren schwieriger Wörter, Namen und Bezeichnungen innerhalb von Meldungen, um Übermittlungsfehler zu vermeiden",
+      "Zum Buchstabieren schwieriger Wörter, Namen und Bezeichnungen, um die Vorschriften der Binnenschifffahrt-Sprechfunkverordnung zu erfüllen",
+      "Zum Buchstabieren schwieriger Wörter, Namen und Bezeichnungen, um die Wichtigkeit der buchstabierten Begriffe zu betonen",
+      "Zum Buchstabieren schwieriger Wörter, Namen und Bezeichnungen, um Informationen zu verschlüsseln"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-083",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Wo findet man Angaben über die UKW-Kanäle, die im Binnenschifffahrtsfunk in bestimmten Regionen benutzt werden sollen?",
+    "choices": [
+      "Regionale Teile des Handbuchs Binnenschifffahrtsfunk",
+      "Schifffahrtspolizeiverordnungen, z.B. Rheinschifffahrtspolizeiverordnung",
+      "Binnenschifffahrtsstraßenordnung",
+      "Binnenschifffahrt-Sprechfunkverordnung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-084",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Was bedeutet die Betriebsart „Simplex”?",
+    "choices": [
+      "Wechselsprechen",
+      "Gegensprechen",
+      "Sprechen über Ober- und Unterband",
+      "Sprechen mit einem Funkgerät"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-085",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Wie erfolgt die Verkehrsabwicklung in der Betriebsart „Simplex”?",
+    "choices": [
+      "Jeder Gesprächspartner kann entweder senden oder empfangen",
+      "Beide Gesprächspartner können gleichzeitig senden und empfangen",
+      "Nach den Vorgaben der Revierzentrale",
+      "Der Funkverkehr kann nur in Richtung Landfunkstelle-Schiffsfunkstelle betrieben werden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-086",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Was bedeutet die Betriebsart „Duplex”?",
+    "choices": [
+      "Gegensprechen",
+      "Wechselsprechen",
+      "Sprechen mit zwei Funkgeräten",
+      "Sprechen auf einer Frequenz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-087",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Was bedeutet Semi-Duplex?",
+    "choices": [
+      "Wechselsprechen auf einem Duplex-Kanal",
+      "Wechselsprechen auf einem Simplex-Kanal",
+      "Gegensprechen auf einem Duplex-Kanal",
+      "Gegensprechen auf einem Simplex-Kanal"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-088",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Warum kann die Hörbereitschaft auf zwei Kanälen im Binnenschifffahrtsfunk nicht durch die Zweikanalüberwachung (Dual Watch) wahrgenommen werden?",
+    "choices": [
+      "Die Zweikanalüberwachung ermöglicht nicht den gleichzeitigen Empfang auf zwei Funkkanälen",
+      "Die Zweikanalüberwachung vermindert die Empfangsreichweite der Funkanlage",
+      "Die Zweikanalüberwachung wertet die ATIS-Kennungen anderer Funkstellen nicht aus",
+      "Die Zweikanalüberwachung funktioniert nur in bestimmten Verkehrskreisen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-089",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Wie erfolgt die Leistungsreduzierung beim Sendebetrieb einer Schiffsfunkstelle auf dem UKW-Kanal 10?",
+    "choices": [
+      "Automatisch",
+      "Manuell",
+      "Durch die Revierzentrale",
+      "Durch längeres Drücken der Sendetaste"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-090",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Mit welcher Leistung sendet eine Schiffsfunkstelle auf UKW-Kanal 10?",
+    "choices": [
+      "0,5 bis 1 Watt",
+      "2 bis 5 Watt",
+      "0,5 bis 25 Watt",
+      "10 bis 25 Watt"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-091",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Auf welchem UKW-Kanal müssen Schiffsfunkstellen – unabhängig von dem befahrenen Streckenabschnitt – während der Fahrt ständig empfangsbereit sein?",
+    "choices": [
+      "10",
+      "72",
+      "20",
+      "13"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-092",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Welcher UKW-Kanal darf im Binnenschifffahrtsfunk auf den Bundeswasserstraßen der Zonen 3 und 4 nicht benutzt werden?",
+    "choices": [
+      "16",
+      "72",
+      "10",
+      "77"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-093",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Wozu dienen im Binnenschifffahrtsfunk die UKW-Kanäle 72 und 77?",
+    "choices": [
+      "Funkverkehr sozialer Art",
+      "Nautische Absprachen",
+      "Funkverkehr mit einer Revierzentrale",
+      "Anrufe an eine Schleuse"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-094",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Welche UKW-Kanäle dürfen für „Nachrichten sozialer Art” benutzt werden?",
+    "choices": [
+      "72 und 77",
+      "15 und 17",
+      "06 und 16",
+      "20 und 22"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-095",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Welche Fahrzeuge unterliegen auf bestimmten Wasserstraßen und an bestimmten Stellen einer Meldepflicht?",
+    "choices": [
+      "Gefahrgutschiffe und Sondertransporte",
+      "Motorfahrzeuge mit einer Gesamtlänge von mehr als 20 Metern",
+      "Fahrgastschiffe mit mehr als 20 Passagieren",
+      "Sportboote unter Segel"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-096",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Vor jeder Aussendung ist durch kurzzeitiges Öffnen der Rauschsperre sicherzustellen, dass…",
+    "choices": [
+      "kein anderer Funkverkehr gestört wird",
+      "die Sendeleistung auf 25 Watt eingestellt ist",
+      "die ATIS-Kennung zuvor ausgesendet wird",
+      "der DSC-Controller ausgeschaltet ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-097",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Die längere Aussendung einer anderen Schiffsfunkstelle auf Kanal 10 kann...",
+    "choices": [
+      "nicht unterbrochen werden",
+      "jederzeit unterbrochen werden",
+      "durch Schiffsfunkstellen desselben Verkehrskreises unterbrochen werden",
+      "jederzeit durch Landfunkstellen unterbrochen werden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-098",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Längere Aussendungen auf Kanal 10 sollen vermieden werden, weil sie...",
+    "choices": [
+      "nicht durch andere Schiffsfunkstellen unterbrochen werden können",
+      "durch Landfunkstellen nur im Notfall unterbrochen werden können",
+      "den Empfang des ebenfalls im UKW-Bereich arbeitenden AIS stören können",
+      "in der Nähe von Landesgrenzen andere Funkdienste im Ausland stören können"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-099",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Was hat eine Schiffsfunkstelle im Verkehr mit einer Funkstelle des Verkehrskreises Nautische Information zu beachten?",
+    "choices": [
+      "Anweisungen der Funkstelle des Verkehrskreises Nautische Information sind zu befolgen",
+      "Nachrichten mit der Funkstelle des Verkehrskreises Nautische Information sind auf Kanal 16 auszutauschen",
+      "Sendeleistung ist zu reduzieren",
+      "Hörbereitschaft auf Kanal 13 ist sicherzustellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-100",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Was kann die Funkverbindung zwischen einer Schiffsfunkstelle und einer Seefunkstelle beeinträchtigen?",
+    "choices": [
+      "Die Schiffsfunkstelle sendet auf bestimmten UKW-Kanälen nur mit automatisch reduzierter Leistung",
+      "Die Seefunkstelle sendet auf bestimmten UKW-Kanälen nur mit automatisch reduzierter Leistung",
+      "Die Schiffsfunkstelle kann die AIS-Aussendung der Seefunkstelle auf bestimmten UKW-Kanälen nicht auswerten",
+      "Die Seefunkstelle kann die ATIS-Aussendung der Schiffsfunkstelle auf bestimmten UKW-Kanälen nicht auswerten"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-101",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Warum dürfen Seefunkstellen mit ihrer Seefunkanlage nicht am Binnenschifffahrtsfunk teilnehmen?",
+    "choices": [
+      "Seefunkanlagen verfügen weder über eine automatische Sendeleistungsreduzierung auf bestimmten UKW-Kanälen noch können sie einen ATIS-Code aussenden",
+      "Seefunkanlagen nutzen ein anderes Frequenzband als Binnenschifffahrtsfunkanlagen",
+      "Seefunkanlagen verfügen über einen DSC-Controller, der mit dem ATIS-System nicht kompatibel ist",
+      "Seefunkanlagen ermöglichen die Hörbereitschaft auf den UKW-Kanälen 16 und 70"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-102",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Die Verwendung des Digitalen Selektivrufs (DSC) ist …",
+    "choices": [
+      "im Binnenschifffahrtsfunk nicht zulässig",
+      "eingeführt zur Verbindungsaufnahme mit anderen Schiffsfunkstellen",
+      "eingeführt zur Identifizierung von Schiffsfunkstellen",
+      "im Binnenschifffahrtsfunk zulässig für Notalarme"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-103",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Welche Sprache muss bei Verbindungen zwischen deutschen Schiffsfunk- stellen und ausländischen Landfunkstellen benutzt werden?",
+    "choices": [
+      "Sprache des Landes, in dem sich die Landfunkstelle befindet",
+      "Heimatsprache des Funkers",
+      "Vorrangig Englisch",
+      "Vorrangig Deutsch"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-104",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Was ist bei Testsendungen im Binnenschifffahrtsfunk zu beachten?",
+    "choices": [
+      "Die Aussendungen dürfen 10 Sekunden nicht überschreiten; sie müssen den Rufnamen der aussendenden Funkstelle enthalten, gefolgt von dem Wort „Test“",
+      "Die Aussendungen dürfen 20 Sekunden nicht überschreiten und müssen mit einer Kennung des Schiffes ausgestrahlt werden",
+      "Die Aussendungen dürfen nur einmal nach Einbau des Gerätes ohne Antenne erfolgen und müssen mit dem Wort „Test“ gekennzeichnet werden",
+      "Die Aussendungen dürfen nur außerhalb der Hoheitsgewässer erfolgen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-105",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Wann müssen Meldungen grundsätzlich bestätigt werden?",
+    "choices": [
+      "Auf Verlangen",
+      "Immer",
+      "Nie",
+      "Bei Verständigungsschwierigkeiten"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-106",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Woran erkennt man beim Befahren von Binnenwasserstraßen, welcher UKW-Kanal im Schleusenbereich zu benutzen ist?",
+    "choices": [
+      "Tafelzeichen",
+      "Schwimmende Schifffahrtszeichen",
+      "Durchsage der Revierzentrale",
+      "Lichtzeichen der Schleuse"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-107",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Welche Bedeutung hat ein weißes Tafelzeichen mit rotem Rand und der schwarzen Aufschrift „UKW 20“ oder „VHF 20“?",
+    "choices": [
+      "Gebot, UKW-Kanal 20 zu benutzen",
+      "Gebot, eine Sendeleistung von 20 Watt zu gewährleisten",
+      "Hinweis, dass der Verkehrskreis Schiff-Schiff auf UKW-Kanal 20 abzuwickeln ist",
+      "Hinweis, dass der UKW-Kanal 20 für die Nutzung durch die Berufsschifffahrt vorgesehen ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-108",
+    "license_type": "ubi",
+    "category": "Sprechfunk",
+    "prompt": "Welche Bedeutung hat ein blaues Tafelzeichen mit der weißen Aufschrift „UKW 18“ oder „VHF 18“?",
+    "choices": [
+      "Hinweis auf den Nautischen Informationsfunk (NIF) auf UKW-Kanal 18",
+      "Gebot, UKW-Kanal 18 statt 10 für die Verkehrsabwicklung zu benutzen",
+      "Hinweis, dass der Verkehrskreis Schiff-Schiff auf UKW-Kanal 18 abzuwickeln ist",
+      "Hinweis, dass der UKW -Kanal 18 für die Nutzung durch die Sportschifffahrt vorgesehen ist V. Betriebsverfahren und Rangfolgen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-109",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welche Landfunkstellen sind zur Einleitung von Rettungsmaßnahmen vorzugsweise anzurufen?",
+    "choices": [
+      "Revierzentralen",
+      "Rettungsleitstellen",
+      "Schiffsfunkstellen",
+      "Polizeifunkstellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-110",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wie ist die Rangfolge des Funkverkehrs im Binnenschifffahrtsfunk?",
+    "choices": [
+      "Notverkehr, Dringlichkeitsverkehr, Sicherheitsverkehr, Routineverkehr",
+      "Dringlichkeitsverkehr, Notverkehr, Sicherheitsverkehr, Routineverkehr",
+      "Sicherheitsverkehr, Dringlichkeitsverkehr, Notverkehr, Routineverkehr",
+      "Notverkehr, Dringlichkeitsverkehr, Routineverkehr, Sicherheitsverkehr"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-111",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wie heißt das Notzeichen im Sprechfunk?",
+    "choices": [
+      "MAYDAY",
+      "PAN PAN",
+      "SOS",
+      "SECURITE"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-112",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Ein Notverkehr im Binnenschifffahrtsfunk muss eingeleitet werden, wenn eine unmittelbare Gefährdung von Mensch oder Schiff gegeben ist oder…",
+    "choices": [
+      "eine Gefahrenabwehr an Land notwendig ist",
+      "das Schiff manövrierunfähig ist",
+      "gefährliche Wetterlagen auftreten",
+      "eine Behinderung der Schifffahrt droht"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-113",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welcher Funkverkehr ist einzuleiten, wenn sich an Bord eine lebensgefährlich verletzte Person befindet?",
+    "choices": [
+      "Notverkehr",
+      "Dringlichkeitsverkehr",
+      "Sicherheitsverkehr",
+      "Routineverkehr"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-114",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welcher Funkverkehr ist einzuleiten, wenn eine Person über Bord gefallen ist?",
+    "choices": [
+      "Notverkehr",
+      "Dringlichkeitsverkehr",
+      "Sicherheitsverkehr",
+      "Routineverkehr"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-115",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welcher Funkverkehr ist einzuleiten, wenn das Fahrzeug in gefährlicher Weise zu kentern droht?",
+    "choices": [
+      "Notverkehr",
+      "Dringlichkeitsverkehr",
+      "Sicherheitsverkehr",
+      "Routineverkehr"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-116",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wer bestätigt eine Notmeldung im Verkehrskreis „Nautische Information“?",
+    "choices": [
+      "Ortsfeste Funkstelle",
+      "Behördenfahrzeug",
+      "In der Nähe befindliche Schiffsfunkstelle",
+      "Der Schiffsführer"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-117",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wer bestätigt eine Notmeldung im Verkehrskreis „Schiff-Schiff“?",
+    "choices": [
+      "In der Nähe befindliche Schiffsfunkstelle",
+      "Ortsfeste Funkstelle",
+      "Verkehrsposten",
+      "Der Schiffsführer"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-118",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Was bedeuten die Worte MAYDAY RELAY?",
+    "choices": [
+      "Aussendung einer Notmeldung durch eine Funkstelle, die sich selbst nicht in Not befindet",
+      "Beendigung einer Notmeldung durch die Funkstelle, die den Notverkehr leitet",
+      "Bestätigung des Empfangs einer Notmeldung",
+      "Notmeldung an eine Landstation mit der Bitte um Leitung des Notverkehrs"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-119",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Was bedeuten die Worte SILENCE FINI?",
+    "choices": [
+      "Der Notverkehr ist beendet",
+      "Einer Funkstelle, die den Notverkehr stört, wird Funkstille geboten",
+      "Dringlichkeits- und Sicherheitsverkehr darf wieder aufgenommen werden",
+      "Alle Funkstellen müssen Funkstille einhalten"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-120",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Was bedeuten die Worte SILENCE MAYDAY?",
+    "choices": [
+      "Die Funkstelle in Not gebietet den nicht am Notverkehr beteiligten Funkstellen Funkstille",
+      "Der Notverkehr ist beendet",
+      "Die am Notverkehr beteiligten Funkstellen genießen Vorrang",
+      "Eine Notmeldung folgt"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-121",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Woraus besteht das Dringlichkeitszeichen im Sprechfunk?",
+    "choices": [
+      "PAN PAN",
+      "MAYDAY",
+      "SECURITE",
+      "URGENT"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-122",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wann liegt ein Dringlichkeitsfall vor?",
+    "choices": [
+      "Wenn dringende Nachrichten übermittelt werden sollen, welche die Besatzung und/oder das Schiff betreffen, ohne dass eine unmittelbare Gefährdung gegeben ist",
+      "Wenn eine unmittelbare Gefährdung von Mensch oder Schiff gegeben ist oder eine Gefahrenabwehr an Land notwendig ist",
+      "Wenn dringende Nachrichten übermittelt werden sollen, welche den Empfang eines Notzeichens betreffen",
+      "Wenn dringende Nachrichten übermittelt werden sollen, welche die Unterstützung durch die Wasserschutzpolizei betreffen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-123",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welche Meldungen können beispielsweise mit dem Dringlichkeitszeichen angekündigt werden?",
+    "choices": [
+      "Meldungen, die sich auf Krankheiten beziehen, die keine Lebensgefahr bedeuten, oder auf Schäden an Fahrzeugen, ohne dass davon eine unmittelbare Gefahr ausgeht",
+      "Meldungen, die sich auf eine unmittelbare Gefährdung von Mensch oder Schiff oder eine Gefahrenabwehr an Land beziehen",
+      "Meldungen, die sich auf Krankheiten beziehen, die keine Lebensgefahr bedeuten, oder auf Schäden an Fahrzeugen, von denen eine unmittelbare Gefahr ausgeht",
+      "Meldungen, die sich auf lebensgefährliche Krankheiten oder auf Schäden an Fahrzeugen oder Anlagen beziehen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-124",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welcher Funkverkehr ist einzuleiten, wenn bei einer Person an Bord eine nicht lebensbedrohliche Verletzung festgestellt wurde, die kurzfristig ärztlicher Versorgung bedarf?",
+    "choices": [
+      "Dringlichkeitsverkehr",
+      "Notverkehr",
+      "Sicherheitsverkehr",
+      "Routineverkehr"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-125",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welcher Funkverkehr ist grundsätzlich einzuleiten, wenn das Fahrzeug einen Maschinenschaden hat, der die Sicherheit des Schiffsverkehrs gefährden könnte?",
+    "choices": [
+      "Dringlichkeitsverkehr",
+      "Notverkehr",
+      "Sicherheitsverkehr",
+      "Routineverkehr"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-126",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wie lautet das Sicherheitszeichen im Sprechfunk?",
+    "choices": [
+      "SECURITE",
+      "MAYDAY",
+      "PAN PAN",
+      "SOS"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-127",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welche Meldungen werden mit dem Sicherheitszeichen SECURITE angekündigt?",
+    "choices": [
+      "Nachrichten, die eine wichtige nautische Warnnachricht oder eine wichtige Wetterwarnung beinhalten",
+      "Nachrichten, die eine wichtige nautische Warnnachricht oder den Radareinsatz bei unsichtigem Wetter beinhalten",
+      "Nachrichten, die eine wichtige Wetterwarnung oder eine Warnung zur Vermeidung von Umweltschäden beinhalten",
+      "Nachrichten, die eine wichtige nautische Warnnachricht oder eine dringende medizinische Meldung beinhalten"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-128",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welche Meldung ist zu verbreiten, wenn ein treibender Baumstamm beobachtet wird, der eine Gefahr für den Verkehr darstellt?",
+    "choices": [
+      "Sicherheitsmeldung",
+      "Notmeldung",
+      "Dringlichkeitsmeldung",
+      "keine Meldung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-129",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welche Meldung ist zu verbreiten, wenn eine vertriebene Tonne beobachtet wird?",
+    "choices": [
+      "Sicherheitsmeldung",
+      "Notmeldung",
+      "Dringlichkeitsmeldung",
+      "keine Meldung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  },
+  {
+    "external_id": "UBI-130",
+    "license_type": "ubi",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wer entscheidet über die Art der auszusendenden Sprechfunkmeldung?",
+    "choices": [
+      "Schiffsführer",
+      "Bediener der Funkanlage",
+      "Wasserschutzpolizei",
+      "Revierzentrale"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ABVT UBI Gesamtfragenkatalog",
+    "source_url": "https://www.abvt.wsv.de/Webs/WSA/ABVT/DE/SharedDocs/Downloads/UBI_Gesamtfragenkatalog_2023-08-16.pdf?__blob=publicationFile&v=2",
+    "source_stand": "08/2023",
+    "exam_section": "UBI"
+  }
+]

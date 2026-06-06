@@ -1,0 +1,3242 @@
+[
+  {
+    "external_id": "SRC-001",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "„Mobiler Seefunkdienst“ ist mobiler Funkdienst …",
+    "choices": [
+      "zwischen Küstenfunkstellen und Seefunkstellen bzw. zwischen Seefunkstellen untereinander",
+      "zwischen tragbaren Funkstellen an Bord eines Seefahrzeuges",
+      "ausschließlich zwischen Seefunkstellen",
+      "zwischen Funkstellen, für die keine Zuteilung (Ship Station Licence) notwendig ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-002",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Welche Funktion hat das „GMDSS“ (Global Maritime Distress and Safety System)?",
+    "choices": [
+      "Hilfe in Seenotfällen und Sicherung der Schifffahrt durch schnelle und genaue Alarmierung im Seenotfall",
+      "Koordinierung der Alarmierung von Seefunkstellen im Seenotfall",
+      "Positionsbestimmung des Havaristen durch geostationäre Satelliten",
+      "Störungsfreier Funkverkehr im Seenotfall"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-003",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Zu welchem Zweck wurde das Weltweite Seenot- und Sicherheitsfunksystem (GMDSS) eingeführt?",
+    "choices": [
+      "Schnelle und genaue Alarmierung in Not-, Dringlichkeits- und Sicherheitsfällen",
+      "Schnelle Alarmierung in Notfällen",
+      "Schnelle und genaue Alarmierung in Not- und Dringlichkeitsfällen",
+      "Schnelle und genaue Alarmierung in Not- und Sicherheitsfällen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-004",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Welche Aufgaben hat die Internationale Fernmeldeunion (International Telecommunication Union [ITU])?",
+    "choices": [
+      "Die Internationale Fernmeldeunion (ITU) legt die grundlegenden Regelungen für die internationale Telekommunikation fest",
+      "Die Internationale Fernmeldeunion (ITU) legt für alle Nationen der UN, die weltweit Seeschifffahrt betreiben, die Mindeststandards hinsichtlich der Funkausrüstung von Seeschiffen fest",
+      "Die Internationale Fernmeldeunion (ITU) führt als internationale Verkehrsbehörde weltweit die Überwachung des Funkverkehrs durch",
+      "Die Internationale Fernmeldeunion (ITU) rechnet die Gebühren von weltweiten Seefunkgesprächen ab"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-005",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Was regelt die Vollzugsordnung für den Funkdienst (VO Funk, engl. Radio Regulations [RR])?",
+    "choices": [
+      "Die Vollzugsordnung für den Funkdienst (RR) regelt u. a. die Zuweisung von Frequenzbereichen an die Funkdienste und die Betriebsverfahren im Seefunkdienst",
+      "Die Vollzugsordnung für den Funkdienst (RR) regelt die Ausrüstung von Seeschiffen bezüglich der Funkeinrichtung",
+      "Die Vollzugsordnung für den Funkdienst (RR) regelt den freien Funkverkehr zwischen den Seefahrt betreibenden Nationen",
+      "Die Vollzugsordnung für den Funkdienst (RR) regelt die Benutzung von Radaranlagen auf Seeschiffen auf See und in Häfen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-006",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Welche Publikationen des Bundesamtes für Seeschifffahrt und Hydrographie (BSH) enthalten speziell für die Sportschifffahrt Informationen zum Seefunk?",
+    "choices": [
+      "Funkdienst für die Klein- und Sportschifffahrt",
+      "Nautisches Jahrbuch",
+      "Nachrichten für Seefahrer",
+      "Mitteilungen für Seefunkstellen und Schiffsfunkstellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-007",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Was ist eine „Küstenfunkstelle“?",
+    "choices": [
+      "Ortsfeste Funkstelle des mobilen Seefunkdienstes",
+      "Funkstelle an Bord eines Schiffes im Küstenbereich, über die wichtige Informationen für die Seeschifffahrt verbreitet werden",
+      "Funkstelle des Rundfunkdienstes zur Übermittlung von Wetternachrichten für die Schifffahrt",
+      "Funkstelle an Bord eines Schiffes für den Empfang von Funkgesprächen aus dem Mobilfunknetz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-008",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Was bedeutet „öffentlicher Funkverkehr“?",
+    "choices": [
+      "Funkverkehr, der der Allgemeinheit zum Austausch von Nachrichten dient",
+      "Funkverkehr, der im Gegensatz zum Nichtöffentlichen Funkverkehr unverschlüsselt abgewickelt wird",
+      "Funkverkehr, der von jeder Seefunkstelle abgehört werden muss",
+      "Funkverkehr, der nicht dem Fernmeldegeheimnis und dem Abhörverbot unterliegt"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-009",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Für die Teilnahme am öffentlichen Funkverkehr ist – im Gegensatz zur Teilnahme am Nicht-öffentlichen Funkverkehr – zusätzlich erforderlich …",
+    "choices": [
+      "Vertrag mit einer Abrechnungsgesellschaft",
+      "Besitz eines Seefunkzeugnisses",
+      "Zulassung des Funkgeräts",
+      "Zuteilung (Ship Station Licence)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-010",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Wodurch erfährt eine Seefunkstelle von einer Küstenfunkstelle, dass dort Nachrichten für sie vorliegen?",
+    "choices": [
+      "Individuelle Benachrichtigung oder Abhören von Sammelanrufen",
+      "Individuelle Benachrichtigung durch die Abrechnungsgesellschaft",
+      "Individuelle Benachrichtigung mittels SMS oder E-Mail",
+      "Öffentliche Benachrichtigung mittels NAVTEX"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-011",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Was sind die Abrechnungsgrundlagen für ein Seefunkgespräch über eine deutsche Küstenfunkstelle?",
+    "choices": [
+      "Gesprächsdauer und Preis der Verrechnungseinheiten",
+      "Gesprächsdauer und Entfernung zur Küstenfunkstelle",
+      "Gesprächsdauer und Frequenznutzungsgebühren",
+      "Gesprächsdauer und Dringlichkeit des Gesprächs"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-012",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Was ist eine „Sea-Area“ im GMDSS?",
+    "choices": [
+      "Festgelegtes Seegebiet",
+      "International festgelegtes Seewarngebiet",
+      "Im NAVTEX bestimmtes Seegebiet",
+      "Weltweites Raster zum schnellen Auffinden von verunglückten Fahrzeugen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-013",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Welche Bezeichnungen tragen die Seegebiete, in denen für Schiffe eine bestimmte Funkausrüstung international vorgeschrieben ist?",
+    "choices": [
+      "A1, A2, A3, A4",
+      "A, B, C, D",
+      "NAVAREAS",
+      "Küstengewässer, küstennahe Seegewässer, Hohe See"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-014",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Eine Yacht befindet sich in einem Seegebiet, das von der Sprechfunkreichweite einer UKW-Küstenfunkstelle abgedeckt wird, die ununterbrochen für DSC-Alarmierungen zur Verfügung steht. In welchem Seegebiet befindet sich das Fahrzeug?",
+    "choices": [
+      "Seegebiet A1",
+      "Seegebiet A2",
+      "Seegebiet A3",
+      "Seegebiet A4"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-015",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Welches sind die satellitengestützten Alarmierungssysteme im Weltweiten Seenot- und Sicherheitsfunksystem (GMDSS)?",
+    "choices": [
+      "COSPAS-SARSAT, Inmarsat",
+      "Eutelsat, Globalstar",
+      "EPIRB, AIS",
+      "DSC, COSPAS-SARSAT"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-016",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Was wird als „MSI“ bezeichnet?",
+    "choices": [
+      "Nachricht, die die Sicherheit der Seeschifffahrt betrifft",
+      "Rufnummer im Seefunkdienst (Maritime Mobile Service Identity)",
+      "Mittlere Signalstärke des modulierten Eingangssignals",
+      "Landeskennung einer Seefunkstelle"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-017",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Welche Aussendung wird als „WX\" bezeichnet?",
+    "choices": [
+      "Wetterbericht",
+      "Nautische Warnnachricht",
+      "Aussendung, die zurückgenommen wurde",
+      "Funktelexaussendung im GMDSS"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-018",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Welche Aussendung wird als „NX\" bezeichnet?",
+    "choices": [
+      "Nautische Warnnachricht",
+      "Wetterbericht",
+      "Aussendung, die zurückgenommen wurde",
+      "Funktelexaussendung im GMDSS"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-019",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Was versteht man unter „AIS“?",
+    "choices": [
+      "Automatisches Schiffsidentifizierungs- und Überwachungssystem, das statische und dynamische Schiffsdaten auf UKW überträgt",
+      "Automatische Aussendung der Kennung eines Seeschiffes jede Minute bzw. beim Loslassen der Sprechtaste",
+      "Allgemeines Informationssystem für die Seeschifffahrt",
+      "Identifizierung eines Schiffes mit Hilfe von Radarpeilungen und deren Weitergabe an die Schifffahrt zur Kollisionsverhütung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-020",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Was bedeutet „ETA“?",
+    "choices": [
+      "Voraussichtliche Ankunftszeit",
+      "Voraussichtliche Abfahrtszeit",
+      "Voraussichtliche Gesamtfahrtzeit",
+      "Voraussichtliche Restfahrtzeit"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-021",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Wonach richten sich die Zeitangaben im Seefunkdienst?",
+    "choices": [
+      "Koordinierte Weltzeit (Universal Time Co-ordinated [UTC])",
+      "Bordzeit, berichtigt nach Sommer- oder Winterzeit",
+      "Greenwich-Zeit (Greenwich Mean Time [GMT])",
+      "Ortszeit, bezogen auf den Standort des Schiffes (Local Time [LT])"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-022",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Welche Bedeutung hat die Zeitangabe „LT“ (Local Time)?",
+    "choices": [
+      "Ortszeit, bezogen auf den Standort des Schiffes",
+      "Zeitzone entsprechend der geografischen Breite des Schiffsortes",
+      "Zeit, die bei Funkaussendungen in einem bestimmten Seegebiet zu verwenden ist",
+      "Zeit, die automatisch durch ein an die Funkanlage angeschlossenes GPS-Gerät übermittelt wird"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-023",
+    "license_type": "src",
+    "category": "Mobiler Seefunkdienst und GMDSS",
+    "prompt": "Wie bezeichnet man ein funkärztliches Beratungsgespräch?",
+    "choices": [
+      "Medico-Gespräch",
+      "Emergency-Gespräch",
+      "Medical-Transport-Gespräch",
+      "Erste-Hilfe-Gespräch II. Funkeinrichtungen und Seefunkstellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-024",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Was ist eine „Seefunkstelle“?",
+    "choices": [
+      "Funkstelle des mobilen Seefunkdienstes an Bord eines nicht dauernd verankerten Seefahrzeuges",
+      "Typgeprüfte Funkstelle, die kein ATIS-Signal aussendet",
+      "Seefunkgerät samt Antenne, das im UKW- bzw. Grenz- und Kurzwellenbereich betrieben wird",
+      "Funkstelle, die am GMDSS teilnehmen darf"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-025",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welches Funkzeugnis ist auf einem mit einer Seefunkanlage ausgerüsteten Sportfahrzeug unter deutscher Flagge für den Schiffsführer vorgeschrieben?",
+    "choices": [
+      "Ein Funkzeugnis, das zum Bedienen der eingebauten Anlage berechtigt, z. B. SRC oder LRC",
+      "Ein SRC bis zur Grenze der Hoheitsgewässer, darüber hinaus ein LRC",
+      "Keines, es genügt, wenn eine Person an Bord ist, die die Funkanlage bedienen darf",
+      "Für die Bedienung einer Grenz-/Kurzwellenanlage ist das LRC vorgeschrieben, für die Bedienung einer UKW-Anlage zusätzlich das SRC"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-026",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Funkanlagen darf der Inhaber eines Beschränkt Gültigen Funkbetriebszeugnisses (Short Range Certificate [SRC]) bedienen?",
+    "choices": [
+      "UKW-Funkanlagen im Seefunkdienst auf nicht funkausrüstungspflichtigen Fahrzeugen und auf Traditionsschiffen",
+      "UKW-Funkanlagen für See- und Luftfunkstellen",
+      "UKW-Funkanlagen auf Sportbooten im Seefunkdienst und Binnenschifffahrtsfunk",
+      "UKW-Funkanlagen auf funkausrüstungspflichtigen und nicht funkausrüstungs- pflichtigen Seeschiffen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-027",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Sportboote müssen mit einer UKW-Seefunkanlage ausgerüstet sein?",
+    "choices": [
+      "Gewerbsmäßig genutzte Sportboote mit einer Länge über alles von 12 m und mehr",
+      "Sportboote mit einer Länge über alles von 12 m und mehr",
+      "Sportboote mit einer Antriebsmaschine von 3,68 kW und mehr",
+      "Gewerbsmäßig genutzte Sportboote mit einer Antriebsmaschine von 3,68 kW und mehr"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-028",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche rechtlichen Voraussetzungen sind für den Betrieb einer Seefunkstelle auf einem Sportfahrzeug und einem Traditionsschiff zu erfüllen?",
+    "choices": [
+      "Zuteilung (Ship Station Licence), für den Seefunkdienst zugelassene oder in Verkehr gebrachte Funkgeräte, ausreichendes Seefunkzeugnis des Fahrzeugführers",
+      "Zuteilung (Ship Station Licence), ausreichendes Seefunkzeugnis und Sportbootführerschein des Fahrzeugführers",
+      "Zuteilung (Ship Station Licence), ausreichendes Seefunkzeugnis einer Person an Bord",
+      "Zuteilung (Ship Station Licence), für den Seefunkdienst zugelassene oder in Verkehr gebrachte Funkgeräte, Sportbootführerschein"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-029",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Urkunde und welcher Befähigungsnachweis müssen bei der Überprüfung einer Seefunkstelle auf einem Sportfahrzeug dem Prüfbeamten auf Verlangen vorgelegt werden?",
+    "choices": [
+      "Zuteilung (Ship Station Licence) und Seefunkzeugnis des Fahrzeugführers",
+      "Zuteilung (Ship Station Licence) und Sportbootführerschein des Fahrzeugführers",
+      "Seefunkzeugnis eines Besatzungsmitgliedes und Internationaler Bootsschein (IBS)",
+      "Seefunkzeugnis des Fahrzeugführers und Eigentumsnachweis"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-030",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Die Urkunde über die Zuteilung (Ship Station Licence) zum Betreiben einer Seefunkstelle wird in Deutschland ausgestellt durch …",
+    "choices": [
+      "die Bundesnetzagentur (BNetzA), Außenstelle Hamburg",
+      "die Bundesnetzagentur (BNetzA), Außenstelle Mülheim an der Ruhr",
+      "das Bundesamt für Seeschifffahrt und Hydrographie (BSH), Rostock",
+      "das Wasserstraßen- und Schifffahrtsamt, Hamburg"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-031",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Urkunde für die Seefunkstelle muss auf einem Sportfahrzeug mitgeführt werden?",
+    "choices": [
+      "Zuteilungsurkunde (Ship Station Licence) (im Original)",
+      "Zuteilungsurkunde (Ship Station Licence) (in Kopie)",
+      "Gerätezulassungsurkunde (im Original)",
+      "Gerätezulassungsurkunde (in Kopie)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-032",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Was und zu welchem Zweck muss ein Schiffseigner bei Änderung des Schiffsnamens in Bezug auf seine Seefunkstelle veranlassen?",
+    "choices": [
+      "Namensänderung der Bundesnetzagentur schriftlich mitteilen zwecks Änderung seiner Zuteilungsurkunde (Ship Station Licence)",
+      "Namensänderung dem Bundesamt für Seeschifffahrt und Hydrographie schriftlich mitteilen zwecks Änderung der Gerätezulassungsurkunde)",
+      "Namensänderung dem Wasser- und Schifffahrtsamt, Hamburg schriftlich mitteilen zwecks Änderung des Kennzeichenausweises",
+      "Namensänderung der Zentralen Verwaltungsstelle schriftlich mitteilen zwecks Änderung des Kennzeichenausweises"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-033",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Was muss ein Schiffseigner beim Austausch der UKW-Sprechfunkanlage gegen eine UKW-GMDSS-Funkanlage veranlassen?",
+    "choices": [
+      "Schriftliche Mitteilung über die Umrüstung an die Bundesnetzagentur",
+      "Schriftliche Mitteilung über die Umrüstung an das Bundesamt für Seeschifffahrt und Hydrographie",
+      "Schriftliche Mitteilung über die Umrüstung an das Amtsgericht",
+      "Schriftliche Mitteilung über die Umrüstung an die Zentrale Verwaltungsstelle"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-034",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Was ist beim Kauf eines UKW-Sprechfunkgeräts für den Seefunkdienst oder eines UKW-GMDSS-Funkgeräts zu beachten?",
+    "choices": [
+      "Das Funkgerät muss für den Seefunkdienst zugelassen oder in Verkehr gebracht worden sein",
+      "Das Funkgerät muss funktionsfähig und TÜV-geprüft sein",
+      "Das Funkgerät muss eine NAVTEX-Schnittstelle aufweisen oder Wetterberichte empfangen können",
+      "Das Funkgerät muss von der Dienststelle Schiffssicherheit der Berufsgenossenschaft Verkehrswirtschaft Post-Logistik Telekommunikation (BG Verkehr) für Sportboote zugelassen sein"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-035",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Wer stellt in Deutschland Funksicherheitszeugnisse für Sportboote aus, die gewerbsmäßig genutzt werden?",
+    "choices": [
+      "Dienststelle Schiffssicherheit der Berufsgenossenschaft Verkehrswirtschaft Post-Logistik Telekommunikation (BG Verkehr)",
+      "Bundesamt für Seeschifffahrt und Hydrographie (BSH)",
+      "Wasserstraßen- und Schifffahrtsverwaltung (WSV)",
+      "Bundesnetzagentur (BNetzA)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-036",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Ein Sportboot von 12 Meter Länge und mehr benötigt ein Funksicherheitszeugnis...",
+    "choices": [
+      "bei gewerbsmäßiger Nutzung",
+      "bei Regattateilnahme",
+      "bei Auslandsfahrten und in internationalen Gewässern",
+      "in jedem Fall"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-037",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Sendeleistungen lassen sich bei einer fest installierten UKW-Seefunkanlage schalten?",
+    "choices": [
+      "1 Watt oder maximal 25 Watt",
+      "25 Watt oder maximal 50 Watt",
+      "0,1 Watt oder maximal 2,5 Watt",
+      "1 Watt oder maximal 12 Watt"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-038",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Behörde erteilt in Deutschland sechsstellige Rufzeichen für Seefunkstellen?",
+    "choices": [
+      "Bundesnetzagentur (BNetzA), Außenstelle Hamburg",
+      "Bundesnetzagentur (BNetzA), Außenstelle Mülheim an der Ruhr",
+      "Bundesamt für Seeschifffahrt und Hydrographie (BSH), Hamburg",
+      "Wasser- und Schifffahrtsamt (WSA), Hamburg"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-039",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Behörden in Deutschland sind berechtigt, die Funktionsfähigkeit von Seefunkstellen zu überprüfen?",
+    "choices": [
+      "Bundesnetzagentur (BNetzA) und Bundesamt für Seeschifffahrt und Hydrographie (BSH)",
+      "Wasser- und Schifffahrtsdirektionen",
+      "Wasserschutzpolizeibehörden der Küstenländer",
+      "Hafenbehörden in den Seehäfen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-040",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Behörde teilt einer in das Seeschiffsregister eingetragenen Yacht das mindestens vierstellige Unterscheidungssignal zu?",
+    "choices": [
+      "Seeschiffsregister des zuständigen Amtsgerichts",
+      "Wasser- und Schifffahrtsverwaltung (WSV)",
+      "Bundesnetzagentur (BNetzA)",
+      "Bundesamt für Seeschifffahrt und Hydrographie (BSH)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-041",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Art von Funkstelle hat z. B. das Rufzeichen „DDTW“?",
+    "choices": [
+      "Seefunkstelle an Bord eines deutschen Schiffes, eingetragen in einem Seeschiffsregister",
+      "Küstenfunkstelle des Schiffsmeldedienstes (SMD)",
+      "Funkstelle des Nichtöffentlichen Funkdienstes",
+      "Funkstelle an Bord eines SAR-Hubschraubers"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-042",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Das Abhörverbot und das Fernmeldegeheimnis sind geregelt...",
+    "choices": [
+      "im Telekommunikationsgesetz (TKG)",
+      "in der Vollzugsordnung für den Funkdienst (VO Funk)/in den Radio Regulations (RR)",
+      "in der Schiffssicherheitsverordnung (SchSV)",
+      "im Gesetz über Funkanlagen und Telekommunikationseinrichtungen (FTEG)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-043",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Wer ist beim Betrieb einer Seefunkstelle auf einem Sportboot zur Wahrung des Fernmeldegeheimnisses und des Abhörverbots verpflichtet?",
+    "choices": [
+      "Alle Personen, die eine Seefunkstelle beaufsichtigen, bedienen oder Kenntnis über öffentlichen Nachrichtenaustausch erlangt haben",
+      "Alle Personen, die ständig an Bord sind",
+      "Alle Personen, die das Funkgerät bedienen können",
+      "Alle Personen, die vom Schiffsführer ausdrücklich dazu verpflichtet worden sind"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-044",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Nachrichten dürfen uneingeschränkt aufgenommen und verbreitet werden?",
+    "choices": [
+      "Aussendungen, die „An alle Funkstellen“ gerichtet sind",
+      "Aussendungen, die von allgemeinem Interesse sind",
+      "Aussendungen im öffentlichen Seefunkdienst",
+      "Aussendungen im Seefunkdienst dürfen uneingeschränkt aufgenommen und verbreitet werden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-045",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Wenn ein Funkgerät ordnungsgemäß in Verkehr gebracht worden ist, trägt es...",
+    "choices": [
+      "das CE-Zeichen",
+      "eine Seriennummer",
+      "das GS-Prüfzeichen",
+      "das VDE-Prüfzeichen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-046",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Zur Teilnahme am Binnenschifffahrtsfunk muss eine Seefunkstelle...",
+    "choices": [
+      "mit einer umschaltbaren „Kombi-Anlage für Seefunkdienst und Binnenschifffahrtsfunk“ oder einer zusätzlichen Sprechfunkanlage für den Binnenschifffahrtsfunk ausgerüstet werden",
+      "mit einer weiteren Seefunkanlage ausgerüstet werden",
+      "nicht geändert werden",
+      "mit der MMSI auch eine ATIS-Kennung aussenden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-047",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Das Seefunkgerät nimmt bei Empfang einen Strom von 0,5 Ampere auf. Wie lange kann das Funkgerät im Empfangsbetrieb an einer Batterie ohne Nachladen überschlägig betrieben werden, wenn die Kapazität 60 Amperestunden beträgt?",
+    "choices": [
+      "120 Stunden",
+      "30 Stunden",
+      "60 Stunden",
+      "90 Stunden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-048",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Auswirkung auf die Betriebsdauer einer Batterie hat der Sendebetrieb einer Seefunkanlage im Vergleich zum Empfangsbetrieb?",
+    "choices": [
+      "Betriebsdauer wird verkürzt",
+      "Betriebsdauer wird halbiert",
+      "Betriebsdauer wird verlängert",
+      "Betriebsdauer bleibt gleich"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-049",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Wie hoch ist die mittlere Stromaufnahme einer UKW-Seefunkanlage im Empfangsbetrieb?",
+    "choices": [
+      "Je nach Anlage zwischen 0,3 A und 1 A",
+      "Je nach Anlage zwischen 0,1 A und 0,2 A",
+      "Je nach Anlage zwischen 1 A und 2 A",
+      "Je nach Anlage zwischen 2 A und 3 A"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-050",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Wie hoch ist die mittlere Stromaufnahme einer UKW-Seefunkanlage im Sendebetrieb bei 25 Watt Sendeleistung?",
+    "choices": [
+      "Zwischen 4 und 8 Ampere",
+      "Zwischen 1 und 2 Ampere",
+      "Zwischen 2 und 3 Ampere",
+      "Zwischen 10 und 12 Ampere"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-051",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Wozu dient am UKW-Gerät die Rauschsperre (Squelch)?",
+    "choices": [
+      "Der Lautsprecher des Empfängers wird nur ab einem Mindest-Empfangssignalpegel aktiviert",
+      "Das Rauschen kann stufenlos auf einen angenehmen Wert eingestellt werden",
+      "Die Rauschsperre verbessert die Wiedergabe von schwachen Empfangssignalen",
+      "Der Lautsprecher des Empfängers wird nur beim Empfang von Notsignalen aktiviert"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-052",
+    "license_type": "src",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Eigenschaften des „GPS“ sind für eine GMDSS-Funkanlage von besonderer Bedeutung?",
+    "choices": [
+      "Mit Hilfe von GPS kann die genaue Position des Fahrzeugs bestimmt und übermittelt werden. Ebenso kann die genaue Zeit bestimmt werden",
+      "Mit Hilfe von GPS ist ein weltweiter Funkverkehr über Satellit zwischen Schiffen untereinander bzw. mit Küstenfunkstellen möglich",
+      "Mit Hilfe von GPS besteht die Möglichkeit der Kommunikation über Inmarsat bzw. COSPAS-SARSAT",
+      "Mit Hilfe von GPS erfolgt die Kommunikation mit der Rettungsleitstelle über Satellit III. Digitaler Selektivruf (DSC)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-053",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Was bedeutet „DSC“ im mobilen Seefunkdienst?",
+    "choices": [
+      "Digitaler Selektivruf",
+      "Funküberwachung auf zwei Funkkanälen (Dual Watch)",
+      "Gegensprechen auf zwei Frequenzen im Gegensatz zu Wechselsprechen auf einer Frequenz",
+      "Digitales System für die Telekommunikation an Bord"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-054",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Was ist ein „Digitaler Selektivruf“?",
+    "choices": [
+      "Digitale Aussendung, die bei der gerufenen Funkstelle ein optisches und/oder akustisches Signal auslöst",
+      "Aussendung eines digitalen Anrufs auf Kanal 16",
+      "Funkaussendung an eine ausgewählte Funkstelle",
+      "Funkverkehr im GMDSS auf den dafür vorgesehenen Kanälen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-055",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Welches technische Verfahren im GMDSS ermöglicht einer Seefunkstelle die Verkehrsaufnahme in den Richtungen Schiff-Küstenfunkstelle und Schiff–Schiff?",
+    "choices": [
+      "DSC",
+      "NAVTEX",
+      "COSPAS-SARSAT",
+      "SMS"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-056",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Welcher Unterschied besteht in der Reichweite bei analoger (Sprechfunk) und bei digitaler Übertragung (DSC) im UKW-Seefunkbereich?",
+    "choices": [
+      "Bei digitaler Übertragung deutlich größere Reichweite im Vergleich zur analogen Übertragung",
+      "Bei digitaler Übertragung besteht kein Unterschied im Vergleich zur analogen Übertragung",
+      "Bei digitaler Übertragung vierfache Reichweite im Vergleich zur analogen Übertragung",
+      "Bei digitaler Übertragung kürzere Reichweite im Vergleich zur analogen Übertragung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-057",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Welcher UKW-Kanal wird im Weltweiten Seenot- und Sicherheitsfunksystem (GMDSS) für die digitale Ankündigung einer Dringlichkeitsmeldung benutzt?",
+    "choices": [
+      "Kanal 70",
+      "Kanal 16",
+      "Kanal 10",
+      "Kanal 06"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-058",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Auf welchem UKW-Kanal erfolgt die Alarmierung mittels DSC?",
+    "choices": [
+      "Kanal 70",
+      "Kanal 16",
+      "Kanal 06",
+      "Kanal 10"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-059",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Wie wird eine mit DSC-Einrichtungen ausgerüstete Seefunkstelle gekennzeichnet?",
+    "choices": [
+      "Schiffsname, Rufzeichen, Rufnummer des mobilen Seefunkdienstes (MMSI)",
+      "Rufnummer des mobilen Seefunkdienstes (MMSI), Schiffsname",
+      "Schiffsname, Heimathafen, Rufzeichen",
+      "Registriernummer des Schiffszertifikates, Rufzeichen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-060",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Der mit einem DSC-Gerät aufgenommene Notarlarm wird…",
+    "choices": [
+      "automatisch gespeichert",
+      "manuell gespeichert",
+      "Gespeichert, wenn im Speicher noch genügend Platz ist",
+      "nicht gespeichert, sondern ausgedruckt."
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-061",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Was wird als „Maritime Mobile Service Identity (MMSI)“ bezeichnet?",
+    "choices": [
+      "Rufnummer im Seefunkdienst",
+      "Maritimes Informationssystem",
+      "Landeskennung einer Seefunkstelle (z.B. 211)",
+      "Aussendung, die die Sicherheit der Schifffahrt betrifft"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-062",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Wie lauten die Maritime Identification Digits (MID) für die Bundesrepublik Deutschland?",
+    "choices": [
+      "211 und 218",
+      "211 und 219",
+      "218 und 224",
+      "218 und 226"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-063",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Welche Urkunde enthält die eigene Seefunkstellen-Rufnummer (MMSI)?",
+    "choices": [
+      "Zuteilungsurkunde (Ship Station Licence)",
+      "Gerätezulassungsurkunde",
+      "Internationaler Bootsschein",
+      "Schiffszertifikat"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-064",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Wie setzt sich die Seefunkstellen-Rufnummer (MMSI) zusammen?",
+    "choices": [
+      "Neun Ziffern, wobei die ersten drei Ziffern die Seefunkkennzahl (MID) enthalten",
+      "Drei Buchstaben und sechs Ziffern",
+      "Sieben Ziffern, wobei die ersten beiden Ziffern Nullen sein müssen",
+      "Neun Ziffern, wobei die erste Ziffer eine Null ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-065",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Wie setzt sich die Küstenfunkstellen-Rufnummer (MMSI) zusammen?",
+    "choices": [
+      "Neun Ziffern, die ersten beiden Ziffern Nullen, die nächsten drei Ziffern enthalten die Seefunkkennzahl (MID)",
+      "Neun Ziffern, die ersten drei Ziffern enthalten die Seefunkkennzahl (MID)",
+      "Geografischer Ortsname der Küstenfunkstelle, gefolgt von drei Ziffern, die die Seefunkkennzahl (MID) bilden",
+      "Internationale Telefon-Vorwahlnummer des Landes, in dem sich die Küstenfunkstelle befindet, gefolgt von fünf besonders festgelegten Ziffern"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-066",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Welche Art von Funkstelle des Seefunkdienstes kennzeichnet die Ziffernfolge 002111240?",
+    "choices": [
+      "Deutsche Küstenfunkstelle",
+      "Deutsche Seefunkstelle",
+      "Deutsches SAR-Fahrzeug",
+      "Deutsche EPIRB"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-067",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Woran ist die Nationalität der Seefunkstelle in der MMSI erkennbar?",
+    "choices": [
+      "Seefunkkennzahl (MID)",
+      "Länderkennung, bestehend aus drei Buchstaben",
+      "Letzte drei Ziffern der MMSI",
+      "Mittlere drei Ziffern der MMSI"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-068",
+    "license_type": "src",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Durch die Verbindung mit welchem Gerät ist gewährleistet, dass bei einem DSC-Notalarm die aktuelle Position automatisch mit ausgesendet wird?",
+    "choices": [
+      "GPS-Empfänger",
+      "NAVTEX-Empfänger",
+      "Radargerät",
+      "UKW-Wachempfänger IV. UKW (VHF)–Sprechfunk"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-069",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Wie wird der Frequenzbereich von 30 bis 300 MHz bezeichnet?",
+    "choices": [
+      "Ultrakurzwelle (UKW/VHF)",
+      "Langwelle (LW/LF)",
+      "Mittelwelle (MW/MF)",
+      "Kurzwelle (KW/HF)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-070",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Welches Funkzeugnis muss der Führer eines Sportfahrzeugs oder Traditionsschiffes, das mit einer UKW-Seefunkstelle ausgerüstet ist, mindestens besitzen, um am GMDSS teilnehmen zu dürfen?",
+    "choices": [
+      "Beschränkt Gültiges Funkbetriebszeugnis (Short Range Certificate)",
+      "Allgemeines Sprechfunkzeugnis für den Seefunkdienst",
+      "UKW-Sprechfunkzeugnis für den Binnenschifffahrtsfunk",
+      "Allgemeines Betriebszeugnis für Funker (General Operator’s Certificate)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-071",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "An welchem Funkdienst darf der Inhaber eines Beschränkt Gültigen Funkbetriebszeugnisses (SRC) teilnehmen?",
+    "choices": [
+      "Mobiler Seefunkdienst auf Ultrakurzwelle (UKW/VHF)",
+      "Mobiler Seefunkdienst auf Ultrakurzwelle (UKW/VHF) einschließlich Satellitenfunk",
+      "Mobiler Seefunkdienst auf Kurzwelle (KW/HF) und Grenzwelle (GW/MF), außer Satellitenfunk",
+      "Mobiler Seefunkdienst auf Ultrakurzwelle (UKW/VHF) einschließlich Grenzwelle/Kurzwelle"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-072",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Was kennzeichnet die Betriebsart „Duplex“?",
+    "choices": [
+      "Gegensprechen auf zwei Frequenzen",
+      "Wechselsprechen auf einer Frequenz",
+      "Gegensprechen auf einer Frequenz",
+      "Wechselsprechen auf zwei Frequenzen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-073",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Was kennzeichnet die Betriebsart „Simplex“?",
+    "choices": [
+      "Wechselsprechen auf einer Frequenz",
+      "Gegensprechen auf einer Frequenz",
+      "Wechselsprechen auf zwei Frequenzen",
+      "Gegensprechen auf zwei Frequenzen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-074",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Welche Betriebsart wird als „Semi-Duplex“ bezeichnet?",
+    "choices": [
+      "Wechselsprechen auf zwei Frequenzen",
+      "Gegensprechen auf zwei Frequenzen",
+      "Gegensprechen auf einer Frequenz",
+      "Wechselsprechen auf einer Frequenz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-075",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Welche UKW-Kanäle sind international ausschließlich für den Funkverkehr zwischen Seefunkstellen vorgesehen?",
+    "choices": [
+      "Kanäle 06, 08, 72 und 77",
+      "Kanäle 15 und 17",
+      "Kanäle 16, 69, 70 und 82",
+      "Kanäle 16 und 18, ersatzweise 70"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-076",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Für welchen Funkverkehr dürfen die UKW-Kanäle 75 und 76 benutzt werden?",
+    "choices": [
+      "Funkverkehr, der ausschließlich die Navigation betrifft",
+      "Funkverkehr, der ausschließlich See-Land-Verbindungen betrifft",
+      "Funkverkehr unter Behördenfahrzeugen",
+      "Funkverkehr, der ausschließlich Land-See-Verbindungen betrifft"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-077",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Atmosphärische Störungen des Funkverkehrs sind …",
+    "choices": [
+      "im Seefunkverkehr im VHF-Bereich kein Problem",
+      "im Seefunkverkehr im VHF-Bereich ein großes Problem",
+      "gleichzeitig im VHF-Bereich und beim NAVTEX-Empfang vorhanden",
+      "im VHF-Bereich nur bei Verwendung von nicht vertikal angebrachten Antennen vorhanden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-078",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Wie breiten sich Ultrakurzwellen (UKW/VHF) aus?",
+    "choices": [
+      "Geradlinig und quasioptisch",
+      "Abhängig von der Tageszeit",
+      "Der Erdkrümmung folgend bis weit hinter den Horizont",
+      "In der Ionosphäre reflektiert"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-079",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Wie werden die internationalen Kanäle im UKW-Seefunkbereich bezeichnet?",
+    "choices": [
+      "Kanal 1 bis 28 und 60 bis 88",
+      "Kanal 1 bis 20 und 68 bis 88",
+      "Kanal 1 bis 28 und 60 bis 87",
+      "Kanal 1 bis 28 und 68 bis 88"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-080",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Wovon hängt die Reichweite einer UKW-Funkanlage hauptsächlich ab?",
+    "choices": [
+      "Antennenhöhe",
+      "Bordnetzspannung",
+      "Tageszeit",
+      "Wetter"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-081",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Wie sollen UKW-Antennen ausgerichtet werden?",
+    "choices": [
+      "Vertikal",
+      "Horizontal",
+      "Radial",
+      "Diagonal"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-082",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Wodurch kann die Abstrahlung der Sendeenergie einer UKW-Anlage auf einem Schiff wesentlich beeinträchtigt werden?",
+    "choices": [
+      "Metallische Gegenstände in der Nähe der Antenne",
+      "Schräglage des Schiffs",
+      "Metallische Gegenstände in der Nähe des Antennenkabels",
+      "Wetter"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-083",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Was hat keinen Einfluss auf die Reichweite eines UKW-Handsprechfunkgerätes?",
+    "choices": [
+      "Schlechtes Wetter",
+      "Niedrige Antennenhöhe",
+      "Geringer Ladezustand des Akkus",
+      "Geringe Sendeleistung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-084",
+    "license_type": "src",
+    "category": "UKW/VHF-Sprechfunk",
+    "prompt": "Ist das Senden auf UKW in ausländischen Häfen gestattet?",
+    "choices": [
+      "Abhängig von entsprechenden Vorschriften des Landes",
+      "Es ist immer gestattet",
+      "Nur am Tage, in der Nacht herrscht Funkstille",
+      "Außer in Notfällen ist es überall verboten V. Betriebsverfahren und Rangfolgen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-085",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wie ist die Rangfolge der Aussendungen im Seefunkdienst festgelegt?",
+    "choices": [
+      "Not, Dringlichkeit, Sicherheit, Routine",
+      "Not, Sicherheit, Dringlichkeit, Routine",
+      "Routine, Sicherheit, Dringlichkeit, Not",
+      "Routine, Dringlichkeit, Sicherheit, Not"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-086",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welche Vorkommnisse im Seefunkdienst sollen im Schiffstagebuch dokumentiert werden?",
+    "choices": [
+      "Der Not-, Dringlichkeits- und Sicherheitsverkehr sowie wichtige Vorkommnisse, die den Seefunkdienst betreffen",
+      "Der Not-, Dringlichkeits- und Sicherheitsverkehr sowie der Routineverkehr zwischen Seefunkstellen und Küstenfunkstellen",
+      "Der gesamte DSC-Verkehr sowie wichtige Vorkommnisse, die den Seefunkdienst betreffen",
+      "Der GMDSS-Verkehr zwischen Seefunkstellen sowie Fehlalarme und andere wichtige Vorkommnisse, die den Seefunkdienst betreffen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-087",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welchem Funkverkehr ist der Nachrichtenaustausch zwischen Küstenfunkstellen des Revier- und Hafenfunkdienstes und Seefunkstellen zuzuordnen?",
+    "choices": [
+      "Nichtöffentlicher Funkverkehr",
+      "On Board Traffic",
+      "Port Radio",
+      "Öffentlicher Funkverkehr"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-088",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wozu dient der Revier- und Hafenfunkdienst?",
+    "choices": [
+      "Übermittlung von Nachrichten, die ausschließlich das Führen, die Fahrt und die Sicherheit von Schiffen auf dem Revier, innerhalb oder in der Nähe von Häfen betreffen",
+      "Zuweisung von Liegeplätzen innerhalb oder in der Nähe von Häfen",
+      "Verbreitung von Wetterberichten auf dem Revier, innerhalb oder in der Nähe von Häfen",
+      "Nachrichtenaustausch innerhalb oder in der Nähe von Häfen über das öffentliche Netz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-089",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welcher Funkdienst gehört neben dem Revier- und Hafenfunkdienst ebenfalls zum Sicherheitsfunkdienst innerhalb des mobilen Seefunkdienstes?",
+    "choices": [
+      "Schiffslenkungsfunkdienst",
+      "Lotsenfunk",
+      "Schleusenfunk",
+      "Binnenschifffahrtsfunk"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-090",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wer bestimmt bei einer Verbindung zwischen See- und Küstenfunkstelle den für die weitere Verkehrsabwicklung zu benutzenden Arbeitskanal?",
+    "choices": [
+      "Küstenfunkstelle",
+      "Seefunkstelle",
+      "On-Scene Co-ordinator (OSC)",
+      "Rufende Funkstelle"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-091",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wie ist eine Küstenfunkstelle des Revier- und Hafenfunkdienstes gekennzeichnet?",
+    "choices": [
+      "Geografischer Name des Ortes, dem die Art des Dienstes und das Wort Radio folgen",
+      "Wort Radio, dem die Art des Dienstes und der geografische Name des Ortes folgen",
+      "Geografischer Name des Ortes, dem das Wort Radio und die Art des Dienstes folgen",
+      "Radio, dem der geografische Name des Ortes und die Art des Dienstes folgen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-092",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welche Funkstelle wird mit dem Rufnamen „Warnemünde Traffic“ gerufen?",
+    "choices": [
+      "Küstenfunkstelle des Revierfunkdienstes in Warnemünde",
+      "Wasserschutzpolizei Warnemünde",
+      "Seefunkstelle der DGzRS-Station Warnemünde",
+      "Funkstelle des Hafenmeisters der Marina in Warnemünde"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-093",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Was zeigt das Dringlichkeitszeichen an?",
+    "choices": [
+      "Die rufende Funkstelle hat eine sehr dringende Meldung auszusenden, welche die Sicherheit einer mobilen Einheit oder einer Person betrifft",
+      "Die rufende Funkstelle hat eine Meldung auszusenden, dass ein Schiff von einer ernsten und unmittelbaren Gefahr bedroht ist und sofortige Hilfe benötigt",
+      "Die rufende Funkstelle hat eine eilige Meldung auszusenden, die eine nautische Warnnachricht zum Inhalt hat",
+      "Die rufende Funkstelle hat eine wichtige Meldung auszusenden, welche den Empfang einer Seenotfunkbake (EPIRB) bestätigt"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-094",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wie lautet das Dringlichkeitszeichen im Sprechfunk?",
+    "choices": [
+      "PAN PAN",
+      "SECURITE",
+      "MAYDAY",
+      "URGENCY"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-095",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Was wird im Sprechfunk durch das Zeichen PAN PAN angekündigt?",
+    "choices": [
+      "Dringlichkeitsmeldung",
+      "Notmeldung",
+      "Sicherheitsmeldung",
+      "Routinemeldung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-096",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wie ist im GMDSS zu verfahren, wenn eine dringende Meldung im UKW-Bereich auszusenden ist, welche die Sicherheit einer Person betrifft?",
+    "choices": [
+      "Ankündigung per Digitalen Selektivruf (DSC) auf Kanal 70 und Aussendung der Dringlichkeitsmeldung im Sprechfunk auf Kanal 16",
+      "Ankündigung und Aussendung der Dringlichkeitsmeldung im Sprechfunk auf Kanal 16",
+      "Ankündigung im Sprechfunk auf Kanal 16 und Aussendung der Dringlichkeitsmeldung auf einem Schiff-Schiff-Kanal",
+      "Ankündigung per Digitalem Selektivruf (DSC) auf Kanal 70 und Aussendung der Dringlichkeitsmeldung auf einem Schiff-Schiff-Kanal"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-097",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Was bedeutet im DSC-Controller die Anzeige „URGENCY“?",
+    "choices": [
+      "Die nachfolgende Meldung ist dringend und betrifft die Sicherheit einer mobilen Einheit oder einer Person",
+      "Die nachfolgende Meldung ist eine Notmeldung und die Seefunkstelle erbittet sofortige Hilfe",
+      "Die nachfolgende Meldung ist dringend und die Seefunkstelle erbittet nautische Beratung",
+      "Die nachfolgende Meldung ist eine Wetterwarnung und betrifft die Sicherheit der Schifffahrt"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-098",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "An wen dürfen Dringlichkeitsmeldungen im Seefunkdienst grundsätzlich gerichtet werden?",
+    "choices": [
+      "An alle Funkstellen oder an eine bestimmte Funkstelle",
+      "An alle Funkstellen im Seegebiet A1 oder an eine bestimmte Funkstelle im Seegebiet A1",
+      "An alle Küstenfunkstellen oder an alle Funkstellen im Seegebiet A1",
+      "An alle Küstenfunkstellen oder die Seenotleitung (MRCC)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-099",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wie ist zu verfahren, wenn eine an alle Funkstellen ausgesendete Dringlichkeits- meldung erledigt ist?",
+    "choices": [
+      "Dringlichkeitsmeldung muss durch eine Meldung an alle Funkstellen aufgehoben werden",
+      "Dringlichkeitsmeldung muss bei dem Fall „Mensch über Bord“ durch eine Meldung an alle Funkstellen aufgehoben werden",
+      "Dringlichkeitsmeldung muss durch eine Meldung an die nächste Küstenfunkstelle aufgehoben werden",
+      "Dringlichkeitsmeldung muss durch die Meldung SILENCE FINI aufgehoben werden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-100",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Wie lautet das Sicherheitszeichen im Seefunkdienst?",
+    "choices": [
+      "SECURITE",
+      "URGENCY",
+      "PAN PAN",
+      "MAYDAY"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-101",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welche Meldung wird mit SECURITE eingeleitet?",
+    "choices": [
+      "Sicherheitsmeldung",
+      "Notmeldung",
+      "Dringlichkeitsmeldung",
+      "Routinemeldung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-102",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welchen Inhalt kann eine Sicherheitsmeldung haben?",
+    "choices": [
+      "Wichtige nautische Warnnachricht oder eine wichtige Wetterwarnung",
+      "Wichtige nautische Warnnachricht oder die Weiterleitung eines Notalarms",
+      "Aufhebung eines Fehlalarms oder eine wichtige Wetterwarnung",
+      "Aufhebung einer Dringlichkeitsmeldung oder ein Medico-Gespräch"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-103",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welche UKW-Kanäle benutzen Sportfahrzeuge für den Funkverkehr untereinander vorzugsweise in den deutschen Hoheitsgewässern?",
+    "choices": [
+      "Kanäle 69 oder 72",
+      "Kanäle 69 oder 70",
+      "Kanäle 10 oder 13",
+      "Kanäle 06 oder 16"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-104",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Für welche Verkehrsabwicklungen werden UKW-Handsprechfunkgeräte vorzugs- weise verwendet?",
+    "choices": [
+      "Funkverkehr an Bord, Funkverkehr Schiff–Überlebensfahrzeug",
+      "Funkverkehr Schiff–Schiff, Funkverkehr Schiff–SAR-Hubschrauber)",
+      "Funkverkehr an Bord, Funkverkehr Schiff–Hafen",
+      "Funkverkehr mit Küstenfunkstellen, Funkverkehr Schiff–Überlebensfahrzeug"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-105",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Was ist bei Testsendungen im Sprech-Seefunkdienst zu beachten?",
+    "choices": [
+      "Die Aussendungen dürfen 10 Sekunden nicht überschreiten, müssen mit dem Wort „Test“ und mit einer Kennung des Schiffes ausgestrahlt werden",
+      "Die Aussendungen dürfen 20 Sekunden nicht überschreiten und müssen mit einer Kennung des Schiffes ausgestrahlt werden",
+      "Die Aussendungen dürfen nur einmal nach Einbau des Gerätes ohne Antenne erfolgen und müssen mit dem Wort „Test“ gekennzeichnet werden",
+      "Die Aussendungen dürfen nur außerhalb der Hoheitsgewässer erfolgen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-106",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Betriebsart wird für den Schiff-Schiff-Verkehr auf UKW im Sprechfunkverfahren verwendet?",
+    "choices": [
+      "Wechselsprechen auf einer Frequenz",
+      "Gegensprechen auf einer Frequenz",
+      "Wechselsprechen auf zwei Frequenzen",
+      "Gegensprechen auf zwei Frequenzen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-107",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Der UKW-Kanal 70 dient ausschließlich dem Zweck der Aussendung ...",
+    "choices": [
+      "des Digitalen Selektivrufs",
+      "von Peilzeichen",
+      "von Positionsmeldungen",
+      "von Küstenfunkstellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-108",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welchen Zwecken dient der UKW-Kanal 16 (156,8 MHz) im Seefunkdienst?",
+    "choices": [
+      "Notverkehr, Dringlichkeitsmeldung, Ankündigung einer Sicherheitsmeldung, Anrufkanal",
+      "Notverkehr, Ankündigung einer Sicherheitsmeldung, Routineverkehr, Anrufkanal",
+      "Aussendung des digitalen Selektivrufs",
+      "Funkverkehr zwischen Fischereifahrzeugen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-109",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Auf welchem UKW-Kanal muss ein Sportfahrzeug empfangsbereit sein, wenn es sich auf See befindet und mit einer GMDSS-Seefunkanlage ausgerüstet ist?",
+    "choices": [
+      "Kanal 70",
+      "Kanal 16",
+      "Kanal 69",
+      "Kanal 72"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-110",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Auf welchem UKW-Kanal sollte ein Sportfahrzeug in der Regel empfangsbereit sein, wenn es sich auf See befindet und nur mit einer UKW-Sprechfunkanlage ausgerüstet ist?",
+    "choices": [
+      "Kanal 16",
+      "Kanal 70",
+      "Kanal 69",
+      "Kanal 06"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-111",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welcher UKW-Kanal ist vorzugsweise für den Schiff-Schiff-Verkehr und für koordinierte Such- und Rettungseinsätze (SAR) vorgesehen?",
+    "choices": [
+      "Kanal 06",
+      "Kanal 10",
+      "Kanal 16",
+      "Kanal 72"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-112",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Welchen Zwecken dienen der Anrufkanal und ein Arbeitskanal?",
+    "choices": [
+      "Anrufkanal zur Verbindungsaufnahme, Arbeitskanal zur Abwicklung des Weiteren Funkverkehrs",
+      "Anrufkanal zur Verbindungsaufnahme, Arbeitskanal nur zur Abwicklung von Notfällen",
+      "Anrufkanal zur Verbindungsaufnahme, Arbeitskanal zur Abwicklung von Reiseplanungen",
+      "Anrufkanal zur Verbindungsaufnahme mit Teilnehmern an Land, Arbeitskanal zur Zuweisung des Schleusenranges"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-113",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Auf welchem Kanal ist eine Küstenfunkstelle zu rufen, die sowohl auf dem Kanal 70 als auch auf Kanal 16 sowie auf einem veröffentlichten Arbeitskanal empfangsbereit ist?",
+    "choices": [
+      "Kanal 70 oder Arbeitskanal",
+      "Kanal 16 oder Kanal 70",
+      "Kanal 70 oder Kanal 72",
+      "Kanal 16 oder Arbeitskanal"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-114",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Auf welchem Kanal wird eine Küstenfunkstelle ohne DSC im Routineverkehr gerufen?",
+    "choices": [
+      "Arbeitskanal",
+      "Kanal 16",
+      "Ankündigung auf Kanal 16, dann Wechsel zum Arbeitskanal",
+      "Kanal 70"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-115",
+    "license_type": "src",
+    "category": "Betriebsverfahren und Rangfolgen",
+    "prompt": "Was ist vor dem Anruf auf einem Arbeitskanal zu beachten?",
+    "choices": [
+      "Der laufende Funkverkehr darf nicht gestört werden",
+      "Die geringste Sendeleistung muss eingestellt werden",
+      "Die Küstenfunkstelle muss den Arbeitskanal freigeben",
+      "Der laufende Funkverkehr muss aufgefordert werden, den Funkverkehr zu beenden VI. Nautische und Meteorologische Warnnachrichten (NAVTEX)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-116",
+    "license_type": "src",
+    "category": "NAVTEX",
+    "prompt": "Was bedeutet „NAVTEX“?",
+    "choices": [
+      "Nautische Warnnachrichten im Funktelexverfahren",
+      "Navigationssystem, das Vorgaben im Funktelexverfahren erhält",
+      "MW-Empfänger an Bord eines Seeschiffes zur Aufzeichnung von Wetterberichten",
+      "Satellitengestütztes Navigationssystem für den Seenotfall"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-117",
+    "license_type": "src",
+    "category": "NAVTEX",
+    "prompt": "Wie heißt der Dienst, in dem Nachrichten für die Sicherheit der Seeschifffahrt (MSI) über terrestrische Frequenzen verbreitet werden?",
+    "choices": [
+      "NAVTEX",
+      "SafetyNET",
+      "AIS",
+      "AMVER"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-118",
+    "license_type": "src",
+    "category": "NAVTEX",
+    "prompt": "Welchen Dienst bieten der Deutsche Wetterdienst (DWD) und das Bundesamt für Seeschifffahrt und Hydrographie (BSH) auf den Frequenzen 518 kHz und 490 kHz gemeinsam an?",
+    "choices": [
+      "NAVTEX",
+      "SafetyNET",
+      "TELEX",
+      "AMVER"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-119",
+    "license_type": "src",
+    "category": "NAVTEX",
+    "prompt": "Bis zu welcher Entfernung vom Standort des Senders können Sicherheitsmeldungen für die Seeschifffahrt im NAVTEX-Dienst empfangen werden?",
+    "choices": [
+      "Ca. 600 sm",
+      "Ca. 30 sm",
+      "Ca. 1000 sm",
+      "Ca. 1500 sm"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-120",
+    "license_type": "src",
+    "category": "NAVTEX",
+    "prompt": "Worauf muss beim Einstellen eines NAVTEX-Empfängers geachtet werden?",
+    "choices": [
+      "Einstellen der jeweiligen NAVTEX-Sender und Auswählen der Art der benötigten Meldungen",
+      "Auswählen der gewünschten NAVTEX-Sender und Eingeben der MMSI-Rufnummer",
+      "Eingeben der eigenen Position und Auswählen der Art der benötigten Meldungen",
+      "Auswählen der Sprache, in der die Nachricht empfangen werden soll, und Unterdrücken nicht benötigter Meldungen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-121",
+    "license_type": "src",
+    "category": "NAVTEX",
+    "prompt": "Welche Informationen können bei der Programmierung eines NAVTEX-Empfängers nicht unterdrückt werden?",
+    "choices": [
+      "Navigationswarnungen, Meteorologische Warnungen und SAR-Meldungen",
+      "Navigationswarnungen, Wettervorhersagen und SAR-Meldungen",
+      "Sat-Nav-Warnungen, Meteorologische Warnungen und Navigationswarnungen",
+      "Meteorologische Warnungen, Revierinformationen und SAR-Meldungen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-122",
+    "license_type": "src",
+    "category": "NAVTEX",
+    "prompt": "In welcher Sprache werden Nachrichten für die Sicherheit der Seeschifffahrt (MSI) im NAVTEX-Dienst auf 490 kHz verbreitet?",
+    "choices": [
+      "Landessprache der Funkstelle",
+      "Englisch",
+      "Niederländisch",
+      "Französisch"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-123",
+    "license_type": "src",
+    "category": "NAVTEX",
+    "prompt": "In welchen Zeitabständen werden die regelmäßigen NAVTEX-Informationen vom deutschen NAVTEX-Sender ausgesendet?",
+    "choices": [
+      "4 Stunden",
+      "1 Stunde",
+      "12 Stunden",
+      "24 Stunden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-124",
+    "license_type": "src",
+    "category": "NAVTEX",
+    "prompt": "Was bezeichnet „NAVAREA“?",
+    "choices": [
+      "International festgelegtes Vorhersage- und Seewarngebiet",
+      "Internationales Seegebiet, das nicht befahren werden darf",
+      "Internationales Seegebiet, das in vier Gruppen eingeteilt ist (A1 bis A4)",
+      "Internationales Seegebiet, das von Seeschiffen befahren werden darf VII. Suche und Rettung (SAR), Seenotfunkbake (EPIRB) und Radartransponder (SART)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-125",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Was bezeichnet „SAR“?",
+    "choices": [
+      "Suche und Rettung",
+      "Seenotfunkbake",
+      "Sanitätsdienst",
+      "Radartransponder"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-126",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Aufgabe hat ein „RCC“ im Seenotfall?",
+    "choices": [
+      "Koordinierung der im Seenotfall zur Verfügung stehenden Kräfte und Abwicklung des Notverkehrs",
+      "Stationierung von Seenotrettungskreuzern rund um die Uhr",
+      "Alarmierung von SAR-Fahrzeugen im Seenotfall über Satellit",
+      "Erteilung von Ratschlägen an den Havaristen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-127",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Aufgabe hat ein „MRCC“ im Seenotfall?",
+    "choices": [
+      "Koordinierung der im Seenotfall zur Verfügung stehenden Kräfte",
+      "Bereithaltung von Rettungsfahrzeugen im Seenotfall",
+      "Erarbeitung von Richtlinien für das Verhalten im Seenotfall",
+      "Erteilung von Ratschlägen an den Havaristen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-128",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Was ist „On-Scene Communication“?",
+    "choices": [
+      "Funkverkehr vor Ort im Seenotfall",
+      "Funkverkehr in Reichweite einer Küstenfunkstelle für UKW",
+      "Funkverkehr im Hafenfunk (Port Radio)",
+      "Funkverkehr von Behördenfahrzeugen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-129",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Aufgabe hat der „On-Scene Coordinator“ (OSC) im SAR-Fall?",
+    "choices": [
+      "Leitung der Such- und Rettungsmaßnahmen vor Ort",
+      "Kooperation mit der nächstgelegenen Küstenfunkstelle des Revierfunkdienstes",
+      "Festlegung der DSC-Kanäle zur Verständigung der SAR-Einheiten",
+      "Verbreitung wichtiger SAR-Meldungen rund um die Uhr"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-130",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Was bedeutet „Funkverkehr vor Ort“?",
+    "choices": [
+      "Funkverkehr zwischen dem Schiff in Not und den Fahrzeugen, die Hilfe leisten sowie dem Schiff in Not und dem Fahrzeug, das die Suche und Rettung koordiniert",
+      "Funkverkehr zwischen dem Fahrzeug, das die Suche und Rettung koordiniert, und der Küstenfunkstelle",
+      "Funkverkehr zwischen der Küstenfunkstelle und dem On-Scene Coordinator",
+      "Funkverkehr zwischen dem Schiff in Not und in der Nähe befindlichen Luftfunkstellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-131",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wer darf das Aussenden einer Notmeldung im Seefunkdienst veranlassen?",
+    "choices": [
+      "Fahrzeugführer",
+      "Crewmitglied",
+      "Rudergänger",
+      "Rettungsleitstelle"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-132",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Auf welchem UKW-Kanal müssen alle mit DSC ausgerüsteten seegehenden Schiffe im Weltweiten Seenot- und Sicherheitsfunksystem (GMDSS empfangsbereit sein?",
+    "choices": [
+      "Kanal 70",
+      "Kanal 16",
+      "Kanal 06",
+      "Kanal 10"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-133",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wie lautet das Notzeichen im Sprechfunk?",
+    "choices": [
+      "MAYDAY",
+      "PAN PAN",
+      "DISTRESS",
+      "SOS"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-134",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Womit wird der Notverkehr im Sprechfunk eingeleitet?",
+    "choices": [
+      "MAYDAY",
+      "Schiffsname",
+      "DISTRESS",
+      "SOS"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-135",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wann liegt ein Seenotfall vor, der das Aussenden des Notzeichens im Sprechfunk rechtfertigt?",
+    "choices": [
+      "Wenn ein Schiff oder eine Person von einer ernsten und unmittelbaren Gefahr bedroht ist und sofortige Hilfe benötigt",
+      "Wenn ein Schiff manövrierbehindert ist und Hilfe benötigt",
+      "Wenn eine nautische Warnnachricht vorliegt, die unbedingt beachtet werden muss",
+      "Wenn ein medizinischer Notfall vorliegt, der unmittelbare funkärztliche Beratung erfordert"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-136",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Priorität der Alarmierung ist zu wählen, wenn sich eine Person in Lebensgefahr befindet und Hilfe benötigt?",
+    "choices": [
+      "Notfall",
+      "Dringlichkeit",
+      "Sicherheit",
+      "Routine"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-137",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Frequenzen dürfen neben den Notfrequenzen für die Aussendung einer Notmeldung im Seefunkdienst benutzt werden?",
+    "choices": [
+      "Jede andere verfügbare und geeignete Frequenz",
+      "UKW Kanal 06 (internationaler Verkehr)",
+      "Keine andere Frequenz",
+      "Nur Schiff-Schiff-Frequenzen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-138",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Auf welchem UKW-Kanal findet der Notverkehr vorzugsweise statt?",
+    "choices": [
+      "Kanal 16",
+      "Kanal 70",
+      "Kanal 69",
+      "Kanal 06"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-139",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Meldungen dürfen im Weltweiten Seenot- und Sicherheitsfunksystem (GMDSS) auf UKW-Kanal 16 (156,8 MHz) übermittelt werden?",
+    "choices": [
+      "Notmeldungen, Dringlichkeitsmeldungen und die Ankündigung von Sicherheitsmeldungen",
+      "Dringlichkeitsmeldungen und Meldungen im öffentlichen Funkverkehr",
+      "Sicherheits-, Dringlichkeitsmeldungen und Nichtöffentlicher Funkverkehr",
+      "Notmeldungen und Routinemeldungen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-140",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wann und warum wird die Einleitung eines Notverkehrs wiederholt?",
+    "choices": [
+      "Wenn die aussendende Seefunkstelle keine Antwort auf ihren DSC-Alarm oder ihre Notmeldung erhalten hat oder wenn sie es aus anderen Gründen für notwendig hält",
+      "Wenn der DSC-Notalarm nur von einer Küstenfunkstelle bestätigt worden ist",
+      "Die Einleitung des Notverkehrs darf nicht wiederholt werden, um Fehlalarme zu vermeiden",
+      "Die Einleitung des Notverkehrs wird nach 6 Minuten wiederholt, wenn keine Bestätigung erfolgt ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-141",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "An wen soll eine Seefunkstelle den Notalarm für ein anderes in Not befindliches Schiff richten?",
+    "choices": [
+      "Grundsätzlich an die nächstgelegene Küstenfunkstelle oder sonst an alle Funkstellen",
+      "Grundsätzlich an alle Seefunkstellen in der Nähe",
+      "Grundsätzlich an das Maritime Lagezentrum beim Havariekommando",
+      "Grundsätzlich an ein Local User Terminal oder sonst an alle Seefunkstellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-142",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Voraussetzung muss eine Seefunkstelle erfüllen, die den Empfang eines DSC-Notalarms auf UKW im Sprechfunkverfahren bestätigt?",
+    "choices": [
+      "Sie muss Hilfe leisten können",
+      "Eine sichere Funkverbindung muss möglich sein",
+      "Sie muss die Seefunkstelle in Not spätestens nach einer Stunde erreichen können",
+      "Notalarme werden in jedem Fall bestätigt"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-143",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wann darf eine Seefunkstelle, wenn sie Hilfe leisten kann, den Empfang eines DSC-Notalarms auf UKW im Sprechfunkverfahren bestätigen?",
+    "choices": [
+      "Nach Bestätigung durch eine Küstenfunkstelle oder einer angemessenen Wartefrist",
+      "Sofort nach Empfang des DSC-Notalarms",
+      "Nach einer Wartefrist von 3 Minuten",
+      "DSC-Notalarme dürfen grundsätzlich nur von Küstenfunkstellen bestätigt werden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-144",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Auf welchem UKW-Kanal und in welchem Verfahren bestätigt eine Seefunkstelle den auf Kanal 70 empfangenen Notalarm?",
+    "choices": [
+      "Kanal 16, Sprechfunkverfahren",
+      "Kanal 70, DSC",
+      "Arbeitskanal, Sprechfunkverfahren",
+      "Kanal 16, DSC"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-145",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wann wird im Seefunkdienst die Aufforderung SILENCE MAYDAY ausgesendet?",
+    "choices": [
+      "Wenn die Funkstelle, die den Notverkehr leitet, störende Funkstellen zur Einhaltung der Funkstille auffordert",
+      "Wenn die Situation des Schiffes in Not besonders kritisch ist",
+      "Wenn die Funkstelle, die den Notverkehr leitet, die Beendigung des Notverkehrs ankündigen will",
+      "Wenn eine Funkstelle sich besondere Aufmerksamkeit für die Verbreitung einer Dringlichkeits- oder Sicherheitsmeldung erbittet"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-146",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wer fordert in einem Seenotfall eine störende Funkstelle mit den Wörtern SILENCE MAYDAY zur Einhaltung der Funkstille auf?",
+    "choices": [
+      "Die Funkstelle, die den Notverkehr leitet",
+      "Die Funkstelle in Not oder eine Hilfe leistende Luftfunkstelle",
+      "Die Funkstelle, die die störende Funkstelle als erste empfangen hat",
+      "Die Funkstelle, die der störenden Funkstelle nächstgelegen ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-147",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Aufgaben übernimmt die Seenotleitung (Maritime Rescue Co-ordination Centre [MRCC]) nach Eingang eines Notalarms?",
+    "choices": [
+      "Koordinierung und Information über die SAR-Maßnahmen",
+      "Leitung des Notverkehrs auf Kanal 70",
+      "Bestimmung des On-Scene Co-ordinators (OSC)",
+      "Überwachung Kanäle 16 und 70 sowie Dokumentation der SAR-Maßnahmen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-148",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Auf welchen UKW-Kanälen ist Bremen Rescue Radio empfangsbereit?",
+    "choices": [
+      "Kanal 16 (Sprechfunk), Kanal 70 (DSC)",
+      "Kanal 10 (Sprechfunk), Kanal 70 (DSC)",
+      "Kanal 16 (Sprechfunk), Kanal 10 (DSC)",
+      "Kanal 06 (Sprechfunk), Kanal 70 (DSC)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-149",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Nach welchem Betriebsverfahren wird der Funkverkehr in Notfällen zwischen Seefunkstellen und SAR-Hubschraubern abgewickelt?",
+    "choices": [
+      "Betriebsverfahren des mobilen Seefunkdienstes",
+      "Betriebsverfahren des mobilen Flugfunkdienstes",
+      "Betriebsverfahren des Navigationsfunkdienstes",
+      "Betriebsverfahren des Revierfunkdienstes"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-150",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Veröffentlichung enthält Angaben zu Verfahren, Abkürzungen und international entwickelte Redewendungen für Notfälle?",
+    "choices": [
+      "Handbuch “Suche und Rettung”",
+      "Handbuch „Funkdienst für die Klein- und Sportschifffahrt“",
+      "Nachrichten für Seefahrer",
+      "Mitteilungen für Seefunkstellen und Schiffsfunkstellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-151",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "In welchem Frequenzbereich kann mit SAR-Einheiten Seefunkverkehr abgewickelt werden?",
+    "choices": [
+      "UKW-Bereich",
+      "UHF-Bereich",
+      "MW-Bereich",
+      "VLF-Bereich"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-152",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Im Funkverkehr zwischen Seefunkstellen und SAR-Hubschraubern gilt das Betriebsverfahren...",
+    "choices": [
+      "des Seefunkdienstes",
+      "des Flugfunkdienstes",
+      "der Rettungsdienste",
+      "des Binnenschifffahrtsfunks"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-153",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Auf welchen UKW-Kanälen dürfen zu Sicherheitszwecken Seefunkstellen mit SAR-Hubschraubern Funkverkehr vorzugsweise abwickeln?",
+    "choices": [
+      "Kanal 16, Kanal 06",
+      "Kanal 16, Kanal 10",
+      "Kanal 06, Kanal 10",
+      "Kanal 70, Kanal 16"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-154",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wodurch werden in der Regel bei einer Rettungsaktion mit SAR Hubschraubern die Kanäle 16 und 06 überwacht?",
+    "choices": [
+      "Zweikanal-Überwachung (Dual Watch)",
+      "Zwei unabhängige Seefunkgeräte",
+      "Regelmäßiges manuelles Umschalten",
+      "Bedarfsweises manuelles Umschalten"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-155",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welchen UKW-Kanal soll ein Schiff in Not bis zur Ankunft eines SAR-Hubschraubers abhören?",
+    "choices": [
+      "Kanal 16",
+      "Kanal 06",
+      "Kanal 10",
+      "Kanal 70"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-156",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wie ist zu verfahren, wenn während eines Notverkehrs auf Kanal 16 die Ankündigung einer Dringlichkeits- oder Sicherheitsmeldung „An alle Funkstellen“ vorgenommen werden soll?",
+    "choices": [
+      "Ankündigung mittels Digitalen Selektivrufs (DSC) auf Kanal 70, Ankündigung während einer Pause im Notverkehr auf Kanal 16, Aussendung der Meldung auf einem Schiff- Schiff-Kanal",
+      "Ankündigung auf Kanal 06, Information an die Küstenfunkstelle/RCC über den Inhalt der Meldung auf einem Arbeitskanal",
+      "Ankündigung mittels Digitalen Selektivrufs (DSC) auf Kanal 70, Information „An alle Funkstellen“ über den Inhalt der Meldung auf Kanal 16",
+      "Ankündigung auf Kanal 16 während einer Pause im Notverkehr, Aussendung auf einem Schiff-Schiff-Kanal"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-157",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Was ist zu tun, wenn irrtümlich von einer Seefunkstelle ein Notalarm auf Kanal 70 ausgelöst worden ist?",
+    "choices": [
+      "a. Gerät umgehend zurücksetzen b. Wenn möglich, den Fehlalarm per DSC zurücknehmen c. Mit Meldung auf Kanal 16 „An alle Funkstellen“ den Fehlalarm zurücknehmen",
+      "a. Gerät ausschalten, um weitere Sendungen zu verhindern b. Eintragung der irrtümlichen Aussendung im Schiffstagebuch c. Zuständiges MRCC telefonisch informieren",
+      "a. Ankündigung der Rücknahme des Notalarms mit DSC b. Mit Meldung auf Kanal 16 „An alle Funkstellen“ den Fehlalarm zurücknehmen c. Schiffsführer informieren",
+      "a. Gerät umgehend zurücksetzen b. Ankündigung der Rücknahme des Notalarms mit DSC c. Mit Meldung auf Kanal 13 „An alle Funkstellen“ den Fehlalarm zurücknehmen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-158",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Womit können im Notfall nach dem Verlassen des havarierten Schiffes keine Such- und Rettungsarbeiten ausgelöst bzw. erleichtert werden?",
+    "choices": [
+      "UKW-Empfänger",
+      "Transponder für Suche und Rettung (SART)",
+      "Seenotfunkbake (EPIRB)",
+      "Handsprechfunkgeräte"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-159",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Komponenten des Weltweiten Seenot- und Sicherheitsfunksystems (GMDSS) werden für die Aussendung von Signalen zur Ortsbestimmung eingesetzt?",
+    "choices": [
+      "SART, EPIRB",
+      "NAVTEX, EGC",
+      "DSC, EPIRB",
+      "NAVTEX, SART"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-160",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wo soll eine Satelliten-Seenotfunkbake (EPIRB) an Bord eines Sportbootes installiert werden?",
+    "choices": [
+      "Im äußeren Decksbereich",
+      "In der Backskiste",
+      "In mindestens 1 m Entfernung von Metallteilen",
+      "Geschützt unter Deck"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-161",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wann darf eine Satelliten-Seenotfunkbake (EPIRB) für eine Aussendung aktiviert werden?",
+    "choices": [
+      "Nur im Notfall",
+      "Zu Testzwecken",
+      "Im Notfall und zu Testzwecken",
+      "Beim Herannahen von Rettungsfahrzeugen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-162",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wie kann eine Satelliten-Seenotfunkbake (EPIRB) im Notfall aktiviert werden?",
+    "choices": [
+      "Manuell oder automatisch",
+      "Nur manuell",
+      "Nur automatisch",
+      "Durch das COSPAS-SARSAT-System"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-163",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wodurch wird eine EPIRB im Seenotfall automatisch aktiviert?",
+    "choices": [
+      "Wasserdruckauslöser",
+      "Rüttelkontakt",
+      "GPS-Signale",
+      "Radar-Signale"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-164",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Informationen enthält die Aussendung einer Satelliten-Seenotfunkbake (EPIRB)?",
+    "choices": [
+      "a. Notsignal b. Identifikationsmerkmal c. Position mittels GPS, wenn vorhanden",
+      "a. Notsignal b. Schiffstyp c. Art des Notfalls",
+      "a. Position mittels GPS, wenn vorhanden b. Identifikationsmerkmal c. Zielhafen",
+      "a. Art des Notfalls b. Position mittels GPS, wenn vorhanden c. Rufzeichen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-165",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wie lange dauert es in den Seegebieten A1 bis A3, bis der Alarm einer COSPAS- SARSAT- Satelliten-Seenotfunkbake (EPIRB) bei der zuständigen Seenotleitung (MRCC) aufläuft?",
+    "choices": [
+      "Wenige Minuten",
+      "Bis zu 30 Minuten",
+      "Bis zu 2 Stunden",
+      "Bis zu 4 Stunden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-166",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wie lange kann es unter ungünstigen Bedingungen von der Aktivierung einer COSPAS- SARSAT-Satelliten-Seenotfunkbake ohne GPS bis zum Empfang der Position im MRCC dauern?",
+    "choices": [
+      "Bis zu 4 Stunden",
+      "Bis zu 8 Stunden",
+      "Bis zu 12 Stunden",
+      "Bis zu einem Tag"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-167",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Warum dauert es unter ungünstigen Bedingungen von der Aktivierung einer COSPAS-SARSAT-Satelliten-Seenotfunkbake ohne GPS bis zum Empfang der Position im MRCC bis zu vier Stunden?",
+    "choices": [
+      "Es müssen Überflüge der umlaufenden COSPAS-SARSAT-Satelliten (LEOSAR) abgewartet werden",
+      "Die niedrige Datenrate im Uplink ermöglicht keine hohe Übertragungsgeschwindigkeit",
+      "Hoher Seegang behindert die Funkwellenausbreitung zum geostationären COSPAS-SARSAT-Satelliten (GEOSAR)",
+      "Schlechte Wetterverhältnisse behindern die Übertragung der Daten vom COSPAS-SARSAT-Satelliten zur Bodenstation (LUT)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-168",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wie groß ist die maximale Abweichung der ermittelten von der tatsächlichen Position einer COSPAS-SARSAT-Seenotfunkbake (EPIRB) ohne GPS?",
+    "choices": [
+      "2 sm",
+      "10 sm",
+      "100 sm",
+      "150 sm"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-169",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Zu welchem Zweck benutzen Satelliten-Seenotfunkbaken (EPIRB) die Frequenzen 121,5 MHz und 406 MHz?",
+    "choices": [
+      "121,5 MHz zur Zielfahrt (Homing), 406 MHz zur Alarmierung und Positionsbestimmung",
+      "121,5 MHz zur Zielfahrt (Homing), 406 MHz zur Kommunikation",
+      "121,5 MHz zur Identifikation, 406 MHz zur Zielfahrt (Homing)",
+      "121,5 MHz zur Kommunikation, 406 MHz zur Alarmierung und Positionsbestimmung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-170",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Informationen müssen an einer Satelliten-Seenotfunkbake (EPIRB) erkennbar sein?",
+    "choices": [
+      "a. Schiffsname/Rufzeichen/MMSI oder anderes Identifikationsmerkmal b. Seriennummer c. Haltbarkeitsdatum der Batterie d. Haltbarkeitsdatum des Wasserdruckauslösers",
+      "a. Herstellerfirma b. Haltbarkeitsdatum des Wasserdruckauslösers c. Zulassungsdatum der EPIRB d. Kurzanleitung",
+      "a. Herstellerfirma b. Schiffsname/Rufzeichen/MMSI oder anderes Identifikationsmerkmal c. Prüfdatum d. Sendefrequenz",
+      "a. Kurzanleitung b. Zulassungsdatum der EPIRB c. Schiffsname/Rufzeichen/MMSI oder anderes Identifikationsmerkmal d. Haltbarkeitsdatum der Batterie"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-171",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Was ist zu tun, bevor die Satelliten-Seenotfunkbake (EPIRB) für Wartungszwecke aus ihrer Halterung entfernt werden soll?",
+    "choices": [
+      "Sicherstellen, dass kein Fehlalarm ausgelöst wird",
+      "Sicherung lösen",
+      "MRCC informieren",
+      "Keine besonderen Vorkehrungen treffen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-172",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Prüfungen sind an einer Satelliten-Seenotfunkbake (EPIRB) durchzuführen?",
+    "choices": [
+      "Haltbarkeitsdatum der Batterie, Haltbarkeitsdatum des Wasserdruckauslösers, Funktion entsprechend den Herstellerangaben",
+      "Haltbarkeitsdatum der Batterie, Haltbarkeitsdatum des Wasserdruckauslösers, Befestigung am Schiffskörper",
+      "Funktion entsprechend den Herstellerangaben, Haltbarkeitsdatum der Batterie, Festigkeit der Sicherheitsleine",
+      "Haltbarkeitsdatum des Wasserdruckauslösers, Lesbarkeit der Beschriftung, Kontakte der Batterien"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-173",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Wie erscheint die Aussendung eines Transponders für Suche und Rettung (SART) auf einem Radarbildschirm?",
+    "choices": [
+      "Als Linie von mindestens zwölf Zeichen",
+      "Die Aussendung eines Transponders ist auf dem Radarschirm nicht sichtbar",
+      "Als lange aus einem Zeichen bestehende Linie",
+      "Als Linie von mindestens drei Zeichen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-174",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welches Navigationsgerät empfängt das Signal eines aktivierten Transponders für Suche und Rettung (SART)?",
+    "choices": [
+      "Radargerät",
+      "GPS-Empfänger",
+      "DSC-Controller",
+      "NAVTEX-Gerät"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-175",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Vorteile hat eine UKW-Seefunkanlage gegenüber einem Mobiltelefon in einer Notsituation?",
+    "choices": [
+      "Allgemeine und sichere Alarmierungsmöglichkeit",
+      "Hohe und gleichbleibende Sprachqualität",
+      "Wahrung des Fernmeldegeheimnisses und des Abhörverbots",
+      "Digitale und sichere Sprachübertragung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-176",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welchen Vorteil hat eine UKW-Seefunkanlage gegenüber einem Mobiltelefon, wenn in einer Notsituation andere Fahrzeuge in Sicht sind und um Hilfe gebeten werden sollen?",
+    "choices": [
+      "Erreichbarkeit aller in Funkreichweite befindlichen Seefunkstellen",
+      "Erreichbarkeit aller Seefunkstellen im Seegebiet A1",
+      "Erreichbarkeit aller Rettungsfahrzeuge in Küstennähe",
+      "Erreichbarkeit aller Seefunkstellen in den Seegebieten A1 und A2"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-177",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Warum ist ein Mobiltelefon gegenüber einer UKW-Seefunkanlage keine Alternative, wenn in einer Notsituation die Such- und Rettungsmaßnahmen anderen Fahrzeugen bekannt gemacht werden müssen?",
+    "choices": [
+      "Telefongespräche können von weiteren Fahrzeugen nicht mitgehört werden, wichtige Informationen zur Hilfeleistung und Rettung sind nicht für alle Beteiligten verfügbar",
+      "Telefongespräche können von weiteren Fahrzeugen nicht bestätigt werden, der Seenotleitung (MRCC) fehlen daher wichtige Informationen",
+      "Telefongespräche können von Küstenfunkstellen nicht bestätigt werden, wichtige Informationen fehlen daher für die Koordination vor Ort",
+      "Telefongespräche können vom On-Scene-Coordinator (OSC) nicht mitgehört werden, wichtige Informationen sind nur bei der Seenotleitung (MRCC) vorhanden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-178",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Mit welcher Meldung werden die Funkstellen davon unterrichtet, dass der Notverkehr beendet ist?",
+    "choices": [
+      "Meldung, die mit SILENCE FINI abschließt",
+      "Meldung, die mit SILENCE MAYDAY abschließt",
+      "Meldung, die mit OVER AND OUT abschließt",
+      "Meldung, die mit MASTER abschließt"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-179",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Funktion hat ein Transponder für Suche und Rettung (Search and Rescue Transponder [SART])?",
+    "choices": [
+      "Aussendung von Ortungsfunksignalen, die im Seenotfall das Auffinden des verunglückten Fahrzeuges mittels Radar erleichtern sollen",
+      "Automatische Aussendung der Notposition über UKW an Küsten- bzw. Schiffsfunkstellen",
+      "Automatische Übermittlung der Position des in Not befindlichen Fahrzeuges über die COSPAS-SARSAT-Satelliten",
+      "Reflexion von Radarstrahlen und Erzeugung eines deutlichen Echos auf Radarbildschirmen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  },
+  {
+    "external_id": "SRC-180",
+    "license_type": "src",
+    "category": "SAR, EPIRB und SART",
+    "prompt": "Welche Funktion hat eine Satelliten-Seenotfunkbake (Emergency Position-Indicating Radiobeacon [EPIRB])?",
+    "choices": [
+      "Alarmierung und Kennzeichnung der Notposition",
+      "Kommunikation im VHF-Band zwischen Überlebensfahrzeug und SAR- Fahrzeugen bzw. dem MRCC",
+      "Aussendung einer Notmeldung auf den Notfrequenzen der Luftfahrt (121,5 MHz bzw. 243 MHz), die von den Luftfahrzeugen bestätigt wird",
+      "Ermöglichen der Ortung mittels Radar und Erleichterung des Auffindens des Havaristen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Gesamtfragenkatalog SRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-SRC-2018.pdf?__blob=publicationFile&v=3",
+    "source_stand": "10/2018 Korrektur 07012019",
+    "exam_section": "SRC"
+  }
+]

@@ -13,7 +13,7 @@ Boatiboat nutzt nur amtliche oder behördennahe Primärquellen als Grundlage fü
 
 - SRC Gesamtfragenkatalog: ELWIS / Fachstelle der WSV für Verkehrstechniken
 - LRC Fragenkatalog: ELWIS / Fachstelle der WSV für Verkehrstechniken
-- UBI Fragenkatalog: Bundes-Verwaltungsvorschriften im Internet
+- UBI Gesamtfragenkatalog: Amt für Binnen-Verkehrstechnik / WSV
 - FKN Fragen- und Antwortenkatalog: gemeinsames Sportbootführerschein-Portal von DMYV und DSV
 
 ## Bodenseeschifferpatent
@@ -36,8 +36,13 @@ mit Dateigrößen und SHA-256-Prüfsummen. `build/` bleibt bewusst unversioniert
 
 ```powershell
 .venv\Scripts\python scripts\parse_fkn_catalog.py
+.venv\Scripts\python scripts\parse_radio_catalogs.py
 ```
 
 Das FKN-Skript liest die amtliche PDF aus `build/authority_catalogs/` und schreibt 60
 Flashcard-Datensätze nach `app/fkn_catalog.json`. Die Fragen bleiben damit getrennt vom
 SBF-Prüfungskatalog, bis FKN-Lernmodus und Prüfungslogik in der App freigeschaltet werden.
+
+Das Funk-Skript liest die amtlichen SRC-, LRC- und UBI-PDFs aus `build/authority_catalogs/`
+und schreibt Multiple-Choice-Kataloge nach `app/src_catalog.json`, `app/lrc_catalog.json`
+und `app/ubi_catalog.json`. Laut Quelle ist jeweils die erste Antwort richtig.

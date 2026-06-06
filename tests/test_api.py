@@ -155,6 +155,39 @@ def test_fkn_exam_mode_is_not_enabled_yet():
     assert response.status_code == 400
 
 
+def test_radio_catalog_import_and_learning_session():
+    payload = [
+        {
+            "external_id": "SRC-TEST-1",
+            "license_type": "src",
+            "category": "Digitaler Selektivruf (DSC)",
+            "prompt": "Was ist DSC?",
+            "choices": ["Richtig", "Falsch 1", "Falsch 2", "Falsch 3"],
+            "correct_index": 0,
+            "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+            "source_name": "SRC",
+            "source_url": "https://example.test/src.pdf",
+            "source_stand": "10/2018",
+        }
+    ]
+
+    assert client.post("/api/import/json", json=payload).status_code == 200
+
+    questions = client.get("/api/questions?license_type=src").json()
+    assert len(questions) == 1
+    assert questions[0]["choices"][0] == "Richtig"
+
+    session = client.get("/api/session?mode=learn&license_type=src&limit=5").json()
+    assert session["questions"][0]["external_id"] == "SRC-TEST-1"
+    assert session["source_summary"][0]["name"] == "SRC"
+
+
+def test_radio_exam_modes_are_not_enabled_yet():
+    for license_type in ("src", "lrc", "ubi"):
+        response = client.get(f"/api/session?mode=exam&license_type={license_type}")
+        assert response.status_code == 400
+
+
 def test_choices_are_shuffled_and_correct_index_is_rebased():
     question = Question(
         external_id="mix-1",

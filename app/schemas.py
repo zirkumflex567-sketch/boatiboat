@@ -3,7 +3,7 @@ from pydantic import BaseModel, Field
 
 class QuestionIn(BaseModel):
     external_id: str
-    license_type: str = Field(pattern="^(see|binnen|fkn)$")
+    license_type: str = Field(pattern="^(see|binnen|fkn|src|lrc|ubi)$")
     category: str
     prompt: str
     choices: list[str] = []

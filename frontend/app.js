@@ -27,14 +27,33 @@ const CAT_ORDER = [
   "Spezifische Fragen Segeln",
   "Navigationsaufgaben",
   "Fachkundenachweis Seenotsignalmittel",
+  "Binnenschifffahrtsfunk",
+  "Mobiler Seefunkdienst und GMDSS",
+  "Mobiler Seefunkdienst, Satelliten und GMDSS",
+  "Funkeinrichtungen und Seefunkstellen",
+  "Funkeinrichtungen und Schiffsfunkstellen",
+  "Digitaler Selektivruf (DSC)",
+  "UKW/VHF-Sprechfunk",
+  "GW/KW-Sprechfunk und Funkwellenausbreitung",
+  "Verkehrskreise",
+  "Sprechfunk",
+  "Betriebsverfahren",
+  "Betriebsverfahren und Rangfolgen",
+  "NAVTEX",
+  "SAR, EPIRB und SART",
+  "Inmarsat",
 ];
 
 const LICENSE_LABELS = {
-  all: "Binnen + See",
+  all: "Alle",
   see: "See",
   binnen: "Binnen",
   fkn: "FKN",
+  src: "SRC",
+  lrc: "LRC",
+  ubi: "UBI",
 };
+const SBF_SCOPES = new Set(["all", "see", "binnen"]);
 
 const OFFICIAL_EXAM_SHEETS = {
   see: {
@@ -242,7 +261,7 @@ let timerId = null;
 function defaultStore() {
   return {
     v: 2,
-    scope: "all",     // "all" | "see" | "binnen" | "fkn"
+    scope: "all",     // "all" | "see" | "binnen" | "fkn" | "src" | "lrc" | "ubi"
     byId:  {},         // Lernfortschritt je external_id
     streak: 0,
     best:   0,
@@ -602,8 +621,8 @@ function startNav() {
 // ---------- Prüfungs-Modus (mit Server-Fallback) -------------------------
 async function startExam(sheetId = null) {
   const lic = store.scope === "binnen" ? "binnen" : "see";
-  if (store.scope === "fkn") {
-    toast("FKN-Prüfungsmodus kommt als nächster Schritt");
+  if (!SBF_SCOPES.has(store.scope)) {
+    toast("Prüfungsmodus kommt für diesen Schein als nächster Schritt");
     return;
   }
   if (!window.__CATALOG__) {
@@ -736,7 +755,15 @@ function ring(percent, sub) {
 
 function scopeSegmented() {
   const seg = el("div", { class: "segmented", role: "group", "aria-label": "Schein wählen" });
-  [["all", LICENSE_LABELS.all], ["see", LICENSE_LABELS.see], ["binnen", LICENSE_LABELS.binnen], ["fkn", LICENSE_LABELS.fkn]].forEach(([val, lbl]) => {
+  [
+    ["all", LICENSE_LABELS.all],
+    ["see", LICENSE_LABELS.see],
+    ["binnen", LICENSE_LABELS.binnen],
+    ["fkn", LICENSE_LABELS.fkn],
+    ["src", LICENSE_LABELS.src],
+    ["lrc", LICENSE_LABELS.lrc],
+    ["ubi", LICENSE_LABELS.ubi],
+  ].forEach(([val, lbl]) => {
     seg.appendChild(el("button", {
       "aria-pressed": String(store.scope === val),
       onclick: () => { store.scope = val; saveStore(); renderHome(); },
@@ -781,7 +808,7 @@ function renderHome() {
   // Hero
   view.appendChild(
     el("section", { class: "hero" },
-      el("p",  { class: "eyebrow" }, "Sportbootführerschein · See, Binnen & FKN"),
+      el("p",  { class: "eyebrow" }, "Sportbootführerschein · Funk · Pyro"),
       el("h1", {}, "Verstehen statt nur ankreuzen."),
       el("p",  {}, "Lerne mit den amtlichen ELWIS-Fragen, im eigenen Tempo. Falsch beantwortete Fragen kommen automatisch häufiger – dein Fortschritt bleibt auf diesem Gerät gespeichert."),
     )
@@ -847,7 +874,7 @@ function renderHome() {
   grid.appendChild(modecard("📚", "Weiterlernen",       "Clevere Auswahl: neue & schwierige Fragen zuerst.", () => startLearn(20), "feature"));
   grid.appendChild(modecard("🗂️", "Alle Fragen",        `Kompletter Durchlauf (${pool.length} Fragen).`,    () => startLearn("all")));
   grid.appendChild(modecard("🎯", "Nur Schwächen",       "Wiederhole gezielt deine Fehler.",                 () => startLearn("wrong")));
-  if (store.scope !== "fkn") {
+  if (SBF_SCOPES.has(store.scope)) {
     grid.appendChild(modecard("⏱️", "Prüfung simulieren",  "Amtlicher Bogen mit Zeitlimit.",                   () => startExam()));
     grid.appendChild(modecard("📋", "Feste Prüfungsbögen", "15 reproduzierbare Bögen in amtlicher Form.",       renderExamSheets));
     grid.appendChild(modecard("📖", "Lehrbuch",            "Theorie kapitelweise lesen und durchsuchen.",       renderTheoryLibrary));
@@ -1107,7 +1134,7 @@ function renderExamSheets() {
   TOPACTIONS.innerHTML = "";
   TOPACTIONS.appendChild(el("button", { class: "btn-icon", onclick: renderHome, "aria-label": "Zurück" }, "←"));
 
-  if (store.scope === "fkn") {
+  if (!SBF_SCOPES.has(store.scope)) {
     store.scope = "see";
     saveStore();
   }
@@ -1166,7 +1193,7 @@ function scopeSegmentedFor(onChange) {
 function theoryKeys() {
   if (store.scope === "see") return ["see"];
   if (store.scope === "binnen") return ["binnen"];
-  if (store.scope === "fkn") return [];
+  if (!SBF_SCOPES.has(store.scope)) return [];
   return ["see", "binnen"];
 }
 
@@ -1329,7 +1356,7 @@ function renderKnots() {
 
 function theoryLinkForQuestion(q) {
   if (!q || q.card_type === "navigation") return { key: "see", id: "see-navigation-position" };
-  if (q.license_type === "fkn") return null;
+  if (!SBF_SCOPES.has(q.license_type)) return null;
   const key = q.license_type === "binnen" ? "binnen" : "see";
   const hay = [q.category, q.prompt, ...(q.choices || []), q.explanation || ""].join(" ").toLowerCase();
 

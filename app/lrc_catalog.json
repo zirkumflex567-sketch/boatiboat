@@ -1,0 +1,1370 @@
+[
+  {
+    "external_id": "LRC-001",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Welche Funkstelle wird im mobilen Seefunkdienst über Satelliten als „Mobile Earth Station“ (MES) bezeichnet?",
+    "choices": [
+      "Schiffs-Erdfunkstelle",
+      "Land-Erdfunkstelle",
+      "Küstenfunkstelle",
+      "Rettungsleitstelle"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-002",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Was ist eine „Schiffs-Erdfunkstelle“?",
+    "choices": [
+      "Mobile Erdfunkstelle des mobilen Seefunkdienstes über Satelliten an Bord eines Schiffes",
+      "Mobile Empfangsanlage für Satellitenrundfunk an Bord eines Schiffes",
+      "Mobile Funkstelle an Bord eines Schiffes ausschließlich für die Kommunikation mit Funkstellen an Land über Satelliten",
+      "Mobile Funkstelle des COSPAS-SARSAT-Systems an Bord eines Schiffes"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-003",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Was ist eine „Land-Erdfunkstelle“ (LES)?",
+    "choices": [
+      "Ortsfeste Funkstelle des mobilen Seefunkdienstes über Satelliten",
+      "Küstenfunkstelle für den öffentlichen Nachrichtenaustausch auf Grenzwelle",
+      "Funkstelle des Revier- und Hafenfunkdienstes auf UKW",
+      "Mobile Funkstelle des Navigationsfunkdienstes über Satelliten"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-004",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Was bedeutet „azimuth angle“?",
+    "choices": [
+      "Winkel zwischen Meridian und Satellit vom Schiff aus gesehen",
+      "Winkel zwischen Kurs des Schiffes und Satellit",
+      "Winkel aus Seitenpeilung des Satelliten vom Schiff aus",
+      "Winkel zwischen Horizont und Satellit"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-005",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Was bedeutet „elevation angle“?",
+    "choices": [
+      "Winkel zwischen Horizont und Satellit vom Schiff aus gesehen",
+      "Winkel zwischen Horizont und Satellit vom Satellit aus gesehen",
+      "Winkel zwischen Antenne und Satellit vom Schiff aus gesehen",
+      "Winkel zwischen Antenne und Satellit vom Satellit aus gesehen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-006",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Welche Erdteile gehören nach den Festlegungen der Internationalen Fernmeldeunion (International Telecommunication Union [ITU]) zur Region 1?",
+    "choices": [
+      "Europa und Afrika",
+      "Europa und Asien",
+      "Nord- und Südamerika",
+      "Australien und Ozeanien"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-007",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Wie wird das Seegebiet innerhalb der Überdeckung eines geostationären Satelliten des Inmarsat-Systems bezeichnet, der ununterbrochen für Alarmierungen zur Verfügung steht?",
+    "choices": [
+      "A3",
+      "A1",
+      "A2",
+      "A4"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-008",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Welchen geografischen Bereich umfasst das Seegebiet A4 im Weltweiten Seenot- und Sicherheitsfunksystem (GMDSS)?",
+    "choices": [
+      "Gewässer nördlich von ca. 70 Grad Nord und südlich von ca. 70 Grad Süd",
+      "Gewässer südlich von ca. 70 Grad Nord und nördlich von ca. 70 Grad Süd",
+      "Gewässer westlich und östlich vom Nullmeridian bis 70° Länge",
+      "Gewässer 10° nördlich und 10° südlich vom Äquator"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-009",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Welches Alarmierungssystem ist für das Seegebiet A4 nicht geeignet?",
+    "choices": [
+      "Inmarsat-System",
+      "COSPAS-SARSAT",
+      "Kurzwellen-DSC",
+      "Grenzwellen-DSC"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-010",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Wie heißt das Positionsmeldesystem für Such- und Rettungszwecke?",
+    "choices": [
+      "AMVER",
+      "SafetyNet",
+      "COSPAS-SARSAT",
+      "Radar"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-011",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Welchen Frequenzbereich benutzt AIS?",
+    "choices": [
+      "Ultrakurzwelle (UKW/VHF)",
+      "Grenzwelle (GW/MF)",
+      "Kurzwelle (KW/HF)",
+      "Langwelle (LW/LF)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-012",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Welches ist die Frequenz für NAVTEX-Aussendungen im Kurzwellenbereich?",
+    "choices": [
+      "4209,5 kHz",
+      "8125 kHz",
+      "6312 kHz",
+      "12577 kHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-013",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Womit kann im Seenotfall ein Alarm über Satelliten ausgelöst werden?",
+    "choices": [
+      "Schiffs-Erdfunkstelle (Ship Earth Station [SES]), Satelliten-Seenotfunkbake (EPIRB)",
+      "UKW-DSC-Anlage, Satelliten-Seenotfunkbake (EPIRB)",
+      "Schiffs-Erdfunkstelle (Ship Earth Station [SES]), Erweiterter Gruppenanruf (EGC)",
+      "Tragbares Funkgerät für Überlebensfahrzeuge, KW-Sender"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-014",
+    "license_type": "lrc",
+    "category": "Mobiler Seefunkdienst, Satelliten und GMDSS",
+    "prompt": "Welches Satelliten-System benutzt für die Seenotalarmierung auch polumlaufende Satelliten?",
+    "choices": [
+      "COSPAS-SARSAT",
+      "Inmarsat",
+      "GEOSAR",
+      "AMVER II. Funkeinrichtungen und Seefunkstellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-015",
+    "license_type": "lrc",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welches Funkzeugnis ist mindestens erforderlich, um mit einer Seefunkstelle auf einem Sportfahrzeug am Weltweiten Seenot- und Sicherheitsfunksystem (GMDSS) im Seegebiet A3 teilnehmen zu können?",
+    "choices": [
+      "Allgemeines Funkbetriebszeugnis (Long Range Certificate [LRC])",
+      "Beschränkt Gültiges Funkbetriebszeugnis (Short Range Certificate [SRC])",
+      "Beschränkt Gültiges Betriebszeugnis für Funker (Restricted Operator's Certificate [ROC])",
+      "Amateurfunkzeugnis (Klasse A)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-016",
+    "license_type": "lrc",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Funkdienste dürfen von dem Inhaber eines Allgemeinen Funkbetriebszeugnisses (LRC) ausgeübt werden?",
+    "choices": [
+      "Mobiler Seefunkdienst und mobiler Seefunkdienst über Satelliten",
+      "Mobiler Seefunkdienst und mobiler Flugfunkdienst",
+      "Mobiler Seefunkdienst und Amateurfunkdienst",
+      "Mobiler Seefunkdienst und Navigationsfunkdienst"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-017",
+    "license_type": "lrc",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welche Funkanlagen dürfen von dem Inhaber eines LRC bedient werden?",
+    "choices": [
+      "Seefunkanlagen im UKW-, Grenz- und Kurzwellenbereich und über Satellit auf Sportfahrzeugen und Traditionsschiffen",
+      "Funkanlagen im See- und Binnenfunk auf Sportfahrzeugen",
+      "Funkanlagen im UKW-Bereich und über Satellit (z. B. Inmarsat oder COSPAS-SARSAT) auf Sportfahrzeugen",
+      "Funkanlagen auf nicht funkausrüstungspflichtigen Fahrzeugen mit Ausnahme von UKW"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-018",
+    "license_type": "lrc",
+    "category": "Funkeinrichtungen und Seefunkstellen",
+    "prompt": "Welches Funkzeugnis muss der Führer eines Sportfahrzeugs oder Traditionsschiffes, das mit einer Kurzwellen/Grenzwellen–DSC–Funkanlage ausgerüstet ist, mindestens besitzen?",
+    "choices": [
+      "Allgemeines Funkbetriebszeugnis (Long Range Certificate [LRC])",
+      "Beschränkt Gültiges Funkbetriebszeugnis (Short Range Certificate [SRC])",
+      "UKW-Sprechfunkzeugnis für den Binnenschifffahrtsfunk (UBI)",
+      "Beschränkt Gültiges Betriebszeugnis für Funker (Restricted Operator´s Certificate [ROC]) III. Digitaler Selektivruf (DSC)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-019",
+    "license_type": "lrc",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Welche Grenzwellenfrequenz (GW/MF) wird national und international zum Routineanruf zwischen Schiffen per Digitalen Selektivruf (DSC) benutzt?",
+    "choices": [
+      "2177 kHz",
+      "2189,5 kHz",
+      "2187,5 kHz",
+      "2182 kHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-020",
+    "license_type": "lrc",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Welche Grenzwellenfrequenz (GW/MF) benutzt eine Küstenfunkstelle zur Beantwortung eines Routineanrufs per Digitalen Selektivruf (DSC)?",
+    "choices": [
+      "2177,0 kHz",
+      "2182,0 kHz",
+      "2614,0 kHz",
+      "2189,5 kHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-021",
+    "license_type": "lrc",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Welche Grenzwellenfrequenz (GW/MF) wird für einen Routineanruf (international) an eine fremde Küstenfunkstelle per Digitalen Selektivruf (DSC) benutzt?",
+    "choices": [
+      "2189,5 kHz",
+      "2177,0 kHz",
+      "2182,0 kHz",
+      "2187,5 kHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-022",
+    "license_type": "lrc",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Welche Frequenzbereiche werden für die Alarmierung mittels Digitalen Selektivrufs (DSC) im Kurzwellen-Bereich (KW/HF) benutzt?",
+    "choices": [
+      "Frequenzbereiche 4, 6, 8, 12 und 16 MHz",
+      "Frequenzbereiche 1, 2, 8, 12 und 16 MHz",
+      "Frequenzbereiche 3, 4, 20, und 30 MHz",
+      "Frequenzbereiche 4, 6, 8, 40 und 60 MHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-023",
+    "license_type": "lrc",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Welche Frequenz und welches Verfahren benutzt eine Seefunkstelle zur Bestätigung eines auf 2187,5 kHz empfangenen Notalarms?",
+    "choices": [
+      "2182.0 kHz im Sprechfunkverfahren",
+      "2187,5 kHz im Sprechfunkverfahren",
+      "2614.0 kHz im Sprechfunkverfahren",
+      "3161.0 kHz im Sprechfunkverfahren"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-024",
+    "license_type": "lrc",
+    "category": "Digitaler Selektivruf (DSC)",
+    "prompt": "Wodurch wird im Kurzwellenbereich (KW/HF) die Empfangsbereitschaft für Aussendungen in Not- und Sicherheitsfällen technisch gewährleistet?",
+    "choices": [
+      "Eingeschalteter Wachempfänger im Scan-Betrieb",
+      "Eingeschalteter Wachempfänger im Dual-Watch-Betrieb",
+      "Eingeschalteter Wachempfänger im 6-MHz-Kurzwellenband",
+      "Eingeschalteter Wachempfänger im 8-MHz-Kurzwellenband IV. GW (MF) / KW (HF) – Sprechfunk und Funkwellenausbreitung"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-025",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "Welche Frequenzen umfasst der Grenzwellenbereich (GW/MF)?",
+    "choices": [
+      "1605 bis 4000 kHz",
+      "4000 bis 27500 kHz",
+      "156 bis 174 MHz",
+      "1705 bis 4100 kHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-026",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "Wie wird die Sendeart „Einseitenband mit unterdrücktem Träger“ bezeichnet?",
+    "choices": [
+      "SSB oder J3E",
+      "SSB oder R3E",
+      "SSB oder H3E",
+      "SSB oder A3E"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-027",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "Welcher Frequenz- bzw. Wellenbereich ist ausreichend, um am Tage eine Mindestreichweite von 150 Seemeilen zu erzielen?",
+    "choices": [
+      "Grenzwelle (GW/MF)",
+      "Kurzwelle (KW/HF)",
+      "Ultrakurzwelle (UKW/VHF)",
+      "Langwelle (LW/LF)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-028",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "In welchen Frequenz- bzw. Wellenbereichen spielt die Bodenwelle die entscheidende Rolle bei der Ausbreitung?",
+    "choices": [
+      "Langwelle (LW/LF) und tagsüber Mittel- und Grenzwelle (MW/MF, GW/MF)",
+      "Kurzwelle (KW/HF) und tagsüber Ultrakurzwelle (UKW/VHF)",
+      "Ultrakurzwelle (UKW/VHF) und tagsüber Kurzwelle (KW/HF)",
+      "Grenzwelle (GW/MF) und tagsüber Langwelle (LW/LF)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-029",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "In welchen terrestrischen Frequenz- bzw. Wellenbereichen sollte ein Schiff – für das Seegebiet A2 ausgerüstet – in einer Entfernung von ca. 150 Seemeilen von der Küste einen Notalarm auslösen, um eine Küstenfunkstelle sowie die in der Nähe befindlichen Seefunkstellen zu erreichen?",
+    "choices": [
+      "Grenzwelle (GW/MF) und Ultrakurzwelle (UKW/VHF)",
+      "Kurzwelle (KW/HF) und Langwelle (LW/LF)",
+      "Kurzwelle (KW/HF) und Ultrakurzwelle (UKW/VHF)",
+      "Grenzwelle (GW/MF) und Langwelle (LW/LF)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-030",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "Welchen Einfluss können Gewitter auf den Empfang von NAVTEX-Aussendungen auf Mittelwelle haben?",
+    "choices": [
+      "Störungen bis zur vollständigen Unlesbarkeit",
+      "Unverändert hohe Übertragungsqualität",
+      "Überreichweiten",
+      "Entstehung „Toter Zonen“"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-031",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "Welcher Frequenz- bzw. Wellenbereich wird für den Weitverkehr im terrestrischen Seefunkdienst benutzt?",
+    "choices": [
+      "Kurzwelle (KW/HF)",
+      "Grenzwelle (GW/MF)",
+      "Langwelle (LW/LF)",
+      "Ultrakurzwelle (UKW/VHF)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-032",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "Welche Frequenzen umfasst der allgemeine Kurzwellenbereich (KW/HF)?",
+    "choices": [
+      "3 bis 30 MHz",
+      "30 bis 300 MHz",
+      "30 bis 300 kHz",
+      "Unter 30 kHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-033",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "In welchem Frequenz- bzw. Wellenbereich spielt die Raumwelle die entscheidende Rolle bei der Ausbreitung?",
+    "choices": [
+      "Kurzwelle (KW/HF)",
+      "Langwelle (LW/LF)",
+      "Ultrakurzwelle (UKW/VHF)",
+      "Grenzwelle (GW/MF)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-034",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "In welchem Frequenz- bzw. Wellenbereich tritt die „Tote Zone“ besonders auf?",
+    "choices": [
+      "Kurzwelle (KW/HF)",
+      "Langwelle (LW/LF)",
+      "Ultrakurzwelle (UKW/VHF)",
+      "Grenzwelle (GW/MF)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-035",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "Um die Mittagszeit wird zur Überbrückung einer bestimmten Entfernung eine Frequenz im 16-MHz-Bereich benutzt. Welcher Frequenzbereich sollte für die Überbrückung derselben Entfernung gegen Mitternacht vorzugsweise gewählt werden?",
+    "choices": [
+      "Niedrigerer Frequenzbereich",
+      "Gleicher Frequenzbereich",
+      "Höherer Frequenzbereich",
+      "UKW-Frequenzbereich"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-036",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "Welche Aussage trifft für den Kurzwellen-Funkverkehr zu?",
+    "choices": [
+      "Die Ausbreitungseigenschaften der Kurzwellen unterliegen tageszeitlichen, jahreszeitlichen und durch die Sonnenaktivität bedingten Schwankungen; Funkverbindungen lassen sich nicht mit Sicherheit vorausplanen",
+      "Im Kurzwellenbereich sind jederzeit weltweite Funkverbindungen zwischen beliebig wählbaren Standorten möglich",
+      "Bei Internet und E-Mail über Kurzwelle lässt sich die übliche DSL- Geschwindigkeit erreichen",
+      "Bei klarer Sicht und geringer Bewölkung ist die Verständigung im Kurzwellenbereich besonders gut"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-037",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "Welche Eigenschaften sollte eine Schiffsantenne für die Überbrückung von großen Entfernungen über Kurzwellen besitzen und warum?",
+    "choices": [
+      "Die Antenne sollte die Sendeenergie möglichst flach abstrahlen, um mit wenigen Sprüngen (hops) den Empfangsort zu erreichen",
+      "Die Antenne sollte gut isoliert sein, damit man sich beim Senden nicht verbrennen kann",
+      "Die Antenne sollte möglichst lang sein, um eine große Wirkungsfläche zu haben und eine hohe Anzahl von Sprüngen (hops) zu ermöglichen",
+      "Die Antenne sollte die Sendeenergie möglichst steil abstrahlen, um Personen an Bord nicht zu gefährden"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-038",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "Eine Yacht ist im Mittelmeer von Rom nach Neapel unterwegs. Die Crew möchte tagsüber über Kiel Radio eine E-Mail versenden. Welcher Frequenzbereich ist dafür meistens geeignet?",
+    "choices": [
+      "Kurzwelle bei 8 MHz",
+      "Grenzwelle",
+      "Kurzwelle bei 4 MHz",
+      "VHF"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-039",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "Eine Yacht ist im karibischen Meer vor Barbados unterwegs. Der Schiffsführer möchte in den Abendstunden eine Verbindung zu Miami Radio aufbauen. Welcher Frequenzbereich ist dafür meistens geeignet?",
+    "choices": [
+      "Kurzwelle bei 6 MHz",
+      "Grenzwelle",
+      "Kurzwelle bei 16 MHz",
+      "VHF"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-040",
+    "license_type": "lrc",
+    "category": "GW/KW-Sprechfunk und Funkwellenausbreitung",
+    "prompt": "Eine Yacht steht 100 Seemeilen westlich Stavanger. Der Schiffsführer möchte Verbindung zu Rogaland Radio aufnehmen. Welcher Frequenzbereich ist dafür vorzugsweise geeignet?",
+    "choices": [
+      "Grenzwelle",
+      "Kurzwelle zwischen 4 MHz und 6 MHz",
+      "Kurzwelle zwischen 10 MHz und 16 MHz",
+      "VHF V. Betriebsverfahren"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-041",
+    "license_type": "lrc",
+    "category": "Betriebsverfahren",
+    "prompt": "Wer bestimmt bei einer Verbindung zwischen See- und Küstenfunkstelle die zu benutzende Arbeitsfrequenz?",
+    "choices": [
+      "Küstenfunkstelle",
+      "Seefunkstelle",
+      "Schiffsführer",
+      "On-Scene Coordinator"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-042",
+    "license_type": "lrc",
+    "category": "Betriebsverfahren",
+    "prompt": "Welches von der Internationalen Fernmeldeunion (International Telecommunication Union [ITU]) herausgegebene Verzeichnis enthält Angaben über Arbeitsfrequenzen von Küstenfunkstellen?",
+    "choices": [
+      "Verzeichnis der Küstenfunkstellen (List of Coast Stations)",
+      "Verzeichnis der Seefunkstellen (List of Ship Stations)",
+      "Inmarsat-Handbuch",
+      "Handbuch für den Seefunkdienst und den Seefunkdienst über Satelliten (Manual for Use by the Maritime Mobile and Maritime Mobile-Satellite Services)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-043",
+    "license_type": "lrc",
+    "category": "Betriebsverfahren",
+    "prompt": "Welche Frequenzbereiche dürfen in deutschen Häfen benutzt werden?",
+    "choices": [
+      "Ultrakurzwellen (UKW/VHF), Ultrahohe Frequenzen (UHF) und der 1,6-GHz- Bereich (Inmarsat)",
+      "Ultrakurzwellen (UKW/VHF) und Grenzwellen (GW/MF)",
+      "Mittelwellen (MW/MF), Grenzwellen(GW/MF) und Kurzwellen(KW/HF)",
+      "Ultrakurzwellen (UKW/VHF) und Kurzwellen (KW/HF)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-044",
+    "license_type": "lrc",
+    "category": "Betriebsverfahren",
+    "prompt": "Was bedeutet die Angabe „ITU-Channel 1604“?",
+    "choices": [
+      "Kanal 04 im 16-MHz-Seefunkband",
+      "Kanal 16 im 4-MHz-Seefunkband",
+      "Kanal 1604 im Kurzwellenband",
+      "Kanal 16 und Kanal 04 im Ultrakurzwellenband"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-045",
+    "license_type": "lrc",
+    "category": "Betriebsverfahren",
+    "prompt": "Welches ist die internationale Not- und Sicherheitsfrequenz für den Sprechfunkverkehr im Grenzwellenbereich (GW/MF)?",
+    "choices": [
+      "2182,0 kHz",
+      "2187,5 kHz",
+      "2614.0 kHz",
+      "3161,0 kHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-046",
+    "license_type": "lrc",
+    "category": "Betriebsverfahren",
+    "prompt": "Welche Frequenz im Grenzwellenbereich (GW/MF) soll im Weltweiten Seenot- und Sicherheitsfunksystem (GMDSS) nach Ankündigung per DSC für die Aussendung einer Dringlichkeitsmeldung „An alle Funkstellen“ grundsätzlich benutzt werden?",
+    "choices": [
+      "2182,0 kHz",
+      "2187,5 kHz",
+      "2614.0 kHz",
+      "3161,0 kHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-047",
+    "license_type": "lrc",
+    "category": "Betriebsverfahren",
+    "prompt": "Wie ist zu verfahren, wenn während eines Notverkehrs auf 2182 kHz die Ankündigung und Aussendung einer Dringlichkeitsmeldung „An alle Funkstellen“ von einer Seefunkstelle vorgenommen werden soll?",
+    "choices": [
+      "Zuerst Ankündigung per Digitalen Selektivruf (DSC) auf 2187,5 kHz, dann Aussendung auf einer Schiff-Schiff-Frequenz",
+      "Zuerst die Funkstelle, die den Funkverkehr leitet, auf 2182 kHz um Erlaubnis fragen, dann Aussendung auf einer Schiff-Schiff-Frequenz",
+      "Zuerst Ankündigung auf 2182 kHz, dann Aussendung auf einer Schiff-Schiff-Frequenz",
+      "Zuerst Ankündigung per Digitalen Selektivruf (DSC), dann Aussendung auf 2182 kHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-048",
+    "license_type": "lrc",
+    "category": "Betriebsverfahren",
+    "prompt": "Wie ist zu verfahren, wenn eine wichtige Meldung im Grenzwellen-Bereich (GW/MF) auszusenden ist, welche die Sicherheit der Seeschifffahrt betrifft?",
+    "choices": [
+      "Zuerst Ankündigung per Digitalen Selektivruf (DSC) auf 2187,5 kHz, dann Aussendung der Sicherheitsmeldung per Sprechfunk auf einer GW-Schiff-Schiff- Arbeitsfrequenz",
+      "Zuerst Ankündigung auf 2182 kHz, dann Aussendung der Sicherheitsmeldung per Sprechfunk auf einer KW-Schiff-Schiff-Arbeitsfrequenz",
+      "Zuerst Ankündigung auf 2182 kHz, dann Aussendung der Sicherheitsmeldung per Sprechfunk auf 2182 kHz",
+      "Zuerst Ankündigung per Digitalen Selektivruf (DSC) auf 2187,5 kHz, dann Aussendung der Sicherheitsmeldung per Sprechfunk auf 2187,5 kHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-049",
+    "license_type": "lrc",
+    "category": "Betriebsverfahren",
+    "prompt": "Auf welcher Frequenz wird im Kurzwellenbereich (KW/HF) der Notverkehr im Sprechfunkverfahren abgewickelt?",
+    "choices": [
+      "Notfrequenz für Sprechfunk des Kurzwellenbandes, in dem die Notalarmierung ausgesendet worden ist",
+      "Notfrequenz für Sprechfunk nach Maßgabe des Inmarsat-Handbuchs",
+      "Notfrequenz für Sprechfunk des Kurzwellenbandes 6 MHz",
+      "Notfrequenz für Sprechfunk des Kurzwellenbandes 8 MHz"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-050",
+    "license_type": "lrc",
+    "category": "Betriebsverfahren",
+    "prompt": "Welche Sendeart wird bei Aussendungen des Sprech-Seefunkdienstes grundsätzlich im Grenz- und Kurzwellenbereich verwendet?",
+    "choices": [
+      "Einseitenband mit unterdrücktem Träger, SSB, J3E",
+      "Analoge Frequenzmodulation, FM, F3E",
+      "Einseitenband mit reduziertem Träger, (R3E)",
+      "Zweiseitenbandmodulation, AM, A3E VI. Inmarsat"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-051",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welche Veröffentlichung enthält Angaben über die Abdeckungsbereiche der Inmarsat-Satelliten?",
+    "choices": [
+      "Inmarsat-Handbuch",
+      "Nachrichten für Seefahrer (NfS)",
+      "Mitteilungen für Seefunkstellen (MfS)",
+      "Jachtfunkdienst"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-052",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welche Veröffentlichung enthält Angaben über Land-Erdfunkstellen (LES)?",
+    "choices": [
+      "Inmarsat-Handbuch",
+      "Jachtfunkdienst",
+      "Nachrichten für Seefahrer",
+      "Mitteilungen für Seefunkstellen und Schiffsfunkstellen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-053",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welche Aufgaben hat ein Point of Service Activation (PSA)?",
+    "choices": [
+      "Freischaltung der Schiffs-Erdfunkstelle",
+      "Freischaltung der Arbeitskanäle für Notrufe",
+      "Freischaltung der Satellitentransponder",
+      "Freischaltung der Inmarsat-Dienste"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-054",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welche Aufgaben hat die Network Co-ordination Station (NCS)?",
+    "choices": [
+      "Automatische Vergabe der Arbeitskanäle an Land-Erdfunkstellen (LES) und Schiffs-Erdfunkstellen (MES)",
+      "Freischaltung der Land-Erdfunkstellen (LES) und Schiffs-Erdfunkstellen (MES)",
+      "Abwicklung des Grenzwellen-Verkehrs per DSC",
+      "Abwicklung des Seefunkdienstes über Satellitennetze (SES)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-055",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Wie sind die Satelliten des Inmarsat-Systems positioniert?",
+    "choices": [
+      "Geostationär",
+      "Polumlaufend",
+      "Polumlaufend und geostationär",
+      "Exzentrisch"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-056",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Über welchem Breitengrad befinden sich die Satelliten des Inmarsat-Systems?",
+    "choices": [
+      "0 Grad",
+      "90 Grad N",
+      "70 Grad S",
+      "45 Grad S"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-057",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welches Seegebiet deckt der Satellit mit der Bezeichnung AOR-E im Inmarsat-System hauptsächlich ab?",
+    "choices": [
+      "Atlantik",
+      "Polarmeere",
+      "Pazifischer Ozean",
+      "Indischer Ozean"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-058",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welches Seegebiet deckt der Satellit mit der Bezeichnung IOR im Inmarsat-System hauptsächlich ab?",
+    "choices": [
+      "Indischer Ozean",
+      "Westlicher Atlantik",
+      "Östlicher Atlantik",
+      "Pazifischer Ozean"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-059",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welcher Satellit deckt das Seegebiet des Pazifischen Ozeans im Inmarsat-System hauptsächlich ab?",
+    "choices": [
+      "POR",
+      "AOR-E",
+      "AOR-W",
+      "IOR"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-060",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Eine Yacht steht vor Hawaii. Der Schiffsführer möchte eine Verbindung nach Europa über Inmarsat herstellen. Welcher Satellit sollte vorzugsweise benutzt werden?",
+    "choices": [
+      "Pacific Ocean Region (POR)",
+      "Indian Ocean Region (IOR)",
+      "Atlantic Ocean Region – East (AOR-E)",
+      "Atlantic Ocean Region – West (AOR-W)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-061",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Eine Yacht ist vor den Malediven unterwegs. Der Schiffsführer möchte eine Verbindung nach Europa über Inmarsat herstellen. Welcher Satellit sollte vorzugsweise benutzt werden?",
+    "choices": [
+      "Indian Ocean Region (IOR)",
+      "Atlantic Ocean Region – East (AOR-E)",
+      "Atlantic Ocean Region – West (AOR-W)",
+      "Pacific Ocean Region (POR)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-062",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Wie wird das Seegebiet außerhalb der Abdeckung durch Inmarsat-Satelliten bezeichnet?",
+    "choices": [
+      "Seegebiet A4",
+      "Seegebiet A1",
+      "Seegebiet A2",
+      "Seegebiet A3"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-063",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Wie wird das Seegebiet bezeichnet, das innerhalb der Sprechfunkreichweite einer Grenzwellen-Küstenfunkstelle liegt, die ununterbrochen für DSC- Alarmierungen zur Verfügung steht?",
+    "choices": [
+      "Seegebiet A2",
+      "Seegebiet A1",
+      "Seegebiet A3",
+      "Seegebiet A4"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-064",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Zur Herstellung welcher Verbindungen wird im Inmarsat-System die Vorwahl +870 benötigt?",
+    "choices": [
+      "Verbindungen zu Inmarsat-Terminals",
+      "Verbindungen zu Festnetz-Anschlüssen",
+      "Verbindungen innerhalb des Seegebiets A4",
+      "Verbindungen zur Verbreitung von MSI"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-065",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welches ist die erste Ziffer einer Inmarsat-C-Rufnummer?",
+    "choices": [
+      "4",
+      "3",
+      "2",
+      "1"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-066",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welchem Inmarsat-Dienst ist die Identifikationsnummer (ID) 421135910 zugeordnet?",
+    "choices": [
+      "Inmarsat C",
+      "Inmarsat Mini-M",
+      "Inmarsat F",
+      "Inmarsat Fleet"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-067",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welche Dienste bietet Inmarsat C?",
+    "choices": [
+      "Telex, Datenübertragung und Telefax Richtung See–Land",
+      "Telefonie, Datenübertragung und SMS",
+      "Telefonie, Datenübertragung und ISDN",
+      "Telex, Telefax Richtung See–Land und Telefonie"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-068",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Mit welcher Aussendung kann die Funktionsfähigkeit der eigenen Inmarsat-C-Anlage überprüft werden?",
+    "choices": [
+      "Nachricht von der eigenen an die eigene Anlage",
+      "Nachricht an ein LUT",
+      "Nachricht an ein MRCC",
+      "Nachricht an ein anderes Schiff"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-069",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Was ist bei dem Ausschalten einer Inmarsat C-Anlage zu beachten?",
+    "choices": [
+      "Vorheriges Ausloggen",
+      "Vom Bordnetz trennen",
+      "Zuerst auf „stand by“ schalten, dann vom Bordnetz trennen",
+      "Der CES mitteilen, ab wann das Schiff nicht zu erreichen ist"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-070",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welches Verfahren wird für den Anruf von Land an bestimmte Schiffs- Erdfunkstellen benutzt?",
+    "choices": [
+      "Erweiterter Gruppenanruf (EGC)",
+      "Digitaler Selektivruf (DSC)",
+      "Tonruf (SSFC)",
+      "Mehrfrequenzwahlverfahren (DTMF)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-071",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welcher Dienst verwendet den Erweiterten Gruppenanruf (EGC)?",
+    "choices": [
+      "Informationsdienst über Satelliten",
+      "Informationsdienst über NAVTEX",
+      "Informationsdienst über UKW-Sprechfunk",
+      "Informationsdienst über Grenzwelle"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-072",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welche Meldungen werden im mobilen Seefunkdienst über „Enhanced Group Call (EGC)“ ausgesendet?",
+    "choices": [
+      "Sicherheitsmeldungen für die Schifffahrt (MSI) oder Informationen an bestimmte Empfänger",
+      "Nachrichten für Seefahrer oder Sammelanrufe",
+      "Regelmäßige Wetterberichte oder nautische Warnnachrichten für bestimmte Seegebiete",
+      "Küstenwetterberichte oder Dringlichkeitsmeldungen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-073",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Was ist für den Empfang eines Enhanced Group Call (EGC) erforderlich?",
+    "choices": [
+      "Satelliten-Empfänger",
+      "NAVTEX-Empfänger",
+      "UKW-Empfänger",
+      "DSC-Wachempfänger"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-074",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "An wen wird ein über Inmarsat ausgelöster Notalarm umgehend geleitet?",
+    "choices": [
+      "Rettungsleitstelle (RCC) oder Seenotleitstelle (MRCC)",
+      "Küsten-Erdfunkstelle (CES) oder On-Scene Co-ordinator (OSC)",
+      "International Maritime Organization (IMO) oder Seenotleitstelle (MRCC)",
+      "Rettungsleitstelle (RCC) oder Küsten-Erdfunkstelle (CES)"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-075",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welcher Dienst sendet Nachrichten für die Sicherheit der Seeschifffahrt (MSI) auf Satellitenfrequenzen aus?",
+    "choices": [
+      "SafetyNet",
+      "GALILEO",
+      "COSPAS-SARSAT",
+      "NAVTEX"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  },
+  {
+    "external_id": "LRC-076",
+    "license_type": "lrc",
+    "category": "Inmarsat",
+    "prompt": "Welche Informationen werden über das Internationale Sicherheitsnetz (SafetyNet) verbreitet?",
+    "choices": [
+      "Informationen für die Sicherheit der Seeschifffahrt (Maritime Safety Information [MSI])",
+      "AMVER-Meldungen des weltweiten Positionsmeldesystems für Such- und Rettungszwecke",
+      "Notmeldungen von COSPAS-SARSAT-Satelliten-Seenotfunkbaken (EPIRB)",
+      "NAVTEX-Warnnachrichten und -Sicherheitsmeldungen"
+    ],
+    "correct_index": 0,
+    "explanation": "Laut amtlichem Katalog ist die erste Antwort richtig.",
+    "source_name": "ELWIS Fragenkatalog LRC",
+    "source_url": "https://www.elwis.de/DE/Schifffahrtsrecht/Sprechfunkzeugnisse/Fragenkatalog-LRC-2018.pdf?__blob=publicationFile&v=2",
+    "source_stand": "02/2024",
+    "exam_section": "LRC"
+  }
+]
