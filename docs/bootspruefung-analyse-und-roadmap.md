@@ -135,6 +135,7 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
 - [x] **Volltextsuche** über alle Fragen/Antworten (lokal, gratis). **(S)**
 - [x] **Schlüsselwörter-Hervorhebung** in Frage/Antwort (gratis). **(M)**
 - [x] **„Weg zur Prüfung"**-Infoseite je Schein (statischer Text). **(S)**
+  - [x] SBF See, SBF Binnen, FKN, SRC, LRC und UBI abgedeckt.
 
 ### Phase 1 – Inhaltliche Tiefe (Kernwert) (3–6 Wochen)
 - [x] **Amtliche Original-Prüfungsbögen** als feste Sätze hinterlegen (zusätzlich zum Zufallsbogen), damit „1:1 wie in der Prüfung" stimmt. Quelle: ELWIS-Bogenstruktur. **(M)**

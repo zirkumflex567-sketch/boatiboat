@@ -1097,8 +1097,8 @@ function renderHome() {
     grid.appendChild(modecard("📋", "Feste Prüfungsbögen", "15 reproduzierbare Bögen in amtlicher Form.",       renderExamSheets));
     grid.appendChild(modecard("📖", "Lehrbuch",            "Theorie kapitelweise lesen und durchsuchen.",       renderTheoryLibrary));
     grid.appendChild(modecard("🪢", "Knoten",              "Prüfungsknoten mit Schritten und Einsatz.",         renderKnots));
-    grid.appendChild(modecard("🧾", "Weg zur Prüfung",     "Anmeldung, Unterlagen und Ablauf auf einen Blick.", renderExamGuide));
   }
+  grid.appendChild(modecard("🧾", "Weg zur Prüfung", "Anmeldung, Unterlagen und Ablauf auf einen Blick.", renderExamGuide));
   if (store.scope === "all" || ["src", "lrc", "ubi"].includes(store.scope)) {
     grid.appendChild(modecard("📻", "Funkpraxis", "Buchstabieren, Anrufschema und Notmeldung trainieren.", renderRadioPractice));
   }
@@ -1882,12 +1882,88 @@ const EXAM_GUIDES = {
       ["Prüfungstag", "Plane Puffer ein und bringe Ausweis sowie die Bestätigung des Prüfungsausschusses mit. Nicht bestandene Teile können wiederholt werden."],
     ],
   },
+  fkn: {
+    title: "FKN",
+    intro: "Der Fachkundenachweis Seenotsignalmittel ist der Nachweis für den Umgang mit erlaubnispflichtigen pyrotechnischen Seenotsignalmitteln.",
+    facts: [
+      ["Mindestalter", "16 Jahre"],
+      ["Voraussetzung", "Amtlicher Sportbootführerschein oder anerkannter Befähigungsnachweis"],
+      ["Prüfung", "Theoretischer Fragebogen und praktische Handhabung"],
+      ["Theorie", "15 Fragen aus 4 amtlichen Fragebögen"],
+    ],
+    steps: [
+      ["Prüfungsausschuss wählen", "Melde dich bei einem zuständigen regionalen Prüfungsausschuss an und prüfe Termin, Frist und Gebühren."],
+      ["Befähigungsnachweis bereitlegen", "Für die Zulassung brauchst du einen amtlichen Sportbootführerschein oder einen anerkannten gleichwertigen Nachweis."],
+      ["Fragenkatalog lernen", "Übe alle 60 FKN-Fragen und die vier offiziellen Fragebogen, bis Rechtsfragen und Handhabungssicherheit sitzen."],
+      ["Praktische Handhabung vorbereiten", "Bereite das sichere Erklären von Handfackel, Rauchsignal, Fallschirm-Signalrakete und Signalgeber vor."],
+      ["Identität nachweisen", "Zum Prüfungstermin brauchst du einen amtlichen Identitätsnachweis und die geforderten Unterlagen."],
+      ["Prüfung ablegen", "Die Prüfung umfasst Theorie und Praxis. Entscheidend sind sichere Begriffe, ruhiges Vorgehen und korrekte Sicherheitsregeln."],
+    ],
+  },
+  src: {
+    title: "SRC",
+    intro: "Das Short Range Certificate ist das beschränkt gültige Funkbetriebszeugnis für UKW-Seefunk und GMDSS im Seegebiet A1.",
+    facts: [
+      ["Mindestalter", "15 Jahre"],
+      ["Prüfung", "Theorie, Aufnahme von Meldungen und praktische Funkaufgaben"],
+      ["Theorie", "24 Multiple-Choice-Fragen"],
+      ["Praxis", "DSC-/UKW-Bedienung und Sprechfunkverfahren"],
+    ],
+    steps: [
+      ["Prüfungsausschuss wählen", "Wähle einen regionalen Prüfungsausschuss und beachte dessen Fristen und Unterlagen."],
+      ["Antrag stellen", "Reiche Antrag, Identitätsnachweis und ggf. weitere Nachweise so ein, wie der Prüfungsausschuss es verlangt."],
+      ["Katalog lernen", "Trainiere den SRC-Fragenkatalog und wiederhole besonders DSC, GMDSS, Rangfolgen und SAR."],
+      ["Meldungen aufnehmen", "Übe das schriftliche Erfassen von Not-, Dringlichkeits- und Sicherheitsmeldungen."],
+      ["Praxis simulieren", "Trainiere Mayday, Pan-pan, Sécurité, Routine-Anruf und Gerätebedienung an prüfungsnahen Beispielen."],
+      ["Prüfung ablegen", "Nimm Ausweis und Einladung mit. Theorie, Aufnahme und Praxis müssen prüfungsreif sitzen."],
+    ],
+  },
+  lrc: {
+    title: "LRC",
+    intro: "Das Long Range Certificate erweitert das SRC um Grenz-/Kurzwelle und Satellitenfunk für weltweite Fahrtgebiete.",
+    facts: [
+      ["Mindestalter", "18 Jahre"],
+      ["Prüfung", "Theorie, Meldungsaufnahme und praktische Funkaufgaben"],
+      ["Theorie", "LRC-Ergänzungskatalog plus SRC-Anteile"],
+      ["Praxis", "GMDSS-Verfahren über mehrere Systeme"],
+    ],
+    steps: [
+      ["Voraussetzungen klären", "Prüfe beim Prüfungsausschuss, ob du LRC direkt oder als Erweiterung auf vorhandenes SRC ablegst."],
+      ["Antrag einreichen", "Reiche die geforderten Unterlagen fristgerecht beim zuständigen Prüfungsausschuss ein."],
+      ["LRC-Katalog lernen", "Trainiere Inmarsat, GW/KW, DSC, Ausbreitung und Betriebsverfahren gezielt."],
+      ["SRC-Grundlagen wiederholen", "Da LRC auf SRC aufbaut, sollten UKW-Seefunk, GMDSS und Rangfolgen stabil sein."],
+      ["Praxis vorbereiten", "Übe Meldungsaufnahme und Funkabläufe über die im Prüfungstermin eingesetzten Systeme."],
+      ["Prüfung ablegen", "Plane genug Zeit ein: LRC kombiniert theoretische, schriftliche und praktische Anteile."],
+    ],
+  },
+  ubi: {
+    title: "UBI",
+    intro: "Das UKW-Sprechfunkzeugnis für den Binnenschifffahrtsfunk ist der Befähigungsnachweis für UKW-Funk auf Binnenwasserstraßen.",
+    facts: [
+      ["Mindestalter", "15 Jahre"],
+      ["Prüfung", "Theorie und praktische Funkaufgaben"],
+      ["Theorie", "22 Multiple-Choice-Fragen"],
+      ["Besonderheit", "Für SRC/LRC-Inhaber ist die UBI-Prüfung verkürzt"],
+    ],
+    steps: [
+      ["Prüfungsausschuss wählen", "Melde dich bei einem regionalen Prüfungsausschuss an und prüfe, ob eine Kombination mit SRC/LRC möglich ist."],
+      ["Unterlagen vorbereiten", "Reiche Antrag, Identitätsnachweis und ggf. vorhandene Funkzeugnisse fristgerecht ein."],
+      ["Katalog lernen", "Trainiere Binnenschifffahrtsfunk, Verkehrskreise, Rangfolgen, Technik und Betriebsverfahren."],
+      ["Verkehrskreise üben", "Ordne Nautische Information, Schiff-Schiff, Funkverkehr an Bord und öffentlichen Nachrichtenaustausch sicher zu."],
+      ["Praxis vorbereiten", "Übe Anruf, Antwort, Kanalwechsel, Not-/Dringlichkeits-/Sicherheitsverkehr und klare Sprechweise."],
+      ["Prüfung ablegen", "Nimm Ausweis und Einladung mit; halte vorhandene Zeugnisse bereit, falls du eine Ergänzungsprüfung ablegst."],
+    ],
+  },
 };
 
 function activeGuideKeys() {
   if (store.scope === "see") return ["see"];
   if (store.scope === "binnen") return ["binnen"];
-  return ["see", "binnen"];
+  if (store.scope === "fkn") return ["fkn"];
+  if (store.scope === "src") return ["src"];
+  if (store.scope === "lrc") return ["lrc"];
+  if (store.scope === "ubi") return ["ubi"];
+  return ["see", "binnen", "fkn", "src", "lrc", "ubi"];
 }
 
 function renderExamGuide() {
