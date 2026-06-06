@@ -334,6 +334,27 @@ const UBI_TRAFFIC_CIRCLES = [
   ["Öffentlicher Nachrichtenaustausch", "Nachrichten über zugelassene Landfunkstellen, soweit verfügbar."],
 ];
 
+const RADIO_VOCAB = [
+  ["Mayday", "Seenot", "Unmittelbare Gefahr für Schiff oder Personen."],
+  ["Pan-pan", "Dringlichkeit", "Dringende Lage, aber noch keine unmittelbare Seenot."],
+  ["Sécurité", "Sicherheit", "Warnung oder wichtige Information für die Schifffahrt."],
+  ["All stations", "Alle Funkstellen", "Anruf an alle mithörenden Funkstellen."],
+  ["This is", "Hier ist", "Leitet den eigenen Stationsnamen ein."],
+  ["Over", "Kommen", "Antwort wird erwartet."],
+  ["Out", "Ende", "Funkverkehr ist beendet, keine Antwort erwartet."],
+  ["Received", "Empfangen", "Nachricht wurde aufgenommen."],
+  ["Say again", "Wiederholen Sie", "Aufforderung, eine Meldung erneut zu senden."],
+  ["Stand by", "Warten Sie", "Bitte warten, Antwort folgt später."],
+  ["Readability", "Verständlichkeit", "Bewertung, wie gut die Aussendung verstanden wurde."],
+  ["Correction", "Berichtigung", "Korrigiert eine gerade gesendete Angabe."],
+  ["Position", "Position", "Ort des Fahrzeugs, meist Breite und Länge."],
+  ["Assistance", "Hilfeleistung", "Benötigte Unterstützung."],
+  ["Persons on board", "Personen an Bord", "Wichtige Angabe in Notmeldungen."],
+  ["Fire on board", "Feuer an Bord", "Typischer Notfallinhalt."],
+  ["Taking water", "Wassereinbruch", "Schiff nimmt Wasser auf."],
+  ["Adrift", "Treibend", "Nicht mehr kontrolliert manövrierfähig."],
+];
+
 // ----------- State ------------------------------------------------------
 let CATALOG = [];   // alle Fragen aus der API
 let MC      = [];   // Nur MC-Fragen (kein card_type navigation)
@@ -1541,6 +1562,32 @@ function renderRadioPractice() {
   view.appendChild(
     el("section", { class: "radio-panel" },
       el("div", { class: "radio-title" },
+        el("h2", {}, "Funkvokabeln"),
+        el("p", {}, "Wichtige englische Funkbegriffe zum Nachlesen und Anhören."),
+      ),
+      el("div", { class: "vocab-list" },
+        ...RADIO_VOCAB.map(([term, translation, note]) =>
+          el("div", { class: "vocab-row" },
+            el("button", {
+              class: "btn-icon vocab-speak",
+              title: `${term} anhören`,
+              "aria-label": `${term} anhören`,
+              onclick: () => speakRadioTerm(term),
+            }, "▶"),
+            el("div", {},
+              el("strong", {}, term),
+              el("span", {}, translation),
+            ),
+            el("p", {}, note),
+          )
+        ),
+      ),
+    )
+  );
+
+  view.appendChild(
+    el("section", { class: "radio-panel" },
+      el("div", { class: "radio-title" },
         el("h2", {}, "UBI-Verkehrskreise"),
         el("p", {}, "Die Verkehrskreise helfen, Zweck und Funkstelle sauber zuzuordnen."),
       ),
@@ -1558,6 +1605,19 @@ function renderRadioPractice() {
   APP.innerHTML = "";
   APP.appendChild(view);
   window.scrollTo(0, 0);
+}
+
+function speakRadioTerm(term) {
+  if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+    toast("Vorlesen wird von diesem Browser nicht unterstützt");
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(term);
+  utterance.lang = "en-GB";
+  utterance.rate = 0.82;
+  utterance.pitch = 1;
+  window.speechSynthesis.speak(utterance);
 }
 
 function theoryLinkForQuestion(q) {

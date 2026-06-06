@@ -627,6 +627,47 @@ a { color: var(--sea-dark); }
   color: var(--muted);
   line-height: 1.45;
 }
+.vocab-list {
+  display: grid;
+  gap: 10px;
+}
+.vocab-row {
+  display: grid;
+  grid-template-columns: 40px minmax(140px, 1fr) minmax(180px, 1.4fr);
+  gap: 12px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--paper);
+  padding: 11px 13px;
+}
+.vocab-speak {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+}
+.vocab-row strong,
+.vocab-row span {
+  display: block;
+}
+.vocab-row strong {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+}
+.vocab-row span {
+  color: var(--sea-dark);
+  font-weight: 800;
+  font-size: 0.86rem;
+  margin-top: 2px;
+}
+.vocab-row p {
+  color: var(--muted);
+  line-height: 1.45;
+  margin: 0;
+}
 
 /* exam guide */
 .guide-hero {
@@ -1092,6 +1133,8 @@ a { color: var(--sea-dark); }
   .guide-facts { grid-template-columns: 1fr; }
   .brand small { display: none; }
   .qhint { display: none; }
+  .vocab-row { grid-template-columns: 40px 1fr; }
+  .vocab-row p { grid-column: 2; }
 }
 @media (max-width: 420px) {
   .tiles { grid-template-columns: 1fr 1fr; }
