@@ -13,6 +13,12 @@ aus der Datenbank aus. Es gibt keine Live-KI und keine LLM-Abhaengigkeit im Proj
 - Pruefungsmodus mit Zeitlimit
 - Pruefungsmodus nutzt feste amtliche Bogenform statt frei waehlbarer Fragenzahl
 - Einfaches Spaced-Repetition-Scoring
+- Moderne, responsive Single-Page-Oberflaeche (Dashboard, Statistik, Themen-Fortschritt)
+- Lernfortschritt wird ohne Login lokal im Browser gespeichert (localStorage)
+- Lernmodus mit Schnellrunden (10/25/50) oder komplettem Durchlauf aller Fragen
+- Spaced Repetition: neue und falsch beantwortete Fragen kommen haeufiger
+- Installierbare PWA mit Service Worker (Website funktioniert nach Erstbesuch offline)
+- Android-App buendelt alle Inhalte und funktioniert vollstaendig ohne Internet
 - Antwortreihenfolge wird pro Session gemischt
 - Frageauswahl und -reihenfolge werden pro Session zufaellig gemischt
 - Amtliche Grafiken (Lichter, Tonnen, Tagzeichen, Flaggen, Schallzeichen) werden

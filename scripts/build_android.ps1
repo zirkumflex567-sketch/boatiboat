@@ -38,12 +38,43 @@ $CompiledRes = Join-Path $OutDir "resources.zip"
 & $Aapt2 compile --dir (Join-Path $AndroidDir "res") -o $CompiledRes
 if ($LASTEXITCODE -ne 0) { throw "aapt2 compile failed" }
 
+# ---------------------------------------------------------------------------
+# Web-Inhalte fuer Offline-Betrieb in die APK-Assets buendeln.
+# Die App laedt file:///android_asset/web/index.html und braucht kein Internet.
+# ---------------------------------------------------------------------------
+$Frontend = Join-Path $Root "frontend"
+$Catalog = Join-Path $Root "app\official_catalog.json"
+$AssetsRoot = Join-Path $OutDir "androidassets"
+$WebDir = Join-Path $AssetsRoot "web"
+$WebAssets = Join-Path $WebDir "assets"
+New-Item -ItemType Directory -Force -Path $WebAssets | Out-Null
+
+# komplettes Frontend nach web/assets kopieren
+Copy-Item (Join-Path $Frontend "*") -Destination $WebAssets -Recurse -Force
+# index.html und manifest gehoeren in den web/-Stamm (wegen "assets/"-Pfaden)
+Move-Item (Join-Path $WebAssets "index.html") (Join-Path $WebDir "index.html") -Force
+if (Test-Path (Join-Path $WebAssets "manifest.webmanifest")) {
+    Copy-Item (Join-Path $WebAssets "manifest.webmanifest") (Join-Path $WebDir "manifest.webmanifest") -Force
+}
+
+# Fragenkatalog als JS einbetten -> window.__CATALOG__ (kein Netzwerk noetig)
+$CatalogJson = Get-Content -LiteralPath $Catalog -Raw -Encoding UTF8
+$CatalogJs = Join-Path $WebAssets "catalog.js"
+Set-Content -LiteralPath $CatalogJs -Value ("window.__CATALOG__ = " + $CatalogJson + ";") -Encoding UTF8
+
+# catalog.js vor app.js in die gebuendelte index.html einfuegen
+$IndexPath = Join-Path $WebDir "index.html"
+$IndexHtml = Get-Content -LiteralPath $IndexPath -Raw -Encoding UTF8
+$IndexHtml = $IndexHtml -replace '<script src="assets/app.js"></script>', '<script src="assets/catalog.js"></script>`r`n    <script src="assets/app.js"></script>'
+Set-Content -LiteralPath $IndexPath -Value $IndexHtml -Encoding UTF8
+
 $UnsignedApk = Join-Path $OutDir "boatiboat-unsigned.apk"
 & $Aapt2 link `
     -o $UnsignedApk `
     -I $AndroidJar `
     --manifest (Join-Path $AndroidDir "AndroidManifest.xml") `
     --java (Join-Path $OutDir "gen") `
+    -A $AssetsRoot `
     --auto-add-overlay `
     $CompiledRes
 if ($LASTEXITCODE -ne 0) { throw "aapt2 link failed" }

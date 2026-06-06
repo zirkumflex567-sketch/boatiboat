@@ -30,12 +30,14 @@ public class MainActivity extends Activity {
         webView.setVisibility(View.INVISIBLE);
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
-        settings.setDomStorageEnabled(true);
+        settings.setDomStorageEnabled(true);   // localStorage = lokal gespeicherter Lernfortschritt
         settings.setDatabaseEnabled(true);
+        settings.setAllowFileAccess(true);      // gebündelte Inhalte aus den App-Assets laden
         settings.setLoadWithOverviewMode(true);
         settings.setUseWideViewPort(true);
         settings.setBuiltInZoomControls(false);
         settings.setDisplayZoomControls(false);
+        settings.setCacheMode(WebSettings.LOAD_DEFAULT);
 
         status = new TextView(this);
         status.setText("Boatiboat lädt...");
@@ -79,7 +81,8 @@ public class MainActivity extends Activity {
             }
         });
 
-        webView.loadUrl(getString(getResources().getIdentifier("app_url", "string", getPackageName())));
+        // Vollständig gebündelte Inhalte: die App funktioniert ohne Internetverbindung.
+        webView.loadUrl("file:///android_asset/web/index.html");
     }
 
     @Override

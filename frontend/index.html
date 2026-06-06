@@ -2,74 +2,35 @@
 <html lang="de">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Boatiboat SBF Trainer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#06727a" />
+    <meta name="description" content="Boatiboat – moderner Lern- und Prüfungstrainer für den Sportbootführerschein See und Binnen mit den amtlichen ELWIS-Fragenkatalogen." />
+    <title>Boatiboat · SBF Trainer</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Boatiboat" />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
-    <main class="shell">
-      <section class="hero">
-        <div>
-          <p class="eyebrow">SBF Binnen & See</p>
-          <h1>Verstehen statt nur ankreuzen.</h1>
-          <p class="intro">
-            Boatiboat fragt dich wie in der Prüfung ab, zeigt im Lernmodus aber sofort,
-            warum eine Antwort stimmt. Falsche Fragen tauchen automatisch häufiger auf.
-          </p>
-        </div>
-        <div class="instrument">
-          <span id="timer">Lernmodus</span>
-          <strong id="score">- / -</strong>
-          <small id="scoreLabel">Fortschritt</small>
-        </div>
-      </section>
+    <header class="topbar">
+      <button class="brand" id="brand" aria-label="Zur Startseite">
+        <span class="mark">⚓</span>
+        <span>Boatiboat<small>SBF Trainer</small></span>
+      </button>
+      <div class="topbar-actions" id="topbarActions"></div>
+    </header>
 
-      <section class="controls" aria-label="Training konfigurieren">
-        <label class="control-field">
-          Modus
-          <select id="mode">
-            <option value="learn">Lernmodus</option>
-            <option value="exam">Prüfungsmodus</option>
-          </select>
-        </label>
-        <label class="control-field">
-          Schein
-          <select id="license">
-            <option value="">Binnen + See</option>
-            <option value="see">See</option>
-            <option value="binnen">Binnen</option>
-          </select>
-        </label>
-        <label class="control-field">
-          Fragen
-          <select id="limit">
-            <option>10</option>
-            <option>20</option>
-            <option>30</option>
-          </select>
-          <span id="limitNote" class="field-note"></span>
-        </label>
-        <button id="start">Neu starten</button>
-      </section>
+    <main id="app" class="wrap" aria-live="polite"></main>
 
-      <section id="sources" class="sources" aria-label="Quellenstand"></section>
+    <footer class="footer">
+      Lerninhalte: amtliche ELWIS-Fragenkataloge See &amp; Binnen (Stand 01. August 2023).
+      Fortschritt wird nur lokal in diesem Browser gespeichert.
+    </footer>
 
-      <section class="trainer" aria-live="polite">
-        <div class="meta">
-          <span id="category">Bereit</span>
-          <span id="priority">Spaced Repetition</span>
-        </div>
-        <h2 id="prompt">Lade die erste Session...</h2>
-        <figure id="media" class="question-media hidden">
-          <img id="mediaImage" alt="" />
-        </figure>
-        <div id="choices" class="choices"></div>
-        <div id="explanation" class="explanation hidden"></div>
-        <div class="actions">
-          <button id="next" disabled>Nächste Frage</button>
-        </div>
-      </section>
-    </main>
+    <div class="toast" id="toast"></div>
+
     <script src="assets/app.js"></script>
   </body>
 </html>

@@ -5,6 +5,7 @@ import secrets
 
 from fastapi import Depends, FastAPI, File, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy import select
@@ -31,6 +32,7 @@ async def lifespan(_app: FastAPI):
 
 
 app = FastAPI(title="Boatiboat SBF Trainer", version="0.1.0", lifespan=lifespan)
+app.add_middleware(GZipMiddleware, minimum_size=1024)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -130,6 +132,18 @@ def pick_exam_questions(questions: list[Question], license_type: str | None, see
 @app.get("/")
 def index() -> FileResponse:
     return FileResponse(PUBLIC_DIR / "index.html")
+
+
+@app.get("/sw.js")
+def service_worker() -> FileResponse:
+    # Im Root-Scope ausliefern, damit der Service Worker die gesamte App steuert.
+    return FileResponse(PUBLIC_DIR / "sw.js", media_type="application/javascript",
+                        headers={"Service-Worker-Allowed": "/", "Cache-Control": "no-cache"})
+
+
+@app.get("/manifest.webmanifest")
+def manifest() -> FileResponse:
+    return FileResponse(PUBLIC_DIR / "manifest.webmanifest", media_type="application/manifest+json")
 
 
 @app.get("/api/health")
