@@ -376,6 +376,53 @@ const RADIO_DICTATION = [
   },
 ];
 
+const FKN_PRACTICE = [
+  {
+    title: "Vor dem Umgang prüfen",
+    purpose: "Sicherstellen, dass Seenotsignalmittel nicht erst im Notfall verstanden werden.",
+    checks: [
+      "Gebrauchsanweisung vollständig gelesen",
+      "Verbrauchsdauer und Zustand geprüft",
+      "trocken, kühl und zugänglich gelagert",
+      "Lee-Seite und Gefahrenbereich bedacht",
+    ],
+    examNote: "In der Prüfung wird erwartet, dass du Sicherheitsmaßnahmen begründen kannst.",
+  },
+  {
+    title: "Handfackel sicher erklären",
+    purpose: "Rote Handfackeln dienen der Positionsmarkierung, wenn Hilfe bereits in Sichtweite ist.",
+    checks: [
+      "nur im Notfall verwenden",
+      "nach Lee und außenbords halten",
+      "Abbrand von Körper, Augen und Boot fernhalten",
+      "Gebrauchsanweisung des konkreten Mittels beachten",
+    ],
+    examNote: "Wichtig ist nicht Aktionismus, sondern kontrollierte und sichere Handhabung.",
+  },
+  {
+    title: "Rauchsignal einordnen",
+    purpose: "Rauchsignale sind vor allem tagsüber zur Positionskennzeichnung geeignet.",
+    checks: [
+      "nur am Tag sinnvoll einsetzen",
+      "möglichst erst bei gesichteter Hilfe verwenden",
+      "Windrichtung beachten",
+      "nach Zündung zur Leeseite außenbords geben",
+    ],
+    examNote: "Rauch zeigt Position, ersetzt aber keine Alarmierung.",
+  },
+  {
+    title: "Recht & Verlustmeldung",
+    purpose: "FKN umfasst auch waffen- und sprengstoffrechtliche Grundkenntnisse.",
+    checks: [
+      "Signalpistole Kaliber 4 unterliegt dem Waffengesetz",
+      "andere pyrotechnische Seenotsignale unterliegen dem Sprengstoffgesetz",
+      "Verlust von Signalmitteln oder Waffen unverzüglich anzeigen",
+      "Überlassen nur an berechtigte Personen",
+    ],
+    examNote: "Bei Rechtsfragen zählt präzise Sprache mehr als lange Erklärungen.",
+  },
+];
+
 // ----------- State ------------------------------------------------------
 let CATALOG = [];   // alle Fragen aus der API
 let MC      = [];   // Nur MC-Fragen (kein card_type navigation)
@@ -1055,6 +1102,9 @@ function renderHome() {
   if (store.scope === "all" || ["src", "lrc", "ubi"].includes(store.scope)) {
     grid.appendChild(modecard("📻", "Funkpraxis", "Buchstabieren, Anrufschema und Notmeldung trainieren.", renderRadioPractice));
   }
+  if (store.scope === "all" || store.scope === "fkn") {
+    grid.appendChild(modecard("🧯", "FKN-Praxis", "Handhabung, Sicherheit und Rechtsfragen als Selbstcheck.", renderFknPractice));
+  }
   if (store.bookmarks.length)
     grid.appendChild(modecard("🔖", "Gemerkte Fragen",   `${store.bookmarks.length} Lesezeichen`,            () => startLearn("bookmarks")));
   if (navPool.length)
@@ -1688,6 +1738,51 @@ function revealDictation(task, feedbackId) {
   if (!feedback) return;
   feedback.className = "dictation-feedback";
   feedback.innerHTML = `<strong>Beispiellösung</strong><span>${task.expected}</span><small>Gehört: ${task.prompt}</small>`;
+}
+
+// ========================================================================
+// FKN-PRAXIS
+// ========================================================================
+function renderFknPractice() {
+  session = null;
+  stopTimer();
+  TOPACTIONS.innerHTML = "";
+  TOPACTIONS.appendChild(el("button", { class: "btn-icon", onclick: renderHome, "aria-label": "Zurück" }, "←"));
+
+  const view = el("div", { class: "view" });
+  view.appendChild(
+    el("section", { class: "fkn-hero" },
+      el("p", { class: "eyebrow" }, "FKN-Praxis"),
+      el("h1", {}, "Sicher handeln, sauber begründen."),
+      el("p", {}, "Selbstchecks für die praktische FKN-Prüfung: Vorbereitung, sichere Handhabung, Aufbewahrung und rechtliche Kernpunkte."),
+    )
+  );
+
+  const list = el("div", { class: "fkn-list" });
+  FKN_PRACTICE.forEach((item) => {
+    list.appendChild(
+      el("details", { class: "fkn-card" },
+        el("summary", {},
+          el("span", {}, item.title),
+          el("small", {}, item.purpose),
+        ),
+        el("ul", {}, ...item.checks.map((check) => el("li", {}, check))),
+        el("p", { class: "fkn-note" }, item.examNote),
+      )
+    );
+  });
+  view.appendChild(list);
+
+  view.appendChild(
+    el("section", { class: "fkn-warning" },
+      el("h2", {}, "Wichtig"),
+      el("p", {}, "Dieses Modul ersetzt keine praktische Einweisung und fordert nicht zum Ausprobieren pyrotechnischer Signalmittel auf. Geübt wird hier das prüfungsreife Erklären sicherer Abläufe."),
+    )
+  );
+
+  APP.innerHTML = "";
+  APP.appendChild(view);
+  window.scrollTo(0, 0);
 }
 
 function speakRadioTerm(term) {

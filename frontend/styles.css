@@ -733,6 +733,80 @@ a { color: var(--sea-dark); }
   line-height: 1.45;
 }
 
+/* fkn practice */
+.fkn-hero {
+  margin-bottom: 20px;
+}
+.fkn-hero .eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sea-dark);
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.fkn-hero h1 { font-size: clamp(1.9rem, 5vw, 3rem); }
+.fkn-hero p { color: var(--ink-soft); max-width: 60ch; margin: 10px 0 0; }
+.fkn-list {
+  display: grid;
+  gap: 12px;
+}
+.fkn-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.fkn-card summary {
+  display: grid;
+  gap: 4px;
+  cursor: pointer;
+  padding: 15px 17px;
+  list-style: none;
+}
+.fkn-card summary::-webkit-details-marker { display: none; }
+.fkn-card summary span {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.fkn-card summary small {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.fkn-card ul {
+  margin: 0;
+  padding: 0 20px 0 42px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+.fkn-note,
+.fkn-warning {
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink-soft);
+}
+.fkn-note {
+  margin: 12px 17px 17px;
+  padding: 11px 13px;
+}
+.fkn-warning {
+  margin-top: 16px;
+  padding: 16px 18px;
+  border-color: var(--buoy);
+}
+.fkn-warning h2 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+.fkn-warning p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 /* exam guide */
 .guide-hero {
   margin-bottom: 20px;

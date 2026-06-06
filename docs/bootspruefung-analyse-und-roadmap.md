@@ -169,7 +169,8 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
   - [x] FKN Fragen- und Antwortenkatalog vom gemeinsamen Sportbootführerschein-Portal abgerufen und mit Prüfsumme manifestiert.
   - [x] FKN-PDF-Importer gebaut und 60 amtliche Frage-/Antwort-Flashcards strukturiert abgelegt.
   - [x] FKN-Lernmodus und Prüfungssimulation mit den 4 amtlichen Fragebögen freigeschaltet.
-  - [ ] Teilpunkte-/Freitextbewertung und praktische Handhabungsaufgaben ergänzen.
+  - [x] Praktische Handhabungsaufgaben als sichere Selbstcheck-Karten ergänzt.
+  - [ ] Teilpunkte-/Freitextbewertung und KI-Feedback ergänzen.
 
 ### Phase 3 – Monetarisierung & Konto (parallel ab Phase 1)
 - [ ] **Free/PRO-Logik** definieren. Empfehlung: **mehr gratis als der Wettbewerb**
