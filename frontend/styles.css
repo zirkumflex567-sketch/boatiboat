@@ -446,6 +446,9 @@ a { color: var(--sea-dark); }
   margin-top: 12px;
   background: var(--panel);
 }
+.audio-action {
+  margin: 10px 0 14px;
+}
 
 /* knots */
 .knots-hero {

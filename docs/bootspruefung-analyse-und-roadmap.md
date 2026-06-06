@@ -196,7 +196,8 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
   - [x] Lokales Tagesziel mit Fortschrittsbalken und einstellbarer Zielhöhe umgesetzt.
   - [ ] Push-/Local-Notifications ergänzen.
 - [ ] **Erklärungen aufwerten**: kurze, verständliche Begründung **+ Eselsbrücken** je Frage.
-- [ ] **Audio-Vorlesen** von Fragen/Theorie (Barrierefreiheit, Lernen unterwegs).
+- [x] **Audio-Vorlesen** von Fragen/Theorie (Barrierefreiheit, Lernen unterwegs).
+  - [x] Browser-TTS für Lernfragen, FKN-Antwortkarten und Lehrbuchabschnitte ergänzt.
 - [ ] **Echte Navigationsaufgaben-Übung**: interaktive Kursdreieck-/Besteck-Tools statt nur Lösungsanzeige (großer Vorteil ggü. reinem „Siehe Karte").
 - [ ] **Web + iOS**: PWA ist da; native iOS-Hülle (wie Android) ergänzen.
 - [ ] **Content/Community light**: FAQ, „Weg zur Prüfung", Bootsschul-Finder-Link – als Vertrauens-/SEO-Booster.

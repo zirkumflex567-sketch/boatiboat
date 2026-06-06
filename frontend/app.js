@@ -1530,6 +1530,10 @@ function renderTheorySection(key, sectionId) {
     el("article", { class: "theory-detail" },
       el("p", { class: "theory-kicker" }, `${THEORY_LIBRARY[key].title} · ${chapter}`),
       el("h1", {}, section.title),
+      el("button", {
+        class: "btn btn-ghost audio-action",
+        onclick: () => speakTheorySection(section),
+      }, "🔊 Abschnitt vorlesen"),
       el("p", {}, section.text),
       el("ul", {}, ...section.bullets.map((item) => el("li", {}, item))),
     )
@@ -1786,16 +1790,34 @@ function renderFknPractice() {
 }
 
 function speakRadioTerm(term) {
+  speakText(term, { lang: "en-GB", rate: 0.82 });
+}
+
+function speakText(text, options = {}) {
+  const clean = String(text || "").replace(/\s+/g, " ").trim();
+  if (!clean) {
+    toast("Kein Text zum Vorlesen");
+    return;
+  }
   if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
     toast("Vorlesen wird von diesem Browser nicht unterstützt");
     return;
   }
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(term);
-  utterance.lang = "en-GB";
-  utterance.rate = 0.82;
-  utterance.pitch = 1;
+  const utterance = new SpeechSynthesisUtterance(clean);
+  utterance.lang = options.lang || "de-DE";
+  utterance.rate = options.rate || 0.92;
+  utterance.pitch = options.pitch || 1;
   window.speechSynthesis.speak(utterance);
+}
+
+function speakQuestion(q) {
+  const choices = (q.choices || []).map((choice, idx) => `${String.fromCharCode(65 + idx)}: ${choice}`);
+  speakText([q.prompt, ...choices].join(". "));
+}
+
+function speakTheorySection(section) {
+  speakText([section.title, section.text, ...(section.bullets || [])].join(". "));
 }
 
 function theoryLinkForQuestion(q) {
@@ -2136,6 +2158,13 @@ function renderQuiz() {
 
   // Lesezeichen-Button (nicht im Prüfungsmodus)
   if (session.mode !== "exam") {
+    metaRight.appendChild(el("button", {
+      class: "btn-icon",
+      title: "Frage vorlesen",
+      "aria-label": "Frage vorlesen",
+      onclick: () => speakQuestion(q),
+    }, "🔊"));
+
     const bmBtn = el("button", {
       class: isBookmarked(q.external_id) ? "btn-icon bookmarked" : "btn-icon",
       title: isBookmarked(q.external_id) ? "Lesezeichen entfernen" : "Frage merken",
@@ -2369,6 +2398,7 @@ function renderFlashcard(it) {
     el("p", { class: "section-label" }, "Amtliche Antwort"),
     el("div", { html: highlightText(it.q.explanation || "Keine Antwort hinterlegt.") }),
     el("div", { class: "flash-actions" },
+      el("button", { class: "btn btn-ghost", onclick: () => speakText(it.q.explanation || "Keine Antwort hinterlegt.") }, "🔊 Vorlesen"),
       el("button", { class: "btn btn-ghost", onclick: () => markFlashcard(it, false) }, "Wiederholen"),
       el("button", { class: "btn btn-primary", onclick: () => markFlashcard(it, true) }, "Gewusst"),
     ),
