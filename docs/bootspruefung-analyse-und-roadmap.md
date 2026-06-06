@@ -194,6 +194,7 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
   - [x] Dashboard-Score aus gemeisterten Fragen, Trefferquote, Katalogabdeckung und schwächsten Themen umgesetzt.
 - [ ] **Tagesziel / Streak / Erinnerungen** (Push/Local Notifications, Lern-Gewohnheit).
   - [x] Lokales Tagesziel mit Fortschrittsbalken und einstellbarer Zielhöhe umgesetzt.
+  - [x] Tagesziel-Streak mit aktivem Serienstand und Bestwert ergänzt.
   - [ ] Push-/Local-Notifications ergänzen.
 - [ ] **Erklärungen aufwerten**: kurze, verständliche Begründung **+ Eselsbrücken** je Frage.
 - [x] **Audio-Vorlesen** von Fragen/Theorie (Barrierefreiheit, Lernen unterwegs).

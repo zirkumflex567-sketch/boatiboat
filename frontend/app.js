@@ -451,6 +451,7 @@ function defaultStore() {
       dailyGoal:      20,         // Tagesziel beantwortete Fragen
     },
     today: { date: "", count: 0 },
+    dailyStreak: { lastDate: "", current: 0, best: 0 },
     bookmarks: [],    // external_ids der gemerkten Fragen
   };
 }
@@ -503,7 +504,11 @@ function recordAnswer(id, correct) {
 }
 
 function todayKey() {
-  return new Date().toISOString().slice(0, 10);
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
 }
 
 function todayProgress() {
@@ -515,7 +520,39 @@ function todayProgress() {
 }
 
 function bumpToday() {
-  todayProgress().count += 1;
+  const today = todayProgress();
+  const goal = Number(cfg().dailyGoal || 0);
+  const wasOpen = goal > 0 && today.count < goal;
+  today.count += 1;
+  if (wasOpen && today.count >= goal) completeDailyGoal(today.date);
+}
+
+function dateDaysApart(a, b) {
+  const start = new Date(`${a}T00:00:00`);
+  const end = new Date(`${b}T00:00:00`);
+  if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) return null;
+  return Math.round((end - start) / 86400000);
+}
+
+function completeDailyGoal(dateKey) {
+  store.dailyStreak = store.dailyStreak || { lastDate: "", current: 0, best: 0 };
+  const ds = store.dailyStreak;
+  if (ds.lastDate === dateKey) return;
+  ds.current = dateDaysApart(ds.lastDate, dateKey) === 1 ? ds.current + 1 : 1;
+  ds.best = Math.max(ds.best || 0, ds.current);
+  ds.lastDate = dateKey;
+  toast(`Tagesziel erreicht · ${ds.current} Tage in Folge`);
+}
+
+function dailyStreakStatus(today) {
+  const ds = store.dailyStreak || { lastDate: "", current: 0, best: 0 };
+  const goalDoneToday = ds.lastDate === today.date;
+  const active = goalDoneToday || dateDaysApart(ds.lastDate, today.date) === 1;
+  return {
+    current: active ? ds.current || 0 : 0,
+    best: ds.best || 0,
+    doneToday: goalDoneToday,
+  };
 }
 
 // ========================================================================
@@ -1014,6 +1051,7 @@ function renderHome() {
   const m     = masteryFor(pool);
   const ready = readinessFor(pool);
   const today = todayProgress();
+  const daySeries = dailyStreakStatus(today);
   const goalPct = cfg().dailyGoal ? Math.min(100, Math.round((today.count / cfg().dailyGoal) * 100)) : 0;
   const navPool = scopedNAV();
   const masterPct = m.total ? Math.round((m.mastered / m.total) * 100) : 0;
@@ -1078,9 +1116,15 @@ function renderHome() {
     el("section", { class: "daily-card" },
       el("div", {},
         el("strong", {}, `Tagesziel: ${today.count}/${cfg().dailyGoal || 0} Fragen`),
-        el("p", {}, today.count >= cfg().dailyGoal ? "Ziel erreicht. Sehr ordentlich." : "Kurze Runde starten und den Balken füllen."),
+        el("p", {}, daySeries.doneToday ? "Ziel erreicht. Die Tages-Serie bleibt aktiv." : "Kurze Runde starten und den Balken füllen."),
       ),
-      el("div", { class: "bar daily-bar" }, el("i", { style: `width:${goalPct}%` })),
+      el("div", { class: "daily-side" },
+        el("div", { class: "daily-streak" },
+          el("strong", {}, `🔥 ${daySeries.current}`),
+          el("span", {}, `Tage in Folge · Bestwert ${daySeries.best}`),
+        ),
+        el("div", { class: "bar daily-bar" }, el("i", { style: `width:${goalPct}%` })),
+      ),
     )
   );
 

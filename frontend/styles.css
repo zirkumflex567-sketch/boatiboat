@@ -976,6 +976,22 @@ a { color: var(--sea-dark); }
   align-items: center;
   gap: 16px;
 }
+.daily-side {
+  display: grid;
+  gap: 8px;
+}
+.daily-streak {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+.daily-streak strong {
+  color: var(--ink);
+  font-size: 1.2rem;
+}
 .daily-bar { height: 10px; }
 
 /* ---------- Quiz ---------- */
