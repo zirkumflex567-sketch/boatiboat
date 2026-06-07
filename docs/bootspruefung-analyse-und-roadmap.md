@@ -173,7 +173,8 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
   - [x] FKN-Lernmodus und Prüfungssimulation mit den 4 amtlichen Fragebögen freigeschaltet.
   - [x] Praktische Handhabungsaufgaben als sichere Selbstcheck-Karten ergänzt.
   - [x] Teilpunkte-/Freitextbewertung ergänzen.
-  - [ ] KI-Feedback ergänzen.
+  - [x] Lokales Assistenz-Feedback ergänzt: Hinweise zu Prüfungsreife, Sicherheit, Rechtsbegriffen und nächstem Übungssatz.
+  - [ ] Echte KI-Auswertung mit Server-/Datenschutzkonzept optional ergänzen.
 
 ### Phase 3 – Monetarisierung & Konto (parallel ab Phase 1)
 - [x] **Free/PRO-Logik** definieren. Empfehlung: **mehr gratis als der Wettbewerb**

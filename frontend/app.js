@@ -1969,6 +1969,32 @@ function fknCheckKeywords(check) {
     .slice(0, 4);
 }
 
+function fknAssistantFeedback(item, hits, missing, value) {
+  const ratio = hits / item.checks.length;
+  const hasSafety = /sicher|gefahr|lee|wind|koerper|körper|auge|augen|boot|aussenbord|außenbord|notfall/.test(value);
+  const hasLaw = /waffe|spreng|gesetz|berechtigt|verlust|anzeigen|unverzueglich|unverzüglich/.test(value);
+  const tips = [];
+
+  if (ratio >= 1) {
+    tips.push("Sehr gut: Deine Antwort deckt alle Kernpunkte ab. In der Prüfung kurz, ruhig und in sicherer Reihenfolge erklären.");
+  } else if (ratio >= 0.75) {
+    tips.push("Fast prüfungsreif: Die Struktur stimmt, jetzt noch den fehlenden Punkt ausdrücklich nennen.");
+  } else {
+    tips.push("Noch zu lückenhaft: Starte mit Zweck, dann Sicherheit, dann konkrete Handhabung beziehungsweise Rechtsfolge.");
+  }
+  if (!hasSafety && !/recht/i.test(item.title)) {
+    tips.push("Sicherheitsbezug fehlt noch: Wind/Lee, Abstand zu Körper und Boot sowie Gebrauch nur im Notfall helfen fast immer.");
+  }
+  if (/recht/i.test(item.title) && !hasLaw) {
+    tips.push("Bei Rechtsthemen präzise Begriffe nennen: Waffenrecht, Sprengstoffrecht, berechtigte Personen und unverzügliche Anzeige.");
+  }
+  if (missing.length) {
+    tips.push(`Nächster Übungssatz: „Ich ergänze noch: ${missing[0]}."`);
+  }
+
+  return tips;
+}
+
 function checkFknPractice(item, index) {
   const input = document.getElementById(`fkn-answer-${index}`);
   const feedback = document.getElementById(`fkn-feedback-${index}`);
@@ -1983,9 +2009,11 @@ function checkFknPractice(item, index) {
   const needed = Math.max(1, Math.ceil(item.checks.length * 0.75));
   const points = Math.round((hits / item.checks.length) * 100);
   const missing = results.filter((result) => !result.hit).map((result) => result.check);
+  const assistant = fknAssistantFeedback(item, hits, missing, value);
   feedback.className = `fkn-feedback ${hits >= needed ? "ok" : "no"}`;
   feedback.innerHTML = `<strong>${hits}/${item.checks.length} Prüfpunkte erkannt · ${points}%</strong>`
     + (missing.length ? `<span>Noch ergänzen: ${missing.map(esc).join("; ")}</span>` : "<span>Prüfungsreif: alle Kernpunkte sind enthalten.</span>")
+    + `<div class="fkn-ai"><b>Assistenz-Feedback</b>${assistant.map((tip) => `<span>${esc(tip)}</span>`).join("")}</div>`
     + `<small>${esc(item.examNote)}</small>`;
 }
 
@@ -2028,7 +2056,7 @@ function renderFknPractice() {
               const feedback = document.getElementById(`fkn-feedback-${index}`);
               if (!feedback) return;
               feedback.className = "fkn-feedback";
-              feedback.innerHTML = `<strong>Beispiellösung</strong><span>${item.checks.map(esc).join("; ")}</span><small>${esc(item.examNote)}</small>`;
+              feedback.innerHTML = `<strong>Beispiellösung</strong><span>${item.checks.map(esc).join("; ")}</span><div class="fkn-ai"><b>Assistenz-Feedback</b><span>Nutze die Beispiellösung als Reihenfolge: erst Zweck, dann Sicherheitsmaßnahme, dann konkrete Handlung oder Rechtsfolge.</span></div><small>${esc(item.examNote)}</small>`;
             } }, "Beispiel anzeigen"),
           ),
           el("div", { id: `fkn-feedback-${index}`, class: "fkn-feedback hidden" }),

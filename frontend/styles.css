@@ -901,6 +901,16 @@ summary:focus-visible,
   color: var(--muted);
   line-height: 1.45;
 }
+.fkn-ai {
+  display: grid;
+  gap: 5px;
+  margin-top: 5px;
+  padding-top: 8px;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 15%, transparent);
+}
+.fkn-ai b {
+  color: var(--ink);
+}
 .fkn-warning {
   margin-top: 16px;
   padding: 16px 18px;
