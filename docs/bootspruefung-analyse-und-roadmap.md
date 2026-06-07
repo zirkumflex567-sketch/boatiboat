@@ -204,6 +204,8 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
 - [ ] **Echte Navigationsaufgaben-Übung**: interaktive Kursdreieck-/Besteck-Tools statt nur Lösungsanzeige (großer Vorteil ggü. reinem „Siehe Karte").
 - [ ] **Web + iOS**: PWA ist da; native iOS-Hülle (wie Android) ergänzen.
 - [ ] **Content/Community light**: FAQ, „Weg zur Prüfung", Bootsschul-Finder-Link – als Vertrauens-/SEO-Booster.
+  - [x] FAQ-/Vertrauensseite mit Quellen-, Datenschutz-, Lernstrategie- und Roadmap-Hinweisen ergänzt.
+  - [ ] Bootsschul-Finder-Link oder passende neutrale Verweislogik ergänzen.
 - [ ] **Barrierefreiheit & Qualität**: WCAG-Kontraste, Tastatur/Screenreader (Web), saubere Skalierung – Verkaufsargument „beste UX".
 
 ---

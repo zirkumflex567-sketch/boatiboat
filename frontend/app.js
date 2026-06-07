@@ -1143,6 +1143,7 @@ function renderHome() {
     grid.appendChild(modecard("🪢", "Knoten",              "Prüfungsknoten mit Schritten und Einsatz.",         renderKnots));
   }
   grid.appendChild(modecard("🧾", "Weg zur Prüfung", "Anmeldung, Unterlagen und Ablauf auf einen Blick.", renderExamGuide));
+  grid.appendChild(modecard("❓", "FAQ & Vertrauen", "Quellen, Datenschutz und nächste Schritte kompakt.", renderSupportCenter));
   if (store.scope === "all" || ["src", "lrc", "ubi"].includes(store.scope)) {
     grid.appendChild(modecard("📻", "Funkpraxis", "Buchstabieren, Anrufschema und Notmeldung trainieren.", renderRadioPractice));
   }
@@ -2086,6 +2087,85 @@ function renderGuideSection(guide) {
     facts,
     steps,
   );
+}
+
+// ========================================================================
+// FAQ / TRUST CENTER
+// ========================================================================
+const FAQ_ITEMS = [
+  {
+    q: "Sind die Fragen amtlich?",
+    a: "Boatiboat nutzt die hinterlegten amtlichen beziehungsweise behördennahen Katalogdaten für SBF, FKN, SRC, LRC und UBI. Quellen und Prüfsummen werden im Projekt dokumentiert, damit spätere Updates nachvollziehbar bleiben.",
+  },
+  {
+    q: "Ersetzt Boatiboat eine Bootsschule?",
+    a: "Nein. Boatiboat trainiert Theorie, Wiederholung und Selbstkontrolle. Praktische Ausbildung, Einweisung und Prüfungsanmeldung laufen weiterhin über zugelassene Stellen, Prüfungsausschüsse oder Bootsschulen.",
+  },
+  {
+    q: "Bleibt mein Lernfortschritt privat?",
+    a: "Ja. Der aktuelle Fortschritt, Lesezeichen, Tagesziel und Einstellungen werden lokal im Browser gespeichert. Ohne optionales Konto wird nichts zwischen Geräten synchronisiert.",
+  },
+  {
+    q: "Was soll ich lernen, wenn ich wenig Zeit habe?",
+    a: "Starte mit Weiterlernen, danach Nur Schwächen. Kurz vor der Prüfung sind feste Bögen, Prüfungssimulation und die schwächsten Themen im Readiness-Kasten am wichtigsten.",
+  },
+  {
+    q: "Warum gibt es Lernhilfen zusätzlich zur amtlichen Antwort?",
+    a: "Die amtliche Antwort sagt, was richtig ist. Die Lernhilfe erklärt die Denkspur dahinter und gibt einen Merksatz, damit du ähnliche Fragen schneller erkennst.",
+  },
+  {
+    q: "Was fehlt noch?",
+    a: "Auf der Roadmap stehen unter anderem redaktionell verfeinerte Erklärungen, Push- oder lokale Erinnerungen, PDF-Export, feinere Frage-zu-Lehrbuch-Zuordnung und später optionale Synchronisierung.",
+  },
+];
+
+const TRUST_LINKS = [
+  ["Weg zur Prüfung", "Unterlagen und Ablauf je Schein prüfen.", renderExamGuide],
+  ["Lehrbuch", "SBF-Theorie kapitelweise lesen.", renderTheoryLibrary],
+  ["Einstellungen", "Tagesziel, Darstellung und Quizverhalten anpassen.", renderSettings],
+];
+
+function renderSupportCenter() {
+  session = null;
+  stopTimer();
+  TOPACTIONS.innerHTML = "";
+  TOPACTIONS.appendChild(el("button", { class: "btn-icon", onclick: renderHome, "aria-label": "Zurück" }, "←"));
+
+  const view = el("div", { class: "view" });
+  view.appendChild(
+    el("section", { class: "faq-hero" },
+      el("p", { class: "eyebrow" }, "FAQ & Vertrauen"),
+      el("h1", {}, "Schnelle Antworten, bevor du weiterlernst."),
+      el("p", {}, "Kurz erklärt: Quellen, Datenschutz, Prüfungsvorbereitung und der beste nächste Lernschritt."),
+    )
+  );
+
+  const links = el("div", { class: "trust-links" });
+  TRUST_LINKS.forEach(([title, desc, action]) => {
+    if (title === "Lehrbuch" && !SBF_SCOPES.has(store.scope)) return;
+    links.appendChild(
+      el("button", { class: "trust-link", onclick: action },
+        el("strong", {}, title),
+        el("span", {}, desc),
+      )
+    );
+  });
+  view.appendChild(links);
+
+  const list = el("section", { class: "faq-list" });
+  FAQ_ITEMS.forEach((item, idx) => {
+    list.appendChild(
+      el("details", { class: "faq-card", open: idx === 0 },
+        el("summary", {}, item.q),
+        el("p", {}, item.a),
+      )
+    );
+  });
+  view.appendChild(list);
+
+  APP.innerHTML = "";
+  APP.appendChild(view);
+  window.scrollTo(0, 0);
 }
 
 // ========================================================================

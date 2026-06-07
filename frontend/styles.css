@@ -906,6 +906,67 @@ a { color: var(--sea-dark); }
   margin: 3px 0 0;
 }
 
+/* FAQ / trust center */
+.faq-hero {
+  margin-bottom: 20px;
+}
+.faq-hero .eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sea-dark);
+  font-weight: 800;
+}
+.faq-hero h1 { font-size: clamp(1.9rem, 5vw, 3rem); }
+.faq-hero p { color: var(--ink-soft); max-width: 58ch; margin: 10px 0 0; }
+.trust-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.trust-link {
+  text-align: left;
+  display: grid;
+  gap: 5px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  cursor: pointer;
+}
+.trust-link:hover {
+  border-color: var(--sea);
+  box-shadow: var(--shadow-sm);
+}
+.trust-link span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.faq-list {
+  display: grid;
+  gap: 12px;
+}
+.faq-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 0;
+  overflow: hidden;
+}
+.faq-card summary {
+  cursor: pointer;
+  font-weight: 800;
+  padding: 15px 18px;
+}
+.faq-card summary::-webkit-details-marker { display: none; }
+.faq-card p {
+  color: var(--ink-soft);
+  margin: 0;
+  padding: 0 18px 17px;
+  line-height: 1.55;
+}
+
 /* category mastery */
 .catlist { display: grid; gap: 12px; }
 .catrow { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 12px 14px; }
@@ -1297,6 +1358,7 @@ a { color: var(--sea-dark); }
   .modegrid { grid-template-columns: 1fr; }
   .readiness-main { grid-template-columns: 1fr; justify-items: start; }
   .daily-card { grid-template-columns: 1fr; }
+  .trust-links { grid-template-columns: 1fr; }
   .sheet-grid { grid-template-columns: 1fr 1fr; }
   .result-stats { grid-template-columns: 1fr 1fr; }
   .guide-facts { grid-template-columns: 1fr; }
