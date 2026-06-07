@@ -1144,6 +1144,7 @@ function renderHome() {
   }
   grid.appendChild(modecard("🧾", "Weg zur Prüfung", "Anmeldung, Unterlagen und Ablauf auf einen Blick.", renderExamGuide));
   grid.appendChild(modecard("❓", "FAQ & Vertrauen", "Quellen, Datenschutz und nächste Schritte kompakt.", renderSupportCenter));
+  grid.appendChild(modecard("💳", "Preise & PRO", "Gratisumfang und faire Einmalkäufe transparent.", renderPricingPlan));
   if (store.scope === "all" || ["src", "lrc", "ubi"].includes(store.scope)) {
     grid.appendChild(modecard("📻", "Funkpraxis", "Buchstabieren, Anrufschema und Notmeldung trainieren.", renderRadioPractice));
   }
@@ -2299,6 +2300,103 @@ function renderSupportCenter() {
     );
   });
   view.appendChild(list);
+
+  APP.innerHTML = "";
+  APP.appendChild(view);
+  window.scrollTo(0, 0);
+}
+
+// ========================================================================
+// PRICING / PRO CONCEPT
+// ========================================================================
+const PRICING_TIERS = [
+  {
+    title: "Gratis lernen",
+    price: "0 €",
+    text: "Für realistische Vorbereitung ohne Paywall bei den Kernfunktionen.",
+    items: [
+      "Fragen üben, suchen und wiederholen",
+      "Prüfungen simulieren und Bögen trainieren",
+      "Lesezeichen, Fehlertraining und Fortschritt",
+      "Lehrbuch lesen, Weg zur Prüfung, FAQ",
+    ],
+  },
+  {
+    title: "Einzelschein PRO",
+    price: "19,90 €",
+    text: "Einmal kaufen, wenn ein Schein mit Komfortfunktionen vertieft werden soll.",
+    items: [
+      "PDF-/Druckpakete für Lernmaterial",
+      "Erweiterte Statistik und Lernplanung",
+      "Vertiefte Praxisübungen je Schein",
+      "Spätere Offline-Pakete und Synchronisierung",
+    ],
+  },
+  {
+    title: "Alle Scheine PRO",
+    price: "49,90 €",
+    text: "Ein Paket für SBF, Funk und FKN, ohne Abo-Modell.",
+    items: [
+      "Alle Einzelschein-PRO-Funktionen",
+      "Funk-Audio, Diktat und Übersetzung",
+      "KI-gestütztes FKN-Feedback, sobald freigegeben",
+      "Ein Konto optional, lokal lernen bleibt möglich",
+    ],
+  },
+];
+
+const PRO_PRINCIPLES = [
+  ["Kernlernen bleibt gratis", "Fortschritt, Suche, Fehlertraining, Lesezeichen und Prüfungssimulation sollen nicht hinter PRO verschwinden."],
+  ["Einmalkauf statt Abo", "Die Preislogik ist als transparenter Kauf gedacht; Store-Billing und Web-Zahlung werden separat umgesetzt."],
+  ["PRO ist Komfort und Tiefe", "Bezahlt werden sollen vor allem Export, Statistik, Offline-Komfort, Audio, KI-Feedback und spätere Synchronisierung."],
+];
+
+function renderPricingPlan() {
+  session = null;
+  stopTimer();
+  TOPACTIONS.innerHTML = "";
+  TOPACTIONS.appendChild(el("button", { class: "btn-icon", onclick: renderHome, "aria-label": "Zurück" }, "←"));
+
+  const view = el("div", { class: "view" });
+  view.appendChild(
+    el("section", { class: "pricing-hero" },
+      el("p", { class: "eyebrow" }, "Preise & PRO-Konzept"),
+      el("h1", {}, "Erst fair lernen, dann optional freischalten."),
+      el("p", {}, "Boatiboat trennt Prüfungsvorbereitung und Komfort: Die wichtigsten Lernfunktionen bleiben gratis, PRO bündelt zusätzliche Tiefe ohne Abo."),
+    )
+  );
+
+  view.appendChild(
+    el("section", { class: "pricing-principles" },
+      PRO_PRINCIPLES.map(([title, text]) =>
+        el("div", { class: "pricing-principle" },
+          el("strong", {}, title),
+          el("span", {}, text),
+        )
+      ),
+    )
+  );
+
+  view.appendChild(
+    el("section", { class: "pricing-grid" },
+      PRICING_TIERS.map((tier, idx) =>
+        el("article", { class: `price-card ${idx === 1 ? "featured" : ""}` },
+          el("p", { class: "price-label" }, idx === 0 ? "Basis" : "PRO"),
+          el("h2", {}, tier.title),
+          el("div", { class: "price" }, tier.price),
+          el("p", { class: "price-text" }, tier.text),
+          el("ul", { class: "price-list" }, tier.items.map((item) => el("li", {}, item))),
+        )
+      ),
+    )
+  );
+
+  view.appendChild(
+    el("section", { class: "pricing-note" },
+      el("strong", {}, "Noch kein Kaufdialog"),
+      el("p", {}, "Diese Seite macht die Produktlogik sichtbar. Zahlung, Lizenzprüfung und optionales Konto werden erst ergänzt, wenn Store-Billing und Web-Freischaltung sauber umgesetzt sind."),
+    )
+  );
 
   APP.innerHTML = "";
   APP.appendChild(view);

@@ -176,16 +176,18 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
   - [ ] KI-Feedback ergänzen.
 
 ### Phase 3 – Monetarisierung & Konto (parallel ab Phase 1)
-- [ ] **Free/PRO-Logik** definieren. Empfehlung: **mehr gratis als der Wettbewerb**
+- [x] **Free/PRO-Logik** definieren. Empfehlung: **mehr gratis als der Wettbewerb**
       (Lernfortschritt, Offline, Fehler-Wiederholung, Lesezeichen, Suche bleiben **gratis**),
       PRO = Lehrbuch-Vollzugriff + PDF, Knoten, Funk-Audio/Diktat, KI-FKN, erweiterte Statistik.
-- [ ] **Preis-Positionierung (günstiger als bootspruefung.de):**
+  - [x] Transparente Konzeptseite ergänzt: Kernlernen bleibt gratis; PRO bündelt Komfort, Tiefe und spätere Synchronisierung.
+- [x] **Preis-Positionierung (günstiger als bootspruefung.de):**
   | Produkt | bootspruefung.de | **Boatiboat (Vorschlag)** |
   |---|---|---|
   | SBF-See / SBF-Binnen einzeln | 28,90 € | **19,90 €** |
   | Bootsführerscheine (See+Binnen+BSP) | 48,90 € | **29,90 €** |
   | Alle Scheine | 78,90 € | **49,90 €** |
   - Einmalkauf, kein Abo, alle Geräte – wie Wettbewerb, aber klar günstiger. Optional Einführungs-/Bootsschul-Rabatt.
+  - [x] Einführungspreise und Produktlogik in der App sichtbar gemacht; Zahlung/Freischaltung bleibt separater Billing-Schritt.
 - [ ] **Store-Billing**: Google Play Billing (Android) + Web-Bezahlung (z. B. Stripe) mit
       Lizenz-Code/Account-Freischaltung. **(L)**
 - [ ] **Optionales Konto + Cross-Device-Sync** (E-Mail-Login, Fortschritt + Käufe).
