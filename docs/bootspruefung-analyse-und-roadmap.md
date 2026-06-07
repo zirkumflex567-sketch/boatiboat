@@ -144,7 +144,8 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
 - [ ] **Virtuelles Lehrbuch** (illustrierte Theorietexte) für See & Binnen, kapitelweise, durchsuchbar, mit Sprungmarken aus Fragen → „mehr dazu im Lehrbuch". **(L)**
   - [x] Erste Lehrbuch-Infrastruktur umgesetzt: Kapitel-/Abschnittsansicht für See & Binnen mit lokaler Suche.
   - [ ] Inhalte vollständig ausarbeiten, illustrieren und fachlich gegenprüfen.
-  - [ ] PDF-Export ergänzen.
+  - [x] PDF-Export ergänzen.
+    - [x] Druck-/PDF-Ansicht für das Lehrbuch ergänzt; Browser kann daraus „Als PDF speichern".
   - Inhalte aus freien/eigenen Quellen erstellen (kein Urheberrechtsverstoß), an die ELWIS-Themen angelehnt.
   - Optional **PDF-Export** des Lehrbuchs.
 - [x] **Frage → Theorie-Verknüpfung**: jede Frage verlinkt auf den passenden Lehrbuch-Abschnitt. **(M)** (klarer Mehrwert ggü. bootspruefung.de)

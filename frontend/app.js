@@ -1488,6 +1488,11 @@ function renderTheoryLibrary() {
       el("p", {}, "Kurze, eigene Erklärtexte für die wichtigsten Prüfungsbereiche. Die Struktur ist vorbereitet für spätere Sprungmarken direkt aus den Fragen."),
     )
   );
+  view.appendChild(
+    el("div", { class: "theory-actions" },
+      el("button", { class: "btn btn-ghost", onclick: renderTheoryPrint }, "🖨️ Lehrbuch als PDF speichern"),
+    )
+  );
   view.appendChild(el("div", { style: "margin:4px 0 18px" }, scopeSegmentedFor(renderTheoryLibrary)));
 
   const search = el("input", {
@@ -1554,6 +1559,55 @@ function renderTheoryLibrary() {
   APP.innerHTML = "";
   APP.appendChild(view);
   window.scrollTo(0, 0);
+}
+
+function renderTheoryPrint() {
+  session = null;
+  stopTimer();
+  TOPACTIONS.innerHTML = "";
+  TOPACTIONS.appendChild(el("button", { class: "btn-icon no-print", onclick: renderTheoryLibrary, "aria-label": "Zurück" }, "←"));
+
+  const keys = theoryKeys();
+  const view = el("div", { class: "view print-view" },
+    el("section", { class: "print-hero" },
+      el("p", { class: "eyebrow" }, "Boatiboat Lehrbuch"),
+      el("h1", {}, `Theorie ${keys.map((key) => THEORY_LIBRARY[key].title).join(" & ")}`),
+      el("p", {}, "Druckansicht für die Browserfunktion „Als PDF speichern“."),
+    ),
+  );
+
+  keys.forEach((key) => {
+    const book = THEORY_LIBRARY[key];
+    const section = el("section", { class: "print-book" },
+      el("h2", {}, book.title),
+      el("p", {}, book.intro),
+    );
+    book.chapters.forEach((chapter) => {
+      section.appendChild(el("h3", {}, chapter.title));
+      chapter.sections.forEach((item) => {
+        section.appendChild(
+          el("article", { class: "print-section" },
+            el("h4", {}, item.title),
+            el("p", {}, item.text),
+            el("ul", {}, ...item.bullets.map((bullet) => el("li", {}, bullet))),
+          )
+        );
+      });
+    });
+    view.appendChild(section);
+  });
+
+  view.appendChild(
+    el("div", { class: "print-actions no-print" },
+      el("button", { class: "btn btn-primary", onclick: () => window.print() }, "Drucken / als PDF speichern"),
+      el("button", { class: "btn btn-ghost", onclick: renderTheoryLibrary }, "Zurück zum Lehrbuch"),
+    )
+  );
+
+  APP.innerHTML = "";
+  APP.appendChild(view);
+  window.scrollTo(0, 0);
+  setTimeout(() => window.print(), 150);
 }
 
 function findTheorySection(key, sectionId) {
