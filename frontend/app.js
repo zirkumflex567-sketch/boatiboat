@@ -1846,6 +1846,34 @@ function revealDictation(task, feedbackId) {
 // ========================================================================
 // FKN-PRAXIS
 // ========================================================================
+function fknCheckKeywords(check) {
+  return normalizeDictationText(check)
+    .replace(/[^a-z0-9\s]/g, " ")
+    .split(/\s+/)
+    .filter((word) => word.length >= 5)
+    .slice(0, 4);
+}
+
+function checkFknPractice(item, index) {
+  const input = document.getElementById(`fkn-answer-${index}`);
+  const feedback = document.getElementById(`fkn-feedback-${index}`);
+  if (!input || !feedback) return;
+  const value = normalizeDictationText(input.value || "");
+  const results = item.checks.map((check) => {
+    const keywords = fknCheckKeywords(check);
+    const hit = keywords.some((keyword) => value.includes(keyword));
+    return { check, hit };
+  });
+  const hits = results.filter((result) => result.hit).length;
+  const needed = Math.max(1, Math.ceil(item.checks.length * 0.75));
+  const points = Math.round((hits / item.checks.length) * 100);
+  const missing = results.filter((result) => !result.hit).map((result) => result.check);
+  feedback.className = `fkn-feedback ${hits >= needed ? "ok" : "no"}`;
+  feedback.innerHTML = `<strong>${hits}/${item.checks.length} Prüfpunkte erkannt · ${points}%</strong>`
+    + (missing.length ? `<span>Noch ergänzen: ${missing.map(esc).join("; ")}</span>` : "<span>Prüfungsreif: alle Kernpunkte sind enthalten.</span>")
+    + `<small>${esc(item.examNote)}</small>`;
+}
+
 function renderFknPractice() {
   session = null;
   stopTimer();
@@ -1862,7 +1890,7 @@ function renderFknPractice() {
   );
 
   const list = el("div", { class: "fkn-list" });
-  FKN_PRACTICE.forEach((item) => {
+  FKN_PRACTICE.forEach((item, index) => {
     list.appendChild(
       el("details", { class: "fkn-card" },
         el("summary", {},
@@ -1871,6 +1899,25 @@ function renderFknPractice() {
         ),
         el("ul", {}, ...item.checks.map((check) => el("li", {}, check))),
         el("p", { class: "fkn-note" }, item.examNote),
+        el("div", { class: "fkn-selfcheck" },
+          el("label", { for: `fkn-answer-${index}` }, "Eigene Prüfungsantwort"),
+          el("textarea", {
+            id: `fkn-answer-${index}`,
+            class: "dictation-input",
+            rows: 3,
+            placeholder: "Erkläre kurz, wie du in der Prüfung vorgehen würdest...",
+          }),
+          el("div", { class: "dictation-actions" },
+            el("button", { class: "btn btn-primary", onclick: () => checkFknPractice(item, index) }, "Teilpunkte prüfen"),
+            el("button", { class: "btn btn-ghost", onclick: () => {
+              const feedback = document.getElementById(`fkn-feedback-${index}`);
+              if (!feedback) return;
+              feedback.className = "fkn-feedback";
+              feedback.innerHTML = `<strong>Beispiellösung</strong><span>${item.checks.map(esc).join("; ")}</span><small>${esc(item.examNote)}</small>`;
+            } }, "Beispiel anzeigen"),
+          ),
+          el("div", { id: `fkn-feedback-${index}`, class: "fkn-feedback hidden" }),
+        ),
       )
     );
   });

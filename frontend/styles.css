@@ -872,6 +872,35 @@ summary:focus-visible,
   margin: 12px 17px 17px;
   padding: 11px 13px;
 }
+.fkn-selfcheck {
+  display: grid;
+  gap: 9px;
+  margin: 0 17px 17px;
+}
+.fkn-selfcheck label {
+  font-weight: 800;
+}
+.fkn-feedback {
+  display: grid;
+  gap: 4px;
+  border-left: 4px solid var(--gold);
+  background: #fff8e6;
+  border-radius: 8px;
+  padding: 11px 13px;
+}
+.fkn-feedback.ok {
+  border-left-color: var(--good);
+  background: var(--good-bg);
+}
+.fkn-feedback.no {
+  border-left-color: var(--bad);
+  background: var(--bad-bg);
+}
+.fkn-feedback span,
+.fkn-feedback small {
+  color: var(--muted);
+  line-height: 1.45;
+}
 .fkn-warning {
   margin-top: 16px;
   padding: 16px 18px;
