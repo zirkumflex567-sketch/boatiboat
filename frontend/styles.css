@@ -1379,6 +1379,55 @@ summary:focus-visible,
 /* nav study card */
 .choices.nav-card { display: block; }
 .nav-scenario { padding: 16px 18px; border-left: 5px solid var(--sea); background: #eaf4f3; border-radius: 10px; line-height: 1.55; margin: 0 0 16px; }
+.nav-tool {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+}
+.nav-tool-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+.nav-tool-head span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.nav-tool-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+.nav-tool-grid label {
+  display: grid;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+.nav-input {
+  min-width: 0;
+  width: 100%;
+  font: inherit;
+  border: 2px solid var(--line-strong);
+  border-radius: 9px;
+  padding: 8px 9px;
+  background: var(--panel);
+  color: var(--ink);
+}
+.nav-tool-output {
+  padding: 10px 12px;
+  border-radius: 9px;
+  background: #eaf4f3;
+  color: var(--ink);
+  font-weight: 800;
+  line-height: 1.45;
+}
 .nav-tasks { display: grid; gap: 10px; }
 .nav-task { padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
 .nav-q { line-height: 1.45; }
@@ -1612,6 +1661,8 @@ summary:focus-visible,
   .pricing-principles,
   .pricing-grid { grid-template-columns: 1fr; }
   .sheet-grid { grid-template-columns: 1fr 1fr; }
+  .nav-tool-grid { grid-template-columns: repeat(2, 1fr); }
+  .nav-tool-head { display: grid; }
   .result-stats { grid-template-columns: 1fr 1fr; }
   .guide-facts { grid-template-columns: 1fr; }
   .reminder-row { align-items: flex-start; flex-direction: column; }

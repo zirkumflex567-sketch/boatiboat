@@ -2961,6 +2961,7 @@ const CHART_SECTIONS = [
 function renderNavCard(q) {
   const box = el("div", { class: "choices nav-card" });
   box.appendChild(el("p", { class: "nav-scenario" }, q.scenario || ""));
+  box.appendChild(renderNavTool());
 
   const tasks = el("div", { class: "nav-tasks" });
   (q.subtasks || []).forEach((sub) => {
@@ -2988,6 +2989,61 @@ function renderNavCard(q) {
   box.appendChild(det);
   box.appendChild(el("p", { class: "nav-note" }, q.explanation || ""));
   return box;
+}
+
+function renderNavTool() {
+  const distance = el("input", { class: "nav-input", type: "number", min: "0", step: "0.1", placeholder: "sm", "aria-label": "Distanz in Seemeilen" });
+  const speed = el("input", { class: "nav-input", type: "number", min: "0", step: "0.1", placeholder: "kn", "aria-label": "Fahrt in Knoten" });
+  const minutes = el("input", { class: "nav-input", type: "number", min: "0", step: "1", placeholder: "min", "aria-label": "Zeit in Minuten" });
+  const trueCourse = el("input", { class: "nav-input", type: "number", min: "0", max: "359", step: "1", placeholder: "rwK", "aria-label": "Rechtweisender Kurs" });
+  const variation = el("input", { class: "nav-input", type: "number", step: "1", placeholder: "Mw", "aria-label": "Missweisung mit Vorzeichen" });
+  const deviation = el("input", { class: "nav-input", type: "number", step: "1", placeholder: "Abl.", "aria-label": "Ablenkung mit Vorzeichen" });
+  const out = el("div", { class: "nav-tool-output", role: "status", "aria-live": "polite" }, "Werte eintragen und rechnen.");
+
+  const num = (input) => {
+    const v = Number(String(input.value).replace(",", "."));
+    return Number.isFinite(v) ? v : null;
+  };
+  const deg = (v) => `${String(Math.round(((v % 360) + 360) % 360)).padStart(3, "0")}°`;
+
+  function calculate() {
+    const d = num(distance);
+    const s = num(speed);
+    const t = num(minutes);
+    const rwk = num(trueCourse);
+    const mw = num(variation) ?? 0;
+    const abl = num(deviation) ?? 0;
+    const lines = [];
+
+    if (d != null && s > 0) lines.push(`Fahrtzeit: ${Math.round((d / s) * 60)} min`);
+    if (s != null && t != null) lines.push(`Distanz: ${((s * t) / 60).toFixed(1).replace(".", ",")} sm`);
+    if (d != null && t > 0) lines.push(`Fahrt über Grund: ${(d / (t / 60)).toFixed(1).replace(".", ",")} kn`);
+    if (rwk != null) {
+      const mgk = rwk - mw;
+      const kk = mgk - abl;
+      lines.push(`MgK: ${deg(mgk)} · Kompasskurs: ${deg(kk)}`);
+    }
+
+    out.textContent = lines.length ? lines.join(" · ") : "Mindestens zwei Werte eintragen.";
+  }
+
+  [distance, speed, minutes, trueCourse, variation, deviation].forEach((input) => input.addEventListener("input", calculate));
+
+  return el("section", { class: "nav-tool" },
+    el("div", { class: "nav-tool-head" },
+      el("strong", {}, "Navigations-Rechner"),
+      el("span", {}, "Distanz, Zeit, Fahrt und Kurskorrektur üben"),
+    ),
+    el("div", { class: "nav-tool-grid" },
+      el("label", {}, el("span", {}, "Distanz"), distance),
+      el("label", {}, el("span", {}, "Fahrt"), speed),
+      el("label", {}, el("span", {}, "Zeit"), minutes),
+      el("label", {}, el("span", {}, "rwK"), trueCourse),
+      el("label", {}, el("span", {}, "Mw +/-"), variation),
+      el("label", {}, el("span", {}, "Abl. +/-"), deviation),
+    ),
+    out,
+  );
 }
 
 // ========================================================================

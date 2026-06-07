@@ -207,6 +207,7 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
 - [x] **Audio-Vorlesen** von Fragen/Theorie (Barrierefreiheit, Lernen unterwegs).
   - [x] Browser-TTS für Lernfragen, FKN-Antwortkarten und Lehrbuchabschnitte ergänzt.
 - [ ] **Echte Navigationsaufgaben-Übung**: interaktive Kursdreieck-/Besteck-Tools statt nur Lösungsanzeige (großer Vorteil ggü. reinem „Siehe Karte").
+  - [x] Erster Navigations-Rechner für Distanz, Zeit, Fahrt und Kurskorrektur direkt in den Navigationskarten ergänzt.
 - [ ] **Web + iOS**: PWA ist da; native iOS-Hülle (wie Android) ergänzen.
 - [ ] **Content/Community light**: FAQ, „Weg zur Prüfung", Bootsschul-Finder-Link – als Vertrauens-/SEO-Booster.
   - [x] FAQ-/Vertrauensseite mit Quellen-, Datenschutz-, Lernstrategie- und Roadmap-Hinweisen ergänzt.
