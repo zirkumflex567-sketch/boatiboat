@@ -1065,6 +1065,18 @@ a { color: var(--sea-dark); }
 .feedback.ok { border-left-color: var(--good); background: var(--good-bg); }
 .feedback.no { border-left-color: var(--bad); background: var(--bad-bg); }
 .feedback .verdict { font-weight: 800; display: block; margin-bottom: 4px; }
+.learning-aid {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 16%, transparent);
+}
+.learning-aid strong {
+  display: block;
+  margin-bottom: 4px;
+}
+.learning-aid p {
+  margin: 5px 0 0;
+}
 
 .qfoot { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 18px; }
 .qhint { font-size: 0.8rem; color: var(--muted); }

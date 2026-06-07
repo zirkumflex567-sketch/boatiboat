@@ -2351,6 +2351,49 @@ function commitAnswer(it, displayIdx) {
   if (session.mode === "exam" && cfg().showResultLate) setTimeout(nextItem, 180);
 }
 
+function learningAidForQuestion(q) {
+  const answer = q.choices?.[q.correct_index] || "";
+  const hay = [q.license_type, q.category, q.prompt, answer, q.explanation || ""].join(" ").toLowerCase();
+  let reason = "Prüfe erst, wonach genau gefragt wird, und streiche Antworten, die nur ähnlich klingen.";
+  let memory = "Fragekern finden, falsche Extreme aussortieren, dann die präziseste Antwort wählen.";
+
+  if (/funk|src|lrc|ubi|mayday|pan-pan|securite|ukw|kanal|rufzeichen/.test(hay)) {
+    reason = "Im Funk zählt die feste Reihenfolge: Dringlichkeit, Adressat, eigene Kennung, Position, Lage und gewünschte Hilfe.";
+    memory = "Erst wer spricht und wo, dann was passiert ist und welche Hilfe gebraucht wird.";
+  } else if (/fkn|pyro|signal|seenot|rakete|rauch|handfackel|notsignal/.test(hay)) {
+    reason = "Pyrotechnik-Fragen drehen sich fast immer um Seenot, sichere Handhabung, Zulassung und Abstand zu Personen.";
+    memory = "Pyro nur im Notfall, weg vom Körper, frei nach Lee und nach Anleitung.";
+  } else if (/navigation|karte|kurs|peil|position|missweisung|rwk|mgk|distanz|koordinat/.test(hay)) {
+    reason = "Navigationsfragen lassen sich sicher lösen, wenn du Richtung, Bezugssystem und Einheiten sauber trennst.";
+    memory = "Erst Karte und Bezug klären, dann rechnen, dann Plausibilität prüfen.";
+  } else if (/tonne|zeichen|befeuer|licht|farbe|kegel|ball|seezeichen|schall/.test(hay)) {
+    reason = "Zeichenfragen fragen meist nach Form, Farbe, Takt oder Bedeutung. Ein einzelnes Merkmal entscheidet oft.";
+    memory = "Form, Farbe, Feuer: immer in dieser Reihenfolge lesen.";
+  } else if (/ausweich|vorfahrt|begegn|überhol|kreuz|kollisions|fahrwasser|kurshalte/.test(hay)) {
+    reason = "Bei Ausweichregeln ist zuerst wichtig, welche Fahrzeuge beteiligt sind und ob sie sich begegnen, kreuzen oder überholen.";
+    memory = "Situation benennen, Rollen klären, dann handeln: Kurs halten oder früh und deutlich ausweichen.";
+  } else if (/wetter|wind|sicht|nebel|gewitter|druck|front/.test(hay)) {
+    reason = "Wetterfragen zielen auf rechtzeitiges Erkennen von Risiko und konservative Entscheidungen vor dem Ablegen.";
+    memory = "Wetter entscheidet vor dem Start, nicht erst mitten auf dem Wasser.";
+  } else if (/motor|maschine|kraftstoff|brand|bilge|kühl|propeller|öl/.test(hay)) {
+    reason = "Technikfragen prüfen Ursache, Kontrolle und sichere Reihenfolge beim Handeln an Bord.";
+    memory = "Erst sichern und prüfen, dann starten, reparieren oder Hilfe holen.";
+  }
+
+  return { reason, memory, answer };
+}
+
+function appendLearningAid(target, q) {
+  const aid = learningAidForQuestion(q);
+  target.appendChild(
+    el("div", { class: "learning-aid" },
+      el("strong", {}, "Lernhilfe"),
+      el("p", {}, aid.reason),
+      aid.answer ? el("p", {}, `Merksatz: ${aid.memory} Richtige Antwort: ${aid.answer}`) : el("p", {}, `Merksatz: ${aid.memory}`),
+    )
+  );
+}
+
 function paintAnswer(it) {
   const btns = APP.querySelectorAll(".choice");
   const hideExamResult = session.mode === "exam" && cfg().showResultLate;
@@ -2369,11 +2412,13 @@ function paintAnswer(it) {
       fb.className = `feedback ${it.correct ? "ok" : "no"}`;
       fb.innerHTML  = `<span class="verdict">${it.correct ? "✓ Richtig" : "✗ Leider falsch"}</span>`
                     + highlightText(it.q.explanation || "");
+      appendLearningAid(fb, it.q);
       const theoryBtn = theoryButtonForQuestion(it.q, "feedback-link");
       if (theoryBtn) fb.appendChild(theoryBtn);
     } else if (fb) {
       fb.className = `feedback ${it.correct ? "ok" : "no"} minimal`;
       fb.innerHTML  = `<span class="verdict">${it.correct ? "✓ Richtig" : "✗ Falsch"}</span>`;
+      appendLearningAid(fb, it.q);
       const theoryBtn = theoryButtonForQuestion(it.q, "feedback-link");
       if (theoryBtn) fb.appendChild(theoryBtn);
     }

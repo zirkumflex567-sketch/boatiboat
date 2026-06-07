@@ -196,7 +196,9 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
   - [x] Lokales Tagesziel mit Fortschrittsbalken und einstellbarer Zielhöhe umgesetzt.
   - [x] Tagesziel-Streak mit aktivem Serienstand und Bestwert ergänzt.
   - [ ] Push-/Local-Notifications ergänzen.
-- [ ] **Erklärungen aufwerten**: kurze, verständliche Begründung **+ Eselsbrücken** je Frage.
+- [x] **Erklärungen aufwerten**: kurze, verständliche Begründung **+ Eselsbrücken** je Frage.
+  - [x] Erste Lernhilfe im Quizfeedback ergänzt: Grundidee, Merksatz und korrekte Antwort als Anker.
+  - [ ] Später redaktionell pro Frage verfeinern.
 - [x] **Audio-Vorlesen** von Fragen/Theorie (Barrierefreiheit, Lernen unterwegs).
   - [x] Browser-TTS für Lernfragen, FKN-Antwortkarten und Lehrbuchabschnitte ergänzt.
 - [ ] **Echte Navigationsaufgaben-Übung**: interaktive Kursdreieck-/Besteck-Tools statt nur Lösungsanzeige (großer Vorteil ggü. reinem „Siehe Karte").
