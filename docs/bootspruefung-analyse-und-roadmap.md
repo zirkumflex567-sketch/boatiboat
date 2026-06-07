@@ -207,6 +207,8 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
   - [x] FAQ-/Vertrauensseite mit Quellen-, Datenschutz-, Lernstrategie- und Roadmap-Hinweisen ergänzt.
   - [x] Neutrale Verweislogik zu DMYV-Ausbildungsstätten, DMYV-Prüfungsausschüssen und DSV/Sportboot-Portal ergänzt.
 - [ ] **Barrierefreiheit & Qualität**: WCAG-Kontraste, Tastatur/Screenreader (Web), saubere Skalierung – Verkaufsargument „beste UX".
+  - [x] Erste A11y-Basis ergänzt: Skip-Link, sichtbare Fokusrahmen, Toast-Live-Region sowie ARIA-Zustände für Fortschritt und Lesezeichen.
+  - [ ] Vollständigen WCAG-/Screenreader-Audit später durchführen.
 
 ---
 

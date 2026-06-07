@@ -2296,7 +2296,14 @@ function renderQuiz() {
   const pct = session.items.length ? (session.idx / session.items.length) * 100 : 0;
   const top = el("div", { class: "qtop" },
     el("button", { class: "btn-icon", onclick: confirmExit, "aria-label": "Beenden" }, "✕"),
-    el("div", { class: "progress-track" }, el("i", { style: `width:${pct}%` })),
+    el("div", {
+      class: "progress-track",
+      role: "progressbar",
+      "aria-label": "Quizfortschritt",
+      "aria-valuemin": "0",
+      "aria-valuemax": String(session.items.length),
+      "aria-valuenow": String(session.idx),
+    }, el("i", { style: `width:${pct}%` })),
   );
   if (session.deadline) {
     const tm = el("span", { class: "qtimer", id: "timer" }, "—:—");
@@ -2328,10 +2335,14 @@ function renderQuiz() {
     const bmBtn = el("button", {
       class: isBookmarked(q.external_id) ? "btn-icon bookmarked" : "btn-icon",
       title: isBookmarked(q.external_id) ? "Lesezeichen entfernen" : "Frage merken",
+      "aria-label": isBookmarked(q.external_id) ? "Lesezeichen entfernen" : "Frage merken",
+      "aria-pressed": String(isBookmarked(q.external_id)),
       onclick: () => {
         const now = toggleBookmark(q.external_id);
         bmBtn.classList.toggle("bookmarked", now);
         bmBtn.title = now ? "Lesezeichen entfernen" : "Frage merken";
+        bmBtn.setAttribute("aria-label", now ? "Lesezeichen entfernen" : "Frage merken");
+        bmBtn.setAttribute("aria-pressed", String(now));
         toast(now ? "Frage gemerkt 🔖" : "Lesezeichen entfernt");
       },
     }, isBookmarked(q.external_id) ? "🔖" : "🏷️");

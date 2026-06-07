@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#app">Zum Inhalt springen</a>
     <header class="topbar">
       <button class="brand" id="brand" aria-label="Zur Startseite">
         <span class="mark">⚓</span>
@@ -22,14 +23,14 @@
       <div class="topbar-actions" id="topbarActions"></div>
     </header>
 
-    <main id="app" class="wrap" aria-live="polite"></main>
+    <main id="app" class="wrap" tabindex="-1"></main>
 
     <footer class="footer">
       Lerninhalte: amtliche ELWIS-Fragenkataloge See &amp; Binnen (Stand 01. August 2023).
       Fortschritt wird nur lokal in diesem Browser gespeichert.
     </footer>
 
-    <div class="toast" id="toast"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
     <script src="assets/app.js"></script>
   </body>
