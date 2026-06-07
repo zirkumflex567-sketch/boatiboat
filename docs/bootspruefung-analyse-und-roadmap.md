@@ -199,7 +199,8 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
 - [ ] **Tagesziel / Streak / Erinnerungen** (Push/Local Notifications, Lern-Gewohnheit).
   - [x] Lokales Tagesziel mit Fortschrittsbalken und einstellbarer Zielhöhe umgesetzt.
   - [x] Tagesziel-Streak mit aktivem Serienstand und Bestwert ergänzt.
-  - [ ] Push-/Local-Notifications ergänzen.
+  - [x] Lokale Browser-Erinnerung mit Uhrzeit, Berechtigungsstatus und ehrlichem Web-Hinweis ergänzt.
+  - [ ] Native Push-Erinnerungen für installierte App ergänzen.
 - [x] **Erklärungen aufwerten**: kurze, verständliche Begründung **+ Eselsbrücken** je Frage.
   - [x] Erste Lernhilfe im Quizfeedback ergänzt: Grundidee, Merksatz und korrekte Antwort als Anker.
   - [ ] Später redaktionell pro Frage verfeinern.

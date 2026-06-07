@@ -429,6 +429,7 @@ let MC      = [];   // Nur MC-Fragen (kein card_type navigation)
 let NAV     = [];   // Navigations-Lernkarten
 let session = null; // aktive Quiz-Session
 let timerId = null;
+let reminderTimerId = null;
 
 // ========================================================================
 // STORE – persistenter Lernfortschritt + Einstellungen
@@ -449,6 +450,8 @@ function defaultStore() {
       highlightKeys:  true,       // Schlüsselwörter hervorheben
       autoHint:       "wrong",    // "always" | "wrong" | "never"
       dailyGoal:      20,         // Tagesziel beantwortete Fragen
+      reminderEnabled: false,      // lokale Browser-Erinnerung
+      reminderTime:   "18:00",     // tägliche Lernzeit
     },
     today: { date: "", count: 0 },
     dailyStreak: { lastDate: "", current: 0, best: 0 },
@@ -473,6 +476,7 @@ let store = loadStore();
 
 function saveStore() {
   try { localStorage.setItem(STORE_KEY, JSON.stringify(store)); } catch (e) { /* quota */ }
+  scheduleReminder();
 }
 
 // Shortcut zu den Einstellungen
@@ -555,6 +559,81 @@ function dailyStreakStatus(today) {
   };
 }
 
+function notificationSupported() {
+  return "Notification" in window;
+}
+
+function notificationPermission() {
+  if (!notificationSupported()) return "unsupported";
+  return Notification.permission;
+}
+
+function reminderLabel() {
+  if (!cfg().reminderEnabled) return "Aus";
+  const permission = notificationPermission();
+  if (permission === "granted") return `Ein · täglich ${cfg().reminderTime || "18:00"} Uhr`;
+  if (permission === "denied") return "Blockiert im Browser";
+  if (permission === "unsupported") return "Nicht unterstützt";
+  return "Noch nicht erlaubt";
+}
+
+function nextReminderDelay(timeValue) {
+  const [hRaw, mRaw] = String(timeValue || "18:00").split(":");
+  const h = Math.min(23, Math.max(0, Number(hRaw) || 18));
+  const m = Math.min(59, Math.max(0, Number(mRaw) || 0));
+  const now = new Date();
+  const next = new Date(now);
+  next.setHours(h, m, 0, 0);
+  if (next <= now) next.setDate(next.getDate() + 1);
+  return next.getTime() - now.getTime();
+}
+
+function showLearningReminder() {
+  if (!cfg().reminderEnabled || notificationPermission() !== "granted") return;
+  const today = todayProgress();
+  const goal = Number(cfg().dailyGoal || 0);
+  const body = goal > 0
+    ? `Heute ${today.count}/${goal} Fragen geschafft. Eine kurze Runde hält deine Serie aktiv.`
+    : "Eine kurze Lernrunde reicht, damit Boatiboat frisch bleibt.";
+  new Notification("Boatiboat Lernzeit", { body, tag: "boatiboat-daily-reminder" });
+}
+
+function scheduleReminder() {
+  if (reminderTimerId) {
+    clearTimeout(reminderTimerId);
+    reminderTimerId = null;
+  }
+  if (!cfg().reminderEnabled || notificationPermission() !== "granted") return;
+  reminderTimerId = setTimeout(() => {
+    showLearningReminder();
+    scheduleReminder();
+  }, nextReminderDelay(cfg().reminderTime));
+}
+
+async function enableReminders() {
+  if (!notificationSupported()) {
+    store.settings.reminderEnabled = false;
+    saveStore();
+    toast("Benachrichtigungen werden hier nicht unterstützt", 3200);
+    renderSettings();
+    return;
+  }
+  const permission = Notification.permission === "default"
+    ? await Notification.requestPermission()
+    : Notification.permission;
+  if (permission !== "granted") {
+    store.settings.reminderEnabled = false;
+    saveStore();
+    toast("Benachrichtigungen sind im Browser nicht erlaubt", 3200);
+    renderSettings();
+    return;
+  }
+  store.settings.reminderEnabled = true;
+  saveStore();
+  toast("Tägliche Erinnerung aktiviert");
+  renderSettings();
+}
+
 // ========================================================================
 // THEME ENGINE
 // ========================================================================
@@ -571,6 +650,7 @@ function applyTheme() {
 
 window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", applyTheme);
 applyTheme();
+scheduleReminder();
 
 // ========================================================================
 // HELPER UTILITIES
@@ -1318,6 +1398,40 @@ function renderSettings() {
   ));
 
   view.appendChild(quiz);
+
+  // ---- Lerngewohnheit ----
+  const habit = section("Lerngewohnheit");
+  habit.appendChild(
+    el("div", { class: "setting-row reminder-row" },
+      el("div", { class: "setting-info" },
+        el("div", { class: "setting-label" }, "🔔 Tägliche Erinnerung"),
+        el("div", { class: "setting-desc" }, `Status: ${reminderLabel()}`),
+        el("div", { class: "setting-note" }, "Im Browser funktioniert die Erinnerung, solange Boatiboat geöffnet ist. Native App-Erinnerungen bleiben ein späterer Ausbauschritt."),
+      ),
+      el("div", { class: "reminder-controls" },
+        el("input", {
+          class: "time-input",
+          type: "time",
+          value: cfg().reminderTime || "18:00",
+          "aria-label": "Uhrzeit für tägliche Erinnerung",
+          onchange: (ev) => {
+            store.settings.reminderTime = ev.target.value || "18:00";
+            saveStore();
+            renderSettings();
+          },
+        }),
+        cfg().reminderEnabled
+          ? el("button", { class: "btn btn-ghost", onclick: () => {
+            store.settings.reminderEnabled = false;
+            saveStore();
+            toast("Erinnerung deaktiviert");
+            renderSettings();
+          } }, "Ausschalten")
+          : el("button", { class: "btn btn-primary", onclick: enableReminders }, "Aktivieren"),
+      ),
+    )
+  );
+  view.appendChild(habit);
 
   // ---- Daten ----
   const data = section("Daten");
@@ -2217,7 +2331,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Was fehlt noch?",
-    a: "Auf der Roadmap stehen unter anderem redaktionell verfeinerte Erklärungen, Push- oder lokale Erinnerungen, PDF-Export, feinere Frage-zu-Lehrbuch-Zuordnung und später optionale Synchronisierung.",
+    a: "Auf der Roadmap stehen unter anderem redaktionell verfeinerte Erklärungen, native App-Erinnerungen, feinere Frage-zu-Lehrbuch-Zuordnung und später optionale Synchronisierung.",
   },
 ];
 
