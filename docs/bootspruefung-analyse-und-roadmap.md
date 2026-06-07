@@ -205,7 +205,7 @@ Priorisiert in Phasen. „Aufwand" = grobe Schätzung (S/M/L).
 - [ ] **Web + iOS**: PWA ist da; native iOS-Hülle (wie Android) ergänzen.
 - [ ] **Content/Community light**: FAQ, „Weg zur Prüfung", Bootsschul-Finder-Link – als Vertrauens-/SEO-Booster.
   - [x] FAQ-/Vertrauensseite mit Quellen-, Datenschutz-, Lernstrategie- und Roadmap-Hinweisen ergänzt.
-  - [ ] Bootsschul-Finder-Link oder passende neutrale Verweislogik ergänzen.
+  - [x] Neutrale Verweislogik zu DMYV-Ausbildungsstätten, DMYV-Prüfungsausschüssen und DSV/Sportboot-Portal ergänzt.
 - [ ] **Barrierefreiheit & Qualität**: WCAG-Kontraste, Tastatur/Screenreader (Web), saubere Skalierung – Verkaufsargument „beste UX".
 
 ---

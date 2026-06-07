@@ -2125,6 +2125,24 @@ const TRUST_LINKS = [
   ["Einstellungen", "Tagesziel, Darstellung und Quizverhalten anpassen.", renderSettings],
 ];
 
+const EXTERNAL_TRUST_LINKS = [
+  {
+    title: "DMYV Bootsschule finden",
+    desc: "Anerkannte Ausbildungsstätten nach Ort und Schein suchen.",
+    url: "https://www.dmyv.de/fuehrerschein/-funk/ausbildung/ausbildungsstaette-finden",
+  },
+  {
+    title: "DMYV Prüfungsausschüsse",
+    desc: "Prüfstellen und regionale Ansprechpartner vergleichen.",
+    url: "https://www.dmyv.de/fuehrerschein/-funk/pruefungen/pruefungsausschuesse",
+  },
+  {
+    title: "DSV/Sportboot-Portal",
+    desc: "Prüfungsausschuss und Termine über das zentrale Portal finden.",
+    url: "https://www.sportbootfuehrerscheine.org/",
+  },
+];
+
 function renderSupportCenter() {
   session = null;
   stopTimer();
@@ -2151,6 +2169,24 @@ function renderSupportCenter() {
     );
   });
   view.appendChild(links);
+
+  view.appendChild(
+    el("section", { class: "finder-card" },
+      el("div", {},
+        el("p", { class: "section-label" }, "Bootsschule & Prüfung finden"),
+        el("h2", {}, "Neutral weiterleiten statt Anbieter empfehlen."),
+        el("p", {}, "Boatiboat listet keine einzelnen Schulen gegen Geld. Nutze die offiziellen beziehungsweise verbandsnahen Suchseiten und prüfe dort Termine, Scheinart, Praxisangebot und Entfernung."),
+      ),
+      el("div", { class: "external-links" },
+        EXTERNAL_TRUST_LINKS.map((item) =>
+          el("a", { class: "external-link", href: item.url, target: "_blank", rel: "noopener noreferrer" },
+            el("strong", {}, item.title),
+            el("span", {}, item.desc),
+          )
+        ),
+      ),
+    )
+  );
 
   const list = el("section", { class: "faq-list" });
   FAQ_ITEMS.forEach((item, idx) => {

@@ -966,6 +966,44 @@ a { color: var(--sea-dark); }
   padding: 0 18px 17px;
   line-height: 1.55;
 }
+.finder-card {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 18px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 18px;
+  margin-bottom: 18px;
+}
+.finder-card .section-label { margin: 0 0 6px; }
+.finder-card h2 { font-size: 1.35rem; }
+.finder-card p:not(.section-label) {
+  color: var(--ink-soft);
+  margin: 8px 0 0;
+}
+.external-links {
+  display: grid;
+  gap: 10px;
+}
+.external-link {
+  display: grid;
+  gap: 4px;
+  text-decoration: none;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 13px 15px;
+}
+.external-link:hover {
+  border-color: var(--sea);
+  box-shadow: var(--shadow-sm);
+}
+.external-link span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
 
 /* category mastery */
 .catlist { display: grid; gap: 12px; }
@@ -1359,6 +1397,7 @@ a { color: var(--sea-dark); }
   .readiness-main { grid-template-columns: 1fr; justify-items: start; }
   .daily-card { grid-template-columns: 1fr; }
   .trust-links { grid-template-columns: 1fr; }
+  .finder-card { grid-template-columns: 1fr; }
   .sheet-grid { grid-template-columns: 1fr 1fr; }
   .result-stats { grid-template-columns: 1fr 1fr; }
   .guide-facts { grid-template-columns: 1fr; }
