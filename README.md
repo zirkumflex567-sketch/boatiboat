@@ -71,6 +71,18 @@ python -m venv .venv
 
 Dann `http://127.0.0.1:8000` oeffnen.
 
+## Live-Deployment
+
+Die htown-Instanz laeuft hinter nginx unter:
+
+- App: `https://h-town.duckdns.org/boatiboat/`
+- Healthcheck: `https://h-town.duckdns.org/boatiboat/api/health`
+
+Nach einem Deploy nicht nur den lokalen Uvicorn-Port pruefen, sondern auch den
+oeffentlichen nginx-Pfad. Die App nutzt relative Pfade; unter `/boatiboat/`
+muessen deshalb auch `/boatiboat/assets/...` und `/boatiboat/api/...` erreichbar
+sein.
+
 ## Android-App bauen
 
 Die Android-App ist eine native WebView-Huelle um die Live-App:
